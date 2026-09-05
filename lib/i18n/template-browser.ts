@@ -143,6 +143,20 @@ export function localizedTemplateFields(
   };
 }
 
+/** Keep one source excerpt from appearing again as both title and description. */
+export function templateCardCopy(title: string, description: string) {
+  const cleanTitle = title.trim();
+  const cleanDescription = description.trim();
+  const normalize = (text: string) => text.toLowerCase().replace(/[\p{P}\p{Z}\s]/gu, "");
+  const normalizedTitle = normalize(cleanTitle);
+  const normalizedDescription = normalize(cleanDescription);
+  if (normalizedTitle === normalizedDescription) return { title: cleanTitle, description: "" };
+  if (/[.…]{1,3}$/.test(cleanTitle) && normalizedTitle.length >= 30 && normalizedDescription.startsWith(normalizedTitle)) {
+    return { title: cleanDescription, description: "" };
+  }
+  return { title: cleanTitle, description: cleanDescription };
+}
+
 export function templateSearchHaystack(item: BotTemplate, locale: Locale) {
   const fields = localizedTemplateFields(item, locale);
   return [

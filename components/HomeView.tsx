@@ -2,8 +2,9 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { ArticleRow } from "@/components/ArticleRow";
+import { BotFace, teamBotColor } from "@/components/BotFace";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
 import { DiscoverFeed } from "@/components/DiscoverFeed";
 import { GitHubStar } from "@/components/GitHubStar";
@@ -232,23 +233,7 @@ function HomeViewContent({
             <div className="col-start-2 row-start-2 mx-auto md:col-start-2 md:row-span-2 md:row-start-1 md:mx-0">
               <HeroBot />
             </div>
-            {!showResults ? (
-              <div className="col-span-2 flex flex-wrap gap-3 md:col-span-1 md:col-start-1">
-                <a
-                  href="#find-your-bot"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[10px] bg-ink px-4 text-[15px] font-medium text-canvas transition-opacity hover:opacity-85"
-                >
-                  {discoveryCopy.chooseIdentity}
-                  <ArrowDown aria-hidden className="size-4 shrink-0" />
-                </a>
-                <a
-                  href="#real-use-cases"
-                  className="inline-flex min-h-12 items-center justify-center rounded-[10px] border border-line-strong bg-card px-4 text-[15px] font-medium text-ink transition-colors hover:bg-elevated"
-                >
-                  {discoveryCopy.seeExamples}
-                </a>
-              </div>
-            ) : null}
+
           </div>
         </div>
       </section>
@@ -289,7 +274,7 @@ function HomeViewContent({
           compactOnMobile
         />
         <p className="mt-2 max-w-xl text-[15px] leading-6 text-mute">{discoveryCopy.identityHint}</p>
-        <div className="mt-6 grid gap-3 min-[360px]:grid-cols-2 sm:mt-8 sm:gap-4 lg:grid-cols-4">
+        <div data-home-identity-grid="" className="mt-6 grid gap-3 min-[360px]:grid-cols-2 sm:mt-8 sm:gap-4 lg:grid-cols-4">
           {identities.map((identity) => (
             <LocaleLink
               key={identity.slug}
@@ -326,28 +311,34 @@ function HomeViewContent({
           <div className="mt-2">
             <SectionHeader title={t("home.botTeamsTitle")} href="/templates/teams" cta={t("home.botTeamsCta")} />
           </div>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
-            {teamTemplates.map(({ template, catalog }) => {
+          <div data-home-team-grid="" className="mt-6 grid gap-3 min-[360px]:grid-cols-2 sm:mt-8 sm:gap-4 lg:grid-cols-4">
+            {teamTemplates.map(({ template, catalog }, index) => {
               const copy = localizeTemplateCopy(template.id, locale, catalog);
               const purpose = getTemplateTeamCardCopy(template.id, locale) ?? copy.oneLiner;
               return (
-                <article key={template.id} className="flex min-h-[250px] min-w-0 flex-col rounded-2xl border border-line bg-card p-6">
-                  <p className="font-mono text-[12px] font-medium tracking-[0.08em] text-faint uppercase">
-                    {t("home.botTeamsLabel")}
-                  </p>
-                  <h3 className="mt-3 text-[21px] leading-7 font-medium tracking-[-0.025em] text-ink">
-                    {copy.title}
-                  </h3>
+                <a
+                  key={template.id}
+                  href={template.templateUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-home-team-card=""
+                  className="spring-lift group flex min-w-0 flex-col rounded-2xl border border-line bg-card p-4 hover:border-line-strong sm:p-5"
+                >
+                  <div className="flex flex-col-reverse items-start justify-between gap-3 sm:flex-row">
+                    <h3 className="text-[18px] leading-6 font-medium tracking-[-0.02em] text-ink group-hover:text-accent sm:text-[19px]">
+                      {copy.title}
+                    </h3>
+                    <div aria-hidden className="relative h-10 w-14 shrink-0">
+                      <BotFace size={32} color={teamBotColor(index)} paper="var(--card)" className="absolute top-0 left-0" />
+                      <BotFace size={32} color={teamBotColor(index + 1)} paper="var(--card)" className="absolute right-0 bottom-0" />
+                    </div>
+                  </div>
                   <p className="mt-3 text-[15px] leading-6 text-mute">{purpose}</p>
-                  <a
-                    href={template.templateUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-auto inline-flex min-h-11 items-center pt-6 text-[15px] font-medium text-accent hover:text-ink"
-                  >
-                    {t("home.openTemplate")}
-                  </a>
-                </article>
+                  <div className="mt-auto flex items-end justify-between gap-3 pt-5">
+                    <span className="text-[15px] font-medium text-accent">{t("home.openTemplate").replace(/\s*→$/, "")}</span>
+                    <ArrowUpRight aria-hidden className="size-4 shrink-0 text-faint group-hover:text-accent" />
+                  </div>
+                </a>
               );
             })}
           </div>

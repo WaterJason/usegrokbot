@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { ExpandablePost } from "@/components/ExpandablePost";
 import { getTemplateStory, rankLabel, templates, type BotTemplate } from "@/data/templates";
 import { getTemplateTeamCardCopy } from "@/data/template-team-copy";
 import { cn } from "@/lib/cn";
 import { useI18n } from "@/lib/i18n";
-import { localizedTemplateFields, templateBrowserCopy } from "@/lib/i18n/template-browser";
+import { localizedTemplateFields, templateBrowserCopy, templateCardCopy } from "@/lib/i18n/template-browser";
 import { useTapFeedback } from "@/lib/tap-feedback";
 import { formatViewCount, metricForPostUrl, metricForStory } from "@/lib/x-metrics";
 
@@ -38,20 +37,19 @@ export function TemplateList({
           const fields = localizedTemplateFields(item, locale);
           const xPostUrl = fields.xPostUrl;
           const byline = item.handle ? "@" + item.handle : item.authorName;
-          const purpose = fields.oneLiner.trim();
-          const showPurpose =
-            Boolean(purpose) && purpose.toLowerCase() !== fields.title.trim().toLowerCase();
+          const card = templateCardCopy(fields.title, fields.oneLiner);
 
           if (variant === "identity" || variant === "team") {
             const isTeamCard = variant === "team";
             const teamPurpose = isTeamCard
               ? getTemplateTeamCardCopy(item.id, locale)
               : undefined;
-            const lead = (teamPurpose || (showPurpose ? purpose : "")).trim();
+            const lead = (teamPurpose || card.description).trim();
 
             return (
               <li key={item.id}>
                 <article
+                  data-template-id={item.id}
                   className={cn(
                     "spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong",
                     isTeamCard && "border-line-strong bg-elevated",
@@ -59,7 +57,7 @@ export function TemplateList({
                 >
                   <div className="flex items-start justify-between gap-3">
                     <Heading className="min-w-0 text-[18px] font-medium tracking-tight wrap-break-word text-ink">
-                      {fields.title}
+                      {card.title}
                     </Heading>
                     {xPostUrl ? (
                       <XPostButton href={xPostUrl} label={t("discover.viewOriginalX")} />
@@ -95,7 +93,7 @@ export function TemplateList({
 
           return (
             <li key={item.id}>
-              <article className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong">
+              <article data-template-id={item.id} className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong">
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-[20px] tabular-nums tracking-tight text-mute">
@@ -113,15 +111,14 @@ export function TemplateList({
                   </p>
                 </div>
 
-                {showPurpose ? (
-                  <p className="mt-4 min-w-0 text-[15px] leading-6 wrap-break-word text-ink">
-                    {purpose}
+                <Heading className="mt-4 text-[18px] font-medium tracking-tight wrap-break-word text-ink">
+                  {card.title}
+                </Heading>
+                {card.description ? (
+                  <p className="mt-3 min-w-0 text-[15px] leading-6 wrap-break-word text-mute">
+                    {card.description}
                   </p>
                 ) : null}
-                <Heading className="mt-3 text-[18px] font-medium tracking-tight wrap-break-word text-ink">
-                  {fields.title}
-                </Heading>
-                <ExpandablePost text={fields.postText} lines={3} className="mt-2" />
                 {byline ? (
                   <p className="mt-3 min-w-0 truncate text-[12px] text-mute">{byline}</p>
                 ) : null}

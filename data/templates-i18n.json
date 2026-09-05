@@ -724,6 +724,411 @@
       "title": "Ralph",
       "oneLiner": "把履歷做成招聘經理真的能點進去的線上 portfolio",
       "body": "每個產品都是可 demo 的頁面，不是 PDF 上的一行。再給你一個可分享的 Bot，別人也能做同一件事。"
+    },
+    "rQt4W2zO2Gx9lfcBjd1lj": {
+      "title": "Researchy（研究助手）",
+      "oneLiner": "只透過 Grok Build CLI，使用最新模型和最高思考設定來研究問題。",
+      "body": "只透過 Grok Build CLI，使用最新模型和最高思考設定來研究問題。"
+    },
+    "br5f3C4mc75QCMEHaszXd": {
+      "title": "tinkabot（外掛製作）",
+      "oneLiner": "把你的 API 做成 MCP 或 skill，再包成 Grok Bot 可使用的外掛。",
+      "body": "把你的 API 做成 MCP 或 skill，再包成 Grok Bot 可使用的外掛。"
+    },
+    "scYgD9jdFhooaSHihRzy7": {
+      "title": "SEO 工程師",
+      "oneLiner": "幫你看落地頁、文章與反向連結，用來累積自然搜尋流量。",
+      "body": "從頁面、文章到反向連結都一手照看，讓自然流量慢慢疊加。一鍵即可加入。"
+    },
+    "qL920VjKyua3_u89UYnQL": {
+      "title": "一人創業者（起步）",
+      "oneLiner": "給一人創業者用：裝好 Grok Bot，再加入這隻就可以開始。",
+      "body": "不必先堆一堆設定。設計前提就是先加入這一隻。"
+    },
+    "b00VrDzeasoqtPymoNDB-": {
+      "title": "Skippy（街道清掃時間）",
+      "oneLiner": "貼上地址，查看舊金山該路段下一次的街道清掃時間。",
+      "body": "貼上地址，查看舊金山該路段下一次的街道清掃時間。"
+    },
+    "BqrH8_GNQvSYV-gcmJnd8": {
+      "title": "When it matters（變化條件）",
+      "oneLiner": "把你反覆核對的對象交給它，找出答案真正會改變的條件。",
+      "body": "先釐清什麼變了才值得再看，讓你不必一再打開同一頁。"
+    },
+    "eFfFM4-QmHxxrUlTUqyAo": {
+      "title": "Pattern of pain（反覆痛點）",
+      "oneLiner": "給它一個網站，找出反覆出現的困擾，並出示證據。",
+      "body": "回報的是多次出現的痛點與依據，不是單次抱怨。"
+    },
+    "FtxHtWPnLGheNJmF04wSf": {
+      "title": "Connections（人脈地圖）",
+      "oneLiner": "依地點分開追蹤與互追，並畫進你現有的 Notion。",
+      "body": "不另開新資料庫，把人與人的連結放進你正在用的 Notion。"
+    },
+    "fY1xWwCLzDDGVe3GwH78j": {
+      "title": "Engineer（實作）",
+      "oneLiner": "把案件排上看板、啟動雲端 agent，並每 30 分鐘查看 PR。",
+      "body": "你只需要負責合併。實作來回交給雲端 agent。"
+    },
+    "gJ4waNMuQoJkQCGX77yF3": {
+      "title": "Writing（寫作）",
+      "oneLiner": "幫你整理文章、郵件與資料的結構，並保留原意、事實與語氣。",
+      "body": "不是換成別人的句子，而是在保住你的意圖下把文字理順。"
+    },
+    "hkGSHcqKjGc5dm3ugNc2U": {
+      "title": "Nightly audit（夜間巡檢）",
+      "oneLiner": "在夜裡檢查整個程式庫，每個範圍只提出一項清理。",
+      "body": "花一晚讀完程式庫，隔早交給你分範圍的小清理。不一次全改。"
+    },
+    "JeFTvcDX-7QT2evKGIb52": {
+      "title": "Product idea（壓力測試）",
+      "oneLiner": "列出必須為真的條件、最脆弱的前提，以及下一步該試什麼。",
+      "body": "不是稱讚點子，而是先看它會怎麼壞掉。"
+    },
+    "NJXi2SWEuhNxjOjspMMPi": {
+      "title": "Dial（外撥電話）",
+      "oneLiner": "只在你要求時，用 Bland AI 打出外撥電話，並回報發生了什麼。",
+      "body": "不會自己撥打。通話結束後，只把結果交回。"
+    },
+    "phPQtGzCZOynABubl0pwx": {
+      "title": "Image gen（圖像生成）",
+      "oneLiner": "蒐集參考、撰寫 Grok Imagine 指示、用 FAL 去背，並重複到畫面穩定。",
+      "body": "不是一次做完，而是把參考、指示、去背與重試當成一整段流程。"
+    },
+    "uFRK1GoAsiopBLPY19QCe": {
+      "title": "The page（頁面守望）",
+      "oneLiner": "每天早上查看 3 到 5 個公開頁面；值得注意的點沒變之前，它保持安靜。",
+      "body": "不提供每日摘要。只有真的動了才通知。"
+    },
+    "VHMdjIGjGpgDSJR7dW6Gz": {
+      "title": "Figma Bro（介面設計）",
+      "oneLiner": "在 Figma 裡用真實元件與直覺版面設計，也一併處理動效。",
+      "body": "不只是外觀草稿，而是用實際元件組裝，並讓動效不顯得突兀。"
+    },
+    "X_P19IvPAHZ3FiA1Q-05s": {
+      "title": "X algo（演算法）",
+      "oneLiner": "依公開的 For You 程式與即時指標，判斷該引用、該發文，還是該等。",
+      "body": "不靠感覺，而是用已公開的排名規則與當下數字來判斷。"
+    },
+    "ZRxm1O9tmizOhriV7GiWL": {
+      "title": "Grok Build（CLI）",
+      "oneLiner": "在 agent 的電腦上，以最大努力實際執行真正的 Grok Build CLI。",
+      "body": "不是在聊天裡模仿，而是用最高設定跑真正的 CLI。"
+    },
+    "zvkkoHMbclsUBWX8MRGpU": {
+      "title": "Tech demos（技術展示）",
+      "oneLiner": "從你在 X 的書籤選一個函式庫，經你允許後，在 sticky monorepo 做出展示。",
+      "body": "由 Cursor 的雲端 agent 實作。一次只推進你選的那一個，不會自行全部做完。"
+    },
+    "_CIeV4P17QVoxuaEyeiFZ": {
+      "title": "Stock Trader（股票交易）",
+      "oneLiner": "作者用來進行股票交易的 Bot。",
+      "body": "作者用來進行股票交易的 Bot。"
+    },
+    "tLSg4HxepSclMqbZUTRnX": {
+      "title": "Fable 5.1 Oracle（規劃審查）",
+      "oneLiner": "整理規劃與審查結果，再交給雲端助手實作。",
+      "body": "整理規劃與審查結果，再交給雲端助手實作。"
+    },
+    "_xZZE41svJdcq2w6ZWJan": {
+      "title": "Supermemory（同步）",
+      "oneLiner": "讓公司用、私人用與寫程式用的 Bot，用共用記憶對齊一天的動向。",
+      "body": "以 supermemory 組成的模板，讓 Grok Bot、Hermes、Cursor／Claude Code／Codex 看到同一處境。"
+    },
+    "guides": {
+      "title": "Grok Bot 指南",
+      "oneLiner": "讀過官方指南的人，整理出較少被提到的使用要點。",
+      "body": "包括如何確認優先事項、先示範再記住、只報告新變化等 11 項。這比較像指南重點連結，不是一隻 Bot 本身。"
+    },
+    "M9c2tC_-mwY8XNTmSbkUY": {
+      "title": "Medical Bill Review（帳單覆核）",
+      "oneLiner": "幫你逐項核對看不懂的醫院帳單，並起草異議信件。",
+      "body": "取出明細、核對防止突襲收費的規則，並查詢減額或免除是否可能。不問 SSN 或病歷號。"
+    },
+    "riqe7Z1oOnU6wIV7Zb9Mt": {
+      "title": "I Said I Would（承諾追蹤）",
+      "oneLiner": "在 Slack 與 GitHub 記住你對人許下的事，只顯示仍未完成的項目。",
+      "body": "若有足夠執行證據就自行關閉。不是全部催促，只列出未完成或不確定的重要承諾。"
+    },
+    "peJxDrQRS4t2DHuHfzhfW": {
+      "title": "Reminder（提醒）",
+      "oneLiner": "一隻簡單的提醒 Bot，幫你不要忘掉要做的事。",
+      "body": "這是避免忘記事情的短模板，不是功能很多的參謀。"
+    },
+    "rt9m-FTkJoGsZzAjsKLPM": {
+      "title": "Critiquito（介面檢查）",
+      "oneLiner": "查看你的介面，提出改善建議。",
+      "body": "查看你的介面，提出改善建議。"
+    },
+    "plugin": {
+      "title": "CLI for Agents（外派）",
+      "oneLiner": "「CLI for Agents」插件，把委託交給 Claude、Codex、Kimi 等處理。",
+      "body": "讓 Bot 本體不必把額度用完的路徑。條目來自 x.ai/bot/plugin 底下的連結。"
+    },
+    "-miS0AF-lema7i8Z019Qp": {
+      "title": "x402 book shop（書店）",
+      "oneLiner": "若已有網域，可用這份模板自己搭一間 x402 書店並開始販售。",
+      "body": "跑在 Cloudflare Workers 上。作者說用手機上的 Grok Bot 大約 20 分鐘搭好。"
+    },
+    "ndOGeXyjkQLdceRlk7JP4": {
+      "title": "free_bots_lol（實驗）",
+      "oneLiner": "free_bots_lol 的官方模板，讓 Bot 理解並參與這場實驗。",
+      "body": "專為這場實驗而做，不是一般用途的參謀。"
+    },
+    "-GgufM3GkZclfn9PuI17_": {
+      "title": "Kinesis compute（算力彙整）",
+      "oneLiner": "把你在 Kinesis Network 上的運算資源，收進同一隻 Bot。",
+      "body": "這是作者自用模板，用來從這裡查看分散的運算資源。"
+    },
+    "xSfBSprfKv5h909uzrv7W": {
+      "title": "X High Coach（帳號教練）",
+      "oneLiner": "貼上你的 @，就收集 X 貼文、為帳號打分，並提出修改方向。",
+      "body": "目的是清理貼文與處理帳號問題，不是代你發文。"
+    },
+    "KTuDBQv3fYw-h8RaC8XGg": {
+      "title": "Monad（錢包）",
+      "oneLiner": "建立新的 Monad 錢包，並可進行迷因幣、perp、借貸與兌換。",
+      "body": "須自行承擔風險。這是可做鏈上操作的模板，不保證收益。"
+    },
+    "1L2VgwhlakwrV5p-iOsuR": {
+      "title": "eBay team（商店管理）",
+      "oneLiner": "透過 eBay API 協助管理商店；支出前必須先由你輸入 APPROVE。",
+      "body": "透過 eBay API 協助管理商店；支出前必須先由你輸入 APPROVE。"
+    },
+    "ehxj2Wdxq9M04jvaAqyBD": {
+      "title": "Copay Compass（藥費協助）",
+      "oneLiner": "尋找癌症藥物自付額協助、登記重開提醒，並準備申請。",
+      "body": "不問 SSN 或病歷號，也不提供醫療建議。重點是基金關閉後重新開放時的準備。"
+    },
+    "LlldYnfUbSX5Z5ogLkHik": {
+      "title": "Revenue Enablement（銷售支援）",
+      "oneLiner": "協助準備銷售話術、產品更新、推廣計畫和季度銷售檢討。",
+      "body": "協助準備銷售話術、產品更新、推廣計畫和季度銷售檢討。"
+    },
+    "9BnpveyF3fbsRRtolSWpp": {
+      "title": "Revenue Signal Radar（商機雷達）",
+      "oneLiner": "為停滯的商談（含企業案件）尋找重新啟動的線索。",
+      "body": "從公開訊號喚醒失速案件的雷達。不會自動寄出訊息。"
+    },
+    "cGcG0msqfz7o7J3QMLhbE": {
+      "title": "Bot checker（加入前檢查）",
+      "oneLiner": "加入前貼上分享連結，會回 CLEAN／WARN／BLOCK 的參考判斷。",
+      "body": "這是加入其他 Bot 前的檢查。不負責刪除，只給建議。"
+    },
+    "-E-6LRFFIZ7oJl5FRXRxbI": {
+      "title": "Plato（求真）",
+      "oneLiner": "不附和你。會把新聞或想法查到帶出處，並寫出反對方最強的說法。",
+      "body": "不會同意完就結束。留下出處，並呈現反對方最有力的形態。"
+    },
+    "1kQ8p3TAKx2FgvYXir2Ta": {
+      "title": "App Store Connect（提交）",
+      "oneLiner": "從 API 金鑰到 TestFlight、文案、截圖與事前確認，引導 App Store Connect 提交。",
+      "body": "縮短提交迷宮。需要時會在旁邊協助。"
+    },
+    "FfGFlZLAQDyxhJwg2ZJlL": {
+      "title": "Pika Bot（商品追蹤）",
+      "oneLiner": "留意 Pokémon Center 的新品上架消息。",
+      "body": "留意 Pokémon Center 的新品上架消息。"
+    },
+    "Loekv1uecl26wWW0lNyfR": {
+      "title": "Subscription cleaner 訂閱清理",
+      "oneLiner": "從邀請信和帳單找出訂閱，標出沒用或重複的項目；要停掉會先問你。",
+      "body": "也會對照卡片明細和最後登入，列出工具、負責人、最後登入、每月費用，以及留下、合併或停用。"
+    },
+    "yXsqmCaODNkTEwtIbiXxe": {
+      "title": "AE deal bot 案件教練",
+      "oneLiner": "幫業務評分 MEDDPICC 不夠完整的案件，查帳號，再提示下一步。",
+      "body": "決策人地圖太薄時，它會補上覆蓋範圍，並寫出下一步該怎麼動。"
+    },
+    "7GgZtqkhyLzKKMNUa7dhd": {
+      "title": "Forge（開發執行）",
+      "oneLiner": "規格齊全後開始開發，遇到阻礙時才向你確認，並記住你的選擇。",
+      "body": "規格齊全後開始開發，遇到阻礙時才向你確認，並記住你的選擇。"
+    },
+    "3iNSp9IoRCnSjh0Z6MtWZ": {
+      "title": "Agent PM（開發進度管理）",
+      "oneLiner": "追蹤多個程式開發助手的進度。",
+      "body": "追蹤多個程式開發助手的進度。"
+    },
+    "9EFVmFgQhjYKjMHAhpCWn": {
+      "title": "PickFu Insights 消費者調查",
+      "oneLiner": "在你投入資源之前，先向真實消費者做調查，並用 PickFu 跑完、整理原因。",
+      "body": "會幫你寫調查草案、執行、摘要原因，並提出下一輪測試。這不是虛構的人物設定。"
+    },
+    "0taQ6RZdkjsnOfda_A8Ie": {
+      "title": "Order tracker 訂單追蹤",
+      "oneLiner": "幫你從 Grok Bot 查看和管理線上訂單。",
+      "body": "作者用 Dr Eggbot 做成，並接到 orbglide Tracker MCP。重點是追蹤訂單。"
+    },
+    "Pc2T7udSjGxv9pd9Spkyc": {
+      "title": "Dr.Binary 逆向解析",
+      "oneLiner": "專門協助逆向工程解析。",
+      "body": "面向程式解析。不是一般寫文或日常幕僚。"
+    },
+    "zj8VKu1CnqkHCM4Na1zex": {
+      "title": "Ads manager 廣告操作",
+      "oneLiner": "幫你操作廣告活動。",
+      "body": "作者公開的 ads manager / operator。仍是初期版本，歡迎回饋改進。"
+    },
+    "9nbLm_04EvjnolE9oevTT": {
+      "title": "Latch 初始設定導引",
+      "oneLiner": "幫你寫下角色和會用到的工具，並引導 Grok Bot 的初始設定與連接。",
+      "body": "給還沒設定好的人。Latch 會一路帶到連接器。"
+    },
+    "Ml4ynlD6O1VT5CoYmFnEa": {
+      "title": "Token Cop 用量監看",
+      "oneLiner": "追蹤每隻 Bot 的 token 用量，標出偏高的，並在吃掉整月額度前通知你。",
+      "body": "讓編制的支出不會被雜訊蓋住。它不會刪除 Bot。"
+    },
+    "5mReUHPYTBA6nJ2aNvlqn": {
+      "title": "Helidon Engineer",
+      "oneLiner": "只看 Helidon 4 的 SE 與 MP，不用 Helidon 3 的 API。",
+      "body": "以 java-helidon skill 為前提，並把寫法對齊同一套程式模型。"
+    },
+    "pL_NCKfdF5UgZYEo-jMAx": {
+      "title": "Cheerful skeptic（想法檢查）",
+      "oneLiner": "檢查 Bot 團隊提出的想法，指出可能不切實際的地方。",
+      "body": "檢查 Bot 團隊提出的想法，指出可能不切實際的地方。"
+    },
+    "Y_R1Ya9SIzQZguGTV5NCX": {
+      "title": "The Accountant（用量檢查）",
+      "oneLiner": "找出 Bot 反覆查詢、不斷重試等浪費 token 用量的情況。",
+      "body": "找出 Bot 反覆查詢、不斷重試等浪費 token 用量的情況。"
+    },
+    "1-UWhTw5N6IVgOcDZHrsb": {
+      "title": "Dr Eggbot 通用改寫",
+      "oneLiner": "用 Dr Eggbot 改寫成較通用的 Grok Bot。",
+      "body": "作者把既有內容經 Dr Eggbot 處理，做成用途不要太窄的範本。原專長在貼文中沒有寫明。"
+    },
+    "zsxwic_IlmyavESnhLiWZ": {
+      "title": "PG Bot 區域帳戶檢視",
+      "oneLiner": "在負責 AE 的區域裡，查看接觸不足、Potential ARR，以及 30 天沒動靜的帳戶。",
+      "body": "聊天用 Markdown。發到 Slack 或電子郵件前需要你確認。"
+    },
+    "Rj9uN1lhqYP-kLpRVShG0": {
+      "title": "Tutor 比喻教學",
+      "oneLiner": "不用課綱；用一則比喻和一道確認，讓想法留在你腦裡。",
+      "body": "這不是 Bot 學校。你指定題目後，它給比喻和確認，然後安靜。思考的人是你。"
+    },
+    "GGnJOdH3hv321H2QES9UE": {
+      "title": "Mission Control（團隊總覽）",
+      "oneLiner": "把 Bot 團隊的行程、決定和狀態整理在同一個頁面。",
+      "body": "把 Bot 團隊的行程、決定和狀態整理在同一個頁面。"
+    },
+    "GTStkB5wsoSlGx9jtdaPe": {
+      "title": "Primer Grok Bot 導覽",
+      "oneLiner": "回答 Grok Bot 本身怎麼用。",
+      "body": "這是產品用法的導覽。不是某個產業的實務 Bot。"
+    },
+    "DNpS1nqrBzmQ5vsx1IHn1": {
+      "title": "Rogue Bot Hunter（異常檢查）",
+      "oneLiner": "檢查團隊中是否有擅自行動的 Bot，並每週整理結果。",
+      "body": "檢查團隊中是否有擅自行動的 Bot，並每週整理結果。"
+    },
+    "LREkas8UxVGvPJ5NiO7bz": {
+      "title": "Know Enemy 知彼",
+      "oneLiner": "孫子包的「知彼」側，整理對方的公開資訊。",
+      "body": "與 Know Yourself 成對。不是寫備忘錄，而是畫出對方側的地圖。"
+    },
+    "mD27QOhXb_plMRSbsvMOv": {
+      "title": "Know Yourself 知己",
+      "oneLiner": "孫子包的「知己」側，整理自己這邊的長處和缺口。",
+      "body": "與 Know Enemy 成對。先把己方事實擺齊。"
+    },
+    "0U6-QCQxUkAkj6BTi7SjL": {
+      "title": "Morning newspaper（晨間新聞）",
+      "oneLiner": "按設定用簡訊送出晨間新聞，內容可自行調整。",
+      "body": "按設定用簡訊送出晨間新聞，內容可自行調整。"
+    },
+    "EfBhh8nwpuGD0XNfl0eBI": {
+      "title": "AvatarMaker 頭像配套",
+      "oneLiner": "為你做的每隻 Grok Bot 做出同一系統的頭像。",
+      "body": "先問一次並固定風格，再交出方形肖像和個人檔案用圖包。有黏土、毛氈、漫畫、貼紙等多種外觀。"
+    },
+    "00LpQytGgJbn3KTdUJREV": {
+      "title": "Android phone operator 手機端操作",
+      "oneLiner": "不把登入資料放上雲端電腦，改在 Android 手機上跑 LinkedIn、X 等每日發文。",
+      "body": "目標是少用 token，把操作留在手機端。"
+    },
+    "NuOSHSdCZPVkM78K0HkB3": {
+      "title": "Spawned dev team（開發小隊）",
+      "oneLiner": "建立開發小隊，簡化溝通，讓助手完成各自的步驟後結束。",
+      "body": "建立開發小隊，簡化溝通，讓助手完成各自的步驟後結束。"
+    },
+    "qFHGsPu6CGtrug6Lm78rJ": {
+      "title": "LinkedIn outreach 聯絡協助",
+      "oneLiner": "協助 LinkedIn 對外聯絡。",
+      "body": "貼文說明很短，只寫明用於 LinkedIn 聯絡。寄出前是否需確認，來源沒有寫。"
+    },
+    "OIwlDPggzoJ1EzGn1D-JD": {
+      "title": "Patch engineer 小修補丁",
+      "oneLiner": "你告訴它哪裡壞了，Cursor 雲端 agent 會帶回補丁和 PR。",
+      "body": "它不開 Mac，也不在聊天室裡寫程式。小修正不必坐在 IDE 前；大改架構仍留在你自己的 Mac。"
+    },
+    "-sOdLVj33yh8hh7OlHogi": {
+      "title": "chief of staff 學生幕僚",
+      "oneLiner": "給學生用的幕僚，把多處資訊收成下一步。",
+      "body": "實習申請、社團、校內工具等散落資訊，會收到同一段對話。"
+    },
+    "1HFC3QdqPtcj1FIbKf8oq": {
+      "title": "the pm 學生進度",
+      "oneLiner": "給學生用的 PM，把多項作業和行程收成一條進度。",
+      "body": "是作者學生套組的一員。不負責實作，只看還剩什麼、下一步做什麼。"
+    },
+    "eSCwViGduTgMD6PiOo7jm": {
+      "title": "the j*bfinder 職缺追蹤",
+      "oneLiner": "追蹤實習和求職的投遞進度。",
+      "body": "讓學生把散落的申請收到同一個地方查看。"
+    },
+    "SDLUUiG6HKwiFpGqCOAw7": {
+      "title": "UCSD 申請與 t-res 表單",
+      "oneLiner": "讓 UCSD 的 programming 申請和 t-res 表單更好讀。",
+      "body": "把學生社團活動申請等校內表單收成一條流程。"
+    },
+    "CHmLGnQyx6r8lkb3U8k9x": {
+      "title": "試用 Bot（用途未寫明）",
+      "oneLiner": "作者邀請你免費試用這隻 Bot；貼文沒有說明它具體幫你做什麼。",
+      "body": "來源只有「Try my Grok @bot for free.」沒有寫功能。"
+    },
+    "qV6FAPsH8Yox5VNuYQ8al": {
+      "title": "UniFi 網路與 Protect 摘要",
+      "oneLiner": "幫你看 Ubiquiti UniFi 的網路健康，並整理 Protect 的人、車、動物、感應器摘要。",
+      "body": "作者公開給 UniFi：網路健康加上 Protect 摘要。來源沒有保證即時警報或自動處置。"
+    },
+    "2Nk6nQTahTex1e5gHS_LU": {
+      "title": "Token 支出檢查",
+      "oneLiner": "幫你檢查整組 Grok Bot 的 token 支出，找出可以少花的地方。",
+      "body": "作者說這隻 Bot 用來降低編制的 token 花費。來源沒有寫它會自動刪除或停用 Bot。"
+    },
+    "4iz8VYK_cG482_vIA8WR4": {
+      "title": "X Scout 設定蒐集",
+      "oneLiner": "先了解你怎麼用 Bot 和發文，再在 X 上找出值得複製的 Grok Bot 設定。",
+      "body": "貼文寫它會從時間軸自動複製好的設定。來源沒有寫複製前是否需你確認。"
+    },
+    "7k0TLQBu4hPI5oE3ywRHU": {
+      "title": "Agent（網站檢查）",
+      "oneLiner": "每天檢查網站是否方便 AI 助手讀取和操作。",
+      "body": "每天檢查網站是否方便 AI 助手讀取和操作。"
+    },
+    "DYg0r1xvzy_xxPeRGHcHE": {
+      "title": "職缺搜尋寄信",
+      "oneLiner": "依你指定的地點搜尋職缺，並把結果寄到你的電子郵件。",
+      "body": "作者說會搜你選定地點的職缺並直接寄給你。來源沒有寫代為投遞，也沒有保證錄取。"
+    },
+    "EiOdP3Fg6pHBkm3AgLbRA": {
+      "title": "Grok Bot 新手導覽",
+      "oneLiner": "帶用過 ChatGPT、但不會寫程式的人開始使用 Grok Bot。",
+      "body": "帶用過 ChatGPT、但不會寫程式的人開始使用 Grok Bot。"
+    },
+    "JocbRv3IMTJ5LmjX_qXvZ": {
+      "title": "Astra Oracle 判斷顧問",
+      "oneLiner": "把 Astra Oracle 放進 Grok Bot 與 Cursor 的迴圈裡，負責判斷，不負責實作。",
+      "body": "作者說 Astra 已上 Pro。這隻 Oracle 不實作。來源沒有寫它會寫程式或合併 PR。"
+    },
+    "marketplace": {
+      "title": "範本目錄",
+      "oneLiner": "這是範本目錄，不是一隻 Bot。SpaceXAI 團隊把一些好用的案例收成任何人都能用的範本。",
+      "body": "用來瀏覽現成範本。不要把它當成一隻會做事的 Bot。"
     }
   },
   "zh-Hans": {
@@ -1451,6 +1856,411 @@
       "title": "Ralph",
       "oneLiner": "把履历做成招聘经理真的能点进去的线上 portfolio",
       "body": "每个产品都是可 demo 的页面，不是 PDF 上的一行。再给你一个可分享的 Bot，别人也能做同一件事。"
+    },
+    "rQt4W2zO2Gx9lfcBjd1lj": {
+      "title": "Researchy（研究助手）",
+      "oneLiner": "只通过 Grok Build CLI，使用最新模型和最高思考设置来研究问题。",
+      "body": "只通过 Grok Build CLI，使用最新模型和最高思考设置来研究问题。"
+    },
+    "br5f3C4mc75QCMEHaszXd": {
+      "title": "tinkabot（插件制作）",
+      "oneLiner": "把你的 API 做成 MCP 或 skill，再包成 Grok Bot 可使用的插件。",
+      "body": "把你的 API 做成 MCP 或 skill，再包成 Grok Bot 可使用的插件。"
+    },
+    "scYgD9jdFhooaSHihRzy7": {
+      "title": "SEO 工程师",
+      "oneLiner": "帮你看落地页、文章与反向连结，用来累积自然搜寻流量。",
+      "body": "从页面、文章到反向连结都一手照看，让自然流量慢慢叠加。一键即可加入。"
+    },
+    "qL920VjKyua3_u89UYnQL": {
+      "title": "一人创业者（起步）",
+      "oneLiner": "给一人创业者用：装好 Grok Bot，再加入这只就可以开始。",
+      "body": "不必先堆一堆设定。设计前提就是先加入这一只。"
+    },
+    "b00VrDzeasoqtPymoNDB-": {
+      "title": "Skippy（街道清扫时间）",
+      "oneLiner": "贴上地址，查看旧金山该路段下一次的街道清扫时间。",
+      "body": "贴上地址，查看旧金山该路段下一次的街道清扫时间。"
+    },
+    "BqrH8_GNQvSYV-gcmJnd8": {
+      "title": "When it matters（变化条件）",
+      "oneLiner": "把你反复核对的对象交给它，找出答案真正会改变的条件。",
+      "body": "先厘清什么变了才值得再看，让你不必一再打开同一页。"
+    },
+    "eFfFM4-QmHxxrUlTUqyAo": {
+      "title": "Pattern of pain（反复痛点）",
+      "oneLiner": "给它一个网站，找出反复出现的困扰，并出示证据。",
+      "body": "回报的是多次出现的痛点与依据，不是单次抱怨。"
+    },
+    "FtxHtWPnLGheNJmF04wSf": {
+      "title": "Connections（人脉地图）",
+      "oneLiner": "依地点分开追踪与互追，并画进你现有的 Notion。",
+      "body": "不另开新数据库，把人与人的连结放进你正在用的 Notion。"
+    },
+    "fY1xWwCLzDDGVe3GwH78j": {
+      "title": "Engineer（实作）",
+      "oneLiner": "把案件排上看板、启动云端 agent，并每 30 分钟查看 PR。",
+      "body": "你只需要负责合并。实作来回交给云端 agent。"
+    },
+    "gJ4waNMuQoJkQCGX77yF3": {
+      "title": "Writing（写作）",
+      "oneLiner": "帮你整理文章、邮件与资料的结构，并保留原意、事实与语气。",
+      "body": "不是换成别人的句子，而是在保住你的意图下把文字理顺。"
+    },
+    "hkGSHcqKjGc5dm3ugNc2U": {
+      "title": "Nightly audit（夜间巡检）",
+      "oneLiner": "在夜里检查整个程式库，每个范围只提出一项清理。",
+      "body": "花一晚读完程式库，隔早交给你分范围的小清理。不一次全改。"
+    },
+    "JeFTvcDX-7QT2evKGIb52": {
+      "title": "Product idea（压力测试）",
+      "oneLiner": "列出必须为真的条件、最脆弱的前提，以及下一步该试什么。",
+      "body": "不是称赞点子，而是先看它会怎么坏掉。"
+    },
+    "NJXi2SWEuhNxjOjspMMPi": {
+      "title": "Dial（外拨电话）",
+      "oneLiner": "只在你要求时，用 Bland AI 打出外拨电话，并回报发生了什么。",
+      "body": "不会自己拨打。通话结束后，只把结果交回。"
+    },
+    "phPQtGzCZOynABubl0pwx": {
+      "title": "Image gen（图像生成）",
+      "oneLiner": "搜集参考、撰写 Grok Imagine 指示、用 FAL 去背，并重复到画面稳定。",
+      "body": "不是一次做完，而是把参考、指示、去背与重试当成一整段流程。"
+    },
+    "uFRK1GoAsiopBLPY19QCe": {
+      "title": "The page（页面守望）",
+      "oneLiner": "每天早上查看 3 到 5 个公开页面；值得注意的点没变之前，它保持安静。",
+      "body": "不提供每日摘要。只有真的动了才通知。"
+    },
+    "VHMdjIGjGpgDSJR7dW6Gz": {
+      "title": "Figma Bro（界面设计）",
+      "oneLiner": "在 Figma 里用真实元件与直觉版面设计，也一并处理动效。",
+      "body": "不只是外观草稿，而是用实际元件组装，并让动效不显得突兀。"
+    },
+    "X_P19IvPAHZ3FiA1Q-05s": {
+      "title": "X algo（算法）",
+      "oneLiner": "依公开的 For You 程式与即时指标，判断该引用、该发文，还是该等。",
+      "body": "不靠感觉，而是用已公开的排名规则与当下数字来判断。"
+    },
+    "ZRxm1O9tmizOhriV7GiWL": {
+      "title": "Grok Build（CLI）",
+      "oneLiner": "在 agent 的电脑上，以最大努力实际执行真正的 Grok Build CLI。",
+      "body": "不是在聊天里模仿，而是用最高设定跑真正的 CLI。"
+    },
+    "zvkkoHMbclsUBWX8MRGpU": {
+      "title": "Tech demos（技术展示）",
+      "oneLiner": "从你在 X 的书签选一个函式库，经你允许后，在 sticky monorepo 做出展示。",
+      "body": "由 Cursor 的云端 agent 实作。一次只推进你选的那一个，不会自行全部做完。"
+    },
+    "_CIeV4P17QVoxuaEyeiFZ": {
+      "title": "Stock Trader（股票交易）",
+      "oneLiner": "作者用来进行股票交易的 Bot。",
+      "body": "作者用来进行股票交易的 Bot。"
+    },
+    "tLSg4HxepSclMqbZUTRnX": {
+      "title": "Fable 5.1 Oracle（规划审查）",
+      "oneLiner": "整理规划与审查结果，再交给云端助手实现。",
+      "body": "整理规划与审查结果，再交给云端助手实现。"
+    },
+    "_xZZE41svJdcq2w6ZWJan": {
+      "title": "Supermemory（同步）",
+      "oneLiner": "让公司用、私人用与写程式用的 Bot，用共用记忆对齐一天的动向。",
+      "body": "以 supermemory 组成的模板，让 Grok Bot、Hermes、Cursor／Claude Code／Codex 看到同一处境。"
+    },
+    "guides": {
+      "title": "Grok Bot 指南",
+      "oneLiner": "读过官方指南的人，整理出较少被提到的使用要点。",
+      "body": "包括如何确认优先事项、先示范再记住、只报告新变化等 11 项。这比较像指南重点连结，不是一只 Bot 本身。"
+    },
+    "M9c2tC_-mwY8XNTmSbkUY": {
+      "title": "Medical Bill Review（账单复核）",
+      "oneLiner": "帮你逐项核对看不懂的医院账单，并起草异议信件。",
+      "body": "取出明细、核对防止突袭收费的规则，并查询减额或免除是否可能。不问 SSN 或病历号。"
+    },
+    "riqe7Z1oOnU6wIV7Zb9Mt": {
+      "title": "I Said I Would（承诺追踪）",
+      "oneLiner": "在 Slack 与 GitHub 记住你对人许下的事，只显示仍未完成的项目。",
+      "body": "若有足够执行证据就自行关闭。不是全部催促，只列出未完成或不确定的重要承诺。"
+    },
+    "peJxDrQRS4t2DHuHfzhfW": {
+      "title": "Reminder（提醒）",
+      "oneLiner": "一只简单的提醒 Bot，帮你不要忘掉要做的事。",
+      "body": "这是避免忘记事情的短模板，不是功能很多的参谋。"
+    },
+    "rt9m-FTkJoGsZzAjsKLPM": {
+      "title": "Critiquito（界面检查）",
+      "oneLiner": "查看你的界面，提出改善建议。",
+      "body": "查看你的界面，提出改善建议。"
+    },
+    "plugin": {
+      "title": "CLI for Agents（外派）",
+      "oneLiner": "“CLI for Agents”插件，把委托交给 Claude、Codex、Kimi 等处理。",
+      "body": "让 Bot 本体不必把额度用完的路径。条目来自 x.ai/bot/plugin 底下的连结。"
+    },
+    "-miS0AF-lema7i8Z019Qp": {
+      "title": "x402 book shop（书店）",
+      "oneLiner": "若已有网域，可用这份模板自己搭一间 x402 书店并开始贩售。",
+      "body": "跑在 Cloudflare Workers 上。作者说用手机上的 Grok Bot 大约 20 分钟搭好。"
+    },
+    "ndOGeXyjkQLdceRlk7JP4": {
+      "title": "free_bots_lol（实验）",
+      "oneLiner": "free_bots_lol 的官方模板，让 Bot 理解并参与这场实验。",
+      "body": "专为这场实验而做，不是一般用途的参谋。"
+    },
+    "-GgufM3GkZclfn9PuI17_": {
+      "title": "Kinesis compute（算力汇整）",
+      "oneLiner": "把你在 Kinesis Network 上的运算资源，收进同一只 Bot。",
+      "body": "这是作者自用模板，用来从这里查看分散的运算资源。"
+    },
+    "xSfBSprfKv5h909uzrv7W": {
+      "title": "X High Coach（账号教练）",
+      "oneLiner": "贴上你的 @，就收集 X 贴文、为账号打分，并提出修改方向。",
+      "body": "目的是清理贴文与处理账号问题，不是代你发文。"
+    },
+    "KTuDBQv3fYw-h8RaC8XGg": {
+      "title": "Monad（钱包）",
+      "oneLiner": "建立新的 Monad 钱包，并可进行迷因币、perp、借贷与兑换。",
+      "body": "须自行承担风险。这是可做链上操作的模板，不保证收益。"
+    },
+    "1L2VgwhlakwrV5p-iOsuR": {
+      "title": "eBay team（商店管理）",
+      "oneLiner": "通过 eBay API 协助管理商店；支出前必须先由你输入 APPROVE。",
+      "body": "通过 eBay API 协助管理商店；支出前必须先由你输入 APPROVE。"
+    },
+    "ehxj2Wdxq9M04jvaAqyBD": {
+      "title": "Copay Compass（药费协助）",
+      "oneLiner": "寻找癌症药物自付额协助、登记重开提醒，并准备申请。",
+      "body": "不问 SSN 或病历号，也不提供医疗建议。重点是基金关闭后重新开放时的准备。"
+    },
+    "LlldYnfUbSX5Z5ogLkHik": {
+      "title": "Revenue Enablement（销售支持）",
+      "oneLiner": "协助准备销售话术、产品更新、推广计划和季度销售回顾。",
+      "body": "协助准备销售话术、产品更新、推广计划和季度销售回顾。"
+    },
+    "9BnpveyF3fbsRRtolSWpp": {
+      "title": "Revenue Signal Radar（商机雷达）",
+      "oneLiner": "为停滞的商谈（含企业案件）寻找重新启动的线索。",
+      "body": "从公开讯号唤醒失速案件的雷达。不会自动寄出讯息。"
+    },
+    "cGcG0msqfz7o7J3QMLhbE": {
+      "title": "Bot checker（加入前检查）",
+      "oneLiner": "加入前贴上分享连结，会回 CLEAN／WARN／BLOCK 的参考判断。",
+      "body": "这是加入其他 Bot 前的检查。不负责删除，只给建议。"
+    },
+    "-E-6LRFFIZ7oJl5FRXRxbI": {
+      "title": "Plato（求真）",
+      "oneLiner": "不附和你。会把新闻或想法查到带出处，并写出反对方最强的说法。",
+      "body": "不会同意完就结束。留下出处，并呈现反对方最有力的形态。"
+    },
+    "1kQ8p3TAKx2FgvYXir2Ta": {
+      "title": "App Store Connect（提交）",
+      "oneLiner": "从 API 金钥到 TestFlight、文案、截图与事前确认，引导 App Store Connect 提交。",
+      "body": "缩短提交迷宫。需要时会在旁边协助。"
+    },
+    "FfGFlZLAQDyxhJwg2ZJlL": {
+      "title": "Pika Bot（商品追踪）",
+      "oneLiner": "留意 Pokémon Center 的新品上架消息。",
+      "body": "留意 Pokémon Center 的新品上架消息。"
+    },
+    "Loekv1uecl26wWW0lNyfR": {
+      "title": "Subscription cleaner 订阅清理",
+      "oneLiner": "从邀请信和账单找出订阅，标出没用或重复的项目；要停掉会先问你。",
+      "body": "也会对照卡片明细和最后登录，列出工具、负责人、最后登录、每月费用，以及留下、合并或停用。"
+    },
+    "yXsqmCaODNkTEwtIbiXxe": {
+      "title": "AE deal bot 案件教练",
+      "oneLiner": "帮业务评分 MEDDPICC 不够完整的案件，查账号，再提示下一步。",
+      "body": "决策人地图太薄时，它会补上覆盖范围，并写出下一步该怎么动。"
+    },
+    "7GgZtqkhyLzKKMNUa7dhd": {
+      "title": "Forge（开发执行）",
+      "oneLiner": "规格齐全后开始开发，遇到阻碍时才向你确认，并记住你的选择。",
+      "body": "规格齐全后开始开发，遇到阻碍时才向你确认，并记住你的选择。"
+    },
+    "3iNSp9IoRCnSjh0Z6MtWZ": {
+      "title": "Agent PM（开发进度管理）",
+      "oneLiner": "追踪多个程序开发助手的进度。",
+      "body": "追踪多个程序开发助手的进度。"
+    },
+    "9EFVmFgQhjYKjMHAhpCWn": {
+      "title": "PickFu Insights 消费者调查",
+      "oneLiner": "在你投入资源之前，先向真实消费者做调查，并用 PickFu 跑完、整理原因。",
+      "body": "会帮你写调查草案、执行、摘要原因，并提出下一轮测试。这不是虚构的人物设定。"
+    },
+    "0taQ6RZdkjsnOfda_A8Ie": {
+      "title": "Order tracker 订单追踪",
+      "oneLiner": "帮你从 Grok Bot 查看和管理线上订单。",
+      "body": "作者用 Dr Eggbot 做成，并接到 orbglide Tracker MCP。重点是追踪订单。"
+    },
+    "Pc2T7udSjGxv9pd9Spkyc": {
+      "title": "Dr.Binary 逆向解析",
+      "oneLiner": "专门协助逆向工程解析。",
+      "body": "面向程序解析。不是一般写文或日常幕僚。"
+    },
+    "zj8VKu1CnqkHCM4Na1zex": {
+      "title": "Ads manager 广告操作",
+      "oneLiner": "帮你操作广告活动。",
+      "body": "作者公开的 ads manager / operator。仍是初期版本，欢迎反馈改进。"
+    },
+    "9nbLm_04EvjnolE9oevTT": {
+      "title": "Latch 初始设置引导",
+      "oneLiner": "帮你写下角色和会用到的工具，并引导 Grok Bot 的初始设置与连接。",
+      "body": "给还没设置好的人。Latch 会一路带到连接器。"
+    },
+    "Ml4ynlD6O1VT5CoYmFnEa": {
+      "title": "Token Cop 用量查看",
+      "oneLiner": "追踪每只 Bot 的 token 用量，标出偏高的，并在吃掉整月额度前通知你。",
+      "body": "让编制的支出不会被噪声盖住。它不会删除 Bot。"
+    },
+    "5mReUHPYTBA6nJ2aNvlqn": {
+      "title": "Helidon Engineer",
+      "oneLiner": "只看 Helidon 4 的 SE 与 MP，不用 Helidon 3 的 API。",
+      "body": "以 java-helidon skill 为前提，并把写法对齐同一套程序模型。"
+    },
+    "pL_NCKfdF5UgZYEo-jMAx": {
+      "title": "Cheerful skeptic（想法检查）",
+      "oneLiner": "检查 Bot 团队提出的想法，指出可能不切实际的地方。",
+      "body": "检查 Bot 团队提出的想法，指出可能不切实际的地方。"
+    },
+    "Y_R1Ya9SIzQZguGTV5NCX": {
+      "title": "The Accountant（用量检查）",
+      "oneLiner": "找出 Bot 反复查询、不断重试等浪费 token 用量的情况。",
+      "body": "找出 Bot 反复查询、不断重试等浪费 token 用量的情况。"
+    },
+    "1-UWhTw5N6IVgOcDZHrsb": {
+      "title": "Dr Eggbot 通用改写",
+      "oneLiner": "用 Dr Eggbot 改写成较通用的 Grok Bot。",
+      "body": "作者把既有内容经 Dr Eggbot 处理，做成用途不要太窄的模板。原专长在帖子中没有写明。"
+    },
+    "zsxwic_IlmyavESnhLiWZ": {
+      "title": "PG Bot 区域账户检视",
+      "oneLiner": "在负责 AE 的区域里，查看接触不足、Potential ARR，以及 30 天没动静的账户。",
+      "body": "聊天用 Markdown。发到 Slack 或邮件前需要你确认。"
+    },
+    "Rj9uN1lhqYP-kLpRVShG0": {
+      "title": "Tutor 比喻教学",
+      "oneLiner": "不用课纲；用一则比喻和一道确认，让想法留在你脑里。",
+      "body": "这不是 Bot 学校。你指定题目后，它给比喻和确认，然后安静。思考的人是你。"
+    },
+    "GGnJOdH3hv321H2QES9UE": {
+      "title": "Mission Control（团队总览）",
+      "oneLiner": "把 Bot 团队的行程、决定和状态整理在同一个页面。",
+      "body": "把 Bot 团队的行程、决定和状态整理在同一个页面。"
+    },
+    "GTStkB5wsoSlGx9jtdaPe": {
+      "title": "Primer Grok Bot 导览",
+      "oneLiner": "回答 Grok Bot 本身怎么用。",
+      "body": "这是产品用法的导览。不是某个产业的实务 Bot。"
+    },
+    "DNpS1nqrBzmQ5vsx1IHn1": {
+      "title": "Rogue Bot Hunter（异常检查）",
+      "oneLiner": "检查团队中是否有擅自行动的 Bot，并每周整理结果。",
+      "body": "检查团队中是否有擅自行动的 Bot，并每周整理结果。"
+    },
+    "LREkas8UxVGvPJ5NiO7bz": {
+      "title": "Know Enemy 知彼",
+      "oneLiner": "孙子包的「知彼」侧，整理对方的公开信息。",
+      "body": "与 Know Yourself 成对。不是写备忘录，而是画出对方一侧的地图。"
+    },
+    "mD27QOhXb_plMRSbsvMOv": {
+      "title": "Know Yourself 知己",
+      "oneLiner": "孙子包的「知己」侧，整理自己这边的长处和缺口。",
+      "body": "与 Know Enemy 成对。先把己方事实摆齐。"
+    },
+    "0U6-QCQxUkAkj6BTi7SjL": {
+      "title": "Morning newspaper（晨间新闻）",
+      "oneLiner": "按设置用短信送出晨间新闻，内容可自行调整。",
+      "body": "按设置用短信送出晨间新闻，内容可自行调整。"
+    },
+    "EfBhh8nwpuGD0XNfl0eBI": {
+      "title": "AvatarMaker 头像配套",
+      "oneLiner": "为你做的每只 Grok Bot 做出同一系统的头像。",
+      "body": "先问一次并固定风格，再交出方形肖像和个人主页用图包。有黏土、毛毡、漫画、贴纸等多种外观。"
+    },
+    "00LpQytGgJbn3KTdUJREV": {
+      "title": "Android phone operator 手机端操作",
+      "oneLiner": "不把登录信息放上云端电脑，改在 Android 手机上跑 LinkedIn、X 等每日发帖。",
+      "body": "目标是少用 token，把操作留在手机端。"
+    },
+    "NuOSHSdCZPVkM78K0HkB3": {
+      "title": "Spawned dev team（开发小队）",
+      "oneLiner": "建立开发小队，简化沟通，让助手完成各自的步骤后结束。",
+      "body": "建立开发小队，简化沟通，让助手完成各自的步骤后结束。"
+    },
+    "qFHGsPu6CGtrug6Lm78rJ": {
+      "title": "LinkedIn outreach 联系协助",
+      "oneLiner": "协助 LinkedIn 对外联系。",
+      "body": "帖子说明很短，只写明用于 LinkedIn 联系。寄出前是否需确认，来源没有写。"
+    },
+    "OIwlDPggzoJ1EzGn1D-JD": {
+      "title": "Patch engineer 小修补丁",
+      "oneLiner": "你告诉它哪里坏了，Cursor 云端 agent 会带回补丁和 PR。",
+      "body": "它不开 Mac，也不在聊天室里写程序。小修正不必坐在 IDE 前；大改架构仍留在你自己的 Mac。"
+    },
+    "-sOdLVj33yh8hh7OlHogi": {
+      "title": "chief of staff 学生幕僚",
+      "oneLiner": "给学生用的幕僚，把多处信息收成下一步。",
+      "body": "实习申请、社团、校内工具等散落信息，会收到同一段对话。"
+    },
+    "1HFC3QdqPtcj1FIbKf8oq": {
+      "title": "the pm 学生进度",
+      "oneLiner": "给学生用的 PM，把多项作业和行程收成一条进度。",
+      "body": "是作者学生套组的一员。不负责实现，只看还剩什么、下一步做什么。"
+    },
+    "eSCwViGduTgMD6PiOo7jm": {
+      "title": "the j*bfinder 职缺追踪",
+      "oneLiner": "追踪实习和求职的投递进度。",
+      "body": "让学生把散落的申请收到同一个地方查看。"
+    },
+    "SDLUUiG6HKwiFpGqCOAw7": {
+      "title": "UCSD 申请与 t-res 表单",
+      "oneLiner": "让 UCSD 的 programming 申请和 t-res 表单更好读。",
+      "body": "把学生社团活动申请等校内表单收成一条流程。"
+    },
+    "CHmLGnQyx6r8lkb3U8k9x": {
+      "title": "试用 Bot（用途未写明）",
+      "oneLiner": "作者邀请你免费试用这只 Bot；帖子没有说明它具体帮你做什么。",
+      "body": "来源只有「Try my Grok @bot for free.」没有写功能。"
+    },
+    "qV6FAPsH8Yox5VNuYQ8al": {
+      "title": "UniFi 网络与 Protect 摘要",
+      "oneLiner": "帮你看 Ubiquiti UniFi 的网络健康，并整理 Protect 的人、车、动物、传感器摘要。",
+      "body": "作者公开给 UniFi：网络健康加上 Protect 摘要。来源没有保证即时警报或自动处置。"
+    },
+    "2Nk6nQTahTex1e5gHS_LU": {
+      "title": "Token 支出检查",
+      "oneLiner": "帮你检查整组 Grok Bot 的 token 支出，找出可以少花的地方。",
+      "body": "作者说这只 Bot 用来降低编制的 token 花费。来源没有写它会自动删除或停用 Bot。"
+    },
+    "4iz8VYK_cG482_vIA8WR4": {
+      "title": "X Scout 设置搜集",
+      "oneLiner": "先了解你怎么用 Bot 和发帖，再在 X 上找出值得复制的 Grok Bot 设置。",
+      "body": "帖子写它会从时间线自动复制好的设置。来源没有写复制前是否需你确认。"
+    },
+    "7k0TLQBu4hPI5oE3ywRHU": {
+      "title": "Agent（网站检查）",
+      "oneLiner": "每天检查网站是否方便 AI 助手读取和操作。",
+      "body": "每天检查网站是否方便 AI 助手读取和操作。"
+    },
+    "DYg0r1xvzy_xxPeRGHcHE": {
+      "title": "职缺搜索寄信",
+      "oneLiner": "按你指定的地点搜索职缺，并把结果寄到你的邮件。",
+      "body": "作者说会搜你选定地点的职缺并直接寄给你。来源没有写代为投递，也没有保证录取。"
+    },
+    "EiOdP3Fg6pHBkm3AgLbRA": {
+      "title": "Grok Bot 新手导览",
+      "oneLiner": "带用过 ChatGPT、但不会写程序的人开始使用 Grok Bot。",
+      "body": "带用过 ChatGPT、但不会写程序的人开始使用 Grok Bot。"
+    },
+    "JocbRv3IMTJ5LmjX_qXvZ": {
+      "title": "Astra Oracle 判断顾问",
+      "oneLiner": "把 Astra Oracle 放进 Grok Bot 与 Cursor 的循环里，负责判断，不负责实现。",
+      "body": "作者说 Astra 已上 Pro。这只 Oracle 不实现。来源没有写它会写程序或合并 PR。"
+    },
+    "marketplace": {
+      "title": "模板目录",
+      "oneLiner": "这是模板目录，不是一只 Bot。SpaceXAI 团队把一些好用的案例收成任何人都能用的模板。",
+      "body": "用来浏览现成模板。不要把它当成一只会做事的 Bot。"
     }
   }
 }

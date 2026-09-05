@@ -7,7 +7,6 @@ import { cn } from "@/lib/cn";
 import { useI18n } from "@/lib/i18n/locale";
 import { stripLocalePrefix } from "@/lib/i18n/paths";
 import { BotFace, botColorFor } from "./BotFace";
-import { GetGrokBot } from "./GetGrokBot";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { LocaleLink } from "./LocaleLink";
 import { SEARCH_UI_ENABLED } from "@/lib/search";
@@ -163,10 +162,6 @@ export function Header() {
 
         <div className="flex items-center gap-1">
           {SEARCH_UI_ENABLED ? <HeaderSearch onOpen={() => setOpen(false)} /> : null}
-          <div className="hidden xl:block">
-            <GetGrokBot className="h-10 px-3 text-[15px]" />
-          </div>
-          <span aria-hidden="true" className="mx-1 hidden h-5 w-px bg-line xl:block" />
           <ThemeToggle />
           <div className="hidden xl:block">
             <LanguageSwitch />
@@ -227,10 +222,6 @@ export function Header() {
                     <span>{t("nav.submit")}</span>
                     <ArrowRight aria-hidden="true" className="size-4 shrink-0" strokeWidth={1.75} />
                   </LocaleLink>
-                  <GetGrokBot
-                    variant="outline"
-                    className="min-h-12 w-full justify-between bg-card px-4 text-[15px]"
-                  />
                 </div>
               </nav>
 

@@ -11,6 +11,7 @@ import {
   localizedTemplateFields,
   matchFocusToGroup,
   templateBrowserCopy,
+  templateCardCopy,
 } from "../lib/i18n/template-browser";
 
 const locales = ["en", "zh-Hant", "zh-Hans", "ja"] as const;
@@ -97,4 +98,13 @@ assert.equal(
 
 assert.equal(templateIdentitySlugs.length, 29);
 
-console.log("Validated template browser search, copy, and identity jumps.");
+const excerpt = "You can actually create an agent in Grok Bot that exclusively uses Grok Build in CLI with the latest Grok models at the highest thinking level.";
+assert.deepEqual(templateCardCopy("You can actually create an agent in Grok Bot that exclusively uses...", excerpt), {title: excerpt, description: ""});
+assert.deepEqual(templateCardCopy("提醒事項", "提醒事項。"), {title: "提醒事項", description: ""});
+assert.deepEqual(templateCardCopy("Researchy（研究助手）", "幫你使用 Grok Build CLI 做研究。"), {title: "Researchy（研究助手）", description: "幫你使用 Grok Build CLI 做研究。"});
+for (const locale of ["zh-Hant", "zh-Hans"] as const) {
+  for (const template of templates) {
+    assert.match(localizedTemplateFields(template, locale).oneLiner, /[\u3400-\u9fff]/u, `${locale} needs Chinese purpose copy for ${template.id}`);
+  }
+}
+console.log("Validated template search, unique card copy, Chinese coverage, and identity jumps.");
