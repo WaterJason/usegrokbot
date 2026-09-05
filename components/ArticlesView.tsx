@@ -17,22 +17,22 @@ const SECTION_COPY: Record<
     latest: "Latest 10 Articles",
   },
   "zh-Hant": {
-    chinese: "中文教學文章排行",
-    english: "英文文章排行",
-    japanese: "日文文章排行",
+    chinese: "中文教學文章",
+    english: "英文文章前 20 篇",
+    japanese: "日文文章",
     latest: "最新 10 篇文章",
   },
   "zh-Hans": {
-    chinese: "中文教程文章排行",
-    english: "英文文章排行",
-    japanese: "日文文章排行",
+    chinese: "中文教程文章",
+    english: "英文文章前 20 篇",
+    japanese: "日文文章",
     latest: "最新 10 篇文章",
   },
   ja: {
     chinese: "中国語のチュートリアル記事",
-    english: "英語記事 上位20件",
-    japanese: "日本語記事の閲覧数順",
-    latest: "最新の10記事",
+    english: "英語記事の上位 20 件",
+    japanese: "日本語記事",
+    latest: "最新の 10 記事",
   },
 };
 

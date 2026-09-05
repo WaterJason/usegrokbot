@@ -21,6 +21,7 @@ import {
   useI18n,
 } from "@/lib/i18n";
 import { appResultsPath, searchResultsPath, topicResultsPath } from "@/lib/search";
+import { templateCardCopy } from "@/lib/i18n/template-browser";
 
 type SearchBarProps = {
   variant?: "hero" | "inline";
@@ -238,12 +239,15 @@ export function SearchBar({
           detail: t("nav.integrations"),
           external: false,
         })),
-        ...stories.map((item) => ({
-          href: item.href,
-          title: item.localized.title,
-          detail: item.localized.headline,
-          external: item.external,
-        })),
+        ...stories.map((item) => {
+          const copy = templateCardCopy(item.localized.title, item.localized.headline);
+          return {
+            href: item.href,
+            title: copy.title,
+            detail: copy.description,
+            external: item.external,
+          };
+        }),
       ]
     : showSuggestions
       ? suggestions.map((item) => ({

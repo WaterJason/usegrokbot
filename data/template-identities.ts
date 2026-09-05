@@ -72,12 +72,12 @@ const identityDefinitions: readonly TemplateIdentity[] = [
       "Ships code, reviews PRs, and coordinates coding agents.",
       "寫程式、審查 PR，也調度 coding agents。",
       "写代码、审查 PR，也调度 coding agents。",
-      "コードを書き、PR をレビューし、コーディング用 AI エージェントをまとめます。",
+      "コードを書き、PR をレビューし、coding agents をまとめます。",
     ),
     focus: [
       text("Ship an app", "寫程式上線", "写代码上线", "アプリを公開する"),
       text("Review PRs", "審查 PR", "审查 PR", "PR をレビューする"),
-      text("Coordinate coding agents", "調度 coding agents", "调度 coding agents", "コーディング用 AI エージェントをまとめる"),
+      text("Coordinate coding agents", "調度 coding agents", "调度 coding agents", "coding agents をまとめる"),
     ],
   },
   {
@@ -85,9 +85,9 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     cluster: "business",
     name: text("Manager", "主管", "主管", "マネージャー"),
     description: text(
-      "Routes a roster of bots and handles decisions that need a person.",
-      "調度一整組 bot，只處理需要由人決定的事情。",
-      "调度一整组 bot，只处理需要由人决定的事情。",
+      "Routes a roster of Bots and handles decisions that need a person.",
+      "調度一整組 Bot，只處理需要由人決定的事情。",
+      "调度一整组 Bot，只处理需要由人决定的事情。",
       "一組の Bot を振り分け、人の判断が必要なことだけ扱います。",
     ),
     focus: [
@@ -102,8 +102,8 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Independent founder", "獨立創業者", "独立创业者", "ひとり創業者"),
     description: text(
       "One person holding the company, from product to fundraising.",
-      "一個人撐著公司，產品和募資都要管理。",
-      "一个人撑着公司，产品和融资都要管理。",
+      "一個人支撐公司，產品和募資都要管理。",
+      "一个人支撑公司，产品和融资都要管理。",
       "プロダクトから資金調達まで、一人で会社を支えます。",
     ),
     focus: [
@@ -118,13 +118,13 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("X creator", "X 博主", "X 博主", "X クリエイター"),
     description: text(
       "Posts, follows a beat, and understands fans. Drafts only.",
-      "發帖、追蹤關注題目、了解粉絲。只提供草稿，不代為發布。",
-      "发帖、追踪关注题目、了解粉丝。只提供草稿，不代为发布。",
+      "發帖、追蹤題目、了解粉絲。只提供草稿，不代為發布。",
+      "发帖、追踪题目、了解粉丝。只提供草稿，不代为发布。",
       "投稿し、テーマを追い、ファンを把握します。下書きのみで、代わりに公開しません。",
     ),
     focus: [
       text("Rewrite a draft", "改稿", "改稿", "下書きを直す"),
-      text("Watch a beat", "追蹤關注題目", "追踪关注题目", "テーマを追う"),
+      text("Watch a beat", "追蹤題目", "追踪题目", "テーマを追う"),
       text("See who engaged", "看誰真正互動", "看谁真正互动", "本当に反応した人を見る"),
       text("Cut clips", "剪片", "剪片", "クリップを切る"),
     ],
@@ -151,13 +151,13 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Sales", "銷售", "销售", "営業"),
     description: text(
       "Accounts, call follow-up, and negotiation. Drafts only.",
-      "管理客戶、會後跟進和談條件。只提供草稿。",
-      "管理客户、会后跟进和谈条件。只提供草稿。",
+      "管理客戶、通話後跟進和談條件。只提供草稿。",
+      "管理客户、通话后跟进和谈条件。只提供草稿。",
       "顧客、通話後のフォロー、条件の調整。下書きのみです。",
     ),
     focus: [
       text("Research accounts", "研究客戶", "研究客户", "顧客を調べる"),
-      text("Follow up after calls", "會後跟進", "会后跟进", "通話後にフォローする"),
+      text("Follow up after calls", "通話後跟進", "通话后跟进", "通話後にフォローする"),
       text("Negotiate terms", "談條件", "谈条件", "条件を調整する"),
     ],
   },
@@ -167,8 +167,8 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Marketer", "行銷人員", "营销人员", "マーケター"),
     description: text(
       "Site, competitors, SEO, AEO, and brand copy.",
-      "管理網站、競爭者、SEO、AEO 和品牌文案。",
-      "管理网站、竞争者、SEO、AEO 和品牌文案。",
+      "網站、競爭者、SEO、AEO 和品牌文案。",
+      "网站、竞争者、SEO、AEO 和品牌文案。",
       "サイト、競合、SEO、AEO、ブランドコピーを見ます。",
     ),
     focus: [
@@ -188,7 +188,7 @@ const identityDefinitions: readonly TemplateIdentity[] = [
       "人材マップ、招待、受信箱に埋もれた求人を整理します。",
     ),
     focus: [
-      text("Map a company", "整理人才地圖", "整理人才地图", "人材マップを作る"),
+      text("Map a company", "整理公司人才地圖", "整理公司人才地图", "人材マップを作る"),
       text("Review invitations", "整理邀請", "整理邀请", "招待を整理する"),
       text("Match people to roles", "配對人才與職缺", "匹配人才与职位", "人と求人を組み合わせる"),
     ],
@@ -215,13 +215,13 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Student", "學生", "学生", "学生"),
     description: text(
       "Keeps up with Canvas, learns difficult topics, and prepares for interviews.",
-      "查看 Canvas、學懂困難內容，也準備面試。",
-      "查看 Canvas、弄懂困难内容，也准备面试。",
+      "查看 Canvas、理解較難的內容，也準備面試。",
+      "查看 Canvas、理解较难的内容，也准备面试。",
       "Canvas を追い、難しい内容を理解し、面接の準備もします。",
     ),
     focus: [
-      text("Track deadlines", "查看限期", "查看期限", "締め切りを見る"),
-      text("Understand a topic", "學懂課題", "弄懂课题", "課題を理解する"),
+      text("Track deadlines", "查看期限", "查看期限", "締め切りを見る"),
+      text("Understand a topic", "理解課題", "理解课题", "課題を理解する"),
       text("Prepare for interviews", "準備面試", "准备面试", "面接の準備をする"),
     ],
   },
@@ -231,9 +231,9 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Job seeker", "求職者", "求职者", "求職者"),
     description: text(
       "Turns a resume into proof, watches freelance boards, and prepares for interviews.",
-      "把履歷變成作品集、查看接案平台，也準備面試。",
-      "把简历变成作品集、查看接案平台，也准备面试。",
-      "履歴書を実績に変え、案件サイトを見、面接の準備もします。",
+      "把履歷變成可核對的證明，查看接案平台，也準備面試。",
+      "把简历变成可核对的证明，查看接案平台，也准备面试。",
+      "履歴書を裏付けに変え、案件サイトを見、面接の準備もします。",
     ),
     focus: [
       text("Build a portfolio", "建立作品集", "建立作品集", "ポートフォリオを作る"),
@@ -296,12 +296,12 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     description: text(
       "Metrics, decks, decisions, and 1:1 preparation.",
       "查看指標、製作簡報、記錄決定，也準備 1:1。",
-      "查看指标、制作演示、记录决定，也准备 1:1。",
+      "查看指标、制作简报、记录决定，也准备 1:1。",
       "指標、資料、決定、1:1 の準備をします。",
     ),
     focus: [
       text("Read metrics", "查看指標", "查看指标", "指標を見る"),
-      text("Build a deck", "製作簡報", "制作演示", "資料を作る"),
+      text("Build a deck", "製作簡報", "制作简报", "資料を作る"),
       text("Prepare a 1:1", "準備 1:1", "准备 1:1", "1:1 を準備する"),
     ],
   },
@@ -311,14 +311,14 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Researcher", "研究員", "研究员", "リサーチャー"),
     description: text(
       "Sourced briefs, archives, and lab watches.",
-      "製作有出處的簡報、整理檔案，也追蹤實驗室消息。",
-      "制作有出处的简报、整理档案，也跟踪实验室消息。",
+      "撰寫有出處的摘要、整理檔案，也追蹤實驗室消息。",
+      "撰写有出处的摘要、整理档案，也追踪实验室消息。",
       "出典つきの要約、資料の整理、研究室の動きを追います。",
     ),
     focus: [
-      text("Write a sourced brief", "製作有出處的簡報", "制作有出处的简报", "出典つきの要約を書く"),
+      text("Write a sourced brief", "撰寫有出處的摘要", "撰写有出处的摘要", "出典つきの要約を書く"),
       text("Build an archive", "整理研究檔案", "整理研究档案", "研究資料を整理する"),
-      text("Watch a field", "追蹤研究領域", "跟踪研究领域", "研究分野を追う"),
+      text("Watch a field", "追蹤研究領域", "追踪研究领域", "研究分野を追う"),
     ],
   },
   {
@@ -333,7 +333,7 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     ),
     focus: [
       text("Check invoices", "核對發票", "核对发票", "請求書を照合する"),
-      text("Find refunds", "找回退款", "找回退款", "返金を見つける"),
+      text("Find refunds", "找出退款", "找出退款", "返金を見つける"),
       text("Review cards and subscriptions", "檢查信用卡與訂閱", "检查信用卡与订阅", "カードとサブスクを確認する"),
     ],
   },
@@ -359,8 +359,8 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Shop owner", "店主", "店主", "店主"),
     description: text(
       "Back office for a trade, construction, or laser shop.",
-      "管理工程行、營造公司或雷射店的後台。",
-      "管理工程店、建筑公司或激光店的后台。",
+      "管理技工店、營造公司或雷射店的後台。",
+      "管理技工店、建筑公司或激光店的后台。",
       "職人店、建設、レーザー店の事務を回します。",
     ),
     focus: [
@@ -381,7 +381,7 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     ),
     focus: [
       text("Maintain the site", "維護網站", "维护网站", "サイトを保つ"),
-      text("Publish a newsletter", "製作電子報", "制作电子报", "ニュースレターを出す"),
+      text("Publish a newsletter", "發布電子報", "发布电子报", "ニュースレターを出す"),
       text("Audit the site", "檢查網站", "检查网站", "サイトを点検する"),
     ],
   },
@@ -397,21 +397,21 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     ),
     focus: [
       text("Triage the inbox", "整理收件匣", "整理收件箱", "受信箱を整理する"),
-      text("Protect the calendar", "管理行事曆", "管理日历", "予定表を守る"),
+      text("Protect the calendar", "保護行事曆", "保护日历", "予定表を守る"),
       text("Prepare follow-up", "準備跟進", "准备跟进", "フォローを用意する"),
     ],
   },
   {
     slug: "renter",
     cluster: "more",
-    name: text("Renter", "租屋者", "租房者", "賃貸を探す人"),
+    name: text("Renter", "租屋者", "租房者", "借り手"),
     description: text(
       "Looks for a rental that matches clear rules.",
-      "按照清楚條件尋找租盤。",
+      "按照清楚條件尋找出租房屋。",
       "按照清楚条件寻找租房。",
       "はっきりした条件に合う物件を探します。",
     ),
-    focus: [text("Watch new listings", "查看新租盤", "查看新房源", "新しい物件を見る")],
+    focus: [text("Watch new listings", "查看新出租房屋", "查看新房源", "新しい物件を見る")],
     sparse: true,
   },
   {
@@ -420,8 +420,8 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Traveler", "旅行者", "旅行者", "旅行者"),
     description: text(
       "Compares flights, tickets, and a practical itinerary.",
-      "比較機票、門票和實際行程。",
-      "比较机票、门票和实际行程。",
+      "比較機票、門票和可行行程。",
+      "比较机票、门票和可行行程。",
       "航空券、入場券、現実的な行程を比べます。",
     ),
     focus: [text("Compare a trip", "比較行程", "比较行程", "行程を比べる")],
@@ -433,11 +433,11 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Tesla owner", "特斯拉車主", "特斯拉车主", "Tesla オーナー"),
     description: text(
       "Controls charging, climate, locks, and navigation.",
-      "管理充電、空調、車鎖和導航。",
-      "管理充电、空调、车锁和导航。",
+      "控制充電、空調、車鎖和導航。",
+      "控制充电、空调、车锁和导航。",
       "充電、空調、ロック、ナビを操作します。",
     ),
-    focus: [text("Control the car", "管理車輛", "管理车辆", "車を操作する")],
+    focus: [text("Control the car", "控制車輛", "控制车辆", "車を操作する")],
     sparse: true,
   },
   {
@@ -485,8 +485,8 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Comics reader", "漫畫讀者", "漫画读者", "漫画読者"),
     description: text(
       "Builds a weekly reading list and summary.",
-      "整理每週書單和漫畫摘要。",
-      "整理每周书单和漫画摘要。",
+      "整理每週漫畫書單和摘要。",
+      "整理每周漫画书单和摘要。",
       "今週読む漫画と要約をまとめます。",
     ),
     focus: [text("Plan this week's reading", "整理本週書單", "整理本周书单", "今週の読書リストを作る")],
@@ -498,8 +498,8 @@ const identityDefinitions: readonly TemplateIdentity[] = [
     name: text("Fashion shopper", "時尚消費者", "时尚消费者", "ファッションを選ぶ人"),
     description: text(
       "Finds secondhand pieces and plans daily outfits.",
-      "尋找二手精品，也安排每日穿搭。",
-      "寻找二手精品，也安排每日穿搭。",
+      "尋找二手單品，也安排每日穿搭。",
+      "寻找二手单品，也安排每日穿搭。",
       "中古の服を探し、毎日のコーディネートも組みます。",
     ),
     focus: [text("Find an outfit", "尋找穿搭", "寻找穿搭", "コーディネートを探す")],
@@ -510,7 +510,7 @@ const identityDefinitions: readonly TemplateIdentity[] = [
 export const identityClusters = [
   {
     slug: "creative" as const,
-    name: text("Create and media", "創作與媒體", "创作与媒体", "制作とメディア"),
+    name: text("Create and media", "創作與媒體", "创作与媒体", "創作とメディア"),
     description: text(
       "For publishing, visual work, video, and the sites around it.",
       "適合內容、視覺、影片，以及管理網站的人。",
@@ -543,7 +543,7 @@ export const identityClusters = [
 export const templateIdentityUiCopy = {
   en: {
     title: "Who are you?",
-    intro: "Choose an identity first, then see what these bots can help you do.",
+    intro: "Choose an identity first, then see what these Bots can help you do.",
     allTemplates: "Browse all {n} templates",
     templateCount: "{n} templates",
     openIdentity: "See templates",
@@ -554,7 +554,7 @@ export const templateIdentityUiCopy = {
     whyBody:
       "You already know who you are. Pick that first, then choose what you need help with. Home and life are situations, not identities, so they are not first-level categories.",
     back: "All identities",
-    question: "What do you want a bot to help with right now?",
+    question: "What do you want a Bot to help with right now?",
     found: "{n} public templates for {name}",
     tryFirst: "Templates for this identity",
     tryFirstBody: "Open only the template you want.",
@@ -570,31 +570,31 @@ export const templateIdentityUiCopy = {
   },
   "zh-Hant": {
     title: "你是誰？",
-    intro: "先選身分，再看這些 bot 能幫你做什麼。",
+    intro: "先選身份，再看這些 Bot 能幫你做什麼。",
     allTemplates: "查看全部 {n} 個模板",
     templateCount: "{n} 個模板",
     openIdentity: "查看模板",
-    moreTitle: "更多特定身分",
-    moreBody: "以下身分的範圍較窄，目前公開模板不多，因此集中放在這裡。",
-    whyTitle: "為什麼先選身分？",
+    moreTitle: "更多特定身份",
+    moreBody: "以下身份的範圍較窄，目前公開模板不多，因此集中放在這裡。",
+    whyTitle: "為什麼先選身份？",
     whyBody:
-      "你已經知道自己是誰。先選身分，再選現在需要哪一種協助。「家庭／生活」是場境，不是身分，所以不會成為第一層分類。",
-    back: "全部身分",
-    question: "現在想先讓 bot 幫你做什麼？",
+      "你已經知道自己是誰。先選身份，再選現在需要哪一種協助。「家庭／生活」是情境，不是身份，所以不會成為第一層分類。",
+    back: "全部身份",
+    question: "現在想先讓 Bot 幫你做什麼？",
     found: "找到適合「{name}」的 {n} 個公開模板",
-    tryFirst: "適合這個身分的模板",
+    tryFirst: "適合這個身份的模板",
     tryFirstBody: "只打開你需要的模板。",
-    more: "更多適合這個身分的模板",
+    more: "更多適合這個身份的模板",
     sparse: "目前只有 {n} 個公開模板。我們不會用不相關內容填滿這一頁。",
     sparsePlural: "目前只有 {n} 個公開模板。我們不會用不相關內容填滿這一頁。",
-    empty: "目前還沒有適合這個身分的公開模板。",
-    emptyBody: "身分會保留，但我們不會假造結果，也不會借用不相關模板。",
+    empty: "目前還沒有適合這個身份的公開模板。",
+    emptyBody: "身份會保留，但我們不會假造結果，也不會借用不相關模板。",
     seeAll: "查看完整目錄",
     catalogTitle: "全部模板",
   },
   "zh-Hans": {
     title: "你是谁？",
-    intro: "先选身份，再看这些 bot 能帮你做什么。",
+    intro: "先选身份，再看这些 Bot 能帮你做什么。",
     allTemplates: "查看全部 {n} 个模板",
     templateCount: "{n} 个模板",
     openIdentity: "查看模板",
@@ -604,7 +604,7 @@ export const templateIdentityUiCopy = {
     whyBody:
       "你已经知道自己是谁。先选身份，再选现在需要哪一种帮助。“家庭／生活”是场景，不是身份，所以不会成为第一层分类。",
     back: "全部身份",
-    question: "现在想先让 bot 帮你做什么？",
+    question: "现在想先让 Bot 帮你做什么？",
     found: "找到适合“{name}”的 {n} 个公开模板",
     tryFirst: "适合这个身份的模板",
     tryFirstBody: "只打开你需要的模板。",
@@ -618,7 +618,7 @@ export const templateIdentityUiCopy = {
   },
   ja: {
     title: "あなたは誰？",
-    intro: "立場を選び、これらの Bot が何を手伝えるかを見ます。",
+    intro: "先に立場を選び、これらの Bot が何を手伝えるかを見ます。",
     allTemplates: "すべてのテンプレート {n} 件を見る",
     templateCount: "{n} 件のテンプレート",
     openIdentity: "テンプレートを見る",
@@ -626,19 +626,19 @@ export const templateIdentityUiCopy = {
     moreBody:
       "対象が狭い立場は、公開テンプレートがまだ少ないため、ここにまとめています。",
     whyTitle: "先に立場を選ぶ理由",
-    whyBody: "立場を選ぶと、今必要な手伝いをすぐ探せます。",
+    whyBody: "自分が誰かはすでに分かっています。先に立場を選び、次に今必要な手伝いを選びます。家庭や生活は状況であり立場ではないので、第一層の分類にはしません。",
     back: "すべての立場",
     question: "今、Bot に手伝ってほしいことは何ですか？",
     found: "「{name}」向けの公開テンプレート {n} 件",
     tryFirst: "この立場向けのテンプレート",
     tryFirstBody: "必要なテンプレートだけ開いてください。",
-    more: "この立場向けのその他",
+    more: "この立場向けのその他のテンプレート",
     sparse:
       "公開テンプレートは今のところ {n} 件だけです。関係のない結果でページを埋めません。",
     sparsePlural:
       "公開テンプレートは今のところ {n} 件だけです。関係のない結果でページを埋めません。",
     empty: "この立場に合う公開テンプレートはまだありません。",
-    emptyBody: "ない結果を足したり、関係のないテンプレートを使いません。",
+    emptyBody: "立場はそのまま残します。結果を作ったり、関係のないテンプレートを借りたりしません。",
     seeAll: "一覧をすべて見る",
     catalogTitle: "すべてのテンプレート",
   },
@@ -730,7 +730,7 @@ const scenarioDefinitions: Partial<
   engineer: [
     {
       slug: "ship",
-      title: text("Build and ship", "建立並交付程式", "建立并交付程序", "作って渡す"),
+      title: text("Build and ship", "建立並交付程式", "建立并交付程序", "作って公開する"),
       description: text(
         "Take an app from a clear specification to something a person can review.",
         "按照清楚規格建立應用，再交給人檢查。",
@@ -752,12 +752,12 @@ const scenarioDefinitions: Partial<
     },
     {
       slug: "agents",
-      title: text("Coordinate coding agents", "調度 coding agents", "调度 coding agents", "コーディング用 AI エージェントをまとめる"),
+      title: text("Coordinate coding agents", "調度 coding agents", "调度 coding agents", "coding agents をまとめる"),
       description: text(
         "Keep coding agents aimed at a checkable goal and keep their tools current.",
         "讓 coding agents 對準可以檢查的目標，也保持本機工具更新。",
         "让 coding agents 对准可以检查的目标，也保持本机工具更新。",
-        "コーディング用 AI エージェントを確認できる目標に向け、手元のツールも新しく保ちます。",
+        "coding agents を確認できる目標に向け、手元のツールも新しく保ちます。",
     ),
       templateIds: ["Ub3T7usX-c6yRQibQq83P", "oq-mYZXM23ShlY7UbJWeB", "z4r7D8iILsTQDf7r7DwKR"],
     },

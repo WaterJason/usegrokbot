@@ -57,7 +57,13 @@ export function Footer({ stars }: { stars?: number | null }) {
             {t("bot.credit")}
           </a>
           <a href="https://github.com/Alain00/blobatar" className="hover:text-mute" rel="noreferrer">
-            {locale === "ja" ? "コミュニティの Blob は Blobatar を使用" : "Community blobs powered by Blobatar"}
+            {locale === "zh-Hant"
+              ? "社群 Blob 使用 Blobatar"
+              : locale === "zh-Hans"
+                ? "社区 Blob 使用 Blobatar"
+                : locale === "ja"
+                  ? "コミュニティの Blob は Blobatar を使用"
+                  : "Community blobs powered by Blobatar"}
           </a>
         </div>
       </div>

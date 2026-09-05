@@ -65,8 +65,7 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
       </header>
 
       <section className="mt-10" data-use-case-guide aria-label={browser.helpsLabel}>
-        <div className="grid gap-3 md:grid-cols-3">
-          <GuideCard title={browser.helpsLabel} body={guide.helps} />
+        <div className="grid gap-3 md:grid-cols-2">
           <GuideCard title={browser.prepareLabel} body={guide.prepare} />
           <GuideCard title={browser.startLabel} body={guide.start} />
         </div>
@@ -77,11 +76,10 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
           <div className="mb-3 flex flex-wrap items-end justify-between gap-3">
             <div className="min-w-0">
               <h2 className="ui-card-title">{browser.originalPrompt}</h2>
-              <p className="ui-body mt-1 text-mute">{browser.pasteHint}</p>
             </div>
             <GetGrokBot variant="outline" className="min-h-11 text-[15px]" />
           </div>
-          <PromptBox prompt={prompt} title={copy.promptTitle} />
+          <PromptBox prompt={prompt} showTitle={false} />
         </section>
       ) : (
         <section className="mt-12" aria-labelledby="shared-setup-title">

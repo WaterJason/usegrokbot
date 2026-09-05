@@ -111,7 +111,7 @@ function communityCopy(locale: string) {
   if (locale === "zh-Hant") {
     return {
       title: "UseGrokBot 社群",
-      body: "認識分享真實案例的人，以及一起改善 UseGrokBot 的開源貢獻者。",
+      body: "認識分享真實使用案例的人，以及一起改善 UseGrokBot 的開源貢獻者。",
       submit: "分享你的使用案例",
       builders: "開源貢獻者",
       buildersBody: "一起改善網站、程式和內容的人。",
@@ -119,15 +119,15 @@ function communityCopy(locale: string) {
       contributions: "次貢獻",
       buildersFallback: "貢獻者資料暫時未能載入，你仍可前往 GitHub 查看。",
       zoo: "精選分享者",
-      zooBody: "按已分享的公開案例數量精選。每張卡片會直接開啟作者的 X 個人頁。",
-      case: "個案例",
-      cases: "個案例",
+      zooBody: "按已分享的公開使用案例數量精選。每張卡片會直接開啟作者的 X 個人頁。",
+      case: "個使用案例",
+      cases: "個使用案例",
     };
   }
   if (locale === "zh-Hans") {
     return {
       title: "UseGrokBot 社区",
-      body: "认识分享真实案例的人，以及一起改善 UseGrokBot 的开源贡献者。",
+      body: "认识分享真实使用案例的人，以及一起改善 UseGrokBot 的开源贡献者。",
       submit: "分享你的使用案例",
       builders: "开源贡献者",
       buildersBody: "一起改善网站、程序和内容的人。",
@@ -135,39 +135,39 @@ function communityCopy(locale: string) {
       contributions: "次贡献",
       buildersFallback: "贡献者数据暂时未能加载，你仍可前往 GitHub 查看。",
       zoo: "精选分享者",
-      zooBody: "按已分享的公开案例数量精选。每张卡片会直接打开作者的 X 个人页。",
-      case: "个案例",
-      cases: "个案例",
+      zooBody: "按已分享的公开使用案例数量精选。每张卡片会直接打开作者的 X 个人页。",
+      case: "个使用案例",
+      cases: "个使用案例",
     };
   }
   if (locale === "ja") {
     return {
       title: "UseGrokBot コミュニティ",
-      body: "実際の Grok Bot 例を共有する人と、UseGrokBot を支えるオープンソースの貢献者を紹介します。",
-      submit: "あなたの Grok Bot を追加",
-      builders: "コミュニティの作り手",
-      buildersBody: "UseGrokBot を支えるオープンソースの貢献者。",
+      body: "実際の活用例を共有する人と、UseGrokBot を改善するオープンソースの貢献者を紹介します。",
+      submit: "活用例を共有",
+      builders: "オープンソースの貢献者",
+      buildersBody: "サイト、コード、内容を改善する人。",
       github: "GitHub で見る",
       contributions: "件の貢献",
       buildersFallback: "貢献者のデータを読み込めません。GitHub のリポジトリは閲覧できます。",
       zoo: "厳選した共有者",
-      zooBody: "公開例の数から厳選。カードから作者の X プロフィールを開けます。",
-      case: "件の例",
-      cases: "件の例",
+      zooBody: "公開された活用例の数から厳選。カードから作者の X プロフィールを開けます。",
+      case: "件の活用例",
+      cases: "件の活用例",
     };
   }
   return {
     title: "UseGrokBot Community",
-    body: "Meet the people behind real Grok Bot examples and the open-source builders improving UseGrokBot. This page keeps the list short and useful.",
-    submit: "Add your Grok Bot",
-    builders: "Community Builders",
-    buildersBody: "Open-source contributors helping the project grow.",
+    body: "Meet the people who share real use cases, and the open-source contributors improving UseGrokBot.",
+    submit: "Share your use case",
+    builders: "Open-source contributors",
+    buildersBody: "People who help improve the site, code, and copy.",
     github: "View on GitHub",
     contributions: "contributions",
     buildersFallback: "Contributor data is temporarily unavailable, but the GitHub repository is still public.",
     zoo: "Featured sharers",
-    zooBody: "Selected by the number of public examples shared. Each card opens the author's X profile.",
-    case: "case",
-    cases: "cases",
+    zooBody: "Selected by the number of public use cases shared. Each card opens the author's X profile.",
+    case: "use case",
+    cases: "use cases",
   };
 }

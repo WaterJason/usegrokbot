@@ -35,7 +35,7 @@ const howItWorks: Record<DiscoverCopyLocale, Record<string, string>> = {
     "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.":
       "UseGrokBot 收錄了這則公開 X 貼文。我們保留原帖連結，沒有在這裡重跑這個 Bot。",
     "This public X post is a first-person Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
-      "這則公開 X 貼文是第一身 Grok Bot 案例。UseGrokBot 保留原帖連結，沒有在這裡重跑這個 Bot。",
+      "這則公開 X 貼文是作者自己寫的 Grok Bot 例子。UseGrokBot 保留原帖連結，沒有在這裡重跑這個 Bot。",
     "Elon Musk reposted or quoted this original Grok Bot post. UseGrokBot keeps the original X permalink and did not re-run this Bot.":
       "Elon Musk 轉發或引用過這則原始 Grok Bot 貼文。UseGrokBot 保留原帖連結，沒有在這裡重跑這個 Bot。",
     "This public X Article / long-form write-up is a Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
@@ -47,7 +47,7 @@ const howItWorks: Record<DiscoverCopyLocale, Record<string, string>> = {
     "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.":
       "UseGrokBot 收录了这则公开 X 帖子。我们保留原帖链接，没有在这里重跑这个 Bot。",
     "This public X post is a first-person Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
-      "这则公开 X 帖子是第一人称 Grok Bot 案例。UseGrokBot 保留原帖链接，没有在这里重跑这个 Bot。",
+      "这则公开 X 帖子是作者自己写的 Grok Bot 例子。UseGrokBot 保留原帖链接，没有在这里重跑这个 Bot。",
     "Elon Musk reposted or quoted this original Grok Bot post. UseGrokBot keeps the original X permalink and did not re-run this Bot.":
       "Elon Musk 转发或引用过这则原始 Grok Bot 帖子。UseGrokBot 保留原帖链接，没有在这里重跑这个 Bot。",
     "This public X Article / long-form write-up is a Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
@@ -72,17 +72,17 @@ const howItWorks: Record<DiscoverCopyLocale, Record<string, string>> = {
 const whyUseful: Record<DiscoverCopyLocale, Record<string, string>> = {
   "zh-Hant": {
     "A public example of someone handing work to Grok Bot, kept here with attribution.":
-      "有人把工作交給 Grok Bot 的公開例子，這裡保留出處。",
+      "有人把事情交給 Grok Bot 的公開例子，這裡保留出處。",
     "It is a concrete public example of work being handed to Grok Bot, with the original source kept for context.":
-      "這是把工作交給 Grok Bot 的具體公開例子，原文連結留在頁上。",
+      "這是把事情交給 Grok Bot 的具體公開例子，原文連結留在頁上。",
     "It is a public Grok Bot post Elon Musk boosted. The card opens the original author, not Elon's repost.":
       "這是 Elon Musk 推過的公開 Grok Bot 貼文。卡片打開原作者，不是 Elon 的轉發。",
   },
   "zh-Hans": {
     "A public example of someone handing work to Grok Bot, kept here with attribution.":
-      "有人把工作交给 Grok Bot 的公开例子，这里保留出处。",
+      "有人把事情交给 Grok Bot 的公开例子，这里保留出处。",
     "It is a concrete public example of work being handed to Grok Bot, with the original source kept for context.":
-      "这是把工作交给 Grok Bot 的具体公开例子，原文链接留在页上。",
+      "这是把事情交给 Grok Bot 的具体公开例子，原文链接留在页上。",
     "It is a public Grok Bot post Elon Musk boosted. The card opens the original author, not Elon's repost.":
       "这是 Elon Musk 推过的公开 Grok Bot 帖子。卡片打开原作者，不是 Elon 的转发。",
   },

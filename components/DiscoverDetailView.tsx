@@ -10,6 +10,7 @@ import type { DiscoverStory } from "@/data/discover";
 import { formatStoryDate, sameCopy } from "@/lib/format";
 import { openExternalUrl } from "@/lib/open-external";
 import { localizeDiscoverStory, useI18n } from "@/lib/i18n";
+import { isImportedStoryExplanation, repeatsReadingCopy } from "@/lib/reading-copy";
 
 export function DiscoverDetailView({
   story,
@@ -34,6 +35,16 @@ export function DiscoverDetailView({
   const outcome = item.result;
   const showOutcome =
     Boolean(outcome) && !sameCopy(outcome, item.title) && !sameCopy(outcome, postText);
+  const shown = [item.title, item.headline, postText, outcome ?? ""];
+  const details = [
+    { key: "whatTheyDid", text: item.whatTheyDid, source: story.whatTheyDid },
+    { key: "howItWorks", text: item.howItWorks, source: story.howItWorks },
+    { key: "whyUseful", text: item.whyUseful, source: story.whyUseful },
+  ].filter(({ text, source }) => {
+    if (isImportedStoryExplanation(source) || repeatsReadingCopy(text, shown)) return false;
+    shown.push(text);
+    return true;
+  });
 
   return (
     <article className="mx-auto max-w-[44rem] px-5 py-10 md:px-8 md:py-16">
@@ -96,25 +107,12 @@ export function DiscoverDetailView({
         </div>
       ) : null}
 
-      <section className="mt-10">
-        <h2 className="ui-card-title">{t("discover.whatTheyDid")}</h2>
-        <p className="ui-body mt-3 text-ink">{item.whatTheyDid}</p>
-      </section>
-
-      <section className="mt-8">
-        <h2 className="ui-card-title">{t("discover.howItWorks")}</h2>
-        <p className="ui-body mt-3 text-ink">{item.howItWorks}</p>
-      </section>
-
-      <section className="mt-8">
-        <h2 className="ui-card-title">{t("discover.whyItMatters")}</h2>
-        <p className="ui-body mt-3 text-ink">{item.whyItMatters}</p>
-      </section>
-
-      <section className="mt-8">
-        <h2 className="ui-card-title">{t("discover.whyUseful")}</h2>
-        <p className="ui-body mt-3 text-ink">{item.whyUseful}</p>
-      </section>
+      {details.map(({ key, text }) => (
+        <section key={key} className="mt-8">
+          <h2 className="ui-card-title">{t(`discover.${key}`)}</h2>
+          <p className="ui-body mt-3 text-ink">{text}</p>
+        </section>
+      ))}
 
       <section className="mt-8">
         <h2 className="ui-card-title">{t("discover.whoShouldTry")}</h2>
@@ -125,7 +123,7 @@ export function DiscoverDetailView({
         </ul>
       </section>
 
-      {item.quote ? (
+      {item.quote && !postText.includes(item.quote) ? (
         <blockquote className="mt-8 border-l-2 border-line pl-4">
           <p className="ui-label uppercase text-mute">{t("discover.quoteCaption")}</p>
           <p className="ui-body mt-2 text-mute">“{item.quote}”</p>
@@ -163,6 +161,9 @@ export function DiscoverDetailView({
         </a>
       </div>
       <p className="ui-meta mt-2 text-mute">{story.sourceLabel}</p>
+      {story.source === "community" && !story.tested ? (
+        <p className="ui-meta mt-2 text-mute">{t("discover.communityNote")}</p>
+      ) : null}
 
       {story.xPostUrl ? (
         <section className="mt-12">

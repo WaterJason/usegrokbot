@@ -38,10 +38,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "shared-bot-wiki",
     rank: 1,
-    title: {
-      en: "Keep a living wiki for every Bot",
-      zhHant: "幫每隻 Bot 建一本活的筆記庫",
-    },
+   title: {
+     en: "Keep a living wiki for every Bot",
+      zhHant: "為每隻 Bot 建立持續更新的知識庫",
+   },
     category: "bot-team-management",
     evidence: "setup",
     structure: "team",
@@ -124,10 +124,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "digital-clutter-cleanup",
     rank: 3,
-    title: {
-      en: "Tidy email, files, and paid subscriptions",
-      zhHant: "先整理電郵、檔案和付費訂閱，等你批准才改",
-    },
+   title: {
+      en: "Tidy email, files, and paid subscriptions, then wait",
+     zhHant: "先整理電郵、檔案和付費訂閱，等你批准才改",
+   },
     category: "everyday-life",
     evidence: "prompt",
     structure: "single",
@@ -142,10 +142,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "bot-team-watcher",
     rank: 4,
-    title: {
-      en: "Watch the rest of your Bots",
-      zhHant: "默默看其他 Bot，只把改進建議交給你",
-    },
+   title: {
+     en: "Watch the rest of your Bots",
+      zhHant: "靜靜觀察其他 Bot，只把改進建議交給你",
+   },
     category: "bot-team-management",
     evidence: "prompt",
     structure: "single",
@@ -158,10 +158,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "live-page-qa",
     rank: 5,
-    title: {
-      en: "Open a live webpage and return a QA report",
-      zhHant: "自己打開網頁檢查，再交出問題報告",
-    },
+   title: {
+     en: "Open a live webpage and return a QA report",
+      zhHant: "自己打開網頁檢查，再交出品質檢查報告",
+   },
     category: "product-engineering",
     evidence: "setup",
     structure: "single",
@@ -204,10 +204,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "home-chef",
     rank: 7,
-    title: {
-      en: "Turn a dish into a shopping list and cooking steps",
-      zhHant: "說一道菜和人數，就得到採買清單和烹調步驟",
-    },
+   title: {
+     en: "Turn a dish into a shopping list and cooking steps",
+      zhHant: "說一道菜和人數，就得到採購清單和烹調步驟",
+   },
     category: "everyday-life",
     evidence: "prompt",
     structure: "single",
@@ -219,7 +219,7 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
     rank: 8,
     title: {
       en: "Keep a reminder board with its photos",
-      zhHant: "用對話記下提醒，連照片一起在鬧鐘時交回",
+      zhHant: "記下提醒，到指定時間連照片一起通知你",
     },
     category: "everyday-life",
     evidence: "prompt",
@@ -248,7 +248,7 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
     rank: 10,
     title: {
       en: "Check rent deposits against the lease",
-      zhHant: "對照租約和銀行入帳，看房租有沒有遲、短、漏",
+      zhHant: "對照租約和入帳，找出延遲或不足的房租",
     },
     category: "business-admin",
     evidence: "prompt",
@@ -262,10 +262,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "best-tools-outreach",
     rank: 11,
-    title: {
-      en: "Find best-tools pages and draft outreach",
-      zhHant: "找出已在排名的工具榜，起草合作信，先不寄出",
-    },
+   title: {
+     en: "Find best-tools pages and draft outreach",
+      zhHant: "找出已在排名的工具榜，起草聯絡信，先不寄出",
+   },
     category: "content-communication",
     evidence: "prompt",
     structure: "single",
@@ -333,10 +333,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "draft-only-communications",
     rank: 14,
-    title: {
-      en: "Draft every message, send nothing",
-      zhHant: "先寫好要發的文字，沒有你點頭就不寄、不發",
-    },
+   title: {
+     en: "Draft every message, send nothing",
+      zhHant: "先寫好要發的文字，沒有你同意就不寄、不發",
+   },
     category: "content-communication",
     evidence: "prompt",
     structure: "single",
@@ -380,10 +380,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "bug-to-pull-request",
     rank: 16,
-    title: {
-      en: "Turn a bug into a pull request",
-      zhHant: "你說哪裡壞了，它請雲端工程 Bot 改好並交出 pull request",
-    },
+   title: {
+     en: "Turn a bug into a pull request",
+      zhHant: "說明問題後，交出待你合併的 pull request",
+   },
     category: "product-engineering",
     evidence: "setup",
     structure: "team",
@@ -566,10 +566,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "bookmarks-to-post",
     rank: 20,
-    title: {
-      en: "Turn today's bookmarks into one post",
-      zhHant: "每天整理當天收藏，寫成一則可以直接複製去發的貼文",
-    },
+   title: {
+     en: "Turn today's bookmarks into one post",
+      zhHant: "把當天收藏寫成一則可直接發布的貼文",
+   },
     category: "content-communication",
     evidence: "setup",
     structure: "single",
@@ -620,9 +620,9 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
         zhHant: "讓 Bot 逐筆下載並轉成獨立 PDF。",
       },
       {
-        en: "Drag the finished files into your own archive.",
-        zhHant: "把完成的檔案拖進你自己的資料庫。",
-      },
+       en: "Drag the finished files into your own archive.",
+        zhHant: "把完成的檔案拖進你自己的歸檔位置。",
+     },
     ],
   },
   {
@@ -630,7 +630,7 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
     rank: 22,
     title: {
       en: "Watch public repositories before the announcement",
-      zhHant: "盯公開程式庫的提交，在公司發稿前先看出變化",
+      zhHant: "追蹤公開程式庫，在正式公告前掌握變化",
     },
     category: "product-engineering",
     evidence: "setup",
@@ -651,9 +651,9 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
         zhHant: "缺少檔案路徑、diff 或 commit SHA 的說法一律不可採用。",
       },
       {
-        en: "Keep delivery blocked until you decide whether the alert should be sent.",
-        zhHant: "提示是否寄出，只可由你最後決定。",
-      },
+       en: "Keep delivery blocked until you decide whether the alert should be sent.",
+        zhHant: "通知是否寄出，只可由你最後決定。",
+     },
     ],
     teamRoles: [
       { name: "WATCH", purpose: { en: "Syncs the repository mirror when a new push appears.", zhHant: "出現新 push 時同步程式庫副本。" } },
@@ -661,7 +661,7 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
       { name: "CROSS", purpose: { en: "Connects a change to people and related repositories.", zhHant: "把變化連到相關人物和其他程式庫。" } },
       { name: "CLOCK", purpose: { en: "Compares the change with past release timing.", zhHant: "拿這次變化和過往發布時間比較。" } },
       { name: "SCRIBE", purpose: { en: "Packages the evidence so every claim can be traced.", zhHant: "整理證據，讓每項說法都可以追查。" } },
-      { name: "EDITOR", purpose: { en: "Turns approved evidence into a concise alert.", zhHant: "把已核對的證據寫成簡短提示。" } },
+      { name: "EDITOR", purpose: { en: "Turns approved evidence into a concise alert.", zhHant: "把已核對的證據寫成簡短通知。" } },
     ],
   },
   {
@@ -760,10 +760,10 @@ export const verifiedUseCases: readonly VerifiedUseCase[] = [
   {
     slug: "lenny-archive-advisor",
     rank: 26,
-    title: {
-      en: "Ask Lenny's archive a product question",
-      zhHant: "直接問 Lenny 的節目和電子報存檔",
-    },
+   title: {
+     en: "Ask Lenny's archive a product question",
+      zhHant: "向 Lenny 的節目和電子報存檔提出產品問題",
+   },
     category: "research-career",
     evidence: "prompt",
     structure: "single",

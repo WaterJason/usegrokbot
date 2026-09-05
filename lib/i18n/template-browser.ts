@@ -44,8 +44,8 @@ export const templateBrowserCopy = {
     emptySearch: "沒有符合這個搜尋的公開模板。",
     emptySearchHint: "可以換一個詞，或清除搜尋與篩選後再看完整列表。",
     openInGrokBot: "在 Grok Bot 開啟",
-    clusterJumpLabel: "跳到身分類別",
-    sectionJumpLabel: "跳到這個身分的分類",
+    clusterJumpLabel: "跳到身份類別",
+    sectionJumpLabel: "跳到這個身份的分類",
   },
   "zh-Hans": {
     searchLabel: "搜索这些模板",

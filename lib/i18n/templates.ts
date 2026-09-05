@@ -1,5 +1,6 @@
 import catalogFile from "@/data/templates-i18n.json";
 import jaCatalogFile from "@/data/templates-i18n-ja.json";
+import enCatalogFile from "@/data/templates-i18n-en.json";
 import type { TemplateCopy } from "@/data/templates";
 import type { ChineseLocale, Locale } from "./types";
 
@@ -11,6 +12,7 @@ export type TemplateI18n = {
 
 const catalog = catalogFile as Record<ChineseLocale, Record<string, TemplateI18n>>;
 const jaCatalog = jaCatalogFile as Record<string, TemplateI18n>;
+const enCatalog = enCatalogFile as Record<string, Partial<TemplateI18n>>;
 
 export function localizeTemplateCopy(
   id: string,
@@ -21,6 +23,7 @@ export function localizeTemplateCopy(
     title: fallback.title,
     oneLiner: fallback.oneLiner,
     body: fallback.body ?? fallback.oneLiner,
+    ...enCatalog[id],
   };
 
   if (locale === "en") return english;

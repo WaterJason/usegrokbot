@@ -96,13 +96,13 @@ export const officialUseCases: readonly OfficialUseCase[] = [
     "chief-of-staff",
     "Chief of Staff",
     "general",
-    "Your always-on assistant. Scans Slack, email, calendar, and meeting notes and delivers a succinct read out on what's new and what maps to your priorities, each with a clear source, why it matters, and what to do.",
+    "Your always-on assistant. Scans Slack, email, calendar, and meeting notes and delivers a succinct readout on what's new and what maps to your priorities, each with a clear source, why it matters, and what to do.",
   ),
   caseOf(
     "daily-briefing-writer",
     "Daily Briefing Writer",
     "general",
-    "Start the day with high quality inputs instead of noise. Delivers a tight daily brief of only the stories that matter to you.",
+    "Start the day with high-quality inputs instead of noise. Delivers a tight daily brief of only the stories that matter to you.",
   ),
   caseOf(
     "executive-assistant",
@@ -200,13 +200,13 @@ export const officialUseCases: readonly OfficialUseCase[] = [
     "compelling-events-monitor",
     "Compelling Events Monitor",
     "marketing",
-    "Engage when there's a real reason. Watches leadership posts for awards, launches, and hiring signals, then sends a short digest of posts to engage with with comments or quote reposts in your voice.",
+    "Engage when there's a real reason. Watches leadership posts for awards, launches, and hiring signals, then sends a short digest of posts to engage with comments or quote reposts in your voice.",
   ),
   caseOf(
     "competitive-intelligence-analyst",
     "Competitive Intelligence Analyst",
     "marketing",
-    "See the landscape shift in meaningful ways. Monitors overnight for new launches and audits your site for fatigued creatives and stale messaging. Surfaces only important shifts that gain traction and suggest changes for you to make.",
+    "See the landscape shift in meaningful ways. Monitors overnight for new launches and audits your site for fatigued creatives and stale messaging. Surfaces only important shifts that gain traction and suggests changes for you to make.",
   ),
   caseOf(
     "event-guest-screener",
@@ -403,7 +403,7 @@ export const officialUseCases: readonly OfficialUseCase[] = [
     "product-performance",
     "Product Performance",
     "engineering",
-    "Get a clear view of the metrics that matter. Logs into observability tools, walks the flamegraphs, and comes back with hotspots plus a short writeup with screenshots.",
+    "Get a clear view of the metrics that matter. Logs into observability tools, walks the flamegraphs, and comes back with hotspots plus a short write-up with screenshots.",
   ),
   caseOf(
     "prototype-builder",

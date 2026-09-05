@@ -1,10 +1,10 @@
 {
   "clear-email-elon": {
     "title": "メールを片づける",
-    "headline": "Elon が X で、Grok Bot に約9万通の受信箱掃除を指した",
+    "headline": "Mike P が約9万通のメールを Grok Bot で整理し、Elon が転載した",
     "whatTheyDid": "2026年8月19日、Elon は Mike P（@mikepat711）を引用した。Grok Bot が2つの Gmail、およそ9万通を歩き、Mike が手を出せずにいた不要メールを消していた。Elon の一文が使い方そのものだった。Clear your email with @Grok @Bot.",
     "howItWorks": "発表デモではない。実在の人が、使っている受信箱を2つ渡し、掃除を頼んだ。Elon はその朝に広めた。Elon の元投稿は残してある。",
-    "whyUseful": "受信箱掃除は、誰でも意味がわかる Grok Bot の使い方だ。十年分の Gmail を前に止まっているなら、いま注目されている公開例がこれだ。",
+    "whyUseful": "長期分のメールを Bot で片づける例。",
     "whyItMatters": "その日の Elon のタイムラインで、Grok Bot 投稿としていちばん熱かった。中身は Mike の作業、注目は Elon。両方をはっきり残してある。",
     "whoShouldTry": [
       "受信箱が溢れている人",
@@ -16,10 +16,10 @@
   },
   "week-of-hacks-nate-herk": {
     "title": "Grok Bot の工夫、1週間分",
-    "headline": "Nate Herk が9つの工夫を書いた日、Elon は What's ur @Bots? と聞いた",
+    "headline": "Nate Herk が Grok Bot チーム設定の工夫を9つ共有した",
     "whatTheyDid": "Nate Herk は X に A Week of Grok Bot Lessons in 10 Mins を出した。初期の Bot を一隊にする9つのやり方だ。Elon はその朝に引用し、みんなの Bot を尋ねた。",
     "howItWorks": "Grill Me で背景を聞き出し、Klaus をまとめ役にして話す相手を1体に絞る。Motion、Eyes、Miner、Coffee、Views などの担当。共有記憶と私的記憶。Composio。ClickUp。一度見せて覚えさせる。ルーチン。ログイン済みのブラウザ。公開記事の要約だ。",
-    "whyUseful": "その日、人が保存していた設定の書き方だ。Bot を作っても、まだチャットが一つ増えただけなら、ここから始める。",
+    "whyUseful": "9つの設定で Bot チームを組む。",
     "whyItMatters": "Elon は新しい進め方を出していない。この記事を指した。記事が中身、Elon の問いが拡散の理由だ。",
     "whoShouldTry": [
       "すでに Bot を持っている人",
@@ -31,10 +31,10 @@
   },
   "household-bots-blake-king": {
     "title": "最初の48時間、コードなし",
-    "headline": "Blake King はコード経験なしで Grok Bot を試し、Elon がその日転載した",
+    "headline": "Blake King はプログラミング経験なしで Grok Bot を試した",
     "whatTheyDid": "Blake は公開の挑戦を受け、OpenClaw は飛ばした。二晩でメール接続、12ページの家計 PowerPoint、妻の店用の一隊、毎日の Tesla ニュース要約まで進めた。",
     "howItWorks": "製品が設定を案内するという。コードは不要。先にメール、次に予算資料、次に小さな隊、朝の要約。Elon は2026年8月19日に転載した。",
-    "whyUseful": "多くの発表は、すでに agent の話がわかる人向けだ。これは非エンジニアが、最初に渡し切った実例を見せている。",
+    "whyUseful": "コードを書かない人向けの、家庭と小さな店の最初の例。",
     "whyItMatters": "その日、受信箱掃除や Nate の工夫と並んで Elon のタイムラインに出た。家庭と小さな店の実作業に、人が Grok Bot を当てている、という話だ。",
     "whoShouldTry": [
       "非エンジニア",
@@ -49,7 +49,7 @@
     "headline": "Rahul が、見込み客から週次報告までを Grok Bot で回す一人会社の書き方を出した",
     "whatTheyDid": "2026年8月19日、Rahul（@sairahul1）は X 長文 How To Build a One-Person Company Using Grok Bot を出した。見込み客、連絡文、画像、返信、報告まで、一人で抱える負荷から話を始めている。",
     "howItWorks": "設定、プラグイン、Bot ごとの憲章、一度見せるルーチン、六つの初期役割（まとめ役、Scout、Quill、Forge、Guide、Ledger）を順に書く。公開長文の要約だ。",
-    "whyUseful": "役割ごとに Bot を置く、その日よく開かれていた長文だ。会社が自分一人なら、ここから始める。",
+    "whyUseful": "一人創業者が販売・コンテンツ・報告を Bot に分ける例。",
     "whyItMatters": "その日、コミュニティ側でいちばん熱かった案内だ。顧客の画面ではなく、進め方の本。Rahul の元リンクは残してある。",
     "whoShouldTry": [
       "一人創業者",
@@ -64,7 +64,7 @@
     "headline": "Gavin Baker は、Grok Bot でポッドキャスト要約を約15秒で作り、手元のやり方より良いと言った",
     "whatTheyDid": "2026年8月17日、Gavin Baker（@GavinSBaker）は、@bot が AI の Claude Code 級だと書き、自分の利用がおよそ100倍になったとも書いた。具体例は、頼まれていたポッドキャスト要約をすぐ作ったことだ。",
     "howItWorks": "著名な投資家が、最初の実例を公開している。発表デモではない。Gavin の元投稿は残してある。",
-    "whyUseful": "毎日たまる音声は、投資家も運営も抱えている。自作ツールの代わりに Bot へ渡す、公開例がこれだ。",
+    "whyUseful": "自分用のポッドキャスト要約を作る例。",
     "whyItMatters": "この週、コミュニティの使い方投稿として注目が大きかった。",
     "whoShouldTry": [
       "投資家",
@@ -79,7 +79,7 @@
     "headline": "Gergely Orosz は顧客サポートのメールに Grok Bot を繋ぎ、Stripe で定型の返金もできるようにした",
     "whatTheyDid": "2026年8月19日、Gergely Orosz（@GergelyOrosz）は、顧客サポートのメールに Grok Bot を繋いだと書いた。Bot は API 経由で Stripe に繋がり、定型の返金などを進められる。添付は Stripe の許可画面だ。",
     "howItWorks": "サポートメールが入り、Stripe API が出る。Stripe がこの流れを用意している点を彼は評価している。元投稿は残してある。",
-    "whyUseful": "店を持つ人の実作業が、サポートと返金だ。実在の人が、本物の受信箱と支払い API に Bot を置いた例である。",
+    "whyUseful": "サポートメールと Stripe の返金をつなぐ例。",
     "whyItMatters": "当日のコミュニティ例。本物のサポート受信箱と、本物の Stripe 許可画面。",
     "whoShouldTry": [
       "自分でサポートする創業者",
@@ -94,7 +94,7 @@
     "headline": "Sawyer Merritt は、50マイル先の自動芝刈り機を Grok Bot から動かした",
     "whatTheyDid": "2026年8月19日、Sawyer Merritt（@SawyerMerritt）は、50マイル先の自動芝刈り機を Grok Bot から操ると書いた。設定は2分。刈り始めと指示すると3秒で動き、充電台へ戻れとも指示した。添付は Engineer Bot の会話と Navimow X450 の地図だ。",
     "howItWorks": "チャットが入り、芝刈り機が出る。Sawyer の元投稿は残してある。",
-    "whyUseful": "遠隔で動かして戻す、誰でもわかる使い方だ。要約ではなく、50マイル先の機械に刈れと言い、家へ帰らせる。",
+    "whyUseful": "会話で芝刈り機を動かし、刈り始めや充電台への帰還を指示する。",
     "whyItMatters": "当日のコミュニティ例。実名、動いている芝刈り機、Engineer Bot の画面。",
     "whoShouldTry": [
       "芝刈りロボットを持つ人",
@@ -106,10 +106,10 @@
   },
   "lennybot-lenny-rachitsky": {
     "title": "Lennybot、本人の資料集",
-    "headline": "Lenny Rachitsky は、500本超のポッドキャストとメール通信で育てた Grok Bot を、製品・戦略・成長・キャリアの相談役として公開した",
-    "whatTheyDid": "2026年8月19日、Lenny Rachitsky（@lennysan）は、自分の500本超の音声と通信で育てた Grok Bot を作り、製品／戦略／成長／キャリアの相談役にせよ、と書いた。最初の1,000人、昇進、見えにくい成長、PM面接、伝えにくいフィードバックなどの問いも並べ、カスタム MCP の入れ方も公開した。",
+    "headline": "Lennybot は500本超の Podcast とメール通信の資料に接続し、製品とキャリアの質問に答える",
+    "whatTheyDid": "2026年8月19日、Lenny Rachitsky（@lennysan）は、カスタム MCP で自分の500本超のポッドキャストとメール通信の資料につなぐ Grok Bot を作り、製品／戦略／成長／キャリアの相談役にせよ、と書いた。最初の1,000人、昇進、見えにくい成長、PM面接、伝えにくいフィードバックなどの問いも並べ、mcp.lennysdata.com/mcp の入れ方も公開した。",
     "howItWorks": "実名の人が、コピーできる Lennybot の指示とカスタム MCP を出した。Lenny の元投稿は残してある。本人のメールログインは代行していない。",
-    "whyUseful": "すでに Lenny を聞いている人が、資料集へ実務の問いを投げたいときの公開設定だ。漠然と agent を試せ、ではない。",
+    "whyUseful": "Lenny の資料集に、製品・成長・キャリアの質問を直接聞ける。",
     "whyItMatters": "著名な製品ライターによる当日のコミュニティ例。",
     "whoShouldTry": [
       "プロダクトマネージャー",
@@ -124,7 +124,7 @@
     "headline": "Yun-Ta Tsai は歩きながら、中英混じりで残り予約を探して枠を取るよう Grok Bot に頼んだ",
     "whatTheyDid": "2026年8月12日、Yun-Ta Tsai（@yunta_tsai）は、Grok Bot がカレンダーを見て、事前予約が残っている予定を見つけ、良い時間を選び、サイトで予約まで進めたと書いた。車に向かう途中の話だ。",
     "howItWorks": "音声が入り、カレンダーを見て、予約サイトを操作する。Yun-Ta の元投稿は残してある。",
-    "whyUseful": "個人の運営で人が指す使い方だ。要約ではなく、まだ予約が必要なカレンダーを、車へ歩く間に進める。",
+    "whyUseful": "カレンダーに残った予約を見つけ、予約まで進める。",
     "whyItMatters": "Grok Bot 公開週の、画面操作の公開例。",
     "whoShouldTry": [
       "忙しい働き手",
@@ -139,7 +139,7 @@
     "headline": "SCOTTY BEAM は、Cursor の同僚が妹の未使用の服を Grok Bot に渡した話を書いた",
     "whatTheyDid": "2026年8月18日、SCOTTY BEAM（@ScottyBeamIO）は、Cursor の誰かが妹の着ていない服の山を Grok Bot に渡したと書いた。売るには写真、出品、説明、買い手への返信、価格の話が要るので、山のまま残っていた。",
     "howItWorks": "Bot が写真を見て品物を特定し、出品文を書き、買い手と交渉を始めた、と Scotty は書く。比較する長文も指している。元投稿は残してある。",
-    "whyUseful": "服の山は、誰でもわかる後回しだ。これを売って、と渡せる。",
+    "whyUseful": "着ていない服を売るときの出品と返信の手間を減らす。",
     "whyItMatters": "他人の Bot をコミュニティが広めた例に、Scotty 自身の文章が付く。両方の出典を残してある。",
     "whoShouldTry": [
       "売りたい山を抱えている人",
@@ -152,16 +152,16 @@
   "3d-game-roundtable-space": {
     "title": "3Dゲームを作り、投稿する",
     "headline": "0xMarioNawfal は、Grok @bot が3Dゲームを作り、自動プレイを録画して X に上げたと書いた",
-    "whatTheyDid": "2026年8月19日、0xMarioNawfal（@RoundtableSpace）は、Grok @bot が3Dゲーム一式を作り、自分でプレイして録画し、編集して X に上げられると書いた。添付映像は Dan（@Dan）のものだ。",
+    "whatTheyDid": "2026年8月19日、0xMarioNawfal（@RoundtableSpace）は、Grok @bot が3Dゲーム一式を作り、自分でプレイして録画し、編集して X に上げられると書いた。添付映像は Dan（@Daniel_Farinax）のものだ。",
     "howItWorks": "Mario は公開録画を広めた。元投稿は残してある。",
-    "whyUseful": "画面操作の使い方として人が指す例だ。チャットの答えではなく、できたゲームと、できた X 動画。",
+    "whyUseful": "ゲームを作り、実演を録画して動画を上げる過程。",
     "whyItMatters": "当日、具体的な Bot の使い方をコミュニティが広めた。映像は Dan、投稿は Mario。両方を残してある。",
     "whoShouldTry": [
-      "作る人",
+      "開発者",
       "ゲームを作る人",
       "Bot に動画まで出してほしい作り手"
     ],
-    "usefulFor": "作る人 / 作り手",
+    "usefulFor": "開発者 / 作り手",
     "result": "3Dゲーム · 録画、編集、X へ投稿"
   },
   "five-bots-peter-yang": {
@@ -169,7 +169,7 @@
     "headline": "Peter Yang は、相談役、YouTube、X、受信箱、旅行の5体を置く手順を出した",
     "whatTheyDid": "2026年8月17日、Peter Yang（@petergyang）は手順を出した。他を作って回す相談役、外れ値動画を探す YouTube、伸びる投稿を探す X、デジタル秘書の受信箱、旅行。古典ゲーム用の Gamer Bot も試し、日常の相談先を置き換えられるかも聞いている。",
     "howItWorks": "公開投稿の要約だ。",
-    "whyUseful": "名前のある5つの使い方であり、漠然と試せ、ではない。最初の編成が欲しいなら、この名簿を写す。",
+    "whyUseful": "5種類の役割を参考に、自分の助手チームを組む。",
     "whyItMatters": "この週、人が保存していた実務の設定案内だ。コミュニティの文章。Peter の元リンクは残してある。",
     "whoShouldTry": [
       "最初の Bot 隊を置く人",
@@ -181,10 +181,10 @@
   },
   "ultimate-guide-miles-deutscher": {
     "title": "Grok Bot 徹底案内",
-    "headline": "Miles Deutscher は設定、プラグイン、自分が回す5体の編成を Grok Bot: The Ultimate Guide にまとめた",
+    "headline": "Miles Deutscher が設定、プラグイン、5体の使い方を共有した",
     "whatTheyDid": "2026年8月18日、Miles Deutscher（@milesdeutscher）は長文を出した。Grok Bot とは何か、入れ方、プラグイン、実際に回している5体。Alex は YouTube の外れ値、Sandra は出品、Jonathan はポートフォリオ、など。公開直後から試していると書く。",
     "howItWorks": "記事そのものが案内だ。設定、使い方、プラグイン、価格への正直な注記。",
-    "whyUseful": "名前付きの Bot、指示、プラグインまでコピーできる公開の編成が欲しいなら、この長文だ。",
+    "whyUseful": "設定の通し案内と、5体の実際の使い方。",
     "whyItMatters": "この週、もう一つのよく開かれた長文案内だ。コミュニティ。Miles の元リンクは残してある。",
     "whoShouldTry": [
       "すでに Bot を持っている人",
@@ -199,7 +199,7 @@
     "headline": "Ben Lang は、@bot チームが共有していた Grok Bot のコツを集めた",
     "whatTheyDid": "2026年8月18日、Ben Lang（@benln）は @bot チームから集めたメモを出した。プラグインごとに複数アカウント、まとめ役と担当、よく使う agent をピン留め、残件の Notion、一度見せて覚えさせる、など。",
     "howItWorks": "肩書きは Cursor チーム経由で SpaceXAI を作っている、とある。投稿は個人アカウントがチームのコツを集めたもので、@bot や @xai の公式リンクではない。その出典のまま残してある。",
-    "whyUseful": "短く写せる設定の癖だ。Bot がまだチャット一つに見えるなら、まとめ役と、残件の Notion から始める。",
+    "whyUseful": "1体が専門の助手をまとめ、残件を一箇所に書く。",
     "whyItMatters": "公開で伝えられたチームのコツだ。",
     "whoShouldTry": [
       "すでに Bot を持っている人",
@@ -212,8 +212,8 @@
     "title": "6体とCEO",
     "headline": "Teslaconomics は、担当6体の上に、振り分ける CEO Bot を置いている",
     "whatTheyDid": "2026年8月14日、Teslaconomics（@Teslaconomics）は、リマインダー、画像と動画、会社の値付け、動画分析、投稿など、一つずつ担当する6体を先に置き、その上に CEO Bot を置いて、一本のメッセージで頼むと書いた。最初の一文と、朝・昼・晩のルーチンも公開した。",
-    "howItWorks": "先に担当、次に振り分けて一つにまとめて返すまとめ役。公開された初回メッセージとルーチンの要約だ。",
-    "whyUseful": "まとめ役がいないと、グループチャットの間に自分が立つ。1体を受付にする、公開の写しがこれだ。",
+    "howItWorks": "先に担当、次に振り分けて結果を一度に返すまとめ役。公開された初回メッセージとルーチンの要約だ。",
+    "whyUseful": "まとめ役1体で複数の助手を回し、会話の切り替えを減らす。",
     "whyItMatters": "実名、名簿、公開された指示。",
     "whoShouldTry": [
       "Bot を複数回している人",
@@ -225,17 +225,17 @@
   },
   "agent-loops-alex-finn": {
     "title": "担当をループさせる",
-    "headline": "Alex Finn は、ある Grok Bot に、別の Bot へ5分ごとのループを指示させている",
+    "headline": "Alex Finn は5分ごとに動く Bot を、別の Bot に見守らせた",
     "whatTheyDid": "2026年8月16日、Alex Finn（@AlexFinn）は、Grok Bot はループ向きだと書いた。本体が別の Bot に5分ごとの作業と監視を指示する。オーケストレーターがエンジニア Bot を24時間見ていた、とも。自分で自分を見る /loop との違いも書いている。",
     "howItWorks": "追加の Bot が、別の文脈で判断する。公開投稿の要約だ。",
-    "whyUseful": "/loop を見守らずに続けたいなら、2体に分ける版がこれだ。",
+    "whyUseful": "別の Bot が進行を見守り、人が何度も確認しなくて済む。",
     "whyItMatters": "公開で回している人の、具体的なループのレシピ。",
     "whoShouldTry": [
-      "作る人",
+      "開発者",
       "エンジニア",
-      "長い作業を回す調べ物"
+      "長い作業を回す人"
     ],
-    "usefulFor": "作る人 / エンジニア",
+    "usefulFor": "開発者 / エンジニア",
     "result": "5分ループ · まとめ役と担当"
   },
   "grok-bot-walkthrough-alex-finn": {
@@ -243,7 +243,7 @@
     "headline": "Alex Finn は、Grok Bot の入れ方、使い方、プラグインの動画案内を出した",
     "whatTheyDid": "2026年8月18日、Alex Finn（@AlexFinn）は、5分ループとは別の投稿で、入れ方、使い方、プラグイン、設定すると動く理由を動画にした。",
     "howItWorks": "公開の設定案内であり、顧客の画面ではない。Alex の元リンクは残してある。",
-    "whyUseful": "ループのレシピではなく、設定から始めたい一本の動画が欲しいなら、その週よく見られていたのがこれだ。",
+    "whyUseful": "動画で基本の設定、プラグイン、使い方を知る。",
     "whyItMatters": "この週、コミュニティの案内動画として注目が大きかった。ループのカードとは別投稿。",
     "whoShouldTry": [
       "最初の Bot を置く人",
@@ -258,7 +258,7 @@
     "headline": "Kun Chen は、話す相手を1体にする Firstmate の指示を、コピー用に公開した",
     "whatTheyDid": "2026年8月18日、Kun Chen（@kunchenguid）は Firstmate Bot のシステム指示を出した。作って、github.com/kunchenguid/firstmate の GROK_BOT.md を説明に貼り、その Bot にだけ話す。それが作り、任せ、回す。",
     "howItWorks": "他の枠組みで使っていたまとめ役の型を、短い Grok Bot の説明にした、と本人は書く。",
-    "whyUseful": "チャットが12個いらない人向けの、公開指示だ。1体が雇い、残りを回す。",
+    "whyUseful": "Firstmate とだけ話し、他の Bot の作成と調整を任せる。",
     "whyItMatters": "リポジトリ、指示、実名が揃っている。",
     "whoShouldTry": [
       "すでに Bot を持っている人",
@@ -272,7 +272,7 @@
     "headline": "Yun-Ta Tsai は親向けに最初の Grok Bot を置き、プラグインの迷路なしで中国語で話せるという",
     "whatTheyDid": "2026年8月19日、Yun-Ta Tsai（@yunta_tsai）は、年配の親に勧める最初の AI 製品が Grok Bot だと書いた。会話はすでにわかる。skills、プラグイン、MCP は要らない。聞いて、届いてほしい。",
     "howItWorks": "続きは、自然で切れ目のない中国語なので、年配の人が人に頼らず大半を済ませられる、という主張だ。この元投稿は残してある。",
-    "whyUseful": "MCP を一生設定しない親が利用者なら、聞いて済む、の公開例がこれだ。",
+    "whyUseful": "設定に詳しくない年配の人が、会話だけで Bot を使う。",
     "whyItMatters": "カレンダー予約と同じ人の、別の使い方。仕組みを覚えなくてよい人のための Bot。",
     "whoShouldTry": [
       "親のために Bot を置く子ども",
@@ -284,10 +284,10 @@
   },
   "eight-use-cases-eric-zakariasson": {
     "title": "この週の使い方8つ",
-    "headline": "eric zakariasson は、テキストで掃除機を動かす話から始まる、この週の Grok Bot 8例を出した",
+    "headline": "Eric Zakariasson が8例をまとめ、メッセージで掃除機を動かす話も含む",
     "whatTheyDid": "2026年8月19日、eric zakariasson（@ericzakariasson）はスレッドを出した。この週の興味深い使い方8つ。最初は掃除機ロボットに繋ぎ、どこを掃除するか Grok に送る話で、Yun-Ta を引用している。続きは Google のロボット判定、Mac を人の机にする、3Dゲーム、配管会社の事務所、など公開例を指す。",
     "howItWorks": "コミュニティの一覧であり、Eric 自身の掃除機ではない。掃除機は Yun-Ta、名簿は Eric。両方を残してある。",
-    "whyUseful": "1本のスレッドに、具体例が8つ。この週に人が出した使い方のメニューが欲しいなら、ここから。",
+    "whyUseful": "公開例8つを一度に見て、用途の幅を知る。",
     "whyItMatters": "他人の例をまとめたコミュニティ投稿。出典を混ぜない。",
     "whoShouldTry": [
       "最初の使い方を集めている人",
@@ -302,7 +302,7 @@
     "headline": "SCOTTY BEAM は、Notion の Gustavo、DocuSign の Walter、ManyChat の Jesse という3体を紹介した",
     "whatTheyDid": "2026年8月18日、SCOTTY BEAM（@ScottyBeamIO）は、人が各作業を実演し、Bot に見せて覚えさせた、と書いた。Gustavo は運営（Notion の顧客ハブ、受け入れ）、Walter は DocuSign、Jesse は ManyChat。雲のパソコンとログインを共有するという。着ていない服の投稿とは別だ。",
     "howItWorks": "この元投稿は残してある。",
-    "whyUseful": "名前のある担当と、名前のある道具。営業まわりの最初の編成が欲しいなら、この3レーンを写す。",
+    "whyUseful": "運営、契約、見込み客を3体で分ける例。",
     "whyItMatters": "届きは控えめでも、机が具体的だ。他人の隊をコミュニティが広めた。Scotty の投稿を残し、創業者は捏造しない。",
     "whoShouldTry": [
       "一人で回している人",
@@ -317,7 +317,7 @@
     "headline": "Yun-Ta Tsai は、Grok の音声 API で明るい声の数学解説動画を Grok Bot に作らせた",
     "whatTheyDid": "2026年8月16日、Yun-Ta Tsai（@yunta_tsai）は、子どもが数を累乗和に分解するところで詰まり、良い解説が見つからなかったと書いた。Grok Bot に作らせると、案を実装して確認待ちにした。",
     "howItWorks": "後回しの案を渡すと実装し、確認を待つ、と本人は書く。元投稿と添付動画は残してある。",
-    "whyUseful": "一度きりの教材動画は、先延ばししやすい。渡して、出来を見る。",
+    "whyUseful": "分かりにくい数学を、確認できる教材動画にする。",
     "whyItMatters": "実名、具体的な依頼、添付動画。",
     "whoShouldTry": [
       "親",
@@ -329,10 +329,10 @@
   },
   "teach-a-task-eric-zakariasson": {
     "title": "一度見せて覚えさせる",
-    "headline": "eric zakariasson は、+ を押してブラウザ操作を録画すると、Grok Bot が同じ道をたどると示した",
+    "headline": "Eric Zakariasson はブラウザ操作を録画して Bot に覚えさせる方法を示した",
     "whatTheyDid": "2026年8月13日、eric zakariasson（@ericzakariasson）は短い手順を出した。チャットで + を押し、ブラウザで自分の操作を録画する。Bot が見て、もう一度できる。多くは一人で最後まで進む、とも。",
     "howItWorks": "機能の歩き方と映像であり、顧客の画面ではない。肩書きは SpaceXAI で試している、とある。投稿は個人アカウントなので、その出典のまま。",
-    "whyUseful": "クリックの道を Bot が外し続けるなら、指示を書き直すより、一度見せた方が早い。",
+    "whyUseful": "手順が分からないとき、操作を録画して教えられる。",
     "whyItMatters": "具体的な手順であり、予告ではない。",
     "whoShouldTry": [
       "道を外し続ける Bot を持つ人",
@@ -347,7 +347,7 @@
     "headline": "@bot は、自分のパソコンを持つ AI の相棒として Grok Bot を紹介した",
     "whatTheyDid": "公式 @bot アカウントが、Grok Bot の早期テストを発表した。各 Bot に自分のパソコンがあり、すでに使っている道具へログインし、判断が要るときだけ戻ってくる。",
     "howItWorks": "公開の発表であり、一つの進め方ではない。あとから出る公式例（営業の外向け、受信箱、CRM、エンジニア）がぶら下がる原文なので、元投稿を残し、何を言っているかを短く書いてある。",
-    "whyUseful": "Grok Bot を初めて見るなら、指示を写す前に、製品が何をすると言っているかをここで押さえる。",
+    "whyUseful": "Grok Bot の基本と使い方を知る。",
     "whyItMatters": "あとの多くの文章が、この発表を指す。短い整理と元投稿の方が、返信を遡るより早い。",
     "whoShouldTry": [
       "Grok Bot を見極めている人",
@@ -361,7 +361,7 @@
     "headline": "xAI は、Grok Bot に夜通し顧客を調べさせ、朝は承認待ちの下書きだけを残した",
     "whatTheyDid": "外向け営業の Bot が夜通しアカウントを調べ、関心で連絡先を点づけ、各担当の口調でメールと LinkedIn を下書きし、朝は承認する束だけを残す。",
     "howItWorks": "人が寝ている間に、ブラウザと既存の営業道具で進める。朝見るのは下書きであり、まだメールになっていない会話要約ではない。",
-    "whyUseful": "朝会の前にパイプライン側を進めておきたい創業者と SDR 向け。未承認のまま送らせない。",
+    "whyUseful": "顧客調査と連絡の下書きを先に進め、送信前は人が承認する。",
     "whyItMatters": "公式の旗艦例だ。終わった作業が、本物の受信箱に届く、という点を示す。",
     "whoShouldTry": [
       "SDR",
@@ -376,7 +376,7 @@
     "headline": "xAI は、通話の文字起こしから CRM を更新する営業 Bot を使った",
     "whatTheyDid": "SpaceXAI の内側で、営業 Bot が通話の文字起こしで CRM を更新し、フォローの下書きも作る。記録は、人が使う道具の中に残る。",
     "howItWorks": "通話のあと、Bot が文字起こしを読み、欄と次の一手を書き、CRM に入れる。取引段階や数字を変えるものは、人が承認する。",
-    "whyUseful": "CRM の腐りは静かで高い。本当の仕組みにメモを置く方が、チャットに要約が残るより良い。",
+    "whyUseful": "CRM が古くならないよう、最新メモと次の一手を残す。",
     "whyItMatters": "xAI 自身の言い方は、仲間が置く場所に届くまで終わっていない、だ。営業まわりのその版がこれだ。",
     "whoShouldTry": [
       "担当営業",
@@ -391,7 +391,7 @@
     "headline": "xAI は、受信箱だけを見る担当 Bot を置いている",
     "whatTheyDid": "SpaceXAI のチームは Bot を重ねる。上にまとめ役、下に受信箱のレーンを置き、1体に全部をさせない。",
     "howItWorks": "1体が受信箱を持つ。仕分け、下書き、落ちたスレッドの催促。上の1体は、判断が要るときだけ人を呼ぶ。",
-    "whyUseful": "12体の組織図は、たいてい要らない。朝までに Gmail を小さくする1体が要る。",
+    "whyUseful": "メールの仕分け、下書き、未返信の催促をまとめる。",
     "whyItMatters": "公式の型は、万能の1体ではなく、小さな隊だ。受信箱は、ほぼ誰でもわかるレーンだ。",
     "whoShouldTry": [
       "創業者",
@@ -403,10 +403,10 @@
   },
   "expense-manager-xai": {
     "title": "経費の担当",
-    "headline": "xAI は経費レーンを1体に渡し、領収書を Gmail に寝かせない",
+    "headline": "xAI はメールの領収書と請求を Bot で整理する",
     "whatTheyDid": "公式例には経費の担当があり、Gmail に届いた請求を処理して、財務がすでに使う道具へ入れる運営 Bot もある。",
     "howItWorks": "Bot が受信箱の領収書と請求を見て、事実を抜き、表か財務ツールを更新する。支払いに見えるものは、人が承認する。",
-    "whyUseful": "領収書は古くなる。毎日一度通す方が、月末に Gmail 検索で探すより良い。",
+    "whyUseful": "領収書と請求を定期的に整理し、月末の探し物を減らす。",
     "whyItMatters": "地味な公式例であり、そこが要点だ。Grok Bot は、やり直したくない相棒の作業として売られている。",
     "whoShouldTry": [
       "創業者",
@@ -421,7 +421,7 @@
     "headline": "xAI は、製品画面で不具合を再現し、チケットを切るエンジニア Bot を使った",
     "whatTheyDid": "エンジニア Bot が製品画面で不具合を再現し、チケットを切り、直しをデバッグ Bot に渡す。報告が曖昧な Slack 一文で終わらない。",
     "howItWorks": "誰かが不具合を話す。Bot が製品を開き、手順を歩き、見たことを書き、チームが使う追跡へ入れる。",
-    "whyUseful": "報告者が一度踏んだ不具合を、小さなエンジニアチームが探し直す時間を減らす。",
+    "whyUseful": "不具合の説明を、再現できて渡せる報告にする。",
     "whyItMatters": "公式のエンジニア例は少ない。これは具体的だ。再現、起票、引き継ぎであり、コードを書いて、ではない。",
     "whoShouldTry": [
       "エンジニア",
@@ -436,7 +436,7 @@
     "headline": "xAI は、自分の口調で仕入れ先と話す使い方を、すでに人がしていると言う",
     "whatTheyDid": "Digital Trends が伝えた Grok Bot チームの初期例に、自分の口調で仕入れ先と直接話すことがある。Bot が下書きし、スレッドを進める。契約は人が承認する。",
     "howItWorks": "書き方と、払える額を見せる。Bot は既存の道具で仕入れ先のスレッドを進め、見ていない約束の前で止まる。",
-    "whyUseful": "交渉がメール型で繰り返し、口調は自分のままがよいときに向く。",
+    "whyUseful": "仕入れ先のやり取りを進め、見ていない約束は人が決める。",
     "whyItMatters": "公式チームの例であり、指名顧客の事例ではない。使い方が具体的なので残してある。お金が動くメールの最後は、人であるべきだ。",
     "whoShouldTry": [
       "創業者",
@@ -451,7 +451,7 @@
     "headline": "xAI は、ネット店のサポートを Grok Bot に見させる使い方があると言う",
     "whatTheyDid": "Grok Bot チームの初期例に、ネット店の顧客サポートがある。仕分け、下書き、更新は、店がすでに使う道具の中で行う。",
     "howItWorks": "Bot が新しいチケットやメールを読み、まとめ、返信の下書きを書く。公開や返金は、そのレーンを信頼するまで人に残す。",
-    "whyUseful": "真夜中の創業者がサポートする小さな店向き。20人の窓口ではない。",
+    "whyUseful": "小さな店の問い合わせを仕分け、返信下書きを用意する。",
     "whyItMatters": "量は多く、最後のクリックを人に残すなら戻しやすい。xAI が Bot に渡すべきだと言う作業に合う。",
     "whoShouldTry": [
       "ネット店の創業者",
@@ -466,7 +466,7 @@
     "headline": "Axel Schapmann は、荒らしではなく、入れるスレッドを探す Reddit 集客に Grok Bot を使った",
     "whatTheyDid": "Axel は、本当に手伝える新しいスレッドと、まだ順位が残る古いスレッドを探し、コメント下書きで止める Reddit 集客を書いた。",
     "howItWorks": "サイト、提供、競合をいくつか渡す。Bot が Reddit と Google を探し、合い方と荒らしリスクを点づけ、投稿は人に残す。",
-    "whyUseful": "遅いのはスレッド探しだ。部屋に入れれば、コメントは書きやすい。",
+    "whyUseful": "参加しやすい議論を先に見つけ、投稿は人が確認する。",
     "whyItMatters": "公開のコミュニティ文章であり、xAI の画面ではない。カードと写せる進め方に整理した。",
     "whoShouldTry": [
       "創業者",
@@ -478,10 +478,10 @@
   },
   "travel-concierge-nate": {
     "title": "旅行の案内役",
-    "headline": "Nate は旅行計画に Grok Bot を使った。一日で置いた12体のうちの一つだ",
+    "headline": "Nate は旅行計画に Grok Bot を使った",
     "whatTheyDid": "公開レビューで、Nate は約8時間で一隊を置いた。旅行計画はその一つで、運動や連絡先の調査もある。",
     "howItWorks": "日付、予算、制約を渡す。Bot が公開の選択肢を比べ、日ごとの案を書く。予約は人に残す。",
-    "whyUseful": "旅行調べはタブが40になる。短い案内を返す Bot の方が、技術に詳しくない人でも使える。",
+    "whyUseful": "旅行の調べを日ごとの行程にまとめ、予約は人が決める。",
     "whyItMatters": "Nate の論点は、終わった、であり、言った、ではない。旅行は個人のきれいな例であり、Grok Bot が営業専用ではないことも示す。",
     "whoShouldTry": [
       "忙しい働き手",
@@ -496,7 +496,7 @@
     "headline": "Remy は、コンテンツ Bot に YouTube コメントへの返信を始めさせた",
     "whatTheyDid": "Remy は Gordon というコンテンツ Bot を作った。公開テストのあと、Gordon は予定に沿って YouTube コメントの返信下書きを始めた。最後のクリックは Remy が持つ。",
     "howItWorks": "動画かチャンネルを指す。Bot がコメントをまとめ、自分の口調で短い返信を書く。自分に聞こえるものだけ投稿する。",
-    "whyUseful": "絵文字の下に、本当の問いが埋まる。毎日の机の方が、思い出したときに YouTube Studio を開くより良い。",
+    "whyUseful": "YouTube コメントを定期的にまとめ、返信下書きを公開用に残す。",
     "whyItMatters": "実名の人が、名前のある Bot を公開で回している。使い方を要約している。",
     "whoShouldTry": [
       "作り手",
@@ -509,9 +509,9 @@
   "newsletter-to-social-remy": {
     "title": "通信から投稿へ",
     "headline": "Remy は、先週の通信を X と LinkedIn の投稿にするコンテンツ Bot を使った",
-    "whatTheyDid": "同じ Gordon が、先週の通信を X と LinkedIn 向けに作り直す。追加の訓練はほとんどなく、自動で回っている、と Remy は書く。",
+    "whatTheyDid": "同じ Gordon が、先週の通信を X と LinkedIn 向けに作り直す。ほとんど追加で教えなくても、自動で回っている、と Remy は書く。",
     "howItWorks": "Bot が号を読み、各場所の長さで自分の口調の下書きを残す。公開は人。こちらの対応する進め方も、投稿の前で止める。",
-    "whyUseful": "号はもうある。税は、三回作り直すことだ。それは Bot に渡せる。",
+    "whyUseful": "同じ内容を別の場所向けに作り直す手間を減らす。",
     "whyItMatters": "Bot の名前と、出てくるものが両方あるコミュニティ例は、使いやすい。これは両方ある。",
     "whoShouldTry": [
       "通信を書く人",
@@ -526,7 +526,7 @@
     "headline": "Jellypod の最初の Grok Bot 集客の型は、月曜のダッシュボード巡回だ",
     "whatTheyDid": "Jellypod の公開案内は、すでにしている報告から始まる。GA4、広告、順位、メールを回り、指定した数字を写し、1枚の案内を残す。",
     "howItWorks": "巡回を一度見せる。月曜の朝に予定する。決めた線を超えたときだけ、Bot が知らせる。",
-    "whyUseful": "月曜の朝は、先週が分かったかどうかを知る前にログインが6つある。埋まった案内の方が、もう一つのダッシュボードより良い。",
+    "whyUseful": "ばらばらの数字を、毎週1枚の案内にまとめる。",
     "whyItMatters": "実務者の案内であり、バズる画面ではない。退屈で、毎週で、写しやすいので残してある。",
     "whoShouldTry": [
       "集客のまとめ役",
@@ -541,7 +541,7 @@
     "headline": "Jellypod は、競合サイトと広告庫を毎週回す Grok Bot の型を書いた",
     "whatTheyDid": "同じ案内の二つ目。広告庫、レビュー、競合の更新ログの固定名簿を毎週歩き、変わったものだけを印す、と教える。",
     "howItWorks": "名簿を一度見せる。Bot は差分を記録する。新しい主張、価格変更、レビューの新しい異論。40ページの捨て資料ではなく、角度を残す。",
-    "whyUseful": "毎日手で競合を見たくない創業者と集客チーム向き。",
+    "whyUseful": "競合の変化をまとめて見られ、サイトを一つずつ回さなくて済む。",
     "whyItMatters": "競合見張りは、人が最初に聞く例だ。この版は出典があり、戻しやすく、UseGrokBot の進め方にも写せる。",
     "whoShouldTry": [
       "創業者",
@@ -558,9 +558,9 @@
     "output": "担当とまとめ役の型"
   },
   "rayfernando1337-i-was-the-bottleneck": {
-    "title": "自分が詰まりだった",
+    "title": "自分がボトルネックだった",
     "headline": "リポジトリのまとめ役に Grok Bot を置き、そこからさらに Bot を増やした。",
-    "whatTheyDid": "自分が詰まりだと気づき、リポジトリのボスに Grok Bot を置いた。そこから別の Grok Bot を集めさせた、という長文だ。",
+    "whatTheyDid": "自分がボトルネックだと気づき、リポジトリのボスに Grok Bot を置いた。そこから別の Grok Bot を集めさせた、という長文だ。",
     "output": "リポジトリのまとめ役から増えた Bot"
   },
   "davidcarbutt-grok-bot-is-hands-down-one-of-the-best-products": {
@@ -648,9 +648,9 @@
     "output": "複数アカウントでの使用感"
   },
   "startupstella-goodbye-mental-load-hellooooo-bot": {
-    "title": "頭の負荷を渡す",
-    "headline": "StartupStella は、テック向けの新しさではなく、親の頭の負荷を @bot に渡す話として書いた。",
-    "whatTheyDid": "母親向けに、頭の中の積み荷を Bot に渡す使い方を公開した。",
+    "title": "頭の中の負担を渡す",
+    "headline": "StartupStella は、テック向けの新しさではなく、親の頭の中の負担を @bot に渡す話として書いた。",
+    "whatTheyDid": "母親向けに、頭の中の負担を Bot に渡す使い方を公開した。",
     "output": "頭の負荷を渡す使い方"
   },
   "scottybeamio-wtf-grok-bot-just-made-ai-agents-available-to-li": {
@@ -673,7 +673,7 @@
   },
   "av1dlive-grok-bot-is-literally-the-closest-to-a-real-life": {
     "title": "店、ソフト、拡散を一度に",
-    "headline": "Jarvis に近い、店を始め、ソフトを出し、拡散まで一気に、という4分の手順。",
+    "headline": "Jarvis に近い、事業を始め、ソフトを出し、拡散まで一気に、という4分の手順。",
     "whatTheyDid": "短い手順で、事業・ソフト・拡散を同時に進める使い方を公開した。",
     "output": "短い手順の公開案内"
   },
@@ -697,7 +697,7 @@
   },
   "congressdj-i-am-not-a-coder": {
     "title": "コードも表も使わない人",
-    "headline": "コードも CRM も表も使わない人が、kite を飛ばす子どもほどワークフローから遠い、と前置きして Grok Bot を試した。",
+    "headline": "コードも CRM も表も使わない人が、凧を飛ばす子どもほどワークフローから遠い、と前置きして Grok Bot を試した。",
     "whatTheyDid": "非エンジニアで、いつもの AI も浅い使い方だった人が、初めてこの製品に触れた公開投稿。",
     "output": "非エンジニアの初回感想"
   },
@@ -788,7 +788,7 @@
   "aaronburnett-1-2-the-turns-and-25-of-the-tokens": {
     "title": "手数半分、トークン4分の1",
     "headline": "Aaron Burnett は、手数とトークンの減りを見ながら、Grok 4.6 が Grok Bot に入っているかを尋ねた。",
-    "whatTheyDid": "Task/Token の変化に注目し、中のモデルを推測する公開メモ。",
+    "whatTheyDid": "Task/Token の変化に注目し、中のモデルを問う公開メモ。",
     "output": "手数とトークンの観察"
   },
   "yunta-tsai-omg": {

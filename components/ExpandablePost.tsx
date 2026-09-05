@@ -77,10 +77,14 @@ export function ExpandablePost({
           />
         </button>
       ) : null}
-      {original && original !== text ? (
-        <p className="ui-meta mt-2 whitespace-pre-wrap text-mute">
-          {t("discover.quoteOriginal")}：{original}
-        </p>
+      {original && original.trim() !== text.trim() ? (
+        <details className="group mt-3 rounded-xl border border-line px-3">
+          <summary className="flex min-h-11 cursor-pointer items-center justify-between gap-3 text-[15px] font-medium text-mute">
+            {t("discover.quoteOriginal")}
+            <ChevronDown aria-hidden="true" className="size-4 shrink-0 transition-transform group-open:rotate-180 motion-reduce:transition-none" />
+          </summary>
+          <p className="ui-body pb-3 whitespace-pre-wrap text-mute">{original}</p>
+        </details>
       ) : null}
     </div>
   );

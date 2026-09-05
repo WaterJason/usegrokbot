@@ -1,0 +1,375 @@
+{
+  "rQt4W2zO2Gx9lfcBjd1lj": {
+    "title": "Researchy",
+    "oneLiner": "Uses only Grok Build CLI, with the latest Grok models at the highest thinking level.",
+    "body": "Uses only Grok Build CLI, with the latest Grok models at the highest thinking level."
+  },
+  "br5f3C4mc75QCMEHaszXd": {
+    "title": "tinkabot",
+    "oneLiner": "Turns your APIs into MCP tools or skills, packages them as a Grok Bot plugin, then submits it for approval."
+  },
+  "scYgD9jdFhooaSHihRzy7": {
+    "title": "SEO engineer",
+    "oneLiner": "Maintains landing pages, articles and backlinks to grow organic traffic."
+  },
+  "qL920VjKyua3_u89UYnQL": {
+    "title": "Solo founder bot",
+    "oneLiner": "A starter Bot for solo founders."
+  },
+  "b00VrDzeasoqtPymoNDB-": {
+    "title": "Skippy",
+    "oneLiner": "Finds the next posted street-cleaning time for a San Francisco address. Does not confirm whether parking is legal."
+  },
+  "BqrH8_GNQvSYV-gcmJnd8": {
+    "title": "When it matters",
+    "oneLiner": "Give it something you keep checking; it figures out what would actually change the answer."
+  },
+  "eFfFM4-QmHxxrUlTUqyAo": {
+    "title": "Pattern of pain",
+    "oneLiner": "Give it a website; it finds the pain that actually repeats and shows the evidence."
+  },
+  "FtxHtWPnLGheNJmF04wSf": {
+    "title": "Connections",
+    "oneLiner": "Maps your following and mutuals by location into a Notion database you already own."
+  },
+  "fY1xWwCLzDDGVe3GwH78j": {
+    "title": "Engineer bot",
+    "oneLiner": "Organizes a task board, starts cloud agents and checks PRs every 30 minutes. Leaves merging to you."
+  },
+  "gJ4waNMuQoJkQCGX77yF3": {
+    "title": "Writing bot",
+    "oneLiner": "Structured revision for essays, emails and docs. Keeps your meaning, facts and voice."
+  },
+  "hkGSHcqKjGc5dm3ugNc2U": {
+    "title": "Nightly audit engineer",
+    "oneLiner": "Researches a whole codebase overnight, then ships one cleanup per area."
+  },
+  "JeFTvcDX-7QT2evKGIb52": {
+    "title": "Product idea stress test",
+    "oneLiner": "Identifies your idea’s key assumptions, biggest risk and next test."
+  },
+  "NJXi2SWEuhNxjOjspMMPi": {
+    "title": "Dial bot",
+    "oneLiner": "Places outbound Bland AI phone calls when you ask, then reports what happened."
+  },
+  "phPQtGzCZOynABubl0pwx": {
+    "title": "Image gen bot",
+    "oneLiner": "Collects references, writes Grok Imagine prompts and removes backgrounds with FAL. Revises until you approve the image."
+  },
+  "uFRK1GoAsiopBLPY19QCe": {
+    "title": "The page",
+    "oneLiner": "Checks 3–5 public pages each morning and alerts you only when a relevant detail changes."
+  },
+  "VHMdjIGjGpgDSJR7dW6Gz": {
+    "title": "Figma Bro",
+    "oneLiner": "Designs in Figma with real components, intuitive layout, and motion that feels right."
+  },
+  "X_P19IvPAHZ3FiA1Q-05s": {
+    "title": "X algo",
+    "oneLiner": "Uses X’s public ranking code and your account metrics to suggest when to quote, post or wait."
+  },
+  "ZRxm1O9tmizOhriV7GiWL": {
+    "title": "Grok Build",
+    "oneLiner": "Runs the real Grok Build CLI on an agent computer at maximum effort."
+  },
+  "zvkkoHMbclsUBWX8MRGpU": {
+    "title": "Tech demos",
+    "oneLiner": "Picks a library from your X bookmarks and, with your approval, builds a demo using a Cursor cloud agent."
+  },
+  "_CIeV4P17QVoxuaEyeiFZ": {
+    "oneLiner": "A stock-trader Grok Bot. The author said it was slightly ahead of the S&P 500. Use at your own risk."
+  },
+  "tLSg4HxepSclMqbZUTRnX": {
+    "title": "Fable 5.1 Oracle",
+    "oneLiner": "Plans and reviews with Claude Code on the Bot’s computer, then hands implementation to a cloud agent."
+  },
+  "_xZZE41svJdcq2w6ZWJan": {
+    "title": "Supermemory",
+    "oneLiner": "Keeps your professional, personal and coding Bots in sync using Supermemory."
+  },
+  "guides": {
+    "title": "Grok Bot guides",
+    "oneLiner": "Eleven lesser-known tips from someone who read the five official Grok Bot guides.",
+    "body": "This card points at guide takeaways, not at a named Bot with a single purpose."
+  },
+  "M9c2tC_-mwY8XNTmSbkUY": {
+    "title": "Medical Bill Review",
+    "oneLiner": "Reviews hospital bills, checks billing rules and financial aid, and drafts appeal letters. Never asks for SSN or MRN."
+  },
+  "uvX1KHZ67D_AZQogYxR8-": {
+    "oneLiner": "A travel-planning Bot that communicates in Japanese.",
+    "body": "The author shared a personal travel-arranging agent in Japanese. The post does not list booking steps in detail.",
+    "title": "Travel Arranger"
+  },
+  "riqe7Z1oOnU6wIV7Zb9Mt": {
+    "title": "I Said I Would",
+    "oneLiner": "Tracks promises you made in Slack and GitHub, showing only those still open."
+  },
+  "peJxDrQRS4t2DHuHfzhfW": {
+    "title": "Reminder",
+    "oneLiner": "A simple reminder bot."
+  },
+  "rt9m-FTkJoGsZzAjsKLPM": {
+    "oneLiner": "Reviews your interface and gives feedback without editing it."
+  },
+  "plugin": {
+    "title": "CLI for Agents",
+    "oneLiner": "Install the CLI for Agents plugin so your Grok Bot can hand tasks to Claude, Codex, Kimi and others."
+  },
+  "-miS0AF-lema7i8Z019Qp": {
+    "oneLiner": "Build an x402 book shop from this template. The author said it costs nothing if you already have a domain."
+  },
+  "ndOGeXyjkQLdceRlk7JP4": {
+    "oneLiner": "Official Grok Bot template for free_bots_lol, so a bot can understand and join that experiment."
+  },
+  "-GgufM3GkZclfn9PuI17_": {
+    "title": "Kinesis compute",
+    "oneLiner": "Centralizes the compute you have on Kinesis Network."
+  },
+  "p6eYp9BM2aFxQSOtzQX3S": {
+    "oneLiner": "Uses the 赛博小晚 skill to help build a personal brand and manage social accounts.",
+    "body": "The source is 小晚老师的 “赛博小晚 skill”. The post is about IP building and social-account running."
+  },
+  "xSfBSprfKv5h909uzrv7W": {
+    "oneLiner": "Reviews your X posts and account, then helps resolve content and account issues."
+  },
+  "KTuDBQv3fYw-h8RaC8XGg": {
+    "oneLiner": "Creates a new Monad wallet to trade memes and perps, and to lend, borrow and swap. Use at your own risk."
+  },
+  "dep-tU0gmIPgiqNsvS4N4": {
+    "title": "Grok for marketers",
+    "oneLiner": "A Grok Bot for ads, SEO and GEO, with 18 notes and 7 prompts from a marketers community.",
+    "body": "The post names this “Grok for marketers” and also lists seven specialist bots. This card is the entry Bot in the first step."
+  },
+  "1L2VgwhlakwrV5p-iOsuR": {
+    "title": "eBay team",
+    "oneLiner": "Talks to eBay through the developer API, scouts slab deals, and never spends without APPROVE."
+  },
+  "ehxj2Wdxq9M04jvaAqyBD": {
+    "title": "Copay Compass",
+    "oneLiner": "Finds copay help for a cancer drug, signs you up for reopen alerts, and preps the application. Never asks for SSN or MRN. Never gives medical advice."
+  },
+  "LlldYnfUbSX5Z5ogLkHik": {
+    "oneLiner": "Prepares sales scripts, competitor guides, launch updates, onboarding plans and quarterly reviews."
+  },
+  "9BnpveyF3fbsRRtolSWpp": {
+    "title": "Revenue Signal Radar",
+    "oneLiner": "Helps revive stalled deals, including enterprise deals."
+  },
+  "cGcG0msqfz7o7J3QMLhbE": {
+    "title": "Bot checker",
+    "oneLiner": "Paste a share link before you add a bot; it returns CLEAN, WARN, or BLOCK-recommended."
+  },
+  "-E-6LRFFIZ7oJl5FRXRxbI": {
+    "oneLiner": "Searches for the truth. It is not allowed to agree with you. It steelmans the other side with sources."
+  },
+  "1kQ8p3TAKx2FgvYXir2Ta": {
+    "title": "App Store Connect Skill",
+    "oneLiner": "Walks App Store Connect from API key through TestFlight, listing copy, screenshots and pre-review."
+  },
+  "FfGFlZLAQDyxhJwg2ZJlL": {
+    "oneLiner": "Scans the Pokémon Center website for new products and drops."
+  },
+  "D9HYH2jAmGiKw7e499mrE": {
+    "title": "GitHub hotspot repos",
+    "oneLiner": "Each day it collects trending GitHub repositories for posts, notes and technical reading.",
+    "body": "The author uses this as a source for X posts, study notes and day-to-day technical reading."
+  },
+  "Loekv1uecl26wWW0lNyfR": {
+    "oneLiner": "Finds subscriptions from invite mail and invoices, flags unused or duplicate tools, and does not cancel until you say so."
+  },
+  "yXsqmCaODNkTEwtIbiXxe": {
+    "title": "AE deal bot",
+    "oneLiner": "Scores a stalled MEDDPICC deal, researches the account, maps coverage, and coaches the next move."
+  },
+  "7GgZtqkhyLzKKMNUa7dhd": {
+    "title": "Forge factory runner",
+    "oneLiner": "When the spec is ready, it builds. It only asks when stuck, and learns from your decisions."
+  },
+  "3iNSp9IoRCnSjh0Z6MtWZ": {
+    "oneLiner": "An agent PM for running an agentic software factory."
+  },
+  "9EFVmFgQhjYKjMHAhpCWn": {
+    "title": "PickFu Insights",
+    "oneLiner": "Drafts a consumer survey, runs it on PickFu, summarizes the reasons, then suggests the next test."
+  },
+  "0taQ6RZdkjsnOfda_A8Ie": {
+    "title": "Order tracker",
+    "oneLiner": "View and manage online orders from Grok Bot, connected to orbglide Tracker MCP."
+  },
+  "Pc2T7udSjGxv9pd9Spkyc": {
+    "title": "Dr.Binary",
+    "oneLiner": "Specialized for reverse engineering."
+  },
+  "zj8VKu1CnqkHCM4Na1zex": {
+    "oneLiner": "An ads manager/operator for running campaigns."
+  },
+  "9nbLm_04EvjnolE9oevTT": {
+    "title": "Latch",
+    "oneLiner": "Walks you through Grok Bot setup and connectors. Pick your role and the tools you actually use."
+  },
+  "Ml4ynlD6O1VT5CoYmFnEa": {
+    "title": "Token Cop",
+    "oneLiner": "Tracks token usage bot by bot, flags expensive ones, and alerts you before a runaway routine eats the month."
+  },
+  "5mReUHPYTBA6nJ2aNvlqn": {
+    "title": "Helidon Engineer",
+    "oneLiner": "Helidon 4 SE and MP only. One programming model. No Helidon 3 APIs."
+  },
+  "pL_NCKfdF5UgZYEo-jMAx": {
+    "title": "Cheerful skeptic",
+    "oneLiner": "Questions a Bot team’s assumptions and checks that its ideas stay grounded."
+  },
+  "Y_R1Ya9SIzQZguGTV5NCX": {
+    "title": "The Accountant",
+    "oneLiner": "Ranks Bots by token use and drafts fixes for overspending. Never deletes or pauses Bots or ends group chats."
+  },
+  "1-UWhTw5N6IVgOcDZHrsb": {
+    "title": "General-purpose Bot",
+    "oneLiner": "A Bot adapted with Dr Eggbot for broader use. The author has not specified its capabilities.",
+    "body": "Dr Eggbot is the tool used to rewrite it, not the name of this Bot. The post does not say what the original bot did."
+  },
+  "zsxwic_IlmyavESnhLiWZ": {
+    "title": "PG Bot",
+    "oneLiner": "Territory pipeline-gen coverage for a named AE: outreach, meetings, contact depth, Potential ARR, and 30-day dark accounts. Confirm before Slack or email."
+  },
+  "Rj9uN1lhqYP-kLpRVShG0": {
+    "oneLiner": "You name the topic. It gives one analogy and one check, then waits. You still do the thinking."
+  },
+  "GGnJOdH3hv321H2QES9UE": {
+    "title": "Mission Control",
+    "oneLiner": "A dashboard of agenda, decisions and bot status, so you can run the fleet at a glance."
+  },
+  "GTStkB5wsoSlGx9jtdaPe": {
+    "title": "Primer",
+    "oneLiner": "An expert on how Grok Bot itself works."
+  },
+  "DNpS1nqrBzmQ5vsx1IHn1": {
+    "title": "Rogue Bot Hunter",
+    "oneLiner": "A hunter for rogue bots in your Grok Bot fleet, with four hunting tracks and weekly recaps."
+  },
+  "LREkas8UxVGvPJ5NiO7bz": {
+    "title": "Know Enemy",
+    "oneLiner": "The “Know Enemy” side of the Sun Tzu pack.",
+    "body": "Posted as a pair with Know Yourself. The post does not add operating details beyond the name."
+  },
+  "mD27QOhXb_plMRSbsvMOv": {
+    "title": "Know Yourself",
+    "oneLiner": "The “Know Yourself” side of the Sun Tzu pack.",
+    "body": "Posted as a pair with Know Enemy. The post does not add operating details beyond the name."
+  },
+  "0U6-QCQxUkAkj6BTi7SjL": {
+    "title": "Morning newspaper",
+    "oneLiner": "A morning-news recipe sent by text at 7:10am. You can add items such as Tesla’s price or Seahawks news."
+  },
+  "EfBhh8nwpuGD0XNfl0eBI": {
+    "title": "AvatarMaker",
+    "oneLiner": "Makes matching avatars for every Grok Bot you create. Interview once, lock a style, download square portraits."
+  },
+  "00LpQytGgJbn3KTdUJREV": {
+    "title": "Android phone operator",
+    "oneLiner": "Operates your Android phone so credentials stay on the device, not a cloud computer."
+  },
+  "NuOSHSdCZPVkM78K0HkB3": {
+    "title": "Spawned dev team",
+    "oneLiner": "Spawns a short-lived dev team with tighter comms, and stays out of the spawned team’s way."
+  },
+  "qFHGsPu6CGtrug6Lm78rJ": {
+    "title": "LinkedIn outreach",
+    "oneLiner": "Helps with LinkedIn outreach. The source does not specify approval rules for sending."
+  },
+  "OIwlDPggzoJ1EzGn1D-JD": {
+    "title": "Patch engineer",
+    "oneLiner": "Sends a reported bug to a Cursor cloud agent and returns a pull request. Does not access your Mac."
+  },
+  "-sOdLVj33yh8hh7OlHogi": {
+    "oneLiner": "A chief-of-staff Bot shared by a student.",
+    "body": "Listed next to the j*bfinder, a UCSD forms bot, and the pm. The post does not assign Slack or calendar to this Bot by name."
+  },
+  "1HFC3QdqPtcj1FIbKf8oq": {
+    "oneLiner": "A PM Bot shared by a student; detailed duties are not listed.",
+    "body": "Listed with chief of staff, the j*bfinder, and the UCSD forms bot. Do not treat the video timestamps as this Bot’s spec."
+  },
+  "eSCwViGduTgMD6PiOo7jm": {
+    "oneLiner": "A job-search Bot from a student’s collection.",
+    "body": "Listed with chief of staff, a UCSD forms bot, and the pm."
+  },
+  "SDLUUiG6HKwiFpGqCOAw7": {
+    "oneLiner": "Helps with UCSD programming-app and t-res forms.",
+    "body": "Named in the student roster. The post also mentions student-org event forms in the video notes, without mapping every timestamp to this Bot."
+  },
+  "CHmLGnQyx6r8lkb3U8k9x": {
+    "title": "Community Bot",
+    "oneLiner": "A free Bot shared by its author. Its purpose is not described in the source.",
+    "body": "Source text is only “Try my Grok @bot for free.” No function is named."
+  },
+  "qV6FAPsH8Yox5VNuYQ8al": {
+    "title": "UniFi + Protect",
+    "oneLiner": "UniFi network health plus Protect digests for people, vehicles, animals and sensors."
+  },
+  "2Nk6nQTahTex1e5gHS_LU": {
+    "title": "Token spend checker",
+    "oneLiner": "Helps reduce token spend across your Grok Bot lineup."
+  },
+  "4iz8VYK_cG482_vIA8WR4": {
+    "title": "X Scout",
+    "oneLiner": "Learns how you work, then scouts X for Grok Bot setups worth copying."
+  },
+  "7k0TLQBu4hPI5oE3ywRHU": {
+    "title": "Agent readiness scan",
+    "oneLiner": "A daily scan so agents such as Grok, Claude and OpenAI can read and transact with your site."
+  },
+  "DYg0r1xvzy_xxPeRGHcHE": {
+    "title": "Job search mailer",
+    "oneLiner": "Searches for jobs in your chosen location and emails them to you."
+  },
+  "EiOdP3Fg6pHBkm3AgLbRA": {
+    "title": "Non-coder onboarding",
+    "oneLiner": "Onboarding for people new to Grok Bot who have used ChatGPT but do not write code. Say Hello and it guides the rest."
+  },
+  "JocbRv3IMTJ5LmjX_qXvZ": {
+    "title": "Astra Oracle",
+    "oneLiner": "Plans and reviews with Codex CLI on the Bot’s computer, then hands implementation to a Cursor cloud agent.",
+    "body": "The author summoned an Astra Oracle into the Grok Bot × Cursor loop. It does not implement."
+  },
+  "marketplace": {
+    "title": "Template marketplace",
+    "oneLiner": "Browse reusable templates based on examples from the SpaceXAI team."
+  },
+  "Q2shbC8RRmoRleIyr5J33": {
+    "oneLiner": "Maintains your website, public dashboard and newsletter."
+  },
+  "8dB3XPIA8XIopvQUIC73P": {
+    "oneLiner": "Creates a team of software-building Bots, including a web app builder."
+  },
+  "jiF_km66YLNm5LBVJ5_Ho": {
+    "oneLiner": "Carries out your plans and challenges them when something is wrong."
+  },
+  "7u3XiRiTYw4GVZmuZboyP": {
+    "oneLiner": "Maintains the shared computer used by your Grok Bots."
+  },
+  "eZhKhPkfxxFSml18TS2X8": {
+    "oneLiner": "Prepares your weekly one-to-one with last week’s context and three talking points."
+  },
+  "j7B5LHnEIPTuPQZxxQwpx": {
+    "oneLiner": "Routes each task to a specialist Bot without doing the task itself."
+  },
+  "JugVUSPe_wSZg-in69owM": {
+    "oneLiner": "Assigns each task to one Bot and leaves execution to it."
+  },
+  "Gd-cqXG8xG_RPmKGixa73": {
+    "oneLiner": "Finds subscriptions, meetings and processes you could stop."
+  },
+  "PFD95widaEeqjkYLLUZmD": {
+    "oneLiner": "Helps you use travel points and rewards effectively."
+  },
+  "vOipeiu0AZ7CuC5ynw5h0": {
+    "oneLiner": "A single place for professional tasks, paired with Life for personal needs."
+  },
+  "z4r7D8iILsTQDf7r7DwKR": {
+    "oneLiner": "Runs cursor-agent locally for experiments and hands-on development."
+  },
+  "Ub3T7usX-c6yRQibQq83P": {
+    "oneLiner": "Coordinates your coding agents. Uses the repository you specify instead of guessing."
+  }
+}
