@@ -2,6 +2,7 @@ import { TemplateTeamBrowser } from "@/components/TemplateTeamBrowser";
 import { TemplatesModeNav } from "@/components/TemplatesModeNav";
 import { teamTemplates } from "@/data/templates";
 import { interpolateTemplateHubCopy, templateHubUiCopy } from "@/data/template-types";
+import { teamSubmitCopy } from "@/lib/i18n/team-submit-ui";
 import type { UrlLocale } from "@/lib/i18n/paths";
 import type { Locale } from "@/lib/i18n/types";
 
@@ -19,20 +20,22 @@ export function TemplatesTeamIndex({
   const countLabel = interpolateTemplateHubCopy(copy.teamCount, { n: allItems.length });
 
   return (
-    <div className="mx-auto max-w-[1240px] px-5 py-12 md:px-8 md:py-16" data-template-team-index>
+    <div className="mx-auto max-w-[1240px] px-5 py-5 md:px-8 md:py-10" data-template-team-index>
       <TemplatesModeNav active="teams" locale={locale} urlLocale={urlLocale} />
 
-      <header className="border-b border-line pb-8 pt-10 md:pt-12">
-        <p className="font-mono text-xs text-faint">{countLabel}</p>
-        <h1 className="mt-3 text-[clamp(32px,5vw,48px)] font-medium tracking-[-0.035em] text-ink">
-          {copy.teamTitle}
-        </h1>
-        <p className="mt-3 max-w-2xl text-base leading-7 text-mute">{copy.teamIntro}</p>
+      <header className="border-b border-line pb-4 pt-5 md:pb-5 md:pt-8">
+        <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+          <h1 className="text-[30px] font-medium leading-tight tracking-tight text-ink md:text-[40px]">
+            {copy.teamTitle}
+          </h1>
+          <p className="text-[16px] font-medium tabular-nums text-ink">{countLabel}</p>
+        </div>
+        <p className="mt-2 max-w-2xl text-[15px] leading-6 text-mute">{teamSubmitCopy(locale).teamIntro}</p>
       </header>
 
       <TemplateTeamBrowser builders={builders} orchestrators={orchestrators} locale={locale} />
 
-      <p className="mt-10 border-t border-line pt-6 text-sm leading-6 text-mute">
+      <p className="mt-8 border-t border-line pt-4 text-[15px] leading-6 text-mute">
         {copy.evidenceNote}
       </p>
     </div>

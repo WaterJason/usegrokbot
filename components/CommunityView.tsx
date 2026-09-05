@@ -22,10 +22,10 @@ export function CommunityView({
   const copy = communityCopy(locale);
 
   return (
-    <div className="mx-auto max-w-[1120px] px-5 py-12 md:px-8 md:py-16">
+    <div className="mx-auto max-w-[1120px] px-5 py-8 md:px-8 md:py-12">
       <div className="max-w-[760px]">
-        <h1 className="text-[clamp(30px,5vw,48px)] font-medium tracking-tight text-ink">{copy.title}</h1>
-        <p className="mt-4 text-[16px] leading-7 text-mute">{copy.body}</p>
+        <h1 className="ui-page-title">{copy.title}</h1>
+        <p className="ui-page-intro mt-3">{copy.body}</p>
         <LocaleLink
           href="/submit"
           className="accent-gradient mt-6 inline-flex h-11 items-center rounded-[10px] px-5 text-[15px] font-medium text-inverse"
@@ -34,7 +34,7 @@ export function CommunityView({
         </LocaleLink>
       </div>
 
-      <section className="mt-14">
+      <section className="mt-10">
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="text-[24px] font-medium tracking-tight text-ink">{copy.builders}</h2>
@@ -51,7 +51,7 @@ export function CommunityView({
         </div>
 
         {contributors.length ? (
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {contributors.map((person) => (
               <a
                 key={person.login}
@@ -63,8 +63,8 @@ export function CommunityView({
                 <BlobatarAvatar name={`github:${person.login}`} size={56} expression="smug" />
                 <div className="min-w-0">
                   <p className="truncate text-[15px] font-medium text-ink">@{person.login}</p>
-                  <p className="mt-1 text-[12px] text-faint">
-                    {person.contributions} {copy.contributions}
+                  <p className="mt-1 text-[13px] text-mute">
+                    <span className="text-[16px] font-medium tabular-nums">{person.contributions}</span> {copy.contributions}
                   </p>
                 </div>
               </a>
@@ -77,7 +77,7 @@ export function CommunityView({
         )}
       </section>
 
-      <section className="mt-16">
+      <section className="mt-12">
         <h2 className="text-[24px] font-medium tracking-tight text-ink">{copy.zoo}</h2>
         <p className="mt-2 max-w-2xl text-[15px] leading-6 text-mute">{copy.zooBody}</p>
 
@@ -95,8 +95,8 @@ export function CommunityView({
               <span className="min-w-0">
                 <span className="block truncate text-[15px] font-medium text-ink">{person.name}</span>
                 <span className="mt-0.5 block truncate text-[12px] text-faint">@{person.handle}</span>
-                <span className="mt-1 block text-[12px] text-mute">
-                  {person.count} {person.count === 1 ? copy.case : copy.cases}
+                <span className="mt-1 block text-[13px] text-mute">
+                  <span className="text-[16px] font-medium tabular-nums">{person.count}</span> {person.count === 1 ? copy.case : copy.cases}
                 </span>
               </span>
             </a>
@@ -111,13 +111,13 @@ function communityCopy(locale: string) {
   if (locale === "zh-Hant") {
     return {
       title: "UseGrokBot 社群",
-      body: "認識分享真實 Grok Bot 案例的人，以及幫助改善 UseGrokBot 的開源 Contributor。這裡只顯示精選名單，方便快速查看。",
-      submit: "加入你的 Grok Bot",
-      builders: "Community Builders",
-      buildersBody: "幫助改善 UseGrokBot 的開源 Contributor。",
+      body: "認識分享真實案例的人，以及一起改善 UseGrokBot 的開源貢獻者。",
+      submit: "分享你的使用案例",
+      builders: "開源貢獻者",
+      buildersBody: "一起改善網站、程式和內容的人。",
       github: "在 GitHub 查看",
-      contributions: "次 contributions",
-      buildersFallback: "Contributor 資料暫時未載入，但 GitHub repo 仍然可以正常瀏覽。",
+      contributions: "次貢獻",
+      buildersFallback: "貢獻者資料暫時未能載入，你仍可前往 GitHub 查看。",
       zoo: "精選分享者",
       zooBody: "按已分享的公開案例數量精選。每張卡片會直接開啟作者的 X 個人頁。",
       case: "個案例",
@@ -127,13 +127,13 @@ function communityCopy(locale: string) {
   if (locale === "zh-Hans") {
     return {
       title: "UseGrokBot 社区",
-      body: "认识分享真实 Grok Bot 案例的人，以及帮助改善 UseGrokBot 的开源 Contributor。这里仅显示精选名单，方便快速查看。",
-      submit: "加入你的 Grok Bot",
-      builders: "Community Builders",
-      buildersBody: "帮助改善 UseGrokBot 的开源 Contributor。",
+      body: "认识分享真实案例的人，以及一起改善 UseGrokBot 的开源贡献者。",
+      submit: "分享你的使用案例",
+      builders: "开源贡献者",
+      buildersBody: "一起改善网站、程序和内容的人。",
       github: "在 GitHub 查看",
-      contributions: "次 contributions",
-      buildersFallback: "Contributor 数据暂时未载入，但 GitHub repo 仍然可以正常浏览。",
+      contributions: "次贡献",
+      buildersFallback: "贡献者数据暂时未能加载，你仍可前往 GitHub 查看。",
       zoo: "精选分享者",
       zooBody: "按已分享的公开案例数量精选。每张卡片会直接打开作者的 X 个人页。",
       case: "个案例",

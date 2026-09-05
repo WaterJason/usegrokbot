@@ -273,7 +273,7 @@ function TabChip({
       className={cn(
         "inline-flex h-11 shrink-0 items-center rounded-full border px-3.5 text-[13px] transition md:h-9",
         active
-          ? "border-accent bg-accent text-white"
+          ? "border-accent bg-accent-soft text-accent"
           : "border-line text-mute hover:border-line-strong hover:text-ink",
         className,
       )}

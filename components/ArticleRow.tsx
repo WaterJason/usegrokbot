@@ -37,13 +37,13 @@ export function ArticleRow({
           <AuthorAvatar name={story.authorName} handle={item.story.handle} size={40} />
         </span>
         <div className={cn("row-start-1 min-w-0 flex-1", rank != null ? "col-start-2" : "col-span-2")}>
-          <p className="truncate text-[13px] font-medium text-ink">
+          <p className="text-[18px] font-medium leading-7 text-ink">{story.title}</p>
+          <p className="mt-2 truncate text-[13px] text-mute">
             {story.authorName}
             {item.story.handle ? (
               <span className="ml-1 font-normal text-mute">@{item.story.handle}</span>
             ) : null}
           </p>
-          <p className="mt-1 text-[16px] leading-6 text-ink sm:text-[15px]">{story.title}</p>
           <p className="mt-2 text-[12px] text-mute">{formatCardDate(item.story.publishedAt, locale)}</p>
         </div>
         <div className={cn("row-start-2 flex shrink-0 items-baseline gap-1.5 sm:block sm:pt-1 sm:text-right", rank != null ? "col-start-2" : "col-span-2")}>

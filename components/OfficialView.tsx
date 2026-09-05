@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { Search } from "lucide-react";
 import { BotFace, botColorFor } from "@/components/BotFace";
 import { CopyButton } from "@/components/CopyButton";
@@ -16,6 +16,7 @@ import {
 import { cn } from "@/lib/cn";
 import { useI18n } from "@/lib/i18n";
 import { localizeOfficial } from "@/lib/i18n/official";
+import { readingUiCopy } from "@/lib/i18n/reading-ui";
 
 const categoryKeys: Record<OfficialCategory, string> = {
   general: "officialPage.catGeneral",
@@ -29,11 +30,24 @@ const categoryKeys: Record<OfficialCategory, string> = {
   life: "officialPage.catLife",
 };
 
+function subscribeRoleHash(onChange: () => void) {
+  window.addEventListener("hashchange", onChange);
+  window.addEventListener("popstate", onChange);
+  return () => {
+    window.removeEventListener("hashchange", onChange);
+    window.removeEventListener("popstate", onChange);
+  };
+}
+
+const getRoleHash = () => window.location.hash.slice(1);
+const getServerRoleHash = () => "";
+
 export function OfficialView() {
   const { locale, t } = useI18n();
+  const ui = readingUiCopy[locale];
   const [category, setCategory] = useState<OfficialCategory | "all">("all");
   const [query, setQuery] = useState("");
-  const [selectedSlug, setSelectedSlug] = useState(officialUseCases[0]?.slug ?? "");
+  const selectedSlug = useSyncExternalStore(subscribeRoleHash, getRoleHash, getServerRoleHash);
   const catalog = useMemo(
     () => officialUseCases.map((item) => localizeOfficial(item, locale)),
     [locale],
@@ -65,32 +79,27 @@ export function OfficialView() {
     items.find((item) => item.slug === selectedSlug) ?? items[0];
 
   useEffect(() => {
-    const hash = window.location.hash.replace(/^#/, "");
-    if (hash && officialUseCases.some((item) => item.slug === hash)) {
-      setSelectedSlug(hash);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!selected) return;
-    if (selected.slug !== selectedSlug) setSelectedSlug(selected.slug);
+    if (!selected || selected.slug === selectedSlug) return;
+    window.history.replaceState(window.history.state, "", `#${selected.slug}`);
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
   }, [selected, selectedSlug]);
 
   function pick(slug: string) {
-    setSelectedSlug(slug);
-    window.history.replaceState(null, "", `#${slug}`);
+    window.history.replaceState(window.history.state, "", `#${slug}`);
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
     window.requestAnimationFrame(() => {
-      document.getElementById("official-detail")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth";
+      document.getElementById("official-detail")?.scrollIntoView({ behavior, block: "start" });
     });
   }
 
   return (
-    <div className="mx-auto max-w-[1240px] px-5 py-8 md:px-8 md:py-10">
+    <div className="mx-auto max-w-[1240px] px-5 py-8 md:px-8 md:py-12">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <h1 className="text-[20px] font-medium tracking-tight text-ink">{t("officialPage.title")}</h1>
-          <p className="mt-1 max-w-[36rem] text-[13px] leading-6 text-mute">{t("officialPage.body")}</p>
-          <p className="mt-2 text-[13px] text-faint">
+          <h1 className="ui-page-title">{t("officialPage.title")}</h1>
+          <p className="ui-page-intro mt-3">{ui.officialIntro}</p>
+          <p className="mt-3 text-[16px] font-medium tabular-nums text-mute">
             {t("officialPage.count", { n: officialUseCases.length })}
             {" · "}
             {t("officialPage.countGuide", { n: officialGuideCount })}
@@ -104,13 +113,30 @@ export function OfficialView() {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder={t("officialPage.search")}
-            className="h-10 w-full rounded-[10px] border border-line bg-elevated pr-3 pl-9 text-[13px] text-ink outline-none placeholder:text-faint focus:border-accent"
+            className="h-12 w-full rounded-xl border border-line bg-card pr-3 pl-9 text-[16px] text-ink placeholder:text-faint focus:border-accent"
           />
         </label>
       </div>
 
-      {/* Wrap filters. Never overflow-x-auto for catalogs or chip rows. */}
-      <div className="mt-5 flex flex-wrap gap-x-1 gap-y-1.5">
+      <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:hidden">
+        <label className="grid gap-2 text-[13px] font-medium text-mute">
+          {ui.chooseCategory}
+          <select value={category} onChange={(event) => setCategory(event.target.value as OfficialCategory | "all")} className="min-h-12 w-full min-w-0 rounded-xl border border-line bg-card px-3 text-[16px] font-normal text-ink">
+            <option value="all">{t("officialPage.catAll")}</option>
+            {officialCategories.map((item) => <option key={item} value={item}>{t(categoryKeys[item])}</option>)}
+          </select>
+        </label>
+        {selected ? (
+          <label className="grid gap-2 text-[13px] font-medium text-mute">
+            {ui.chooseRole}
+            <select aria-controls="official-detail" value={selected.slug} onChange={(event) => pick(event.target.value)} className="min-h-12 w-full min-w-0 rounded-xl border border-accent bg-accent-soft px-3 text-[16px] font-normal text-ink">
+              {items.map((item) => <option key={item.slug} value={item.slug}>{item.title}</option>)}
+            </select>
+          </label>
+        ) : null}
+      </div>
+
+      <div className="mt-6 hidden flex-wrap gap-2 lg:flex">
         <FilterChip active={category === "all"} label={t("officialPage.catAll")} onClick={() => setCategory("all")} />
         {officialCategories.map((item) => (
           <FilterChip
@@ -122,8 +148,15 @@ export function OfficialView() {
         ))}
       </div>
 
-      <div className="mt-8 flex flex-col-reverse gap-10 lg:grid lg:grid-cols-[260px_minmax(0,1fr)] lg:items-start lg:gap-16">
-        <aside className="lg:sticky lg:top-28 lg:flex lg:h-[calc(100vh-12rem)] lg:flex-col">
+      {items.length === 0 ? (
+        <div role="status" className="mt-8 rounded-2xl border border-line bg-card p-6">
+          <p className="text-[15px] text-mute">{t("officialPage.empty")}</p>
+          <button type="button" className="ui-button-secondary mt-4" onClick={() => { setQuery(""); setCategory("all"); }}>{ui.clearFilters}</button>
+        </div>
+      ) : null}
+
+      <div className="mt-6 lg:grid lg:grid-cols-[280px_minmax(0,1fr)] lg:items-start lg:gap-8">
+        <aside className="hidden lg:sticky lg:top-28 lg:flex lg:h-[calc(100vh-12rem)] lg:flex-col">
           <nav
             className="prompt-scroll min-h-0 flex-1 overflow-y-auto"
             aria-label={t("officialPage.title")}
@@ -131,7 +164,7 @@ export function OfficialView() {
             {items.length === 0 ? (
               <p className="py-6 text-[13px] text-mute">{t("officialPage.empty")}</p>
             ) : (
-              <ul>
+              <ul className="space-y-1">
                 {items.map((item) => {
                   const active = item.slug === selected?.slug;
                   return (
@@ -144,8 +177,8 @@ export function OfficialView() {
                           item.guide ? `${item.title}. ${t("officialPage.hasTask")}` : undefined
                         }
                         className={cn(
-                          "-mx-2 flex w-[calc(100%+1rem)] items-baseline justify-between gap-3 rounded-[8px] px-2 py-2 text-left text-[14px] transition",
-                          active ? "bg-elevated text-ink" : "text-mute hover:text-ink",
+                          "flex min-h-12 w-full items-center justify-between gap-3 rounded-xl border px-3 py-3 text-left text-[15px] transition-colors",
+                          active ? "border-accent bg-accent-soft text-accent" : "border-transparent text-mute hover:bg-card hover:text-ink",
                         )}
                       >
                         <span className="flex min-w-0 items-baseline gap-2">
@@ -163,7 +196,7 @@ export function OfficialView() {
                           )}
                           <span className={cn("min-w-0 truncate", active && "font-medium")}>{item.title}</span>
                         </span>
-                        <span className="hidden shrink-0 font-mono text-[10px] tracking-wide text-faint uppercase lg:inline">
+                        <span className="hidden shrink-0 text-[12px] text-mute xl:inline">
                           {t(categoryKeys[item.category])}
                         </span>
                       </button>
@@ -182,13 +215,14 @@ export function OfficialView() {
 }
 
 function OfficialDetail({ selected }: { selected: OfficialUseCase }) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
+  const ui = readingUiCopy[locale];
   const guide = selected.guide;
 
   return (
-    <article id="official-detail" className="min-h-[24rem] scroll-mt-28 lg:min-h-[calc(100vh-8.5rem)]">
+    <article id="official-detail" className="min-w-0 scroll-mt-28 rounded-2xl border border-line bg-card p-5 md:p-8">
       <div className="flex items-start justify-between gap-6">
-        <h2 className="max-w-[14ch] text-[clamp(32px,6vw,56px)] leading-[1.05] font-medium tracking-[-0.035em] text-ink">
+        <h2 className="text-[clamp(28px,4vw,40px)] leading-tight font-medium tracking-[-0.035em] text-ink">
           {selected.title}
         </h2>
         <BotFace size={52} color={botColorFor(selected.slug)} className="mt-1 hidden shrink-0 lg:block" />
@@ -198,8 +232,8 @@ function OfficialDetail({ selected }: { selected: OfficialUseCase }) {
         {guide ? ` · ${t("officialPage.hasTask")}` : ""}
       </p>
 
-      <section className="mt-10 max-w-[38rem]">
-        <p className="text-[11px] font-medium tracking-[0.08em] text-faint uppercase">
+      <section className="mt-7 max-w-[38rem]">
+        <p className="text-[13px] font-medium text-mute">
           {t("officialPage.roleTitle")}
         </p>
         <p className="mt-3 text-[17px] leading-8 text-ink md:text-[18px] md:leading-8">{selected.role}</p>
@@ -210,29 +244,29 @@ function OfficialDetail({ selected }: { selected: OfficialUseCase }) {
             variant={guide ? "ghost" : "solid"}
           />
         </div>
-        <p className="mt-2 text-[12px] text-faint">{t("officialPage.roleHint")}</p>
+        <p className="mt-2 text-[13px] leading-6 text-mute">{ui.roleHint}</p>
       </section>
 
       {guide ? (
         <>
-          <section className="mt-12 max-w-[38rem]">
-            <p className="text-[11px] font-medium tracking-[0.08em] text-faint uppercase">
+          <section className="mt-8 max-w-[38rem] border-t border-line pt-6">
+            <p className="text-[13px] font-medium text-mute">
               {t("officialPage.scopeTitle")}
             </p>
             <dl className="mt-4 space-y-3">
               <div>
                 <dt className="text-[12px] text-faint">{t("officialPage.owns")}</dt>
-                <dd className="mt-0.5 text-[14px] leading-6 text-ink">{guide.owns}</dd>
+                <dd className="mt-0.5 text-[15px] leading-7 text-ink">{guide.owns}</dd>
               </div>
               <div>
                 <dt className="text-[12px] text-faint">{t("officialPage.connect")}</dt>
-                <dd className="mt-0.5 text-[14px] leading-6 text-ink">{guide.connect}</dd>
+                <dd className="mt-0.5 text-[15px] leading-7 text-ink">{guide.connect}</dd>
               </div>
             </dl>
           </section>
 
-          <section className="mt-12 max-w-[38rem]">
-            <p className="text-[11px] font-medium tracking-[0.08em] text-faint uppercase">
+          <section className="mt-8 max-w-[38rem] border-t border-line pt-6">
+            <p className="text-[13px] font-medium text-mute">
               {t("officialPage.taskTitle")}
             </p>
             <blockquote className="mt-4 border-l-2 border-line pl-4 text-[16px] leading-8 text-ink">
@@ -244,17 +278,17 @@ function OfficialDetail({ selected }: { selected: OfficialUseCase }) {
                 href={OFFICIAL_DOCS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[13px] text-mute underline decoration-line underline-offset-[5px] hover:text-ink"
+                className="inline-flex min-h-11 items-center text-[15px] text-mute underline decoration-line underline-offset-[5px] hover:text-ink"
               >
                 {t("officialPage.docs")} ↗
               </a>
             </div>
-            <p className="mt-2 text-[12px] text-faint">{t("officialPage.taskHint")}</p>
+            <p className="mt-2 text-[13px] leading-6 text-mute">{ui.taskHint}</p>
           </section>
         </>
       ) : null}
 
-      <p className="mt-12 max-w-[38rem] text-[13px] leading-6 text-faint">
+      <p className="mt-8 max-w-[38rem] text-[15px] leading-6 text-mute">
         <a
           href={OFFICIAL_SOURCE_URL}
           target="_blank"
@@ -283,8 +317,8 @@ function FilterChip({
       onClick={onClick}
       aria-pressed={active}
       className={cn(
-        "inline-flex h-7 shrink-0 items-center rounded-full px-2.5 text-[12px] transition",
-        active ? "bg-ink text-inverse" : "text-mute hover:text-ink",
+        "inline-flex min-h-11 items-center rounded-full border px-3.5 py-2 text-[15px] transition-colors",
+        active ? "border-accent bg-accent-soft text-accent" : "border-line bg-card text-mute hover:border-line-strong hover:text-ink",
       )}
     >
       {label}

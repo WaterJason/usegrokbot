@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
 import { BotFace, teamBotColor } from "@/components/BotFace";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { GetGrokBot } from "@/components/GetGrokBot";
 import { LocaleLink } from "@/components/LocaleLink";
 import { PromptBox } from "@/components/PromptBox";
 import type { VerifiedUseCase } from "@/data/verified-use-cases";
@@ -10,6 +11,7 @@ import {
   verifiedUseCasesPageCopy,
   type Locale,
 } from "@/lib/i18n";
+import { useCaseBrowserCopy, useCaseStartGuide } from "@/lib/i18n/use-case-browser";
 import {
   getVerifiedUseCasePrompt,
   getVerifiedUseCaseSource,
@@ -18,6 +20,8 @@ import {
 
 export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseCase; locale: Locale }) {
   const copy = verifiedUseCasesPageCopy(locale);
+  const browser = useCaseBrowserCopy(locale);
+  const guide = useCaseStartGuide(item, locale);
   const localized = localizeVerifiedUseCase(item, locale);
   const source = getVerifiedUseCaseSource(item.primarySourceSlug);
   const prompt = getVerifiedUseCasePrompt(item.primarySourceSlug);
@@ -60,8 +64,23 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
         </a>
       </header>
 
+      <section className="mt-10" data-use-case-guide aria-label={browser.helpsLabel}>
+        <div className="grid gap-3 md:grid-cols-3">
+          <GuideCard title={browser.helpsLabel} body={guide.helps} />
+          <GuideCard title={browser.prepareLabel} body={guide.prepare} />
+          <GuideCard title={browser.startLabel} body={guide.start} />
+        </div>
+      </section>
+
       {prompt ? (
         <section className="mt-12" aria-label={copy.promptTitle}>
+          <div className="mb-3 flex flex-wrap items-end justify-between gap-3">
+            <div className="min-w-0">
+              <h2 className="text-[18px] font-medium tracking-[-0.02em] text-ink">{browser.originalPrompt}</h2>
+              <p className="mt-1 text-[15px] leading-6 text-mute">{browser.pasteHint}</p>
+            </div>
+            <GetGrokBot variant="outline" className="min-h-11 text-[15px]" />
+          </div>
           <PromptBox prompt={prompt} title={copy.promptTitle} />
         </section>
       ) : (
@@ -146,13 +165,22 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
   );
 }
 
+function GuideCard({ title, body }: { title: string; body: string }) {
+  return (
+    <article className="rounded-2xl border border-line bg-card p-4 md:p-5">
+      <h3 className="text-[13px] font-medium text-mute">{title}</h3>
+      <p className="mt-2 text-[16px] leading-7 text-ink">{body}</p>
+    </article>
+  );
+}
+
 function Badge({ children, tone }: { children: React.ReactNode; tone: "accent" | "neutral" }) {
   return (
     <span
       className={
         tone === "accent"
-          ? "inline-flex items-center rounded-full bg-accent-soft px-2.5 py-1 text-[12px] font-medium tracking-[0.04em] text-accent"
-          : "inline-flex items-center rounded-full border border-line px-2.5 py-1 text-[12px] font-medium tracking-[0.04em] text-mute"
+          ? "inline-flex items-center rounded-full bg-accent-soft px-2.5 py-1 text-[12px] font-medium text-accent"
+          : "inline-flex items-center rounded-full border border-line px-2.5 py-1 text-[12px] font-medium text-mute"
       }
     >
       {children}

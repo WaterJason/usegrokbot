@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import { Check, Copy } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Check, Copy, RotateCcw } from "lucide-react";
 import { celebrate } from "@/lib/celebrate";
 import { cn } from "@/lib/cn";
 import { useI18n } from "@/lib/i18n";
+import { readingUiCopy } from "@/lib/i18n/reading-ui";
 
 type CopyButtonProps = {
   text: string;
@@ -16,31 +17,51 @@ type CopyButtonProps = {
 const COPY_CELEBRATION_KEY = "usegrokbot:copy-celebrated";
 
 export function CopyButton({ text, label, className, variant = "ghost" }: CopyButtonProps) {
-  const { t } = useI18n();
-  const [copied, setCopied] = useState(false);
+  const { t, locale } = useI18n();
+  const [status, setStatus] = useState<"idle" | "copied" | "error">("idle");
+  const copying = useRef(false);
+  const resetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => {
+    if (resetTimer.current) clearTimeout(resetTimer.current);
+  }, []);
   const idleLabel = label ?? t("copy.prompt");
 
   async function onCopy() {
+    if (copying.current) return;
+    copying.current = true;
+    if (resetTimer.current) clearTimeout(resetTimer.current);
     try {
-      await navigator.clipboard.writeText(text);
-    } catch {
-      const area = document.createElement("textarea");
-      area.value = text;
-      document.body.appendChild(area);
-      area.select();
-      document.execCommand("copy");
-      area.remove();
-    }
-    setCopied(true);
-    try {
-      if (!window.sessionStorage.getItem(COPY_CELEBRATION_KEY)) {
-        window.sessionStorage.setItem(COPY_CELEBRATION_KEY, "1");
-        void celebrate("copy");
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const focused = document.activeElement;
+        const area = document.createElement("textarea");
+        area.value = text;
+        area.style.cssText = "position:fixed;inset:0 auto auto 0;opacity:0;pointer-events:none";
+        document.body.appendChild(area);
+        try {
+          area.select();
+          if (!document.execCommand("copy")) throw new Error("Copy failed");
+        } finally {
+          area.remove();
+          if (focused instanceof HTMLElement) focused.focus({ preventScroll: true });
+        }
+      }
+      setStatus("copied");
+      try {
+        if (!window.sessionStorage.getItem(COPY_CELEBRATION_KEY)) {
+          window.sessionStorage.setItem(COPY_CELEBRATION_KEY, "1");
+          void celebrate("copy");
+        }
+      } catch {
+        // Storage is optional; it must not affect copying.
       }
     } catch {
-      // Copying still works if sessionStorage is unavailable.
+      setStatus("error");
+    } finally {
+      copying.current = false;
+      resetTimer.current = setTimeout(() => setStatus("idle"), 2200);
     }
-    window.setTimeout(() => setCopied(false), 1400);
   }
 
   return (
@@ -48,21 +69,23 @@ export function CopyButton({ text, label, className, variant = "ghost" }: CopyBu
       type="button"
       onClick={onCopy}
       className={cn(
-        "spring-press inline-flex h-9 items-center justify-center gap-1.5 rounded-[10px] px-3 text-[13px] font-medium transition",
+        "spring-press inline-flex min-h-11 items-center justify-center gap-2 rounded-xl px-3 py-2 text-[15px] leading-5 font-medium transition-colors",
         variant === "ghost" &&
           "border border-line bg-transparent text-mute hover:border-line-strong hover:text-ink",
-        variant === "solid" && "h-11 bg-ink px-5 text-sm text-inverse hover:opacity-90",
-        variant === "inline" && "h-8 px-2.5 text-mute hover:text-ink",
-        variant === "inverse" && "h-8 px-2.5 text-inverse/80 hover:text-inverse",
+        variant === "solid" && "bg-ink px-5 text-inverse hover:opacity-90",
+        variant === "inline" && "px-2.5 text-mute hover:bg-elevated hover:text-ink",
+        variant === "inverse" && "px-2.5 text-inverse/80 hover:text-inverse",
         className,
       )}
     >
-      {copied ? (
-        <Check className="spring-pop size-3.5 scale-110 text-ok" strokeWidth={2} />
+      {status === "copied" ? (
+        <Check aria-hidden className="size-4 shrink-0 text-ok" strokeWidth={2} />
+      ) : status === "error" ? (
+        <RotateCcw aria-hidden className="size-4 shrink-0" strokeWidth={1.75} />
       ) : (
-        <Copy className="size-3.5" strokeWidth={1.75} />
+        <Copy aria-hidden className="size-4 shrink-0" strokeWidth={1.75} />
       )}
-      {copied ? t("copy.copied") : idleLabel}
+      <span aria-live="polite">{status === "copied" ? t("copy.copied") : status === "error" ? readingUiCopy[locale].copyFailed : idleLabel}</span>
     </button>
   );
 }

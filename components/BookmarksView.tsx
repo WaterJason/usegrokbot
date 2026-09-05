@@ -40,7 +40,6 @@ export function BookmarksView({
           englishArticles.length +
           (locale === "ja" ? japaneseArticles.length : 0);
   }
-  const visibleCount = countForSource(source);
 
   function selectSource(next: BookmarkSource) {
     setSource(next);
@@ -75,10 +74,15 @@ export function BookmarksView({
 
   return (
     <div
-      className="mx-auto max-w-[1240px] px-5 py-12 md:px-8 md:py-16"
+      className="mx-auto max-w-[1240px] px-5 py-8 md:px-8 md:py-12"
       data-bookmarks-page
       data-bookmark-source={source}
     >
+      <header className="mb-6 md:mb-8">
+        <h1 className="ui-page-title">{copy.title}</h1>
+        <p className="ui-page-intro mt-3">{copy.intro}</p>
+      </header>
+
       <nav aria-label={copy.navLabel}>
         <div className="grid grid-cols-3 border-b border-line" role="tablist">
           {bookmarkSources.map((item, index) => {
@@ -95,8 +99,8 @@ export function BookmarksView({
                 onClick={() => selectSource(item)}
                 onKeyDown={(event) => moveWithKeyboard(event, index)}
                 className={cn(
-                  "relative flex min-h-[72px] min-w-0 items-center justify-center px-2 py-3 text-center text-base leading-5 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent sm:min-h-20 sm:px-4 sm:text-lg",
-                  active ? "font-medium text-ink" : "text-mute hover:bg-elevated hover:text-ink",
+                  "relative flex min-h-12 min-w-0 items-center justify-center rounded-t-xl px-2 py-3 text-center text-[15px] leading-5 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent sm:px-4 sm:text-base",
+                  active ? "bg-accent-soft font-medium text-accent" : "text-mute hover:bg-elevated hover:text-ink",
                 )}
               >
                 <span className="min-w-0 text-balance">{copy.sourceCards[item].title}</span>
@@ -113,16 +117,6 @@ export function BookmarksView({
         </div>
       </nav>
 
-      <header className="border-b border-line pb-8 pt-10 md:pt-12">
-        <p className="font-mono text-xs text-faint">
-          {copy.count.replace("{n}", String(visibleCount))}
-        </p>
-        <h1 className="mt-3 text-[clamp(32px,5vw,48px)] font-medium tracking-[-0.035em] text-ink">
-          {copy.title}
-        </h1>
-        <p className="mt-3 max-w-2xl text-base leading-7 text-mute">{copy.intro}</p>
-      </header>
-
       {bookmarkSources.map((panelSource) => {
         const active = source === panelSource;
         const panelCopy = copy.sourceCards[panelSource];
@@ -134,7 +128,7 @@ export function BookmarksView({
             role="tabpanel"
             aria-labelledby={`bookmark-tab-${panelSource}`}
             hidden={!active}
-            className="py-10 md:py-12"
+            className="py-6 md:py-8"
           >
             {active ? (
               <>
@@ -147,7 +141,7 @@ export function BookmarksView({
                       {panelCopy.body}
                     </p>
                   </div>
-                  <p className="font-mono text-xs text-faint" aria-live="polite">
+                  <p className="text-[16px] font-medium tabular-nums text-mute" aria-live="polite">
                     {copy.count.replace("{n}", String(panelCount))}
                   </p>
                 </div>
@@ -170,7 +164,7 @@ export function BookmarksView({
         );
       })}
 
-      <p className="border-t border-line pt-6 text-sm leading-6 text-mute">{copy.note}</p>
+      <p className="border-t border-line pt-6 text-[15px] leading-7 text-mute">{copy.note}</p>
     </div>
   );
 }
@@ -204,7 +198,7 @@ function BookmarkGrid({
             <h3 className="mt-5 text-[18px] font-medium leading-6 tracking-tight wrap-break-word text-ink">
               {item.title}
             </h3>
-            <p className="mt-2 text-[14px] leading-6 text-mute">{item.description}</p>
+            <p className="mt-2 text-[15px] leading-7 text-mute">{item.description}</p>
 
             <div className="mt-5">
               <span className="inline-flex rounded-full bg-elevated px-2.5 py-1 text-[12px] text-mute">
@@ -224,7 +218,7 @@ function BookmarkGrid({
                     size={40}
                   />
                   <span className="min-w-0">
-                    <span className="block truncate text-[13px] font-medium text-ink transition-colors group-hover:text-accent">
+                    <span className="block truncate text-[15px] font-medium text-ink transition-colors group-hover:text-accent">
                       {item.xAuthor.name}
                     </span>
                     <span className="block truncate text-[12px] text-faint transition-colors group-hover:text-accent">
@@ -245,7 +239,7 @@ function BookmarkGrid({
                 href={item.url}
                 target="_blank"
                 rel="noreferrer"
-                className="spring-press inline-flex h-11 w-full items-center justify-center gap-2 rounded-[10px] border border-line px-4 text-[15px] font-medium text-ink transition-colors hover:border-line-strong hover:bg-accent-soft hover:text-accent"
+                className="ui-button-secondary w-full"
               >
                 <span>{action}</span>
                 <ExternalLink aria-hidden className="size-4" strokeWidth={1.75} />
@@ -292,7 +286,7 @@ function XArticleLists({
             <h3 className="text-xl font-medium tracking-tight text-ink md:text-2xl">
               {section.title}
             </h3>
-            <p className="font-mono text-xs text-faint">
+            <p className="text-[16px] font-medium tabular-nums text-mute">
               {copy.count.replace("{n}", String(section.items.length))}
             </p>
           </div>

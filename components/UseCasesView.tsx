@@ -1,9 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, SlidersHorizontal, X } from "lucide-react";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
 import { LocaleLink } from "@/components/LocaleLink";
+import { UseCaseFilterPanel } from "@/components/UseCaseFilterPanel";
 import type {
   VerifiedUseCaseCategorySlug,
   VerifiedUseCaseEvidence,
@@ -11,6 +12,7 @@ import type {
 } from "@/data/verified-use-cases";
 import { cn } from "@/lib/cn";
 import { useI18n, verifiedUseCasesPageCopy } from "@/lib/i18n";
+import { useCaseBrowserCopy } from "@/lib/i18n/use-case-browser";
 
 export type VerifiedUseCaseCard = {
   slug: string;
@@ -34,9 +36,11 @@ export function UseCasesView({
 }) {
   const { locale } = useI18n();
   const copy = verifiedUseCasesPageCopy(locale);
+  const browser = useCaseBrowserCopy(locale);
   const [category, setCategory] = useState<FilterValue<VerifiedUseCaseCategorySlug>>("all");
   const [evidence, setEvidence] = useState<FilterValue<VerifiedUseCaseEvidence>>("all");
   const [structure, setStructure] = useState<FilterValue<VerifiedUseCaseStructure>>("all");
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const filteredItems = useMemo(
     () =>
@@ -49,62 +53,168 @@ export function UseCasesView({
     [category, evidence, items, structure],
   );
 
+  const extraCount = Number(evidence !== "all") + Number(structure !== "all");
+  const hasAnyFilter = category !== "all" || extraCount > 0;
+  const selectedFilters = [
+    category !== "all"
+      ? {
+          key: "category",
+          label: copy.categories.find((item) => item.slug === category)?.label ?? category,
+          onClear: () => setCategory("all"),
+        }
+      : null,
+    evidence !== "all"
+      ? {
+          key: "evidence",
+          label: evidence === "prompt" ? copy.promptIncluded : copy.setupShared,
+          onClear: () => setEvidence("all"),
+        }
+      : null,
+    structure !== "all"
+      ? {
+          key: "structure",
+          label: structure === "team" ? copy.botTeam : copy.singleBot,
+          onClear: () => setStructure("all"),
+        }
+      : null,
+  ].filter((item): item is { key: string; label: string; onClear: () => void } => item !== null);
+
+  function clearAll() {
+    setCategory("all");
+    setEvidence("all");
+    setStructure("all");
+  }
+
+  const categoryOptions = [{ slug: "all" as const, label: copy.allCategories }, ...copy.categories];
+  const evidenceOptions = [
+    { value: "all", label: copy.allEvidence },
+    { value: "prompt", label: copy.promptIncluded },
+    { value: "setup", label: copy.setupShared },
+  ];
+  const structureOptions = [
+    { value: "all", label: copy.allStructures },
+    { value: "single", label: copy.singleBot },
+    { value: "team", label: copy.botTeam },
+  ];
+
   return (
-    <div data-use-cases-page className="mx-auto max-w-[1120px] px-5 py-12 md:px-8 md:py-20">
+    <div data-use-cases-page className="mx-auto max-w-[1120px] px-5 py-8 md:px-8 md:py-12">
       <header className="max-w-[760px]">
-        <h1 className="text-[clamp(42px,7vw,72px)] leading-[0.96] font-medium tracking-[-0.05em] text-ink">
+        <h1 className="ui-page-title">
           {copy.title}
         </h1>
-        <p className="mt-5 text-[16px] leading-7 text-mute">{copy.subtitle(reviewedPostCount)}</p>
+        <p className="mt-4 text-[16px] leading-7 text-mute">{copy.subtitle(reviewedPostCount)}</p>
       </header>
 
-      <section className="mt-10 grid gap-5 border-y border-line py-5 lg:grid-cols-[minmax(14rem,1fr)_auto_auto] lg:items-end">
-        <label className="grid gap-2 text-[13px] font-medium tracking-[0.06em] text-mute uppercase">
-          {copy.categoryLabel}
-          <select
-            value={category}
-            onChange={(event) => setCategory(event.target.value as FilterValue<VerifiedUseCaseCategorySlug>)}
-            className="min-h-11 w-full rounded-xl border border-line bg-card px-3 text-[16px] font-normal tracking-normal text-ink normal-case focus:border-line-strong"
-          >
-            <option value="all">{copy.allCategories}</option>
-            {copy.categories.map((item) => (
-              <option key={item.slug} value={item.slug}>
-                {item.label}
-              </option>
-            ))}
+      <section className="mt-8" aria-label={browser.categoriesLabel}>
+        <label className="grid gap-2 text-[13px] font-medium text-mute md:hidden">
+          {browser.categoriesLabel}
+          <select value={category} onChange={(event) => setCategory(event.target.value as FilterValue<VerifiedUseCaseCategorySlug>)} className="min-h-12 w-full rounded-xl border border-line bg-card px-3 text-[16px] font-normal text-ink">
+            {categoryOptions.map((item) => <option key={item.slug} value={item.slug}>{item.label}</option>)}
           </select>
         </label>
-
-        <FilterGroup
-          label={copy.evidenceLabel}
-          value={evidence}
-          options={[
-            { value: "all", label: copy.allEvidence },
-            { value: "prompt", label: copy.promptIncluded },
-            { value: "setup", label: copy.setupShared },
-          ]}
-          onChange={(value) => setEvidence(value as FilterValue<VerifiedUseCaseEvidence>)}
-        />
-
-        <FilterGroup
-          label={copy.structureLabel}
-          value={structure}
-          options={[
-            { value: "all", label: copy.allStructures },
-            { value: "single", label: copy.singleBot },
-            { value: "team", label: copy.botTeam },
-          ]}
-          onChange={(value) => setStructure(value as FilterValue<VerifiedUseCaseStructure>)}
-        />
+        <p className="hidden text-[13px] font-medium text-mute md:block">{browser.categoriesLabel}</p>
+        <div className="mt-2 hidden flex-wrap gap-2 md:flex">
+          {categoryOptions.map((item) => {
+            const value = item.slug;
+            const active = category === value;
+            return (
+              <button
+                key={value}
+                type="button"
+                data-filter-value={value}
+                aria-pressed={active}
+                onClick={() => setCategory(value)}
+                className={cn(
+                  "inline-flex min-h-11 items-center rounded-full border px-3.5 text-[15px] font-medium transition-colors",
+                  active
+                    ? "border-accent bg-accent-soft text-accent"
+                    : "border-line bg-card text-mute hover:border-line-strong hover:text-ink",
+                )}
+              >
+                {item.label}
+              </button>
+            );
+          })}
+        </div>
       </section>
 
-      <section className="mt-10" aria-label={copy.resultsLabel}>
+      <div className="mt-6 flex flex-wrap items-center gap-3">
         <p aria-live="polite" className="font-mono text-[16px] font-medium tracking-[0.03em] text-mute">
-          {copy.showing(filteredItems.length)}
+          {browser.resultCount(filteredItems.length)}
         </p>
+        <button
+          type="button"
+          aria-expanded={filtersOpen}
+          aria-controls="use-case-filter-panel"
+          onClick={() => setFiltersOpen((open) => !open)}
+          className={cn(
+            "inline-flex min-h-11 items-center gap-2 rounded-full border px-3.5 text-[15px] font-medium transition-colors",
+            extraCount > 0 || filtersOpen
+              ? "border-accent bg-accent-soft text-accent"
+              : "border-line bg-card text-ink hover:border-line-strong",
+          )}
+        >
+          <SlidersHorizontal className="size-4" strokeWidth={1.75} />
+          {browser.filters}
+          {extraCount > 0 ? (
+            <span className="rounded-full bg-ink px-2 py-0.5 text-[16px] font-medium text-inverse">
+              {extraCount}
+            </span>
+          ) : null}
+        </button>
+        {hasAnyFilter ? (
+          <button
+            type="button"
+            data-clear-use-case-filters
+            onClick={clearAll}
+            className="inline-flex min-h-11 items-center text-[15px] font-medium text-accent hover:text-ink"
+          >
+            {browser.clearFilters}
+          </button>
+        ) : null}
+      </div>
 
+      {selectedFilters.length > 0 ? (
+        <div className="mt-3 flex flex-wrap gap-2" aria-label={browser.selectedFilters}>
+          {selectedFilters.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              onClick={item.onClear}
+              aria-label={browser.removeFilter(item.label)}
+              className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-accent bg-accent-soft px-3 text-[15px] font-medium text-accent"
+            >
+              {item.label}
+              <X className="size-3.5" strokeWidth={2} />
+            </button>
+          ))}
+        </div>
+      ) : null}
+
+      <div id="use-case-filter-panel">
+        <UseCaseFilterPanel
+          open={filtersOpen}
+          onOpenChange={setFiltersOpen}
+          evidence={evidence}
+          structure={structure}
+          evidenceLabel={copy.evidenceLabel}
+          structureLabel={copy.structureLabel}
+          evidenceOptions={evidenceOptions}
+          structureOptions={structureOptions}
+          resultCount={filteredItems.length}
+          onEvidenceChange={(value) => setEvidence(value as FilterValue<VerifiedUseCaseEvidence>)}
+          onStructureChange={(value) => setStructure(value as FilterValue<VerifiedUseCaseStructure>)}
+          onClear={() => {
+            setEvidence("all");
+            setStructure("all");
+          }}
+        />
+      </div>
+
+      <section className="mt-8" aria-label={copy.resultsLabel}>
         {filteredItems.length > 0 ? (
-          <ol className="mt-4 grid gap-x-10 md:grid-cols-2">
+          <ol className="grid gap-x-10 md:grid-cols-2">
             {filteredItems.map((item) => (
               <li key={item.slug} className="border-t border-line">
                 <LocaleLink
@@ -120,12 +230,13 @@ export function UseCasesView({
                       {item.title}
                     </span>
                     <span className="mt-4 flex flex-wrap gap-2">
+                      <Badge tone="neutral">
+                        {copy.categories.find((entry) => entry.slug === item.category)?.label ?? item.category}
+                      </Badge>
                       <Badge tone={item.evidence === "prompt" ? "accent" : "neutral"}>
                         {item.evidence === "prompt" ? copy.promptIncluded : copy.setupShared}
                       </Badge>
-                      <Badge tone="neutral">
-                        {item.structure === "team" ? copy.botTeam : copy.singleBot}
-                      </Badge>
+                      <Badge tone="neutral">{item.structure === "team" ? copy.botTeam : copy.singleBot}</Badge>
                     </span>
                     <span className="mt-5 flex min-w-0 items-center gap-2.5">
                       <AuthorAvatar name={item.authorName} handle={item.handle} size={40} />
@@ -151,14 +262,10 @@ export function UseCasesView({
             <button
               type="button"
               data-clear-use-case-filters
-              onClick={() => {
-                setCategory("all");
-                setEvidence("all");
-                setStructure("all");
-              }}
+              onClick={clearAll}
               className="mt-4 min-h-11 text-[15px] font-medium text-accent hover:text-ink"
             >
-              {copy.clearFilters}
+              {browser.clearFilters}
             </button>
           </div>
         )}
@@ -167,51 +274,11 @@ export function UseCasesView({
   );
 }
 
-function FilterGroup({
-  label,
-  value,
-  options,
-  onChange,
-}: {
-  label: string;
-  value: string;
-  options: readonly { value: string; label: string }[];
-  onChange: (value: string) => void;
-}) {
-  return (
-    <fieldset className="min-w-0">
-      <legend className="mb-2 text-[13px] font-medium tracking-[0.06em] text-mute uppercase">{label}</legend>
-      <div className="flex flex-wrap gap-2">
-        {options.map((option) => {
-          const active = value === option.value;
-          return (
-            <button
-              key={option.value}
-              type="button"
-              data-filter-value={option.value}
-              aria-pressed={active}
-              onClick={() => onChange(option.value)}
-              className={cn(
-                "inline-flex min-h-11 items-center rounded-full border px-3.5 text-[15px] font-medium transition-colors",
-                active
-                  ? "border-ink bg-ink text-inverse"
-                  : "border-line bg-card text-mute hover:border-line-strong hover:text-ink",
-              )}
-            >
-              {option.label}
-            </button>
-          );
-        })}
-      </div>
-    </fieldset>
-  );
-}
-
 function Badge({ children, tone }: { children: React.ReactNode; tone: "accent" | "neutral" }) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full px-2.5 py-1 text-[12px] font-medium tracking-[0.04em]",
+        "inline-flex items-center rounded-full px-2.5 py-1 text-[12px] font-medium text-mute",
         tone === "accent" ? "bg-accent-soft text-accent" : "border border-line text-mute",
       )}
     >

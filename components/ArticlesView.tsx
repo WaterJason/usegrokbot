@@ -4,6 +4,7 @@ import { ArticleRow } from "@/components/ArticleRow";
 import { useI18n } from "@/lib/i18n/locale";
 import type { Locale } from "@/lib/i18n/types";
 import type { RankedStory } from "@/lib/x-metrics";
+import { readingUiCopy } from "@/lib/i18n/reading-ui";
 
 const SECTION_COPY: Record<
   Locale,
@@ -63,18 +64,26 @@ export function ArticlesView({
         : [chineseSection, englishSection];
 
   return (
-    <div className="mx-auto max-w-[760px] px-5 py-12 md:px-8 md:py-16">
-      <h1 className="text-[clamp(28px,4vw,40px)] font-medium tracking-tight text-ink">
+    <div className="mx-auto max-w-[860px] px-5 py-8 md:px-8 md:py-12">
+      <h1 className="ui-page-title">
         {t("pages.articlesTitle")}
       </h1>
-      <p className="mt-3 max-w-2xl text-base text-mute">{t("pages.articlesBody")}</p>
+      <p className="ui-page-intro mt-3">{t("pages.articlesBody")}</p>
+
+      <nav aria-label={readingUiCopy[locale].articleSections} className="mt-6 flex flex-wrap gap-2">
+        {[...rankedSections, { key: "latest", title: copy.latest }].map((section) => (
+          <a key={section.key} href={`#articles-${section.key}`} className="ui-button-secondary">
+            {section.title}
+          </a>
+        ))}
+      </nav>
 
       {rankedSections.map((section, sectionIndex) => (
-        <section className={sectionIndex === 0 ? "mt-12" : "mt-14"} key={section.key}>
+        <section id={`articles-${section.key}`} className={sectionIndex === 0 ? "mt-8 md:mt-10" : "mt-12"} key={section.key}>
           <h2 className="text-[24px] font-medium tracking-tight text-ink md:text-[28px]">
             {section.title}
           </h2>
-          <p className="mt-2 text-[13px] text-faint">
+          <p className="mt-2 text-[16px] font-medium tabular-nums text-mute">
             {t("count.articles", { n: section.items.length })}
           </p>
           <ol className="mt-6 divide-y divide-line border-y border-line">
@@ -91,9 +100,9 @@ export function ArticlesView({
         </section>
       ))}
 
-      <section className="mt-14">
+      <section id="articles-latest" className="mt-12">
         <h2 className="text-[24px] font-medium tracking-tight text-ink md:text-[28px]">{copy.latest}</h2>
-        <p className="mt-2 text-[13px] text-faint">{t("count.articles", { n: latest.length })}</p>
+        <p className="mt-2 text-[16px] font-medium tabular-nums text-mute">{t("count.articles", { n: latest.length })}</p>
         <ol className="mt-6 divide-y divide-line border-y border-line">
           {latest.map((item) => (
             <ArticleRow

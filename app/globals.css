@@ -12,8 +12,8 @@ html[data-theme="light"] {
   --line-strong: rgb(15 23 42 / 0.18);
   --ink: #111318;
   --mute: #5c6370;
-  --faint: #7b8290;
-  --accent: #4f7cff;
+  --faint: #68717e;
+  --accent: #315bd4;
   --accent-2: #6d28d9;
   --accent-soft: rgb(79 124 255 / 0.1);
   --danger: #dc2626;
@@ -37,8 +37,8 @@ html[data-theme="dark"] {
   --line-strong: rgb(255 255 255 / 0.16);
   --ink: #f5f7fa;
   --mute: #9ca3af;
-  --faint: #6b7280;
-  --accent: #4f7cff;
+  --faint: #909aaa;
+  --accent: #8ca8ff;
   --accent-2: #8b5cf6;
   --accent-soft: rgb(79 124 255 / 0.14);
   --danger: #ff3b30;
@@ -93,12 +93,54 @@ body {
 }
 
 .accent-gradient {
-  background: #4f7cff;
-  color: #f5f7fa;
+  background: #315bd4;
+  color: #ffffff;
 }
 
 .accent-gradient:hover {
-  background: color-mix(in srgb, #4f7cff 88%, #8b5cf6);
+  background: #264bbb;
+}
+
+.ui-page-title {
+  color: var(--ink);
+  font-size: clamp(30px, 4.5vw, 48px);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.ui-page-intro {
+  max-width: 46rem;
+  color: var(--mute);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.ui-button-secondary {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  color: var(--ink);
+  background: var(--card);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.ui-button-secondary:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+html {
+  scroll-padding-top: 112px;
 }
 
 .featured-glow {
