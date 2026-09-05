@@ -26,6 +26,44 @@ function isNavItemActive(item: NavItem, current: string) {
     : current === item.href || current.startsWith(`${item.href}/`);
 }
 
+function MobileNavLinks({
+  items,
+  path,
+  onNavigate,
+}: {
+  items: NavItem[];
+  path: string;
+  onNavigate: () => void;
+}) {
+  return (
+    <ul className="space-y-1">
+      {items.map((item) => {
+        const active = isNavItemActive(item, path);
+        return (
+          <li key={item.href}>
+            <LocaleLink
+              href={item.href}
+              aria-current={active ? "page" : undefined}
+              className={cn(
+                "flex min-h-12 items-center justify-between rounded-[10px] px-4 text-[15px] font-medium transition-colors hover:bg-elevated hover:text-ink",
+                active ? "bg-accent-soft text-accent" : "text-ink",
+              )}
+              onClick={onNavigate}
+            >
+              <span>{item.label}</span>
+              <ArrowRight
+                aria-hidden="true"
+                className={cn("size-4", active ? "text-accent" : "text-faint")}
+                strokeWidth={1.75}
+              />
+            </LocaleLink>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 export function Header() {
   const pathname = usePathname();
   const path = stripLocalePrefix(pathname);
@@ -52,6 +90,23 @@ export function Header() {
     { href: "/submit", label: t("nav.submitShort") },
   ];
   const menuItems = nav.filter((item) => item.href !== "/submit");
+  const moreItems: NavItem[] = [
+    {
+      href: "/articles",
+      label: t("nav.articles"),
+      match: (current: string) => current.startsWith("/articles"),
+    },
+    {
+      href: "/community",
+      label: t("trust.community"),
+      match: (current: string) => current.startsWith("/community"),
+    },
+    {
+      href: "/roles",
+      label: t("nav.official"),
+      match: (current: string) => current.startsWith("/roles"),
+    },
+  ];
 
   function closeMenu(returnFocus = false) {
     setOpen(false);
@@ -144,31 +199,20 @@ export function Header() {
           >
             <div className="mx-auto max-w-[1176px]">
               <nav aria-label={t("nav.menuLabel")}>
-                <ul className="space-y-1">
-                  {menuItems.map((item) => {
-                    const active = isNavItemActive(item, path);
-                    return (
-                      <li key={item.href}>
-                        <LocaleLink
-                          href={item.href}
-                          aria-current={active ? "page" : undefined}
-                          className={cn(
-                            "flex min-h-12 items-center justify-between rounded-[10px] px-4 text-[15px] font-medium transition-colors hover:bg-elevated hover:text-ink",
-                            active ? "bg-accent-soft text-accent" : "text-ink",
-                          )}
-                          onClick={() => closeMenu()}
-                        >
-                          <span>{item.label}</span>
-                          <ArrowRight
-                            aria-hidden="true"
-                            className={cn("size-4", active ? "text-accent" : "text-faint")}
-                            strokeWidth={1.75}
-                          />
-                        </LocaleLink>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <MobileNavLinks items={menuItems} path={path} onNavigate={() => closeMenu()} />
+
+                <section
+                  aria-labelledby="mobile-more-navigation"
+                  className="mt-4 border-t border-line pt-3"
+                >
+                  <h2
+                    id="mobile-more-navigation"
+                    className="px-4 pb-2 text-[13px] font-medium text-mute"
+                  >
+                    {t("nav.moreGroup")}
+                  </h2>
+                  <MobileNavLinks items={moreItems} path={path} onNavigate={() => closeMenu()} />
+                </section>
 
                 <div className="mt-4 grid gap-2">
                   <LocaleLink

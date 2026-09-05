@@ -2,7 +2,7 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { ArticleRow } from "@/components/ArticleRow";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
 import { DiscoverFeed } from "@/components/DiscoverFeed";
@@ -26,6 +26,7 @@ import type { AppSlug } from "@/data/types";
 import { getVerifiedUseCase } from "@/data/verified-use-cases";
 import type { RankedStory } from "@/lib/articles";
 import { useI18n } from "@/lib/i18n/locale";
+import { homeDiscoveryCopy } from "@/lib/i18n/home-discovery";
 import { localizeTemplateCopy } from "@/lib/i18n/templates";
 import {
   localizeVerifiedUseCase,
@@ -190,6 +191,7 @@ function HomeViewContent({
   popularArticles: RankedStory[];
 }) {
   const { locale, t } = useI18n();
+  const discoveryCopy = homeDiscoveryCopy[locale];
   const useCaseCopy = verifiedUseCasesPageCopy(locale);
   const resultTitle = [
     query ? `“${query}”` : "",
@@ -203,7 +205,7 @@ function HomeViewContent({
   return (
     <>
       <section className="border-b border-line">
-        <div className="mx-auto max-w-[1240px] px-5 pb-10 pt-8 md:px-8 md:pb-24 md:pt-[104px]">
+        <div className="mx-auto max-w-[1240px] px-5 pb-8 pt-8 md:px-8 md:pb-16 md:pt-20">
           <div className="grid grid-cols-[minmax(0,1fr)_160px] items-center gap-x-3 gap-y-5 md:grid-cols-[minmax(0,1fr)_auto] md:gap-x-16 md:gap-y-8">
             <div className="col-span-2 min-w-0 md:col-span-1 md:col-start-1 md:row-start-1">
               <div className="flex flex-wrap items-center gap-3">
@@ -215,6 +217,11 @@ function HomeViewContent({
               <h1 className="mt-5 max-w-3xl text-[clamp(38px,8vw,68px)] leading-[0.98] font-medium tracking-[-0.05em] text-ink">
                 {t("home.title")}
               </h1>
+              {!showResults ? (
+                <p className="mt-5 max-w-xl text-[16px] leading-7 text-mute md:text-[18px]">
+                  {discoveryCopy.intro}
+                </p>
+              ) : null}
             </div>
             <div className="col-start-1 row-start-2 min-w-0 self-center border-l border-accent pl-4 md:col-start-1 md:row-start-2 md:max-w-[650px] md:pl-5">
               <AnimatedSignal total={postCount} />
@@ -225,6 +232,23 @@ function HomeViewContent({
             <div className="col-start-2 row-start-2 mx-auto md:col-start-2 md:row-span-2 md:row-start-1 md:mx-0">
               <HeroBot />
             </div>
+            {!showResults ? (
+              <div className="col-span-2 flex flex-wrap gap-3 md:col-span-1 md:col-start-1">
+                <a
+                  href="#find-your-bot"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[10px] bg-ink px-4 text-[15px] font-medium text-canvas transition-opacity hover:opacity-85"
+                >
+                  {discoveryCopy.chooseIdentity}
+                  <ArrowDown aria-hidden className="size-4 shrink-0" />
+                </a>
+                <a
+                  href="#real-use-cases"
+                  className="inline-flex min-h-12 items-center justify-center rounded-[10px] border border-line-strong bg-card px-4 text-[15px] font-medium text-ink transition-colors hover:bg-elevated"
+                >
+                  {discoveryCopy.seeExamples}
+                </a>
+              </div>
+            ) : null}
           </div>
         </div>
       </section>
@@ -257,22 +281,23 @@ function HomeViewContent({
         </section>
       ) : (
         <>
-      <section className="mx-auto max-w-[1240px] px-5 py-10 md:px-8 md:py-24">
+      <section id="find-your-bot" className="mx-auto max-w-[1240px] scroll-mt-16 px-5 py-10 md:px-8 md:py-20">
         <SectionHeader
           title={t("home.identitiesTitle")}
           href="/templates"
           cta={t("home.identitiesCta")}
           compactOnMobile
         />
-        <div className="mt-6 grid gap-4 sm:mt-8 sm:grid-cols-2 lg:grid-cols-4">
+        <p className="mt-2 max-w-xl text-[15px] leading-6 text-mute">{discoveryCopy.identityHint}</p>
+        <div className="mt-6 grid gap-3 min-[360px]:grid-cols-2 sm:mt-8 sm:gap-4 lg:grid-cols-4">
           {identities.map((identity) => (
             <LocaleLink
               key={identity.slug}
               href={`/templates/${identity.slug}`}
-              className="spring-lift group flex min-h-[210px] min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong"
+              className="spring-lift group flex min-w-0 flex-col rounded-2xl border border-line bg-card p-4 hover:border-line-strong sm:p-5"
             >
-              <div className="flex items-start justify-between gap-3">
-                <h3 className="text-[19px] leading-6 font-medium tracking-[-0.02em] text-ink group-hover:text-accent">
+              <div className="flex flex-col-reverse items-start justify-between gap-3 sm:flex-row">
+                <h3 className="text-[18px] leading-6 font-medium tracking-[-0.02em] text-ink group-hover:text-accent sm:text-[19px]">
                   {localizeText(identity.name, locale)}
                 </h3>
                 <IdentityMascot slug={identity.slug} paper="var(--card)" />
@@ -284,7 +309,7 @@ function HomeViewContent({
                 <AnimatedCountLabel
                   total={templateCountForIdentity(identity.slug)}
                   template={t("home.identityTemplateCount")}
-                  className="font-mono text-[13px] font-medium text-faint"
+                  className="font-mono text-[16px] font-medium text-mute"
                 />
                 <ArrowUpRight aria-hidden className="size-4 shrink-0 text-faint group-hover:text-accent" />
               </div>
@@ -294,7 +319,7 @@ function HomeViewContent({
       </section>
 
       <section className="border-y border-line bg-elevated">
-        <div className="mx-auto max-w-[1240px] px-5 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-[1240px] px-5 py-10 md:px-8 md:py-24">
           <p className="text-[13px] font-medium tracking-[0.1em] text-mute uppercase">
             {t("home.botTeamsLabel")}
           </p>
@@ -329,7 +354,7 @@ function HomeViewContent({
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1240px] px-5 py-16 md:px-8 md:py-24">
+      <section id="real-use-cases" className="mx-auto max-w-[1240px] scroll-mt-16 px-5 py-10 md:px-8 md:py-24">
         <SectionHeader title={t("home.realUseCasesTitle")} href="/use-cases" cta={t("home.realUseCasesCta")} />
         <div className="mt-8 grid gap-x-10 md:grid-cols-2">
           {realUseCases.map((useCase, index) => {
@@ -369,7 +394,7 @@ function HomeViewContent({
       </section>
 
       <section className="border-y border-line">
-        <div className="mx-auto max-w-[1000px] px-5 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-[1000px] px-5 py-10 md:px-8 md:py-24">
           <SectionHeader
             title={t("home.popularArticlesTitle")}
             body={t("home.popularArticlesBody")}
@@ -390,7 +415,7 @@ function HomeViewContent({
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1240px] px-5 py-16 md:px-8 md:py-24">
+      <section className="mx-auto max-w-[1240px] px-5 py-10 md:px-8 md:py-24">
         <SectionHeader title={t("home.followTeamTitle")} body={t("home.followTeamBody")} />
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {FOLLOW_ACCOUNTS.map((account) => (
