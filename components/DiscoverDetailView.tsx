@@ -36,34 +36,34 @@ export function DiscoverDetailView({
     Boolean(outcome) && !sameCopy(outcome, item.title) && !sameCopy(outcome, postText);
 
   return (
-    <article className="mx-auto max-w-[800px] px-5 py-10 md:px-8 md:py-16">
+    <article className="mx-auto max-w-[44rem] px-5 py-10 md:px-8 md:py-16">
       <Breadcrumbs items={[{ href: "/", label: t("nav.discover") }, { label: item.title }]} />
 
       <div className="mt-6 flex flex-wrap items-center gap-2">
-        <span className="rounded-full border border-line px-2.5 py-1 text-[12px] text-mute">
+        <span className="ui-label rounded-full border border-line px-2.5 py-1 text-mute">
           {t(`discover.cat${story.category.charAt(0).toUpperCase()}${story.category.slice(1)}`)}
         </span>
         {trustLabel ? (
-          <span className="rounded-full border border-line px-2.5 py-1 text-[12px] text-mute">
+          <span className="ui-label rounded-full border border-line px-2.5 py-1 text-mute">
             {trustLabel}
           </span>
         ) : null}
-        <span className="text-[12px] text-faint">{formatStoryDate(story.publishedAt, locale)}</span>
+        <span className="ui-meta text-mute">{formatStoryDate(story.publishedAt, locale)}</span>
       </div>
 
       <div className="mt-5 flex items-center gap-3">
         <AuthorAvatar name={item.authorName} handle={story.handle} />
-        <p className="text-[14px] text-mute">
+        <p className="text-[15px] font-medium wrap-break-word text-ink">
           {item.authorName}
-          {story.handle ? <span className="text-faint"> @{story.handle}</span> : null}
+          {story.handle ? <span className="ui-meta font-normal text-mute"> @{story.handle}</span> : null}
         </p>
       </div>
       {showTitle ? (
-        <h1 className="mt-2 text-[clamp(28px,4vw,40px)] font-medium tracking-tight text-ink">{item.title}</h1>
+        <h1 className="ui-page-title mt-2">{item.title}</h1>
       ) : (
         <h1 className="sr-only">{item.title}</h1>
       )}
-      {showHeadline ? <p className="mt-4 text-lg leading-8 text-mute">{item.headline}</p> : null}
+      {showHeadline ? <p className="ui-page-intro mt-4">{item.headline}</p> : null}
       {postText ? (
         <ExpandablePost
           text={postText}
@@ -71,8 +71,8 @@ export function DiscoverDetailView({
           className="mt-4"
         />
       ) : null}
-      <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px]">
-        <p className="text-faint">
+      <div className="ui-meta mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+        <p className="text-mute">
           {story.handle
             ? t("discover.basedOn", { handle: story.handle })
             : t("discover.basedOnNamed", { name: story.authorName })}
@@ -89,36 +89,36 @@ export function DiscoverDetailView({
       </div>
       {showOutcome ? (
         <div className="mt-6 rounded-[12px] border border-line bg-elevated px-4 py-3">
-          <p className="text-[10px] font-medium tracking-[0.1em] text-faint uppercase">
+          <p className="ui-label uppercase text-mute">
             {item.result ? t("discover.result") : t("discover.output")}
           </p>
-          <p className="mt-1 text-[15px] text-ink">{outcome}</p>
+          <p className="ui-body mt-1 text-ink">{outcome}</p>
         </div>
       ) : null}
 
       <section className="mt-10">
-        <h2 className="text-[13px] font-medium tracking-[0.08em] text-faint uppercase">{t("discover.whatTheyDid")}</h2>
-        <p className="mt-3 text-[16px] leading-7 text-ink">{item.whatTheyDid}</p>
+        <h2 className="ui-card-title">{t("discover.whatTheyDid")}</h2>
+        <p className="ui-body mt-3 text-ink">{item.whatTheyDid}</p>
       </section>
 
       <section className="mt-8">
-        <h2 className="text-[13px] font-medium tracking-[0.08em] text-faint uppercase">{t("discover.howItWorks")}</h2>
-        <p className="mt-3 text-[16px] leading-7 text-ink">{item.howItWorks}</p>
+        <h2 className="ui-card-title">{t("discover.howItWorks")}</h2>
+        <p className="ui-body mt-3 text-ink">{item.howItWorks}</p>
       </section>
 
       <section className="mt-8">
-        <h2 className="text-[13px] font-medium tracking-[0.08em] text-faint uppercase">{t("discover.whyItMatters")}</h2>
-        <p className="mt-3 text-[16px] leading-7 text-ink">{item.whyItMatters}</p>
+        <h2 className="ui-card-title">{t("discover.whyItMatters")}</h2>
+        <p className="ui-body mt-3 text-ink">{item.whyItMatters}</p>
       </section>
 
       <section className="mt-8">
-        <h2 className="text-[13px] font-medium tracking-[0.08em] text-faint uppercase">{t("discover.whyUseful")}</h2>
-        <p className="mt-3 text-[16px] leading-7 text-ink">{item.whyUseful}</p>
+        <h2 className="ui-card-title">{t("discover.whyUseful")}</h2>
+        <p className="ui-body mt-3 text-ink">{item.whyUseful}</p>
       </section>
 
       <section className="mt-8">
-        <h2 className="text-[13px] font-medium tracking-[0.08em] text-faint uppercase">{t("discover.whoShouldTry")}</h2>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-[15px] leading-7 text-ink">
+        <h2 className="ui-card-title">{t("discover.whoShouldTry")}</h2>
+        <ul className="ui-body mt-3 list-disc space-y-1 pl-5 text-ink">
           {item.whoShouldTry.map((who) => (
             <li key={who}>{who}</li>
           ))}
@@ -127,17 +127,17 @@ export function DiscoverDetailView({
 
       {item.quote ? (
         <blockquote className="mt-8 border-l-2 border-line pl-4">
-          <p className="text-[11px] font-medium tracking-[0.08em] text-faint uppercase">{t("discover.quoteCaption")}</p>
-          <p className="mt-2 text-[15px] leading-7 text-mute">“{item.quote}”</p>
+          <p className="ui-label uppercase text-mute">{t("discover.quoteCaption")}</p>
+          <p className="ui-body mt-2 text-mute">“{item.quote}”</p>
           {locale !== "en" && story.quote && story.quote !== item.quote ? (
-            <p className="mt-2 text-[13px] leading-6 text-faint">
+            <p className="ui-meta mt-2 text-mute">
               {t("discover.quoteOriginal")}：{story.quote}
             </p>
           ) : null}
         </blockquote>
       ) : null}
 
-      <div className="mt-8 flex flex-wrap gap-2 text-[12px] text-mute">
+      <div className="ui-meta mt-8 flex flex-wrap gap-2 text-mute">
         {[t(`difficulty.${story.difficulty}`), t(`schedule.${story.schedule}`)].map((chip) => (
           <span key={chip} className="rounded-full border border-line px-2.5 py-1">
             {chip}
@@ -145,7 +145,7 @@ export function DiscoverDetailView({
         ))}
       </div>
       <div className="mt-3">
-        <p className="mb-1.5 text-[11px] font-medium tracking-[0.08em] text-faint uppercase">
+        <p className="ui-label mb-1.5 uppercase text-mute">
           {t("discover.integrations")}
         </p>
         <AppNamePills apps={story.apps} />
@@ -157,17 +157,17 @@ export function DiscoverDetailView({
           target="_blank"
           rel="noopener noreferrer"
           onClick={(event) => openExternalUrl(originalHref, event)}
-          className="inline-flex h-11 items-center justify-center rounded-[10px] border border-line px-4 text-sm text-mute hover:border-line-strong hover:text-ink"
+          className="inline-flex h-11 items-center justify-center rounded-[10px] border border-line px-4 text-[15px] text-mute hover:border-line-strong hover:text-ink"
         >
           {originalLabel} ↗
         </a>
       </div>
-      <p className="mt-2 text-[12px] text-faint">{story.sourceLabel}</p>
+      <p className="ui-meta mt-2 text-mute">{story.sourceLabel}</p>
 
       {story.xPostUrl ? (
         <section className="mt-12">
-          <h2 className="text-[20px] font-medium tracking-tight text-ink">{t("discover.originalPost")}</h2>
-          <p className="mt-2 text-[13px] leading-6 text-faint">{t("discover.embedNote")}</p>
+          <h2 className="ui-section-title">{t("discover.originalPost")}</h2>
+          <p className="ui-meta mt-2 text-mute">{t("discover.embedNote")}</p>
           <div className="mt-4">
             <XPostEmbed url={story.xPostUrl} />
           </div>
@@ -176,7 +176,7 @@ export function DiscoverDetailView({
 
       {more.length ? (
         <section className="mt-16">
-          <h2 className="text-[20px] font-medium tracking-tight text-ink">{t("discover.moreStories")}</h2>
+          <h2 className="ui-section-title">{t("discover.moreStories")}</h2>
           <div className="mt-6 grid gap-5 sm:grid-cols-2">
             {more.map((itemStory) => (
               <DiscoverCard key={itemStory.slug} story={itemStory} />

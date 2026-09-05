@@ -22,7 +22,7 @@ export function GitHubStar({
       rel="noreferrer"
       aria-label={t("github.starAria")}
       className={cn(
-        "spring-press inline-flex h-8 items-center gap-1.5 rounded-[10px] border border-line bg-card px-3 text-[13px] font-medium text-ink",
+        "spring-press inline-flex h-8 items-center gap-1.5 rounded-[10px] border border-line bg-card px-3 text-[15px] font-medium text-ink",
         "hover:border-line-strong hover:bg-accent-soft",
         className,
       )}
@@ -30,7 +30,7 @@ export function GitHubStar({
       <GitHubMark className="size-3.5 shrink-0" />
       <span>{t("github.star")}</span>
       {count ? (
-        <span className="inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-md bg-accent-soft px-1 font-mono text-[11px] font-medium text-accent tabular-nums">
+        <span className="inline-flex h-6 min-w-6 items-center justify-center rounded-md bg-accent-soft px-1 font-mono text-[16px] font-medium text-accent tabular-nums">
           {count}
         </span>
       ) : null}

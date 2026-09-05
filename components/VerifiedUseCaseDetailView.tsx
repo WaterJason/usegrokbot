@@ -30,7 +30,7 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
     .filter((candidate) => sourceHref(candidate) !== sourceHref(source));
 
   return (
-    <article data-use-cases-page className="mx-auto max-w-[960px] px-5 py-12 md:px-8 md:py-16">
+    <article data-use-cases-page className="mx-auto max-w-[44rem] px-5 py-12 md:px-8 md:py-16">
       <Breadcrumbs items={[{ href: "/use-cases", label: copy.allUseCases }, { label: localized.title }]} />
 
       <header className="mt-8 border-b border-line pb-10 md:pb-12">
@@ -42,7 +42,7 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
           <Badge tone="neutral">{localized.categoryLabel}</Badge>
         </div>
 
-        <h1 className="mt-7 max-w-[820px] text-[clamp(36px,6vw,64px)] leading-[1.02] font-medium tracking-[-0.045em] text-ink">
+        <h1 className="ui-page-title mt-7">
           {localized.title}
         </h1>
 
@@ -55,8 +55,8 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
         >
           <AuthorAvatar name={source.authorName} handle={source.handle} size={40} />
           <span>
-            <span className="block text-[15px] font-medium text-ink group-hover:text-accent">{source.authorName}</span>
-            <span className="mt-0.5 flex items-center gap-1 text-[13px] text-mute">
+            <span className="block text-[15px] font-medium wrap-break-word text-ink group-hover:text-accent">{source.authorName}</span>
+            <span className="ui-meta mt-0.5 flex items-center gap-1 text-mute">
               {source.handle ? `@${source.handle}` : copy.openOriginal}
               <ArrowUpRight aria-hidden className="size-3" strokeWidth={1.75} />
             </span>
@@ -76,8 +76,8 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
         <section className="mt-12" aria-label={copy.promptTitle}>
           <div className="mb-3 flex flex-wrap items-end justify-between gap-3">
             <div className="min-w-0">
-              <h2 className="text-[18px] font-medium tracking-[-0.02em] text-ink">{browser.originalPrompt}</h2>
-              <p className="mt-1 text-[15px] leading-6 text-mute">{browser.pasteHint}</p>
+              <h2 className="ui-card-title">{browser.originalPrompt}</h2>
+              <p className="ui-body mt-1 text-mute">{browser.pasteHint}</p>
             </div>
             <GetGrokBot variant="outline" className="min-h-11 text-[15px]" />
           </div>
@@ -85,16 +85,16 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
         </section>
       ) : (
         <section className="mt-12" aria-labelledby="shared-setup-title">
-          <h2 id="shared-setup-title" className="text-[24px] font-medium tracking-[-0.025em] text-ink">
+          <h2 id="shared-setup-title" className="ui-section-title">
             {copy.setupTitle}
           </h2>
           <ol className="mt-6 border-y border-line">
             {localized.setupSteps.map((step, index) => (
               <li key={`${item.slug}-step-${index}`} className="grid grid-cols-[2.25rem_minmax(0,1fr)] gap-3 border-b border-line py-5 last:border-b-0">
-                <span className="pt-0.5 font-mono text-[16px] font-medium tracking-[0.04em] text-mute">
+                <span className="ui-count pt-0.5 font-medium text-mute">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <p className="text-[16px] leading-7 text-ink">{step}</p>
+                <p className="ui-body text-ink">{step}</p>
               </li>
             ))}
           </ol>
@@ -103,7 +103,7 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
 
       {item.structure === "team" && localized.teamRoles.length > 0 ? (
         <section className="mt-16 border-t border-line pt-12" aria-labelledby="team-handoff-title">
-          <h2 id="team-handoff-title" className="text-[24px] font-medium tracking-[-0.025em] text-ink">
+          <h2 id="team-handoff-title" className="ui-section-title">
             {copy.handoffTitle}
           </h2>
           <ol className="mt-7">
@@ -116,8 +116,8 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
                     <BotFace size={30} color={teamBotColor(index)} paper="var(--card)" />
                   </span>
                   <span className="min-w-0 pt-0.5">
-                    <span className="block text-[16px] font-medium text-ink">{role.name}</span>
-                    <span className="mt-1 block text-[16px] leading-7 text-mute">{role.purpose}</span>
+                    <span className="ui-card-title block text-ink">{role.name}</span>
+                    <span className="ui-body mt-1 block text-mute">{role.purpose}</span>
                   </span>
                 </li>
               );
@@ -128,7 +128,7 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
 
       {relatedSources.length > 0 ? (
         <section className="mt-16 border-t border-line pt-10" aria-labelledby="related-source-title">
-          <h2 id="related-source-title" className="text-[18px] font-medium tracking-tight text-ink">
+          <h2 id="related-source-title" className="ui-card-title">
             {copy.relatedSourcesTitle}
           </h2>
           <ul className="mt-5 divide-y divide-line border-y border-line sm:grid sm:grid-cols-2 sm:divide-y-0">
@@ -142,10 +142,10 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
                   className="group flex min-h-16 items-center justify-between gap-3 py-3"
                 >
                   <span className="min-w-0">
-                    <span className="block truncate text-[15px] font-medium text-ink group-hover:text-accent">
+                    <span className="block text-[15px] font-medium wrap-break-word text-ink group-hover:text-accent">
                       {related.authorName}
                     </span>
-                    {related.handle ? <span className="block truncate text-[13px] text-mute">@{related.handle}</span> : null}
+                    {related.handle ? <span className="ui-meta mt-0.5 block text-mute">@{related.handle}</span> : null}
                   </span>
                   <ArrowUpRight aria-hidden className="size-3.5 shrink-0 text-faint group-hover:text-accent" strokeWidth={1.75} />
                 </a>
@@ -168,8 +168,8 @@ export function VerifiedUseCaseDetailView({ item, locale }: { item: VerifiedUseC
 function GuideCard({ title, body }: { title: string; body: string }) {
   return (
     <article className="rounded-2xl border border-line bg-card p-4 md:p-5">
-      <h3 className="text-[13px] font-medium text-mute">{title}</h3>
-      <p className="mt-2 text-[16px] leading-7 text-ink">{body}</p>
+      <h3 className="ui-label text-mute">{title}</h3>
+      <p className="ui-body mt-2 text-ink">{body}</p>
     </article>
   );
 }
@@ -179,8 +179,8 @@ function Badge({ children, tone }: { children: React.ReactNode; tone: "accent" |
     <span
       className={
         tone === "accent"
-          ? "inline-flex items-center rounded-full bg-accent-soft px-2.5 py-1 text-[12px] font-medium text-accent"
-          : "inline-flex items-center rounded-full border border-line px-2.5 py-1 text-[12px] font-medium text-mute"
+          ? "ui-label inline-flex items-center rounded-full bg-accent-soft px-2.5 py-1 text-accent"
+          : "ui-label inline-flex items-center rounded-full border border-line px-2.5 py-1 text-mute"
       }
     >
       {children}

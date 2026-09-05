@@ -44,7 +44,7 @@ function MobileNavLinks({
               href={item.href}
               aria-current={active ? "page" : undefined}
               className={cn(
-                "flex min-h-12 items-center justify-between rounded-[10px] px-4 text-[15px] font-medium transition-colors hover:bg-elevated hover:text-ink",
+                "flex min-h-12 items-center justify-between rounded-[10px] gap-3 px-4 py-2 text-[16px] leading-6 font-medium transition-colors hover:bg-elevated hover:text-ink",
                 active ? "bg-accent-soft text-accent" : "text-ink",
               )}
               onClick={onNavigate}
@@ -52,7 +52,7 @@ function MobileNavLinks({
               <span>{item.label}</span>
               <ArrowRight
                 aria-hidden="true"
-                className={cn("size-4", active ? "text-accent" : "text-faint")}
+                className={cn("size-4 shrink-0", active ? "text-accent" : "text-faint")}
                 strokeWidth={1.75}
               />
             </LocaleLink>
@@ -214,7 +214,7 @@ export function Header() {
                     href="/submit"
                     aria-current={path.startsWith("/submit") ? "page" : undefined}
                     className={cn(
-                      "flex min-h-12 items-center justify-between rounded-[10px] border border-line bg-card px-4 text-[15px] font-medium text-ink transition-colors hover:border-line-strong",
+                      "flex min-h-12 items-center justify-between rounded-[10px] border border-line bg-card gap-3 px-4 py-2 text-[16px] leading-6 font-medium text-ink transition-colors hover:border-line-strong",
                       path.startsWith("/submit") && "border-accent/40 bg-accent-soft text-accent",
                     )}
                     onClick={() => closeMenu()}
@@ -225,7 +225,7 @@ export function Header() {
                 </div>
               </nav>
 
-              <div className="mt-4 flex items-center justify-between gap-3 border-t border-line pt-4">
+              <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
                 <span className="inline-flex items-center gap-2 text-[15px] text-mute">
                   <Languages aria-hidden="true" className="size-4" strokeWidth={1.75} />
                   {t("lang.label")}

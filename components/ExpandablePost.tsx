@@ -20,7 +20,7 @@ export function ExpandablePost({
   const ref = useRef<HTMLParagraphElement>(null);
   const [overflows, setOverflows] = useState(false);
   const [open, setOpen] = useState(false);
-  const collapsedHeight = lines * 24;
+  const collapsedHeight = lines * 28.8;
   const [expandedHeight, setExpandedHeight] = useState(collapsedHeight);
 
   useLayoutEffect(() => {
@@ -52,7 +52,7 @@ export function ExpandablePost({
         <div className="min-h-0 overflow-hidden">
           <p
             ref={ref}
-            className="min-w-0 text-[15px] leading-6 wrap-break-word whitespace-pre-wrap text-ink"
+            className="ui-body min-w-0 whitespace-pre-wrap text-ink"
           >
             {text}
           </p>
@@ -78,7 +78,7 @@ export function ExpandablePost({
         </button>
       ) : null}
       {original && original !== text ? (
-        <p className="mt-2 text-[13px] leading-6 text-faint whitespace-pre-wrap">
+        <p className="ui-meta mt-2 whitespace-pre-wrap text-mute">
           {t("discover.quoteOriginal")}：{original}
         </p>
       ) : null}

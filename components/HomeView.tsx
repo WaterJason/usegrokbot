@@ -8,6 +8,7 @@ import { BotFace, teamBotColor } from "@/components/BotFace";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
 import { DiscoverFeed } from "@/components/DiscoverFeed";
 import { GitHubStar } from "@/components/GitHubStar";
+import { TemplateName } from "@/components/TemplateName";
 import { HeroBot } from "@/components/HeroBot";
 import { IdentityMascot } from "@/components/IdentityMascot";
 import { LocaleLink } from "@/components/LocaleLink";
@@ -210,23 +211,23 @@ function HomeViewContent({
           <div className="grid grid-cols-[minmax(0,1fr)_160px] items-center gap-x-3 gap-y-5 md:grid-cols-[minmax(0,1fr)_auto] md:gap-x-16 md:gap-y-8">
             <div className="col-span-2 min-w-0 md:col-span-1 md:col-start-1 md:row-start-1">
               <div className="flex flex-wrap items-center gap-3">
-                <p className="text-[13px] font-medium tracking-[0.1em] text-mute uppercase sm:tracking-[0.14em]">
+                <p className="ui-label tracking-[0.06em] text-mute uppercase">
                   {t("home.kicker")}
                 </p>
                 <GitHubStar stars={stars} className="h-7 shrink-0 px-2.5" />
               </div>
-              <h1 className="mt-5 max-w-3xl text-[clamp(38px,8vw,68px)] leading-[0.98] font-medium tracking-[-0.05em] text-ink">
+              <h1 className="ui-hero-title mt-5 max-w-3xl">
                 {t("home.title")}
               </h1>
               {!showResults ? (
-                <p className="mt-5 max-w-xl text-[16px] leading-7 text-mute md:text-[18px]">
+                <p className="ui-page-intro mt-5 max-w-xl md:text-[18px]">
                   {discoveryCopy.intro}
                 </p>
               ) : null}
             </div>
             <div className="col-start-1 row-start-2 min-w-0 self-center border-l border-accent pl-4 md:col-start-1 md:row-start-2 md:max-w-[650px] md:pl-5">
               <AnimatedSignal total={postCount} />
-              <p className="mt-3 text-[12px] leading-5 font-medium tracking-[0.01em] text-faint md:text-[13px]">
+              <p className="ui-meta mt-3 text-faint">
                 {t("home.signalRefresh")}
               </p>
             </div>
@@ -246,7 +247,7 @@ function HomeViewContent({
           className="mx-auto max-w-[1240px] px-5 py-16 md:px-8 md:py-20"
         >
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <h2 className="min-w-0 text-[24px] leading-tight font-medium tracking-tight break-words text-ink md:text-[28px]">
+            <h2 className="ui-section-title min-w-0">
               {resultTitle}
             </h2>
             <LocaleLink
@@ -273,7 +274,7 @@ function HomeViewContent({
           cta={t("home.identitiesCta")}
           compactOnMobile
         />
-        <p className="mt-2 max-w-xl text-[15px] leading-6 text-mute">{discoveryCopy.identityHint}</p>
+        <p className="ui-body mt-3 max-w-xl text-mute">{discoveryCopy.identityHint}</p>
         <div data-home-identity-grid="" className="mt-6 grid gap-3 min-[360px]:grid-cols-2 sm:mt-8 sm:gap-4 lg:grid-cols-4">
           {identities.map((identity) => (
             <LocaleLink
@@ -281,20 +282,20 @@ function HomeViewContent({
               href={`/templates/${identity.slug}`}
               className="spring-lift group flex min-w-0 flex-col rounded-2xl border border-line bg-card p-4 hover:border-line-strong sm:p-5"
             >
-              <div className="flex flex-col-reverse items-start justify-between gap-3 sm:flex-row">
-                <h3 className="text-[18px] leading-6 font-medium tracking-[-0.02em] text-ink group-hover:text-accent sm:text-[19px]">
+              <div className="flex flex-col-reverse items-start gap-4">
+                <h3 className="ui-card-title w-full group-hover:text-accent">
                   {localizeText(identity.name, locale)}
                 </h3>
                 <IdentityMascot slug={identity.slug} paper="var(--card)" />
               </div>
-              <p className="mt-3 text-[15px] leading-6 text-mute">
+              <p className="ui-body mt-3 text-mute">
                 {localizeText(identity.description, locale)}
               </p>
               <div className="mt-auto flex items-end justify-between gap-3 pt-5">
                 <AnimatedCountLabel
                   total={templateCountForIdentity(identity.slug)}
                   template={t("home.identityTemplateCount")}
-                  className="font-mono text-[16px] font-medium text-mute"
+                  className="ui-count font-medium text-mute"
                 />
                 <ArrowUpRight aria-hidden className="size-4 shrink-0 text-faint group-hover:text-accent" />
               </div>
@@ -305,7 +306,7 @@ function HomeViewContent({
 
       <section className="border-y border-line bg-elevated">
         <div className="mx-auto max-w-[1240px] px-5 py-10 md:px-8 md:py-24">
-          <p className="text-[13px] font-medium tracking-[0.1em] text-mute uppercase">
+          <p className="ui-label tracking-[0.06em] text-mute uppercase">
             {t("home.botTeamsLabel")}
           </p>
           <div className="mt-2">
@@ -324,16 +325,16 @@ function HomeViewContent({
                   data-home-team-card=""
                   className="spring-lift group flex min-w-0 flex-col rounded-2xl border border-line bg-card p-4 hover:border-line-strong sm:p-5"
                 >
-                  <div className="flex flex-col-reverse items-start justify-between gap-3 sm:flex-row">
-                    <h3 className="text-[18px] leading-6 font-medium tracking-[-0.02em] text-ink group-hover:text-accent sm:text-[19px]">
-                      {copy.title}
+                  <div className="flex flex-col-reverse items-start gap-4">
+                    <h3 className="ui-card-title min-h-[3.5rem] w-full group-hover:text-accent">
+                      <TemplateName title={copy.title} />
                     </h3>
                     <div aria-hidden className="relative h-10 w-14 shrink-0">
                       <BotFace size={32} color={teamBotColor(index)} paper="var(--card)" className="absolute top-0 left-0" />
                       <BotFace size={32} color={teamBotColor(index + 1)} paper="var(--card)" className="absolute right-0 bottom-0" />
                     </div>
                   </div>
-                  <p className="mt-3 text-[15px] leading-6 text-mute">{purpose}</p>
+                  <p className="ui-body mt-3 text-mute">{purpose}</p>
                   <div className="mt-auto flex items-end justify-between gap-3 pt-5">
                     <span className="text-[15px] font-medium text-accent">{t("home.openTemplate").replace(/\s*→$/, "")}</span>
                     <ArrowUpRight aria-hidden className="size-4 shrink-0 text-faint group-hover:text-accent" />
@@ -361,7 +362,7 @@ function HomeViewContent({
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <span className="min-w-0">
-                  <span className="block text-[19px] leading-7 font-medium tracking-[-0.02em] text-ink group-hover:text-accent">
+                  <span className="ui-card-title block group-hover:text-accent">
                     {localized.title}
                   </span>
                   <span className="mt-4 flex flex-wrap gap-2">
@@ -419,12 +420,12 @@ function HomeViewContent({
             >
               <AuthorAvatar name={account.name} handle={account.handle} size={48} />
               <span className="min-w-0">
-                <span className="block truncate text-[17px] font-medium text-ink group-hover:text-accent">
+                <span className="ui-card-title block group-hover:text-accent">
                   {account.name}
                 </span>
-                <span className="mt-0.5 block truncate text-[13px] text-mute">@{account.handle}</span>
-                <span className="mt-3 block text-[15px] leading-5 text-mute">{account.role[locale]}</span>
-                <span className="mt-3 block text-[13px] font-medium text-accent">{t("home.followOnX")}</span>
+                <span className="ui-meta mt-1 block text-mute">@{account.handle}</span>
+                <span className="ui-body mt-3 block text-mute">{account.role[locale]}</span>
+                <span className="mt-3 block text-[15px] leading-6 font-medium text-accent">{t("home.followOnX")}</span>
               </span>
             </a>
           ))}
@@ -433,8 +434,8 @@ function HomeViewContent({
 
       <section className="mx-auto max-w-[1240px] px-5 pb-24 md:px-8 md:pb-28">
         <div className="rounded-[20px] border border-line bg-elevated px-6 py-12 text-center md:px-12 md:py-16">
-          <h2 className="text-[28px] font-medium tracking-[-0.025em] text-ink md:text-[34px]">{t("home.submitTitle")}</h2>
-          <p className="mx-auto mt-3 max-w-xl text-[15px] leading-6 text-mute">{t("home.submitBody")}</p>
+          <h2 className="ui-section-title">{t("home.submitTitle")}</h2>
+          <p className="ui-body mx-auto mt-3 max-w-xl text-mute">{t("home.submitBody")}</p>
           <LocaleLink
             href="/submit"
             className="accent-gradient spring-press mt-7 inline-flex min-h-11 items-center rounded-[10px] px-5 text-[15px] font-medium"
@@ -468,7 +469,7 @@ function AnimatedSignal({ total }: { total: number }) {
         />
         <span>{after.trim()}</span>
       </p>
-      <p aria-hidden="true" className="mt-1 text-[19px] leading-7 font-medium tracking-[-0.02em] text-ink md:text-[21px]">
+      <p aria-hidden="true" className="ui-card-title mt-2 md:text-[21px]">
         {t("home.signalResult")}
       </p>
     </div>
@@ -491,19 +492,19 @@ function SectionHeader({
   return (
     <div
       className={cn(
-        "flex gap-3 sm:flex-row sm:items-end sm:justify-between",
+        "flex flex-wrap gap-x-6 gap-y-2 sm:flex-row sm:items-end sm:justify-between",
         compactOnMobile ? "flex-row items-end justify-between" : "flex-col",
       )}
     >
       <div className="min-w-0">
-        <h2 className="text-[30px] leading-tight font-medium tracking-[-0.035em] text-ink md:text-[36px]">{title}</h2>
-        {body ? <p className="mt-2 text-[15px] leading-6 text-mute">{body}</p> : null}
+        <h2 className="ui-section-title">{title}</h2>
+        {body ? <p className="ui-body mt-3 text-mute">{body}</p> : null}
       </div>
       {href && cta ? (
         <LocaleLink
           href={href}
           className={cn(
-            "min-h-11 shrink-0 py-2.5 text-[15px] font-medium text-mute hover:text-ink sm:self-auto",
+            "min-h-11 max-w-full py-2.5 text-[15px] leading-6 font-medium text-mute hover:text-ink sm:self-auto",
             compactOnMobile ? "self-auto text-right" : "self-start",
           )}
         >
@@ -516,7 +517,7 @@ function SectionHeader({
 
 function Badge({ children }: { children: string }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-line px-2.5 py-1 text-[12px] font-medium tracking-[0.02em] text-mute">
+    <span className="inline-flex items-center rounded-full border border-line px-2.5 py-1 ui-label text-mute">
       {children}
     </span>
   );

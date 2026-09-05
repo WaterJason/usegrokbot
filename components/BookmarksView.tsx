@@ -134,14 +134,14 @@ export function BookmarksView({
               <>
                 <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
                   <div>
-                    <h2 className="text-2xl font-medium tracking-tight text-ink">
+                    <h2 className="ui-section-title">
                       {panelCopy.title}
                     </h2>
-                    <p className="mt-2 max-w-2xl text-[15px] leading-6 text-mute">
+                    <p className="ui-page-intro mt-2">
                       {panelCopy.body}
                     </p>
                   </div>
-                  <p className="text-[16px] font-medium tabular-nums text-mute" aria-live="polite">
+                  <p className="ui-count font-medium text-mute" aria-live="polite">
                     {copy.count.replace("{n}", String(panelCount))}
                   </p>
                 </div>
@@ -164,7 +164,7 @@ export function BookmarksView({
         );
       })}
 
-      <p className="border-t border-line pt-6 text-[15px] leading-7 text-mute">{copy.note}</p>
+      <p className="ui-body border-t border-line pt-6 text-mute">{copy.note}</p>
     </div>
   );
 }
@@ -190,18 +190,18 @@ function BookmarkGrid({
               <span className="inline-flex size-10 items-center justify-center rounded-[10px] bg-accent-soft text-accent">
                 <Icon aria-hidden className="size-5" strokeWidth={1.75} />
               </span>
-              <span className="rounded-full border border-line px-2.5 py-1 text-[12px] text-mute">
+              <span className="ui-label rounded-full border border-line px-2.5 py-1 text-mute">
                 {copy.language[item.language]}
               </span>
             </div>
 
-            <h3 className="mt-5 text-[18px] font-medium leading-6 tracking-tight wrap-break-word text-ink">
+            <h3 className="ui-card-title mt-5 text-ink">
               {item.title}
             </h3>
-            <p className="mt-2 text-[15px] leading-7 text-mute">{item.description}</p>
+            <p className="ui-body mt-2 text-mute">{item.description}</p>
 
             <div className="mt-5">
-              <span className="inline-flex rounded-full bg-elevated px-2.5 py-1 text-[12px] text-mute">
+              <span className="ui-label inline-flex rounded-full bg-elevated px-2.5 py-1 text-mute">
                 {item.focus}
               </span>
               {item.xAuthor ? (
@@ -218,17 +218,17 @@ function BookmarkGrid({
                     size={40}
                   />
                   <span className="min-w-0">
-                    <span className="block truncate text-[15px] font-medium text-ink transition-colors group-hover:text-accent">
+                    <span className="block text-[15px] font-medium wrap-break-word text-ink transition-colors group-hover:text-accent">
                       {item.xAuthor.name}
                     </span>
-                    <span className="block truncate text-[12px] text-faint transition-colors group-hover:text-accent">
+                    <span className="ui-meta mt-0.5 block text-mute transition-colors group-hover:text-accent">
                       @{item.xAuthor.handle}
                       <span className="sr-only"> X</span>
                     </span>
                   </span>
                 </a>
               ) : (
-                <p className="mt-4 flex min-h-11 min-w-0 items-center truncate text-[12px] text-faint">
+                <p className="ui-meta mt-4 flex min-h-11 min-w-0 items-center text-mute">
                   {copy.by} {item.author}
                 </p>
               )}
@@ -283,10 +283,10 @@ function XArticleLists({
       {sections.map((section, sectionIndex) => (
         <section className={sectionIndex === 0 ? "" : "mt-14"} key={section.key}>
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="text-xl font-medium tracking-tight text-ink md:text-2xl">
+            <h3 className="ui-section-title">
               {section.title}
             </h3>
-            <p className="text-[16px] font-medium tabular-nums text-mute">
+            <p className="ui-count font-medium text-mute">
               {copy.count.replace("{n}", String(section.items.length))}
             </p>
           </div>

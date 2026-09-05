@@ -25,7 +25,7 @@ export function CommunityView({
     <div className="mx-auto max-w-[1120px] px-5 py-8 md:px-8 md:py-12">
       <div className="max-w-[760px]">
         <h1 className="ui-page-title">{copy.title}</h1>
-        <p className="ui-page-intro mt-3">{copy.body}</p>
+        <p className="ui-page-intro mt-4">{copy.body}</p>
         <LocaleLink
           href="/submit"
           className="accent-gradient mt-6 inline-flex h-11 items-center rounded-[10px] px-5 text-[15px] font-medium text-inverse"
@@ -34,17 +34,17 @@ export function CommunityView({
         </LocaleLink>
       </div>
 
-      <section className="mt-10">
+      <section className="mt-12">
         <div className="flex items-end justify-between gap-4">
-          <div>
-            <h2 className="text-[24px] font-medium tracking-tight text-ink">{copy.builders}</h2>
-            <p className="mt-2 text-[15px] text-mute">{copy.buildersBody}</p>
+          <div className="min-w-0">
+            <h2 className="ui-section-title">{copy.builders}</h2>
+            <p className="ui-body mt-3 text-mute">{copy.buildersBody}</p>
           </div>
           <a
             href="https://github.com/a70win-wq/usegrokbot/graphs/contributors"
             target="_blank"
             rel="noreferrer"
-            className="hidden text-[13px] text-mute hover:text-ink sm:inline"
+            className="ui-meta hidden shrink-0 pb-1 text-mute hover:text-ink sm:inline"
           >
             {copy.github} ↗
           </a>
@@ -58,28 +58,28 @@ export function CommunityView({
                 href={person.htmlUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center gap-3 rounded-2xl border border-line bg-card px-4 py-4 transition hover:border-line-strong"
+                className="group flex min-w-0 items-start gap-3 rounded-2xl border border-line bg-card px-4 py-4 transition hover:border-line-strong"
               >
                 <BlobatarAvatar name={`github:${person.login}`} size={56} expression="smug" />
                 <div className="min-w-0">
-                  <p className="truncate text-[15px] font-medium text-ink">@{person.login}</p>
-                  <p className="mt-1 text-[13px] text-mute">
-                    <span className="text-[16px] font-medium tabular-nums">{person.contributions}</span> {copy.contributions}
+                  <p className="ui-card-title">@{person.login}</p>
+                  <p className="ui-meta mt-1.5 text-mute">
+                    <span className="ui-count font-medium">{person.contributions}</span> {copy.contributions}
                   </p>
                 </div>
               </a>
             ))}
           </div>
         ) : (
-          <div className="mt-6 rounded-2xl border border-line bg-elevated px-5 py-6 text-[15px] text-mute">
+          <div className="ui-body mt-6 rounded-2xl border border-line bg-elevated px-5 py-6 text-mute">
             {copy.buildersFallback}
           </div>
         )}
       </section>
 
       <section className="mt-12">
-        <h2 className="text-[24px] font-medium tracking-tight text-ink">{copy.zoo}</h2>
-        <p className="mt-2 max-w-2xl text-[15px] leading-6 text-mute">{copy.zooBody}</p>
+        <h2 className="ui-section-title">{copy.zoo}</h2>
+        <p className="ui-body mt-3 max-w-2xl text-mute">{copy.zooBody}</p>
 
         <div className="mt-6 grid gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {identities.map((person) => (
@@ -89,14 +89,14 @@ export function CommunityView({
               target="_blank"
               rel="noopener noreferrer"
               data-community-handle={person.handle}
-              className="group flex min-w-0 items-center gap-3 rounded-2xl border border-line bg-card px-4 py-4 transition hover:border-line-strong"
+              className="group flex min-w-0 items-start gap-3 rounded-2xl border border-line bg-card px-4 py-4 transition hover:border-line-strong"
             >
               <BlobatarAvatar name={person.handle} size={56} expression="happy" />
               <span className="min-w-0">
-                <span className="block truncate text-[15px] font-medium text-ink">{person.name}</span>
-                <span className="mt-0.5 block truncate text-[12px] text-faint">@{person.handle}</span>
-                <span className="mt-1 block text-[13px] text-mute">
-                  <span className="text-[16px] font-medium tabular-nums">{person.count}</span> {person.count === 1 ? copy.case : copy.cases}
+                <span className="ui-card-title block">{person.name}</span>
+                <span className="ui-meta mt-1 block text-mute">@{person.handle}</span>
+                <span className="ui-meta mt-1.5 block text-mute">
+                  <span className="ui-count font-medium">{person.count}</span> {person.count === 1 ? copy.case : copy.cases}
                 </span>
               </span>
             </a>

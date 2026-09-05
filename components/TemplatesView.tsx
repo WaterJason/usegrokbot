@@ -78,7 +78,7 @@ export function TemplatesView() {
         <h1 className="text-[clamp(28px,4vw,40px)] font-medium tracking-tight text-ink">
           {t("templates.allTitle")}
         </h1>
-        <p className="mt-3 max-w-2xl text-[15px] leading-7 text-mute">{t("templates.empty")}</p>
+        <p className="ui-page-intro mt-3">{t("templates.empty")}</p>
       </div>
     );
   }
@@ -87,15 +87,15 @@ export function TemplatesView() {
     <div className="mx-auto max-w-[1240px] px-5 py-12 md:px-8 md:py-16">
       <TemplatesModeNav active="all" locale={locale} urlLocale={urlLocale} />
 
-      <h1 className="flex flex-wrap items-baseline gap-x-3 pt-10 text-[clamp(28px,4vw,40px)] font-medium tracking-tight text-ink md:pt-12">
+      <h1 className="ui-page-title flex flex-wrap items-baseline gap-x-3 pt-8 md:pt-10">
         <span>{t("templates.allTitle")}</span>
         <CensusNumber accessible total={items.length} className="text-[1em] leading-none" />
       </h1>
-      <p className="mt-3 max-w-2xl text-[15px] leading-7 text-mute">{description}</p>
+      <p className="ui-page-intro mt-3">{description}</p>
 
       <div className="mt-7 space-y-5">
         <label className="block w-full min-w-0">
-          <span className="mb-2 block text-[12px] font-medium text-mute">{browserCopy.searchLabel}</span>
+          <span className="mb-2 block ui-label text-mute">{browserCopy.searchLabel}</span>
           <span className="relative block">
             <Search
               className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-mute"
@@ -112,7 +112,7 @@ export function TemplatesView() {
               placeholder={browserCopy.searchPlaceholder}
               autoComplete="off"
               data-template-search
-              className="h-12 w-full rounded-[10px] border border-line bg-card pr-28 pl-10 text-[15px] text-ink outline-none placeholder:text-mute focus:border-accent"
+              className={cn("h-12 w-full rounded-[10px] border border-line bg-card pl-10 text-[16px] text-ink outline-none placeholder:text-mute focus:border-accent", hasQuery ? "pr-24" : "pr-3")}
             />
             {hasQuery ? (
               <button
@@ -131,7 +131,7 @@ export function TemplatesView() {
         </label>
 
         <fieldset className="w-full min-w-0">
-          <legend className="mb-2 text-[12px] font-medium text-mute">{copy.typeLabel}</legend>
+          <legend className="mb-2 ui-label text-mute">{copy.typeLabel}</legend>
           <div className="flex flex-wrap gap-2">
             <Chip
               active={templateType === "all"}
@@ -152,7 +152,7 @@ export function TemplatesView() {
         </fieldset>
 
         <fieldset className="w-full min-w-0">
-          <legend className="mb-2 text-[12px] font-medium text-mute">{t("filters.category")}</legend>
+          <legend className="mb-2 ui-label text-mute">{t("filters.category")}</legend>
           <div className="flex flex-wrap gap-2">
             <Chip
               active={category === "all"}
@@ -172,7 +172,7 @@ export function TemplatesView() {
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <p data-template-result-count className="text-[16px] font-medium tabular-nums text-ink">
+        <p data-template-result-count className="ui-count font-medium text-ink">
           {resultCount}
         </p>
         {isFiltered ? (
@@ -195,10 +195,10 @@ export function TemplatesView() {
           <TemplateList items={items} />
         ) : (
           <div className="rounded-2xl border border-line bg-card p-6">
-            <p className="text-[15px] leading-6 text-ink">
+            <p className="ui-body text-ink">
               {hasQuery ? browserCopy.emptySearch : copy.filterEmpty}
             </p>
-            <p className="mt-2 text-[15px] leading-6 text-mute">{browserCopy.emptySearchHint}</p>
+            <p className="mt-2 ui-body text-mute">{browserCopy.emptySearchHint}</p>
             <button
               type="button"
               onClick={clearAll}

@@ -334,13 +334,13 @@ export function SearchBar({
         onKeyDown={onKeyDown}
         placeholder={query ? undefined : placeholder}
         className={cn(
-          "w-full border border-line bg-elevated pr-16 pl-12 text-[15px] text-ink placeholder:text-faint transition-[border-color,box-shadow] duration-200",
+          "w-full border border-line bg-elevated pr-4 pl-12 text-[16px] md:pr-16 text-ink placeholder:text-faint transition-[border-color,box-shadow] duration-200",
           variant === "hero"
             ? "search-field-hero h-14 rounded-full focus:border-line-strong"
             : "h-12 rounded-full focus:border-line-strong",
         )}
       />
-      <span className="pointer-events-none absolute top-1/2 right-4 hidden -translate-y-1/2 rounded-md border border-line bg-card px-1.5 py-0.5 font-mono text-[11px] text-faint md:inline">
+      <span className="pointer-events-none absolute top-1/2 right-4 hidden -translate-y-1/2 rounded-md border border-line bg-card px-1.5 py-0.5 font-mono text-[12px] text-faint md:inline">
         {modKey}K
       </span>
 
@@ -355,7 +355,7 @@ export function SearchBar({
           matchingApps.length === 0 &&
           matchingUseCases.length === 0 &&
           matchingTemplates.length === 0 ? (
-            <div className="px-4 py-5 text-sm text-mute">
+            <div className="px-4 py-5 text-[15px] leading-6 text-mute">
               {t("search.empty")}
               <p className="mt-1 text-faint">{t("search.emptyHint")}</p>
             </div>
@@ -379,7 +379,7 @@ export function SearchBar({
                           setOpen(false);
                         }}
                       >
-                        <div className="text-sm font-medium text-ink">{item.title}</div>
+                        <div className="text-[15px] leading-6 font-medium text-ink">{item.title}</div>
                       </button>
                     ) : item.external ? (
                       <a
@@ -389,9 +389,9 @@ export function SearchBar({
                         className={className}
                         onClick={() => setOpen(false)}
                       >
-                        <div className="text-sm font-medium text-ink">{item.title}</div>
+                        <div className="text-[15px] leading-6 font-medium text-ink">{item.title}</div>
                         {item.detail ? (
-                          <div className="mt-0.5 line-clamp-1 text-[13px] text-mute">{item.detail}</div>
+                          <div className="mt-0.5 line-clamp-2 ui-meta text-mute">{item.detail}</div>
                         ) : null}
                       </a>
                     ) : (
@@ -400,9 +400,9 @@ export function SearchBar({
                         className={className}
                         onClick={() => setOpen(false)}
                       >
-                        <div className="text-sm font-medium text-ink">{item.title}</div>
+                        <div className="text-[15px] leading-6 font-medium text-ink">{item.title}</div>
                         {item.detail ? (
-                          <div className="mt-0.5 line-clamp-1 text-[13px] text-mute">{item.detail}</div>
+                          <div className="mt-0.5 line-clamp-2 ui-meta text-mute">{item.detail}</div>
                         ) : null}
                       </LocaleLink>
                     )}
@@ -415,7 +415,7 @@ export function SearchBar({
             stayOnPage ? (
               <button
                 type="button"
-                className="block w-full border-t border-line px-4 py-2.5 text-left text-[13px] text-ink"
+                className="block w-full border-t border-line px-4 py-2.5 text-left text-[15px] text-ink"
                 onClick={() => {
                   onQueryChange?.(trimmed);
                   setOpen(false);
@@ -426,7 +426,7 @@ export function SearchBar({
             ) : (
               <LocaleLink
                 href={resultsPath(trimmed)}
-                className="block border-t border-line px-4 py-2.5 text-[13px] text-ink"
+                className="block border-t border-line px-4 py-2.5 text-[15px] text-ink"
                 onClick={() => setOpen(false)}
               >
                 {t("search.seeAll")}

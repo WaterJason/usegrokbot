@@ -112,19 +112,19 @@ export default function SubmitPage() {
   return (
     <div className="mx-auto max-w-[760px] px-5 py-8 md:px-8 md:py-14">
       <h1 className="ui-page-title">{copy.submitTitle}</h1>
-      <p className="mt-3 text-[15px] leading-6 text-mute">{copy.submitLead}</p>
-      <p className="mt-2 text-[15px] leading-6 text-mute">{copy.submitHelp}</p>
-      <p className="mt-2 text-[12px] leading-5 text-faint">{copy.submitReview}</p>
+      <p className="ui-page-intro mt-4">{copy.submitLead}</p>
+      <p className="ui-body mt-3 text-mute">{copy.submitHelp}</p>
+      <p className="ui-meta mt-3 text-mute">{copy.submitReview}</p>
 
       {done ? (
         <div className="mt-8 rounded-2xl border border-line bg-card px-5 py-8">
           <div className="flex items-center gap-4">
             <BlobatarAvatar name={identitySeed} size={56} expression="love" />
             <div>
-              <p className="text-[18px] font-medium text-ink">
+              <p className="ui-card-title">
                 {done.status === "published" ? t("submit.published") : t("submit.queued")}
               </p>
-              {handle ? <p className="mt-1 text-[12px] text-faint">@{handle}</p> : null}
+              {handle ? <p className="ui-meta mt-1 text-mute">@{handle}</p> : null}
             </div>
           </div>
           <div className="mt-5 flex flex-wrap gap-3">
@@ -149,11 +149,11 @@ export default function SubmitPage() {
           </div>
         </div>
       ) : (
-        <form onSubmit={onSubmit} className="mt-8 space-y-4">
+        <form onSubmit={onSubmit} className="mt-8 space-y-6">
           <section className="rounded-2xl border border-line bg-card p-4 md:p-5">
-            <p className="text-[16px] font-medium text-ink">{copy.stepOne}</p>
-            <label className="mt-3 block">
-              <span className="mb-1.5 block text-[12px] font-medium text-faint">{copy.xUrl}</span>
+            <p className="ui-card-title">{copy.stepOne}</p>
+            <label className="mt-4 block">
+              <span className="ui-label mb-2 block text-mute">{copy.xUrl}</span>
               <input
                 name="xUrl"
                 required
@@ -164,30 +164,30 @@ export default function SubmitPage() {
                 onChange={(event) => { setXUrlPreview(event.target.value); setError(""); }}
                 aria-describedby={error ? `${hintId} ${errorId}` : hintId}
                 aria-invalid={error ? true : undefined}
-                className="h-11 w-full rounded-[10px] border border-line bg-input px-3 text-[15px] text-ink placeholder:text-faint"
+                className="h-12 w-full rounded-[10px] border border-line bg-input px-3 text-[16px] text-ink placeholder:text-faint"
               />
             </label>
-            <p id={hintId} className="mt-2 text-[12px] leading-5 text-faint">
+            <p id={hintId} className="ui-meta mt-2 text-mute">
               {copy.xUrlHint}
             </p>
 
-            <div className="mt-4 flex items-center gap-4 rounded-2xl border border-line bg-elevated px-4 py-4">
+            <div className="mt-5 flex items-start gap-4 rounded-2xl border border-line bg-elevated px-4 py-4">
               <BlobatarAvatar name={identitySeed} size={72} expression={handle ? "happy" : "thinking"} />
               <div className="min-w-0">
-                <p className="text-[15px] font-medium text-ink">{copy.previewTitle}</p>
-                <p className="mt-1 truncate text-[15px] text-mute">
+                <p className="ui-card-title">{copy.previewTitle}</p>
+                <p className="ui-body mt-1 text-mute">
                   {handle ? `@${handle}` : copy.previewPlaceholder}
                 </p>
-                <p className="mt-1 text-[12px] leading-5 text-faint">{copy.previewBody}</p>
+                <p className="ui-meta mt-2 text-mute">{copy.previewBody}</p>
               </div>
             </div>
           </section>
 
           <details className="group rounded-2xl border border-line bg-card" data-submit-optional>
-            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-[15px] font-medium text-ink [&::-webkit-details-marker]:hidden">
+            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-ink [&::-webkit-details-marker]:hidden">
               <span className="min-w-0">
-                <span className="block">{copy.optionalTitle}</span>
-                <span className="mt-1 block text-[12px] font-normal leading-5 text-faint">{copy.optionalHint}</span>
+                <span className="ui-card-title block">{copy.optionalTitle}</span>
+                <span className="ui-meta mt-1 block font-normal text-mute">{copy.optionalHint}</span>
               </span>
               <ChevronDown
                 className="size-4 shrink-0 text-faint transition-transform group-open:rotate-180"
@@ -197,31 +197,31 @@ export default function SubmitPage() {
             </summary>
             <div className="space-y-4 border-t border-line px-4 py-4">
               <label className="block">
-                <span className="mb-1.5 block text-[12px] font-medium text-faint">{copy.prompt}</span>
+                <span className="ui-label mb-2 block text-mute">{copy.prompt}</span>
                 <textarea
                   name="prompt"
                   rows={8}
                   value={prompt}
                   onChange={(event) => setPrompt(event.target.value)}
-                  className="w-full rounded-[10px] border border-line bg-input px-3 py-2.5 font-mono text-[15px] text-ink"
+                  className="w-full rounded-[10px] border border-line bg-input px-3 py-2.5 font-mono text-[16px] leading-7 text-ink"
                 />
               </label>
               <label className="block">
-                <span className="mb-1.5 block text-[12px] font-medium text-faint">{copy.notes}</span>
+                <span className="ui-label mb-2 block text-mute">{copy.notes}</span>
                 <textarea
                   name="notes"
                   rows={4}
                   value={notes}
                   onChange={(event) => setNotes(event.target.value)}
                   placeholder={copy.notesHint}
-                  className="w-full rounded-[10px] border border-line bg-input px-3 py-2.5 text-[15px] text-ink placeholder:text-faint"
+                  className="w-full rounded-[10px] border border-line bg-input px-3 py-2.5 text-[16px] leading-7 text-ink placeholder:text-faint"
                 />
               </label>
             </div>
           </details>
 
           {error ? (
-            <p id={errorId} className="text-[15px] text-danger" role="alert">
+            <p id={errorId} className="ui-body text-danger" role="alert">
               {error}
             </p>
           ) : null}

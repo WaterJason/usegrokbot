@@ -57,17 +57,17 @@ export function TemplateIdentityDetailView({
       </Link>
 
       <header className="mt-6 border-b border-line pb-8 md:mt-8 md:pb-10">
-        <p className="text-[16px] font-medium tabular-nums text-mute">{countLabel}</p>
-        <h1 className="mt-3 text-[clamp(32px,5vw,48px)] font-medium tracking-[-0.035em] text-ink">
+        <p className="ui-count font-medium text-mute">{countLabel}</p>
+        <h1 className="ui-page-title mt-3">
           {name}
         </h1>
-        <p className="mt-3 max-w-2xl text-[15px] leading-7 text-mute">
+        <p className="ui-page-intro mt-3">
           {localizeText(identity.description, locale)}
         </p>
       </header>
 
       <section className="py-8 md:py-10" aria-labelledby="identity-focus">
-        <h2 id="identity-focus" className="text-xl font-medium tracking-tight text-ink">
+        <h2 id="identity-focus" className="ui-section-title">
           {copy.question}
         </h2>
         <ul className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -116,17 +116,17 @@ export function TemplateIdentityDetailView({
       ) : null}
 
       {identity.sparse && items.length > 0 ? (
-        <p className="mb-10 rounded-2xl border border-line bg-card p-5 text-[15px] leading-6 text-mute">
+        <p className="ui-body mb-10 rounded-2xl border border-line bg-card p-5 text-mute">
           {sparseLabel}
         </p>
       ) : null}
 
       {items.length === 0 ? (
         <section className="rounded-2xl border border-line bg-card p-6 md:p-8" aria-labelledby="identity-empty">
-          <h2 id="identity-empty" className="text-xl font-medium tracking-tight text-ink">
+          <h2 id="identity-empty" className="ui-section-title">
             {copy.empty}
           </h2>
-          <p className="mt-3 max-w-2xl text-[15px] leading-6 text-mute">{copy.emptyBody}</p>
+          <p className="ui-body mt-3 max-w-2xl text-mute">{copy.emptyBody}</p>
           <Link
             href={withLocale("/templates/all", urlLocale)}
             className="mt-6 inline-flex min-h-11 items-center rounded-[10px] border border-line px-4 text-[15px] font-medium text-ink hover:border-line-strong"
@@ -144,12 +144,12 @@ export function TemplateIdentityDetailView({
                   <div className="mb-6 max-w-2xl">
                     <h2
                       id={"group-" + group.slug}
-                      className="scroll-mt-24 text-2xl font-medium tracking-tight text-ink"
+                      className="ui-section-title scroll-mt-24"
                     >
                       {group.title}
                     </h2>
                     {group.description ? (
-                      <p className="mt-2 text-[15px] leading-6 text-mute">{group.description}</p>
+                      <p className="ui-body mt-2 text-mute">{group.description}</p>
                     ) : null}
                   </div>
                 )}

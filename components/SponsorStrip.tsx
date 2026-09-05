@@ -18,7 +18,7 @@ export function SponsorStrip() {
         aria-label={t("sponsor.aria")}
         className="group mx-auto flex h-12 max-w-[1240px] items-center gap-3 px-5 md:px-8"
       >
-        <span className="shrink-0 text-[11px] font-medium tracking-[0.12em] text-mute uppercase">
+        <span className="shrink-0 text-[12px] font-medium tracking-[0.04em] text-mute uppercase">
           {t("sponsor.label")}
         </span>
         <span className="hidden h-4 w-px shrink-0 bg-line sm:block" aria-hidden />
@@ -30,7 +30,7 @@ export function SponsorStrip() {
             height={19}
             className="size-5 shrink-0 rounded-[5px] ring-1 ring-line"
           />
-          <span className="truncate text-[13px] font-medium text-ink">{t("sponsor.name")}</span>
+          <span className="truncate text-[15px] font-medium text-ink">{t("sponsor.name")}</span>
           <span className="hidden truncate text-[13px] text-mute md:inline">{t("sponsor.tagline")}</span>
         </span>
         <span className="ml-auto inline-flex shrink-0 items-center gap-0.5 text-[12px] text-mute transition group-hover:text-ink">

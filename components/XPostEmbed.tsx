@@ -49,7 +49,7 @@ export function XPostEmbed({ url }: { url: string }) {
         target="_blank"
         rel="noopener noreferrer"
         onClick={(event) => openExternalUrl(url, event)}
-        className="inline-flex h-11 items-center rounded-[10px] border border-line px-4 text-sm text-mute hover:border-line-strong hover:text-ink"
+        className="inline-flex h-11 items-center rounded-[10px] border border-line px-4 text-[15px] leading-6 text-mute hover:border-line-strong hover:text-ink"
       >
         {t("discover.viewOriginalX")} ↗
       </a>

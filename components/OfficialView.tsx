@@ -98,8 +98,8 @@ export function OfficialView() {
       <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <h1 className="ui-page-title">{t("officialPage.title")}</h1>
-          <p className="ui-page-intro mt-3">{ui.officialIntro}</p>
-          <p className="mt-3 text-[16px] font-medium tabular-nums text-mute">
+          <p className="ui-page-intro mt-4">{ui.officialIntro}</p>
+          <p className="ui-count mt-3 font-medium text-mute">
             {t("officialPage.count", { n: officialUseCases.length })}
             {" · "}
             {t("officialPage.countGuide", { n: officialGuideCount })}
@@ -119,7 +119,7 @@ export function OfficialView() {
       </div>
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:hidden">
-        <label className="grid gap-2 text-[13px] font-medium text-mute">
+        <label className="ui-label grid gap-2 text-mute">
           {ui.chooseCategory}
           <select value={category} onChange={(event) => setCategory(event.target.value as OfficialCategory | "all")} className="min-h-12 w-full min-w-0 rounded-xl border border-line bg-card px-3 text-[16px] font-normal text-ink">
             <option value="all">{t("officialPage.catAll")}</option>
@@ -127,7 +127,7 @@ export function OfficialView() {
           </select>
         </label>
         {selected ? (
-          <label className="grid gap-2 text-[13px] font-medium text-mute">
+          <label className="ui-label grid gap-2 text-mute">
             {ui.chooseRole}
             <select aria-controls="official-detail" value={selected.slug} onChange={(event) => pick(event.target.value)} className="min-h-12 w-full min-w-0 rounded-xl border border-accent bg-accent-soft px-3 text-[16px] font-normal text-ink">
               {items.map((item) => <option key={item.slug} value={item.slug}>{item.title}</option>)}
@@ -150,7 +150,7 @@ export function OfficialView() {
 
       {items.length === 0 ? (
         <div role="status" className="mt-8 rounded-2xl border border-line bg-card p-6">
-          <p className="text-[15px] text-mute">{t("officialPage.empty")}</p>
+          <p className="ui-body text-mute">{t("officialPage.empty")}</p>
           <button type="button" className="ui-button-secondary mt-4" onClick={() => { setQuery(""); setCategory("all"); }}>{ui.clearFilters}</button>
         </div>
       ) : null}
@@ -162,7 +162,7 @@ export function OfficialView() {
             aria-label={t("officialPage.title")}
           >
             {items.length === 0 ? (
-              <p className="py-6 text-[13px] text-mute">{t("officialPage.empty")}</p>
+              <p className="ui-meta py-6 text-mute">{t("officialPage.empty")}</p>
             ) : (
               <ul className="space-y-1">
                 {items.map((item) => {
@@ -196,7 +196,7 @@ export function OfficialView() {
                           )}
                           <span className={cn("min-w-0 truncate", active && "font-medium")}>{item.title}</span>
                         </span>
-                        <span className="hidden shrink-0 text-[12px] text-mute xl:inline">
+                        <span className="ui-meta hidden shrink-0 text-mute xl:inline">
                           {t(categoryKeys[item.category])}
                         </span>
                       </button>
@@ -222,21 +222,21 @@ function OfficialDetail({ selected }: { selected: OfficialUseCase }) {
   return (
     <article id="official-detail" className="min-w-0 scroll-mt-28 rounded-2xl border border-line bg-card p-5 md:p-8">
       <div className="flex items-start justify-between gap-6">
-        <h2 className="text-[clamp(28px,4vw,40px)] leading-tight font-medium tracking-[-0.035em] text-ink">
+        <h2 className="ui-section-title min-w-0">
           {selected.title}
         </h2>
         <BotFace size={52} color={botColorFor(selected.slug)} className="mt-1 hidden shrink-0 lg:block" />
       </div>
-      <p className="mt-3 text-[13px] text-mute">
+      <p className="ui-meta mt-3 text-mute">
         {t(categoryKeys[selected.category])} · {t("officialPage.badge")}
         {guide ? ` · ${t("officialPage.hasTask")}` : ""}
       </p>
 
       <section className="mt-7 max-w-[38rem]">
-        <p className="text-[13px] font-medium text-mute">
+        <p className="ui-label text-mute">
           {t("officialPage.roleTitle")}
         </p>
-        <p className="mt-3 text-[17px] leading-8 text-ink md:text-[18px] md:leading-8">{selected.role}</p>
+        <p className="ui-body mt-3 text-ink">{selected.role}</p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <CopyButton
             text={selected.role}
@@ -244,32 +244,32 @@ function OfficialDetail({ selected }: { selected: OfficialUseCase }) {
             variant={guide ? "ghost" : "solid"}
           />
         </div>
-        <p className="mt-2 text-[13px] leading-6 text-mute">{ui.roleHint}</p>
+        <p className="ui-meta mt-3 text-mute">{ui.roleHint}</p>
       </section>
 
       {guide ? (
         <>
           <section className="mt-8 max-w-[38rem] border-t border-line pt-6">
-            <p className="text-[13px] font-medium text-mute">
+            <p className="ui-label text-mute">
               {t("officialPage.scopeTitle")}
             </p>
-            <dl className="mt-4 space-y-3">
+            <dl className="mt-4 space-y-4">
               <div>
-                <dt className="text-[12px] text-faint">{t("officialPage.owns")}</dt>
-                <dd className="mt-0.5 text-[15px] leading-7 text-ink">{guide.owns}</dd>
+                <dt className="ui-label text-mute">{t("officialPage.owns")}</dt>
+                <dd className="ui-body mt-1 text-ink">{guide.owns}</dd>
               </div>
               <div>
-                <dt className="text-[12px] text-faint">{t("officialPage.connect")}</dt>
-                <dd className="mt-0.5 text-[15px] leading-7 text-ink">{guide.connect}</dd>
+                <dt className="ui-label text-mute">{t("officialPage.connect")}</dt>
+                <dd className="ui-body mt-1 text-ink">{guide.connect}</dd>
               </div>
             </dl>
           </section>
 
           <section className="mt-8 max-w-[38rem] border-t border-line pt-6">
-            <p className="text-[13px] font-medium text-mute">
+            <p className="ui-label text-mute">
               {t("officialPage.taskTitle")}
             </p>
-            <blockquote className="mt-4 border-l-2 border-line pl-4 text-[16px] leading-8 text-ink">
+            <blockquote className="ui-body mt-4 border-l-2 border-line pl-4 text-ink">
               {guide.startWith}
             </blockquote>
             <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -283,12 +283,12 @@ function OfficialDetail({ selected }: { selected: OfficialUseCase }) {
                 {t("officialPage.docs")} ↗
               </a>
             </div>
-            <p className="mt-2 text-[13px] leading-6 text-mute">{ui.taskHint}</p>
+            <p className="ui-meta mt-3 text-mute">{ui.taskHint}</p>
           </section>
         </>
       ) : null}
 
-      <p className="mt-8 max-w-[38rem] text-[15px] leading-6 text-mute">
+      <p className="ui-body mt-8 max-w-[38rem] text-mute">
         <a
           href={OFFICIAL_SOURCE_URL}
           target="_blank"

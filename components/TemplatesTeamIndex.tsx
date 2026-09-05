@@ -25,17 +25,17 @@ export function TemplatesTeamIndex({
 
       <header className="border-b border-line pb-4 pt-5 md:pb-5 md:pt-8">
         <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-          <h1 className="text-[30px] font-medium leading-tight tracking-tight text-ink md:text-[40px]">
+          <h1 className="ui-page-title">
             {copy.teamTitle}
           </h1>
-          <p className="text-[16px] font-medium tabular-nums text-ink">{countLabel}</p>
+          <p className="ui-count font-medium text-ink">{countLabel}</p>
         </div>
-        <p className="mt-2 max-w-2xl text-[15px] leading-6 text-mute">{teamSubmitCopy(locale).teamIntro}</p>
+        <p className="ui-page-intro mt-3">{teamSubmitCopy(locale).teamIntro}</p>
       </header>
 
       <TemplateTeamBrowser builders={builders} orchestrators={orchestrators} locale={locale} />
 
-      <p className="mt-8 border-t border-line pt-4 text-[15px] leading-6 text-mute">
+      <p className="ui-body mt-8 border-t border-line pt-4 text-mute">
         {copy.evidenceNote}
       </p>
     </div>

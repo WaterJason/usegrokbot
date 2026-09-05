@@ -52,7 +52,7 @@ export function Footer({ stars }: { stars?: number | null }) {
           </span>
         </div>
 
-        <div className="mt-8 flex flex-col gap-2 text-[12px] leading-5 text-faint sm:flex-row sm:flex-wrap sm:gap-x-4">
+        <div className="mt-8 flex flex-col gap-2 ui-meta text-faint sm:flex-row sm:flex-wrap sm:gap-x-4">
           <a href="https://github.com/jeremy-prt/bloub" className="hover:text-mute" rel="noreferrer">
             {t("bot.credit")}
           </a>

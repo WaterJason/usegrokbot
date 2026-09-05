@@ -37,10 +37,10 @@ export function TemplatesIdentityIndex({
       <TemplatesModeNav active="role" locale={locale} urlLocale={urlLocale} />
 
       <div className="border-b border-line pb-5 pt-6 md:pt-8">
-        <h1 className="text-[clamp(28px,4vw,40px)] font-medium tracking-tight text-ink">
+        <h1 className="ui-page-title">
           {copy.title}
         </h1>
-        <p className="mt-2 max-w-2xl text-[15px] leading-6 text-mute">{copy.intro}</p>
+        <p className="ui-page-intro mt-3">{copy.intro}</p>
         <nav className="mt-4" aria-label={browserCopy.clusterJumpLabel} data-identity-cluster-jump>
           <div className="flex flex-wrap gap-2">
             {jumps.map((jump) => (
@@ -65,11 +65,11 @@ export function TemplatesIdentityIndex({
               <div className="max-w-2xl">
                 <h2
                   id={headingId}
-                  className="scroll-mt-24 text-2xl font-medium tracking-tight text-ink"
+                  className="ui-section-title scroll-mt-24"
                 >
                   {localizeText(cluster.name, locale)}
                 </h2>
-                <p className="mt-2 text-[15px] leading-6 text-mute">
+                <p className="ui-body mt-2 text-mute">
                   {localizeText(cluster.description, locale)}
                 </p>
               </div>
@@ -84,16 +84,16 @@ export function TemplatesIdentityIndex({
                       className="group spring-lift flex min-h-[148px] min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                       data-template-identity={identity.slug}
                     >
-                      <div className="flex items-start justify-between gap-4">
-                        <h3 className="text-[18px] font-medium tracking-tight text-ink">
+                      <div className="flex flex-col-reverse items-start gap-4">
+                        <h3 className="ui-card-title w-full group-hover:text-accent">
                           {localizeText(identity.name, locale)}
                         </h3>
                         <IdentityMascot slug={identity.slug} paper="var(--card)" />
                       </div>
-                      <p className="mt-3 text-[15px] leading-6 text-mute">
+                      <p className="ui-body mt-3 text-mute">
                         {localizeText(identity.description, locale)}
                       </p>
-                      <span className="mt-auto flex items-end justify-between gap-3 pt-5">
+                      <span className="mt-auto flex flex-wrap items-end justify-between gap-3 pt-5">
                         <span className="flex items-center gap-1.5 text-[15px] font-medium text-accent">
                           {copy.openIdentity}
                           <ArrowRight
@@ -104,7 +104,7 @@ export function TemplatesIdentityIndex({
                         <AnimatedCountLabel
                           total={count}
                           template={copy.templateCount}
-                          className="shrink-0 font-mono text-[12px] tabular-nums text-mute"
+                          className="ui-count font-medium text-mute"
                         />
                       </span>
                     </Link>
@@ -119,11 +119,11 @@ export function TemplatesIdentityIndex({
           <div className="max-w-3xl">
             <h2
               id="more-identities"
-              className="scroll-mt-24 text-2xl font-medium tracking-tight text-ink"
+              className="ui-section-title scroll-mt-24"
             >
               {copy.moreTitle}
             </h2>
-            <p className="mt-2 text-[15px] leading-6 text-mute">{copy.moreBody}</p>
+            <p className="ui-body mt-2 text-mute">{copy.moreBody}</p>
           </div>
           <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {moreTemplateIdentities().map((identity) => {
@@ -137,13 +137,13 @@ export function TemplatesIdentityIndex({
                 >
                   <IdentityMascot slug={identity.slug} size={36} paper="var(--canvas)" />
                   <span className="min-w-0 flex-1">
-                    <span className="block text-[15px] font-medium">
+                    <span className="ui-card-title block">
                       {localizeText(identity.name, locale)}
                     </span>
                     <AnimatedCountLabel
                       total={count}
                       template={copy.templateCount}
-                      className="mt-1 block font-mono text-[12px] text-mute"
+                      className="ui-count mt-1 block font-medium text-mute"
                     />
                   </span>
                   <ArrowRight
@@ -157,10 +157,10 @@ export function TemplatesIdentityIndex({
         </section>
 
         <aside className="rounded-2xl border border-line bg-elevated p-6 md:p-8" aria-labelledby="identity-rationale">
-          <h2 id="identity-rationale" className="text-xl font-medium tracking-tight text-ink">
+          <h2 id="identity-rationale" className="ui-section-title">
             {copy.whyTitle}
           </h2>
-          <p className="mt-3 max-w-3xl text-[15px] leading-6 text-mute">{copy.whyBody}</p>
+          <p className="ui-body mt-3 max-w-3xl text-mute">{copy.whyBody}</p>
         </aside>
       </div>
     </div>

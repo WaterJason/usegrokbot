@@ -29,11 +29,11 @@ export default function GlobalNotFound() {
       <body className="flex min-h-full flex-col bg-canvas font-sans text-ink antialiased">
         <div className="mx-auto max-w-[640px] px-5 py-24 text-center">
           <BlobatarAvatar name="usegrokbot-lost-bot" size={104} expression="sad" className="mx-auto mb-6" />
-          <h1 className="text-3xl font-medium tracking-tight text-ink">Page not found</h1>
-          <p className="mt-3 text-mute">That URL is not in the library.</p>
+          <h1 className="ui-page-title">Page not found</h1>
+          <p className="ui-page-intro mt-3">That URL is not in the library.</p>
           <Link
             href="/en"
-            className="accent-gradient mt-8 inline-flex h-11 items-center rounded-[10px] px-5 text-sm font-medium text-inverse"
+            className="accent-gradient mt-8 inline-flex h-11 items-center rounded-[10px] px-5 text-[15px] leading-6 font-medium text-inverse"
           >
             Browse posts
           </Link>

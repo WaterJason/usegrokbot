@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { TemplateName } from "@/components/TemplateName";
 import { getTemplateStory, rankLabel, templates, type BotTemplate } from "@/data/templates";
 import { getTemplateTeamCardCopy } from "@/data/template-team-copy";
 import { cn } from "@/lib/cn";
@@ -55,28 +56,24 @@ export function TemplateList({
                     isTeamCard && "border-line-strong bg-elevated",
                   )}
                 >
-                  <div className="flex items-start justify-between gap-3">
-                    <Heading className="min-w-0 text-[18px] font-medium tracking-tight wrap-break-word text-ink">
-                      {card.title}
-                    </Heading>
-                    {xPostUrl ? (
-                      <XPostButton href={xPostUrl} label={t("discover.viewOriginalX")} />
-                    ) : null}
-                  </div>
+                  <Heading className="ui-card-title min-w-0">
+                    <TemplateName title={card.title} />
+                  </Heading>
                   {lead ? (
-                    <p className="mt-3 min-w-0 text-[15px] leading-6 wrap-break-word text-ink">
+                    <p className="ui-body mt-3 min-w-0 text-mute">
                       {lead}
                     </p>
                   ) : null}
-                  {byline ? (
-                    <p className="mt-3 min-w-0 truncate text-[12px] text-mute">{byline}</p>
-                  ) : null}
-                  <div className="mt-auto pt-5">
+                  <div className="mt-auto flex min-w-0 items-center justify-between gap-3 pt-4">
+                    {byline ? <p className="ui-meta min-w-0 text-mute">{byline}</p> : <span />}
+                    {xPostUrl ? <XPostButton href={xPostUrl} label={t("discover.viewOriginalX")} /> : null}
+                  </div>
+                  <div className="pt-4">
                     <a
                       href={item.templateUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="accent-gradient spring-press inline-flex h-11 w-full items-center justify-center rounded-[10px] px-5 text-[15px] font-medium"
+                      className="accent-gradient spring-press inline-flex min-h-11 w-full items-center justify-center rounded-[10px] px-4 py-2.5 text-center text-[15px] leading-6 font-medium"
                     >
                       {openLabel}
                     </a>
@@ -94,7 +91,7 @@ export function TemplateList({
           return (
             <li key={item.id}>
               <article data-template-id={item.id} className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong">
-                <div className="flex items-center justify-between gap-3">
+                <div className="flex flex-wrap items-center justify-between gap-3">
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-[20px] tabular-nums tracking-tight text-mute">
                       {rankLabel(item.rank)}
@@ -104,23 +101,23 @@ export function TemplateList({
                     ) : null}
                   </div>
                   <p className="shrink-0 text-right">
-                    <span className="text-[16px] font-medium tabular-nums tracking-tight text-ink">
+                    <span className="ui-count font-medium text-ink">
                       {views > 0 ? formatViewCount(views, locale) : "—"}
                     </span>{" "}
-                    <span className="text-[12px] text-mute">{t("pages.rankingsViews")}</span>
+                    <span className="ui-meta text-mute">{t("pages.rankingsViews")}</span>
                   </p>
                 </div>
 
-                <Heading className="mt-4 text-[18px] font-medium tracking-tight wrap-break-word text-ink">
-                  {card.title}
+                <Heading className="ui-card-title mt-5">
+                  <TemplateName title={card.title} />
                 </Heading>
                 {card.description ? (
-                  <p className="mt-3 min-w-0 text-[15px] leading-6 wrap-break-word text-mute">
+                  <p className="ui-body mt-3 min-w-0 text-mute">
                     {card.description}
                   </p>
                 ) : null}
                 {byline ? (
-                  <p className="mt-3 min-w-0 truncate text-[12px] text-mute">{byline}</p>
+                  <p className="ui-meta mt-4 min-w-0 text-mute">{byline}</p>
                 ) : null}
 
                 <div className="mt-auto pt-5">
@@ -128,7 +125,7 @@ export function TemplateList({
                     href={item.templateUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="accent-gradient spring-press inline-flex h-11 w-full items-center justify-center rounded-[10px] px-5 text-[15px] font-medium"
+                    className="accent-gradient spring-press inline-flex min-h-11 w-full items-center justify-center rounded-[10px] px-4 py-2.5 text-center text-[15px] leading-6 font-medium"
                   >
                     {openLabel}
                   </a>

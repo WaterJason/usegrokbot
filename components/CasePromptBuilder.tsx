@@ -85,36 +85,36 @@ export function CasePromptBuilder({
   return (
     <section className="mt-10 overflow-hidden rounded-[18px] border border-line bg-card">
       <div className="border-b border-line bg-elevated px-5 py-6 sm:px-6">
-        <div className="flex items-center gap-2 text-[11px] font-medium tracking-[0.1em] text-accent uppercase">
+        <div className="ui-label flex items-center gap-2 uppercase text-accent">
           <ShieldCheck className="size-4" strokeWidth={1.8} />
           {copy.eyebrow}
         </div>
-        <h2 className="mt-3 text-[24px] font-medium tracking-tight text-ink sm:text-[28px]">
+        <h2 className="ui-section-title mt-3">
           {copy.title}
         </h2>
-        <p className="mt-2 max-w-[650px] text-[14px] leading-6 text-mute">{copy.body}</p>
-        <p className="mt-3 rounded-[10px] border border-line bg-card px-3 py-2 text-[12px] leading-5 text-faint">
+        <p className="ui-page-intro mt-2">{copy.body}</p>
+        <p className="ui-meta mt-3 rounded-[10px] border border-line bg-card px-3 py-2 text-mute">
           {copy.caseNote}
         </p>
 
         <div className="mt-4">
-          <p className="text-[11px] font-medium tracking-[0.08em] text-faint uppercase">
+          <p className="ui-label uppercase text-mute">
             {copy.toolsLabel}
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {appNames.map((app) => (
               <span
                 key={app}
-                className="rounded-full border border-line bg-card px-2.5 py-1 text-[12px] text-ink"
+                className="ui-label rounded-full border border-line bg-card px-2.5 py-1 text-ink"
               >
                 {app}
               </span>
             ))}
           </div>
-          <p className="mt-2 text-[12px] leading-5 text-faint">{copy.toolsNote}</p>
+          <p className="ui-meta mt-2 text-mute">{copy.toolsNote}</p>
         </div>
 
-        <ul className="mt-5 grid gap-2 text-[13px] text-ink sm:grid-cols-2">
+        <ul className="ui-body mt-5 grid gap-2 text-ink sm:grid-cols-2">
           {copy.included.map((item) => (
             <li key={item} className="flex items-start gap-2">
               <Check className="mt-0.5 size-4 shrink-0 text-ok" strokeWidth={2} />
@@ -140,13 +140,13 @@ export function CasePromptBuilder({
             className="w-full justify-center sm:w-auto"
           />
         </div>
-        <p className="mt-3 text-[12px] leading-5 text-faint">{copy.firstRun}</p>
+        <p className="ui-meta mt-3 text-mute">{copy.firstRun}</p>
 
         <details className="group mt-6 rounded-[14px] border border-line bg-elevated">
-          <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-[14px] font-medium text-ink [&::-webkit-details-marker]:hidden">
+          <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-[15px] font-medium text-ink [&::-webkit-details-marker]:hidden">
             <span>
               {copy.customize}
-              <span className="ml-2 font-normal text-faint">{copy.optional}</span>
+              <span className="ml-2 font-normal text-mute">{copy.optional}</span>
             </span>
             <ChevronDown
               className="size-4 shrink-0 text-faint transition-transform group-open:rotate-180"
@@ -161,7 +161,7 @@ export function CasePromptBuilder({
                   key={field.key}
                   className={field.multiline ? "block sm:col-span-2" : "block"}
                 >
-                  <span className="mb-1.5 block text-[12px] font-medium text-faint">
+                  <span className="ui-label mb-1.5 block text-mute">
                     {field.label}
                   </span>
                   {field.multiline ? (
@@ -175,7 +175,7 @@ export function CasePromptBuilder({
                       onChange={(event) => updateField(field.key, event.target.value)}
                       maxLength={fieldMaxLength(field.key)}
                       rows={3}
-                      className="w-full resize-y rounded-[10px] border border-line bg-input px-3 py-2.5 text-sm leading-6 text-ink placeholder:text-faint"
+                      className="w-full resize-y rounded-[10px] border border-line bg-input px-3 py-2.5 text-[16px] leading-6 text-ink placeholder:text-mute"
                     />
                   ) : (
                     <input
@@ -187,7 +187,7 @@ export function CasePromptBuilder({
                       }
                       onChange={(event) => updateField(field.key, event.target.value)}
                       maxLength={fieldMaxLength(field.key)}
-                      className="h-11 w-full rounded-[10px] border border-line bg-input px-3 text-sm text-ink placeholder:text-faint"
+                      className="h-11 w-full rounded-[10px] border border-line bg-input px-3 text-[16px] text-ink placeholder:text-mute"
                     />
                   )}
                 </label>
@@ -195,20 +195,20 @@ export function CasePromptBuilder({
             </div>
 
             <label className="mt-4 block">
-              <span className="mb-1.5 block text-[12px] font-medium text-faint">
+              <span className="ui-label mb-1.5 block text-mute">
                 {copy.approvalLabel}
               </span>
               <select
                 value={approvalMode}
                 onChange={(event) => setApprovalMode(event.target.value as ApprovalMode)}
-                className="h-11 w-full rounded-[10px] border border-line bg-input px-3 text-sm text-ink sm:max-w-[420px]"
+                className="h-11 w-full rounded-[10px] border border-line bg-input px-3 text-[16px] text-ink sm:max-w-[420px]"
               >
                 <option value="confirm-changes">{copy.confirmChanges}</option>
                 <option value="draft-only">{copy.draftOnly}</option>
               </select>
             </label>
 
-            <p className="mt-4 flex items-start gap-2 text-[12px] leading-5 text-faint">
+            <p className="ui-meta mt-4 flex items-start gap-2 text-mute">
               <ShieldCheck className="mt-0.5 size-4 shrink-0" strokeWidth={1.8} />
               <span>{copy.privacy}</span>
             </p>

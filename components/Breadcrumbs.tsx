@@ -4,11 +4,11 @@ export type Crumb = { href?: string; label: string };
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
-    <nav aria-label="Breadcrumb" className="text-[13px] text-faint">
+    <nav aria-label="Breadcrumb" className="ui-meta text-mute">
       <ol className="flex flex-wrap items-center gap-2">
         {items.map((item, index) => (
-          <li key={`${item.label}-${index}`} className="flex items-center gap-2">
-            {index > 0 ? <span aria-hidden>→</span> : null}
+          <li key={`${item.label}-${index}`} className="flex min-w-0 items-start gap-2">
+            {index > 0 ? <span className="shrink-0" aria-hidden>→</span> : null}
             {item.href ? (
               <LocaleLink href={item.href} className="hover:text-ink">
                 {item.label}

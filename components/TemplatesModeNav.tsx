@@ -33,7 +33,7 @@ export function TemplatesModeNav({
               href={withLocale(item.href, urlLocale)}
               aria-current={current ? "page" : undefined}
               className={cn(
-                "relative flex min-h-12 min-w-0 items-center justify-center px-2 py-3 text-center text-[15px] leading-5 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent sm:min-h-14 sm:px-4 sm:text-base",
+                "relative flex min-h-12 min-w-0 items-center justify-center px-2 py-3 text-center text-[15px] leading-6 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent sm:min-h-14 sm:px-4 sm:text-base",
                 current
                   ? "font-medium text-ink"
                   : "text-mute hover:bg-elevated hover:text-ink",

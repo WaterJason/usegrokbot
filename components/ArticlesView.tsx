@@ -80,10 +80,10 @@ export function ArticlesView({
 
       {rankedSections.map((section, sectionIndex) => (
         <section id={`articles-${section.key}`} className={sectionIndex === 0 ? "mt-8 md:mt-10" : "mt-12"} key={section.key}>
-          <h2 className="text-[24px] font-medium tracking-tight text-ink md:text-[28px]">
+          <h2 className="ui-section-title">
             {section.title}
           </h2>
-          <p className="mt-2 text-[16px] font-medium tabular-nums text-mute">
+          <p className="ui-count mt-2 font-medium text-mute">
             {t("count.articles", { n: section.items.length })}
           </p>
           <ol className="mt-6 divide-y divide-line border-y border-line">
@@ -101,8 +101,8 @@ export function ArticlesView({
       ))}
 
       <section id="articles-latest" className="mt-12">
-        <h2 className="text-[24px] font-medium tracking-tight text-ink md:text-[28px]">{copy.latest}</h2>
-        <p className="mt-2 text-[16px] font-medium tabular-nums text-mute">{t("count.articles", { n: latest.length })}</p>
+        <h2 className="ui-section-title">{copy.latest}</h2>
+        <p className="ui-count mt-2 font-medium text-mute">{t("count.articles", { n: latest.length })}</p>
         <ol className="mt-6 divide-y divide-line border-y border-line">
           {latest.map((item) => (
             <ArticleRow

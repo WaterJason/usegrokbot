@@ -79,7 +79,7 @@ export function UseCaseFilterPanel({
 
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <h2 id={titleId} className="text-[18px] font-medium tracking-[-0.02em] text-ink">
+            <h2 id={titleId} className="ui-card-title">
               {copy.filtersTitle}
             </h2>
             {extraCount > 0 ? (
@@ -169,7 +169,7 @@ function FilterChoiceGroup({
 }) {
   return (
     <fieldset className="min-w-0">
-      <legend className="mb-2 text-[13px] font-medium text-mute">{label}</legend>
+      <legend className="mb-2 ui-label text-mute">{label}</legend>
       <div className="flex flex-wrap gap-2">
         {options.map((option) => {
           const active = value === option.value;

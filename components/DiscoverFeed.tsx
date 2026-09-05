@@ -101,13 +101,13 @@ export function DiscoverFilters({
         ) : null}
       </div>
       {tab === "latest" ? (
-        <p className="mt-2 text-[12px] text-faint">{t("discover.tabLatestHint")}</p>
+        <p className="mt-2 ui-meta text-mute">{t("discover.tabLatestHint")}</p>
       ) : null}
       {tab === "featured" ? (
-        <p className="mt-2 text-[12px] text-faint">{t("discover.tabFeaturedHint")}</p>
+        <p className="mt-2 ui-meta text-mute">{t("discover.tabFeaturedHint")}</p>
       ) : null}
       {tab === "learn" ? (
-        <p className="mt-2 text-[12px] text-faint">{t("discover.tabLearnHint")}</p>
+        <p className="mt-2 ui-meta text-mute">{t("discover.tabLearnHint")}</p>
       ) : null}
 
       <div className="mt-4 flex flex-wrap gap-2">
@@ -124,7 +124,7 @@ export function DiscoverFilters({
 
       {showOutcomes ? (
         <div className={cn("mt-3", showMore ? "block" : "hidden md:block")}>
-          <p className="text-[12px] text-faint">{t("discover.byOutcome")}</p>
+          <p className="ui-meta text-mute">{t("discover.byOutcome")}</p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Chip active={outcome === "all"} onClick={() => setOutcome("all")} label={t("discover.catAll")} />
             {outcomeSlugs.map((item) => (
@@ -197,7 +197,7 @@ export function DiscoverFeed({
     <div>
       {showIntro ? (
         <div className="mb-6">
-          <h2 className="text-[24px] font-medium tracking-tight text-ink md:text-[28px]">
+          <h2 className="ui-section-title">
             {t(
               tab === "featured"
                 ? "discover.feedTitleFeatured"
@@ -212,7 +212,7 @@ export function DiscoverFeed({
       {hideFilters ? null : <DiscoverFilters {...filters} showOutcomes={showOutcomes} />}
 
       {showIntro ? null : (
-        <p className="mt-6 text-[13px] text-faint">{t("discover.count", { n: stories.length })}</p>
+        <p className="ui-count mt-6 text-mute">{t("discover.count", { n: stories.length })}</p>
       )}
 
       {stories.length === 0 ? (
@@ -223,7 +223,7 @@ export function DiscoverFeed({
             expression="thinking"
             className="mx-auto mb-4"
           />
-          <p className="text-sm text-ink">
+          <p className="text-[15px] leading-6 text-ink">
             {t(tab === "featured" ? "discover.emptyElonLiked" : "discover.empty")}
           </p>
           <p className="mt-2 text-[13px] text-mute">
@@ -242,7 +242,7 @@ export function DiscoverFeed({
               <button
                 type="button"
                 onClick={() => setPage({ key: resetKey, count: visible + PAGE_SIZE })}
-                className="inline-flex h-11 items-center rounded-[10px] border border-line px-5 text-sm text-ink hover:border-line-strong"
+                className="inline-flex h-11 items-center rounded-[10px] border border-line px-5 text-[15px] leading-6 text-ink hover:border-line-strong"
               >
                 {t("discover.loadMore")}
               </button>

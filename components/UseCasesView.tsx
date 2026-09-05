@@ -103,17 +103,17 @@ export function UseCasesView({
         <h1 className="ui-page-title">
           {copy.title}
         </h1>
-        <p className="mt-4 text-[16px] leading-7 text-mute">{copy.subtitle(reviewedPostCount)}</p>
+        <p className="ui-page-intro mt-4">{copy.subtitle(reviewedPostCount)}</p>
       </header>
 
       <section className="mt-8" aria-label={browser.categoriesLabel}>
-        <label className="grid gap-2 text-[13px] font-medium text-mute md:hidden">
+        <label className="ui-label grid gap-2 text-mute md:hidden">
           {browser.categoriesLabel}
           <select value={category} onChange={(event) => setCategory(event.target.value as FilterValue<VerifiedUseCaseCategorySlug>)} className="min-h-12 w-full rounded-xl border border-line bg-card px-3 text-[16px] font-normal text-ink">
             {categoryOptions.map((item) => <option key={item.slug} value={item.slug}>{item.label}</option>)}
           </select>
         </label>
-        <p className="hidden text-[13px] font-medium text-mute md:block">{browser.categoriesLabel}</p>
+        <p className="ui-label hidden text-mute md:block">{browser.categoriesLabel}</p>
         <div className="mt-2 hidden flex-wrap gap-2 md:flex">
           {categoryOptions.map((item) => {
             const value = item.slug;
@@ -140,7 +140,7 @@ export function UseCasesView({
       </section>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <p aria-live="polite" className="font-mono text-[16px] font-medium tracking-[0.03em] text-mute">
+        <p aria-live="polite" className="ui-count font-medium text-mute">
           {browser.resultCount(filteredItems.length)}
         </p>
         <button
@@ -158,7 +158,7 @@ export function UseCasesView({
           <SlidersHorizontal className="size-4" strokeWidth={1.75} />
           {browser.filters}
           {extraCount > 0 ? (
-            <span className="rounded-full bg-ink px-2 py-0.5 text-[16px] font-medium text-inverse">
+            <span className="ui-count rounded-full bg-ink px-2 py-0.5 font-medium text-inverse">
               {extraCount}
             </span>
           ) : null}
@@ -219,15 +219,20 @@ export function UseCasesView({
               <li key={item.slug} className="border-t border-line">
                 <LocaleLink
                   href={`/use-cases/${item.slug}`}
-                  className="group grid min-h-40 grid-cols-[2rem_minmax(0,1fr)_auto] gap-3 py-6 focus-visible:outline-offset-4"
+                  className="group grid min-h-40 grid-cols-[2rem_minmax(0,1fr)] gap-3 py-6 focus-visible:outline-offset-4"
                 >
-                  <span className="pt-0.5 font-mono text-[16px] font-medium tracking-[0.04em] text-mute">
+                  <span className="ui-count pt-0.5 font-medium text-mute">
                     {String(item.rank).padStart(2, "0")}
                   </span>
 
                   <span className="min-w-0">
-                    <span className="block text-[19px] leading-7 font-medium tracking-[-0.02em] text-ink group-hover:text-accent">
-                      {item.title}
+                    <span className="ui-card-title flex items-start gap-2 text-ink group-hover:text-accent">
+                      <span className="min-w-0 flex-1">{item.title}</span>
+                      <ArrowUpRight
+                        aria-hidden
+                        className="mt-1 size-4 shrink-0 text-faint transition-colors group-hover:text-accent"
+                        strokeWidth={1.75}
+                      />
                     </span>
                     <span className="mt-4 flex flex-wrap gap-2">
                       <Badge tone="neutral">
@@ -241,24 +246,18 @@ export function UseCasesView({
                     <span className="mt-5 flex min-w-0 items-center gap-2.5">
                       <AuthorAvatar name={item.authorName} handle={item.handle} size={40} />
                       <span className="min-w-0">
-                        <span className="block truncate text-[15px] font-medium text-ink">{item.authorName}</span>
-                        {item.handle ? <span className="block truncate text-[13px] text-mute">@{item.handle}</span> : null}
+                        <span className="block text-[15px] font-medium wrap-break-word text-ink">{item.authorName}</span>
+                        {item.handle ? <span className="ui-meta mt-0.5 block text-mute">@{item.handle}</span> : null}
                       </span>
                     </span>
                   </span>
-
-                  <ArrowUpRight
-                    aria-hidden
-                    className="mt-1 size-4 text-faint transition-colors group-hover:text-accent"
-                    strokeWidth={1.75}
-                  />
                 </LocaleLink>
               </li>
             ))}
           </ol>
         ) : (
           <div className="mt-4 border-y border-line py-12 text-center">
-            <p className="text-[15px] text-mute">{copy.empty}</p>
+            <p className="ui-body text-mute">{copy.empty}</p>
             <button
               type="button"
               data-clear-use-case-filters
@@ -278,7 +277,7 @@ function Badge({ children, tone }: { children: React.ReactNode; tone: "accent" |
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full px-2.5 py-1 text-[12px] font-medium text-mute",
+        "ui-label inline-flex items-center rounded-full px-2.5 py-1 text-mute",
         tone === "accent" ? "bg-accent-soft text-accent" : "border border-line text-mute",
       )}
     >

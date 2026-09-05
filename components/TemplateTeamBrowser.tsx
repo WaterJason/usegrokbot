@@ -43,7 +43,7 @@ export function TemplateTeamBrowser({
           role="group"
           aria-label={copy.categoryLabel}
         >
-          <p className="mb-2 text-[15px] font-medium text-ink">{copy.categoryLabel}</p>
+          <p className="ui-label mb-2 text-ink">{copy.categoryLabel}</p>
           <div className="grid grid-cols-2 gap-2">
             <ModeOption
               checked={mode === "builder"}
@@ -62,7 +62,7 @@ export function TemplateTeamBrowser({
               onSelect={selectMode}
             />
           </div>
-          <p className="mt-3 text-[15px] leading-6 text-mute" aria-live="polite">
+          <p className="ui-body mt-3 text-mute" aria-live="polite">
             {selectedBody}
           </p>
         </div>
@@ -70,10 +70,10 @@ export function TemplateTeamBrowser({
 
       <section id="team-template-results" className="mt-4" aria-labelledby="team-template-list">
         <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-          <h2 id="team-template-list" className="text-[16px] font-medium tracking-tight text-ink">
+          <h2 id="team-template-list" className="ui-section-title">
             {resultTitle}
           </h2>
-          <p className="text-[16px] font-medium tabular-nums text-ink" aria-live="polite">
+          <p className="ui-count font-medium text-ink" aria-live="polite">
             {resultCount}
           </p>
         </div>
@@ -114,10 +114,10 @@ function ModeOption({
           : "border-line bg-card hover:border-line-strong",
       )}
     >
-      <span className="text-[15px] font-medium leading-5 text-ink">{title}</span>
+      <span className="ui-card-title">{title}</span>
       <span
         className={cn(
-          "mt-1 block text-[16px] font-medium tabular-nums leading-5",
+          "ui-count mt-1 block font-medium",
           checked ? "text-accent" : "text-ink",
         )}
       >
