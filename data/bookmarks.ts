@@ -55,10 +55,10 @@ export type BookmarkUiCopy = {
 
 export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
   en: {
-    title: "Grok Bot Resources",
+    title: "Grok Bot Articles",
     intro: "Discover community projects, guides, and tutorials.",
-    navLabel: "Resource source",
-    count: "{n} resources",
+    navLabel: "Article source",
+    count: "{n} items",
     sourceCards: {
       github: { title: "GitHub", body: "Community projects, resource collections, and practical guides." },
       x: { title: "X Articles", body: "Long-form X articles ranked by public view counts." },
@@ -78,10 +78,10 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     note: "GitHub and YouTube are curated selections; X articles are ranked by views.",
   },
   "zh-Hant": {
-    title: "Grok Bot 資源",
+    title: "Grok Bot 文章",
     intro: "探索社群項目、實用指南及影片教學。",
-    navLabel: "資源來源",
-    count: "{n} 個資源",
+    navLabel: "文章來源",
+    count: "{n} 項",
     sourceCards: {
       github: { title: "GitHub", body: "社群項目、資源合集及實用指南。" },
       x: { title: "X 文章", body: "按公開瀏覽次數排列的 X 長文。" },
@@ -101,10 +101,10 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     note: "GitHub 與 YouTube 內容經過精選；X 文章按瀏覽次數排列。",
   },
   "zh-Hans": {
-    title: "Grok Bot 资源",
+    title: "Grok Bot 文章",
     intro: "探索社区项目、实用指南和视频教程。",
-    navLabel: "资源来源",
-    count: "{n} 个资源",
+    navLabel: "文章来源",
+    count: "{n} 项",
     sourceCards: {
       github: { title: "GitHub", body: "社区项目、资源合集和实用指南。" },
       x: { title: "X 文章", body: "按公开浏览次数排列的 X 长文。" },
@@ -124,10 +124,10 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     note: "GitHub 和 YouTube 内容经过精选；X 文章按浏览次数排列。",
   },
   ja: {
-    title: "Grok Bot リソース",
+    title: "Grok Bot 記事",
     intro: "コミュニティのプロジェクト、ガイド、解説動画を探せます。",
-    navLabel: "リソースの出典",
-    count: "{n} 件のリソース",
+    navLabel: "記事の出典",
+    count: "{n} 件",
     sourceCards: {
       github: { title: "GitHub", body: "コミュニティのプロジェクト、リソース集、実践ガイド。" },
       x: { title: "X 記事", body: "公開の閲覧数で並べた X の長文。" },

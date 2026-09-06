@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type KeyboardEvent } from "react";
-import { ExternalLink, FolderGit2, Play, Star } from "lucide-react";
+import { ExternalLink, Star } from "lucide-react";
 import { ArticleRow } from "@/components/ArticleRow";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
 import {
@@ -183,7 +183,6 @@ function BookmarkGrid({
 }) {
   const { locale } = useI18n();
   const copy = bookmarkUiCopy[locale];
-  const Icon = source === "github" ? FolderGit2 : Play;
   const action = source === "github" ? copy.openGithub : copy.openYoutube;
 
   return (
@@ -191,20 +190,11 @@ function BookmarkGrid({
       {items.map((item) => (
         <li key={item.id}>
           <article data-resource-id={item.id} className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong">
-            <div className="flex items-center justify-between gap-3">
-              <span className="inline-flex size-10 items-center justify-center rounded-[10px] bg-accent-soft text-accent">
-                <Icon aria-hidden className="size-5" strokeWidth={1.75} />
-              </span>
-              <span className="ui-label rounded-full border border-line px-2.5 py-1 text-mute">
-                {copy.language[item.language]}
-              </span>
-            </div>
-
-            <h3 className="ui-card-title mt-5 text-ink">
+            <h3 className="ui-card-title text-ink">
               {item.title}
             </h3>
-            {source === "github" ? (
-              <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+            <div className="mt-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+              {source === "github" ? (
                 <span
                   data-github-stars={stars?.[item.url]?.count ?? "unavailable"}
                   title={stars?.[item.url] ? copy.starsCheckedAt.replace("{date}", new Date(stars[item.url]!.checkedAt).toISOString().slice(0, 10)) : undefined}
@@ -218,12 +208,15 @@ function BookmarkGrid({
                     </>
                   ) : <span className="ui-meta text-mute">{copy.starsUnavailable}</span>}
                 </span>
-              </div>
-            ) : null}
-            <p className="ui-body mt-2 text-mute">{item.description}</p>
+              ) : null}
+              <span className="ui-meta text-mute">
+                {copy.language[item.language]}
+              </span>
+            </div>
+            <p className="ui-body mt-3 text-mute">{item.description}</p>
 
-            <div className="mt-5">
-              <span className="ui-label inline-flex rounded-full bg-elevated px-2.5 py-1 text-mute">
+            <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
+              <span className="ui-label inline-flex max-w-full rounded-full bg-elevated px-2.5 py-1 text-mute">
                 {item.focus}
               </span>
               {item.xAuthor ? (
@@ -232,7 +225,7 @@ function BookmarkGrid({
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${item.xAuthor.name}, @${item.xAuthor.handle}, X`}
-                  className="group mt-4 flex min-h-11 max-w-full items-center gap-3 rounded-[10px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+                  className="group flex min-h-11 max-w-full items-center gap-2 rounded-[10px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
                 >
                   <AuthorAvatar
                     name={item.xAuthor.name}
@@ -250,13 +243,13 @@ function BookmarkGrid({
                   </span>
                 </a>
               ) : (
-                <p className="ui-meta mt-4 flex min-h-11 min-w-0 items-center text-mute">
+                <p className="ui-meta min-w-0 wrap-break-word text-mute">
                   {copy.by} {item.author}
                 </p>
               )}
             </div>
 
-            <div className="mt-auto pt-6">
+            <div className="mt-auto pt-4">
               <a
                 href={item.url}
                 target="_blank"
