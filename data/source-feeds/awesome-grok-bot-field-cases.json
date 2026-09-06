@@ -9,14 +9,66 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 55,
+    "total": 61,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
-    "alreadyIngested": 50,
+    "alreadyIngested": 56,
     "pending": 0
   },
   "cases": [
+    {
+      "id": "sprite-portal-grok-bot-nursery-ui",
+      "title": "Sprite Portal Grok Bot nursery UI",
+      "url": "https://github.com/hkclaw/sprite-portal",
+      "sourceSummary": "Localhost Vite dashboard that presents six branded Grok Bot sprites with desks, hopper items, and persona fields.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "getdasha-com-lobby-worker-grok-bot-ship",
+      "title": "getdasha.com lobby Worker (Grok Bot ship)",
+      "url": "https://github.com/Uuriko/dasha-lobby",
+      "sourceSummary": "Large Cloudflare Worker mirror of the live getdasha.com lobby/compute stack as shipped from a Grok Bot tree.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "grok-bot-3d-mascot-controller",
+      "title": "Grok Bot 3D mascot controller",
+      "url": "https://github.com/lenxism/grok-bot-mascot-3d",
+      "sourceSummary": "Three.js web controller that turns the official Grok Bot mark into a blink/nod/wave 3D mascot, built via Grok Bot + Cursor.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "grok-bot-ai-manhua-pipeline",
+      "title": "Grok Bot AI manhua pipeline",
+      "url": "https://github.com/wicm84266964/grokbot-ai-manju",
+      "sourceSummary": "Copy-paste Grok Bot prompts plus local ComfyUI/FFmpeg conductor so one Bot window runs storyboard-to-final AI manhua episodes.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
     {
       "id": "n2parko-cos-em-five-eng-ics-databricks-pm",
       "title": "n2parko: CoS + EM + five eng ICs + Databricks + PM",
@@ -726,6 +778,32 @@
       "title": "GrokBot Board public DeFi directors",
       "url": "https://github.com/thegrokboard/the-grokbot-board",
       "sourceSummary": "Public build-in-public case of an autonomous AI board of directors of Grok Bots running a Solana DeFi company.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "buying-signal-bot-grok-bot-fullenrich",
+      "title": "Buying Signal Bot (Grok Bot + FullEnrich)",
+      "url": "https://github.com/ToolMonsters/buying-signal-bot",
+      "sourceSummary": "Setup playbook so a Grok Bot watches X for people leaving tools, then FullEnrich qualifies them into a short morning list.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "hedge-fund-desk-grok-bot-agent-export",
+      "title": "Hedge-fund desk Grok Bot agent export",
+      "url": "https://github.com/prosmoon-hash/hedge-fund-agents",
+      "sourceSummary": "Sanitized backup of a multi-desk Grok Bot trading roster (profiles, automations, skills, ops docs) for version history—not a live runtime.",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",

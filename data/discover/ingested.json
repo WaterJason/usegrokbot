@@ -66102,5 +66102,175 @@
     "sourceUrl": "https://x.com/JCChristopher/status/2096455411956126118",
     "sourceLabel": "JC Christopher on X",
     "format": "article"
+  },
+  {
+    "slug": "hkclaw-sprite-portal-grok-bot-nursery-ui",
+    "title": "Sprite Portal Grok Bot nursery UI",
+    "headline": "Localhost Vite dashboard that presents six branded Grok Bot sprites with desks, hopper items, and persona fields.",
+    "whatTheyDid": "Localhost Vite dashboard that presents six branded Grok Bot sprites with desks, hopper items, and persona fields.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Localhost Vite dashboard that presents six branded Grok Bot sprites with desks, hopper items, and persona fields.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "hkclaw",
+    "publishedAt": "2026-09-05",
+    "sourceUrl": "https://github.com/hkclaw/sprite-portal",
+    "sourceLabel": "hkclaw · GitHub"
+  },
+  {
+    "slug": "uuriko-getdasha-com-lobby-worker-grok-bot-ship",
+    "title": "getdasha.com lobby Worker (Grok Bot ship)",
+    "headline": "Large Cloudflare Worker mirror of the live getdasha.com lobby/compute stack as shipped from a Grok Bot tree.",
+    "whatTheyDid": "Large Cloudflare Worker mirror of the live getdasha.com lobby/compute stack as shipped from a Grok Bot tree.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Large Cloudflare Worker mirror of the live getdasha.com lobby/compute stack as shipped from a Grok Bot tree.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Uuriko",
+    "publishedAt": "2026-09-05",
+    "sourceUrl": "https://github.com/Uuriko/dasha-lobby",
+    "sourceLabel": "Uuriko · GitHub"
+  },
+  {
+    "slug": "lenxism-grok-bot-3d-mascot-controller",
+    "title": "Grok Bot 3D mascot controller",
+    "headline": "Three.js web controller that turns the official Grok Bot mark into a blink/nod/wave 3D mascot, built via Grok Bot + Cursor.",
+    "whatTheyDid": "Three.js web controller that turns the official Grok Bot mark into a blink/nod/wave 3D mascot, built via Grok Bot + Cursor.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Three.js web controller that turns the official Grok Bot mark into a blink/nod/wave 3D mascot, built via Grok Bot + Cursor.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "lenxism",
+    "publishedAt": "2026-08-12",
+    "sourceUrl": "https://github.com/lenxism/grok-bot-mascot-3d",
+    "sourceLabel": "lenxism · GitHub"
+  },
+  {
+    "slug": "wicm84266964-grok-bot-ai-manhua-pipeline",
+    "title": "Grok Bot AI manhua pipeline",
+    "headline": "Copy-paste Grok Bot prompts plus local ComfyUI/FFmpeg conductor so one Bot window runs storyboard-to-final AI manhua episodes.",
+    "whatTheyDid": "Copy-paste Grok Bot prompts plus local ComfyUI/FFmpeg conductor so one Bot window runs storyboard-to-final AI manhua episodes.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Copy-paste Grok Bot prompts plus local ComfyUI/FFmpeg conductor so one Bot window runs storyboard-to-final AI manhua episodes.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "wicm84266964",
+    "publishedAt": "2026-09-06",
+    "sourceUrl": "https://github.com/wicm84266964/grokbot-ai-manju",
+    "sourceLabel": "wicm84266964 · GitHub"
+  },
+  {
+    "slug": "toolmonsters-buying-signal-bot-grok-bot-fullenrich",
+    "title": "Buying Signal Bot (Grok Bot + FullEnrich)",
+    "headline": "Setup playbook so a Grok Bot watches X for people leaving tools, then FullEnrich qualifies them into a short morning list.",
+    "whatTheyDid": "Setup playbook so a Grok Bot watches X for people leaving tools, then FullEnrich qualifies them into a short morning list.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Setup playbook so a Grok Bot watches X for people leaving tools, then FullEnrich qualifies them into a short morning list.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "daily",
+    "source": "community",
+    "authorName": "ToolMonsters",
+    "publishedAt": "2026-09-06",
+    "sourceUrl": "https://github.com/ToolMonsters/buying-signal-bot",
+    "sourceLabel": "ToolMonsters · GitHub"
+  },
+  {
+    "slug": "prosmoon-hash-hedge-fund-desk-grok-bot-agent-export",
+    "title": "Hedge-fund desk Grok Bot agent export",
+    "headline": "Sanitized backup of a multi-desk Grok Bot trading roster (profiles, automations, skills, ops docs) for version history—not a live runtime.",
+    "whatTheyDid": "Sanitized backup of a multi-desk Grok Bot trading roster (profiles, automations, skills, ops docs) for version history—not a live runtime.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Sanitized backup of a multi-desk Grok Bot trading roster (profiles, automations, skills, ops docs) for version history—not a live runtime.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "prosmoon-hash",
+    "publishedAt": "2026-09-05",
+    "sourceUrl": "https://github.com/prosmoon-hash/hedge-fund-agents",
+    "sourceLabel": "prosmoon-hash · GitHub"
   }
 ]
