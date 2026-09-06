@@ -510,7 +510,7 @@ export const messages = {
     },
     nav: {
       discover: "首頁",
-      useCases: "使用案例",
+      useCases: "案例",
       templates: "模板",
       workflows: "工作流程",
       official: "官方角色",
@@ -981,7 +981,7 @@ export const messages = {
     },
     nav: {
       discover: "首页",
-      useCases: "使用案例",
+      useCases: "案例",
       templates: "模板",
       workflows: "工作流",
       official: "官方角色",
