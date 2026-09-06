@@ -49,6 +49,9 @@ export default async function BookmarksPage({
   const englishArticles = englishArticlesByViews(20);
   const japaneseArticles = japaneseArticlesByViews(20);
   const githubStars = await getGithubResourceStars(github.map((item) => item.url));
+  const rankedGithub = [...github].sort(
+    (a, b) => (githubStars[b.url]?.count ?? -1) - (githubStars[a.url]?.count ?? -1),
+  );
 
   return (
     <>
@@ -69,7 +72,7 @@ export default async function BookmarksPage({
         }}
       />
       <BookmarksView
-        github={github}
+        github={rankedGithub}
         githubStars={githubStars}
         youtube={youtube}
         chineseArticles={chineseArticles}
