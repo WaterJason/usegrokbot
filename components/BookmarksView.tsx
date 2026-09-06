@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, type KeyboardEvent } from "react";
-import { ExternalLink, Star } from "lucide-react";
+import { ExternalLink, Play, Star } from "lucide-react";
+import { YouTubeVideoDialog } from "@/components/YouTubeVideoDialog";
+import { youtubeVideoId } from "@/lib/youtube";
 import { ArticleRow } from "@/components/ArticleRow";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
 import {
@@ -179,10 +181,14 @@ function BookmarkGrid({
   const { locale } = useI18n();
   const copy = bookmarkUiCopy[locale];
   const action = source === "github" ? copy.openGithub : copy.openYoutube;
+  const [playing, setPlaying] = useState<{ video: LocalizedBookmarkItem; videoId: string; trigger: HTMLButtonElement } | null>(null);
 
   return (
+    <>
     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {items.map((item) => (
+      {items.map((item) => {
+        const videoId = source === "youtube" ? youtubeVideoId(item.url) : null;
+        return (
         <li key={item.id}>
           <article data-resource-id={item.id} className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-4 hover:border-line-strong sm:p-5">
             <h3 className="ui-card-title text-ink">
@@ -242,6 +248,18 @@ function BookmarkGrid({
             </div>
 
             <div className="mt-auto pt-3">
+              {videoId ? (
+                <button
+                  type="button"
+                  aria-haspopup="dialog"
+                  aria-label={`${copy.playYoutube}: ${item.title}`}
+                  onClick={(event) => setPlaying({ video: item, videoId, trigger: event.currentTarget })}
+                  className="ui-button-secondary w-full"
+                >
+                  <Play aria-hidden className="size-4" strokeWidth={1.75} />
+                  <span>{copy.playYoutube}</span>
+                </button>
+              ) : (
               <a
                 href={item.url}
                 target="_blank"
@@ -251,11 +269,15 @@ function BookmarkGrid({
                 <span>{action}</span>
                 <ExternalLink aria-hidden className="size-4" strokeWidth={1.75} />
               </a>
+              )}
             </div>
           </article>
         </li>
-      ))}
+        );
+      })}
     </ul>
+    {playing ? <YouTubeVideoDialog video={playing.video} videoId={playing.videoId} returnFocusTo={playing.trigger} onClose={() => setPlaying(null)} /> : null}
+    </>
   );
 }
 

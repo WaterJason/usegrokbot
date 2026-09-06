@@ -45,6 +45,8 @@ export type BookmarkUiCopy = {
   by: string;
   openGithub: string;
   openYoutube: string;
+  playYoutube: string;
+  closeVideo: string;
   starsLabel: string;
   starsUnavailable: string;
   starsCheckedAt: string;
@@ -70,6 +72,8 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     by: "By",
     openGithub: "Open on GitHub",
     openYoutube: "Watch on YouTube",
+    playYoutube: "Play video",
+    closeVideo: "Close video",
     starsLabel: "GitHub stars",
     starsUnavailable: "Stars unavailable",
     starsCheckedAt: "Last checked: {date}",
@@ -93,6 +97,8 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     by: "作者",
     openGithub: "在 GitHub 開啟",
     openYoutube: "在 YouTube 觀看",
+    playYoutube: "播放影片",
+    closeVideo: "關閉影片",
     starsLabel: "GitHub 星數",
     starsUnavailable: "暫無星數",
     starsCheckedAt: "最後核對：{date}",
@@ -116,6 +122,8 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     by: "作者",
     openGithub: "在 GitHub 打开",
     openYoutube: "在 YouTube 观看",
+    playYoutube: "播放视频",
+    closeVideo: "关闭视频",
     starsLabel: "GitHub 星数",
     starsUnavailable: "暂无星数",
     starsCheckedAt: "最后核对：{date}",
@@ -139,6 +147,8 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     by: "作者",
     openGithub: "GitHub で開く",
     openYoutube: "YouTube で見る",
+    playYoutube: "動画を再生",
+    closeVideo: "動画を閉じる",
     starsLabel: "GitHub スター数",
     starsUnavailable: "スター数を取得できません",
     starsCheckedAt: "最終確認：{date}",
