@@ -77,13 +77,13 @@ export function BookmarksView({
 
   return (
     <div
-      className="mx-auto max-w-[1240px] px-5 py-8 md:px-8 md:py-12"
+      className="mx-auto max-w-[1240px] px-5 py-6 md:px-8 md:py-8"
       data-bookmarks-page
       data-bookmark-source={source}
     >
-      <header className="mb-6 md:mb-8">
-        <h1 className="ui-page-title">{copy.title}</h1>
-        <p className="ui-page-intro mt-3">{copy.intro}</p>
+      <header className="mb-5">
+        <h1 className="ui-page-title text-[30px] md:text-[36px]">{copy.title}</h1>
+        <p className="ui-page-intro mt-2">{copy.intro}</p>
       </header>
 
       <nav aria-label={copy.navLabel}>
@@ -131,19 +131,13 @@ export function BookmarksView({
             role="tabpanel"
             aria-labelledby={`bookmark-tab-${panelSource}`}
             hidden={!active}
-            className="py-6 md:py-8"
+            className="py-4"
           >
             {active ? (
               <>
-                <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
-                  <div>
-                    <h2 className="ui-section-title">
-                      {panelCopy.title}
-                    </h2>
-                    <p className="ui-page-intro mt-2">
-                      {panelCopy.body}
-                    </p>
-                  </div>
+                <h2 className="sr-only">{panelCopy.title}</h2>
+                <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <p className="ui-body text-mute">{panelCopy.body}</p>
                   {panelSource !== "x" ? (
                     <p className="ui-count font-medium text-mute" aria-live="polite">
                       {copy.count.replace("{n}", String(panelCount))}
@@ -169,7 +163,6 @@ export function BookmarksView({
         );
       })}
 
-      <p className="ui-body border-t border-line pt-6 text-mute">{copy.note}</p>
     </div>
   );
 }
@@ -188,10 +181,10 @@ function BookmarkGrid({
   const action = source === "github" ? copy.openGithub : copy.openYoutube;
 
   return (
-    <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-5">
+    <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((item) => (
         <li key={item.id}>
-          <article data-resource-id={item.id} className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong">
+          <article data-resource-id={item.id} className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-4 hover:border-line-strong sm:p-5">
             <h3 className="ui-card-title text-ink">
               {item.title}
             </h3>
@@ -215,9 +208,9 @@ function BookmarkGrid({
                 {copy.language[item.language]}
               </span>
             </div>
-            <p className="ui-body mt-3 text-mute">{item.description}</p>
+            <p className="ui-body mt-2 leading-relaxed text-mute">{item.description}</p>
 
-            <div className="mt-4">
+            <div className="mt-3">
               {item.xAuthor ? (
                 <a
                   href={`https://x.com/${item.xAuthor.handle}`}
@@ -248,7 +241,7 @@ function BookmarkGrid({
               )}
             </div>
 
-            <div className="mt-auto pt-4">
+            <div className="mt-auto pt-3">
               <a
                 href={item.url}
                 target="_blank"
@@ -295,16 +288,16 @@ function XArticleLists({
   return (
     <div className="w-full">
       {sections.map((section, sectionIndex) => (
-        <section className={sectionIndex === 0 ? "" : "mt-14"} key={section.key}>
+        <section className={sectionIndex === 0 ? "" : "mt-8"} key={section.key}>
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="ui-section-title">
+            <h3 className="text-[22px] leading-snug font-medium text-ink md:text-2xl">
               {section.title}
             </h3>
             <p className="ui-count font-medium text-mute">
               {copy.count.replace("{n}", String(section.items.length))}
             </p>
           </div>
-          <ol className="mt-5 divide-y divide-line border-y border-line">
+          <ol className="mt-3 divide-y divide-line border-y border-line">
             {section.items.map((item, index) => (
               <ArticleRow
                 key={`${section.key}-${item.story.slug}`}
@@ -312,6 +305,7 @@ function XArticleLists({
                 locale={locale}
                 viewsLabel={copy.viewsLabel}
                 rank={index + 1}
+                compact
               />
             ))}
           </ol>
