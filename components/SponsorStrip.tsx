@@ -1,13 +1,13 @@
 "use client";
 
 import { ArrowUpRight } from "lucide-react";
-import { sponsors } from "@/data/sponsors";
+import { sponsors, sponsorStripEnabled } from "@/data/sponsors";
 import { useI18n } from "@/lib/i18n";
 
 export function SponsorStrip() {
   const { t } = useI18n();
   const sponsor = sponsors[0];
-  if (!sponsor) return null;
+  if (!sponsorStripEnabled || !sponsor) return null;
 
   return (
     <aside aria-label={t("sponsor.label")} className="border-b border-line bg-elevated/50">

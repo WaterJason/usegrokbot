@@ -5,6 +5,8 @@ export type Sponsor = {
   logo: string;
 };
 
+export const sponsorStripEnabled = false;
+
 export const sponsors: readonly Sponsor[] = [
   {
     slug: "awesome-grok-bot",
