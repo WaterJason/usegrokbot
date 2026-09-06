@@ -289,7 +289,7 @@ function XArticleLists({
     <div className="w-full">
       {sections.map((section, sectionIndex) => (
         <section className={sectionIndex === 0 ? "" : "mt-8"} key={section.key}>
-          <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <h3 className="text-[22px] leading-snug font-medium text-ink md:text-2xl">
               {section.title}
             </h3>
