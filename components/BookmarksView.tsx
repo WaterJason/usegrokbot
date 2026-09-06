@@ -144,9 +144,11 @@ export function BookmarksView({
                       {panelCopy.body}
                     </p>
                   </div>
-                  <p className="ui-count font-medium text-mute" aria-live="polite">
-                    {copy.count.replace("{n}", String(panelCount))}
-                  </p>
+                  {panelSource !== "x" ? (
+                    <p className="ui-count font-medium text-mute" aria-live="polite">
+                      {copy.count.replace("{n}", String(panelCount))}
+                    </p>
+                  ) : null}
                 </div>
 
                 {panelSource === "github" ? (
@@ -291,7 +293,7 @@ function XArticleLists({
         : [chineseSection, englishSection];
 
   return (
-    <div className="max-w-[860px]">
+    <div className="w-full">
       {sections.map((section, sectionIndex) => (
         <section className={sectionIndex === 0 ? "" : "mt-14"} key={section.key}>
           <div className="flex flex-wrap items-baseline justify-between gap-2">
