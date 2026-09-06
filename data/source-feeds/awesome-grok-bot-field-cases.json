@@ -9,11 +9,11 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 52,
+    "total": 55,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
-    "alreadyIngested": 47,
+    "alreadyIngested": 50,
     "pending": 0
   },
   "cases": [
@@ -687,6 +687,45 @@
       "title": "Sanitized multi-Bot fleet export",
       "url": "https://github.com/ofs100private/GrokBot",
       "sourceSummary": "Sanitized Grok Bot backup of eight agents (Chief of Staff, traders, X watch, eToro QA) with profiles, automations, and shared workflow SKILL.md files.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "relay-job-search-workspace-grokcell",
+      "title": "Relay job-search workspace + GrokCell",
+      "url": "https://github.com/SyberLabs/relay",
+      "sourceSummary": "Job-search review app that exchanges drafts with Grok Bot on its VM and ships GrokCell specialist Bot templates.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "canvas-student-assistant-grok-bot",
+      "title": "Canvas student assistant Grok Bot",
+      "url": "https://github.com/ndunl075/grok-bot---cursor-hackathon",
+      "sourceSummary": "Hackathon Grok Bot that proactively texts Canvas due dates, grade impact, and reachable-grade math with skills and routines.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "grokbot-board-public-defi-directors",
+      "title": "GrokBot Board public DeFi directors",
+      "url": "https://github.com/thegrokboard/the-grokbot-board",
+      "sourceSummary": "Public build-in-public case of an autonomous AI board of directors of Grok Bots running a Solana DeFi company.",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",

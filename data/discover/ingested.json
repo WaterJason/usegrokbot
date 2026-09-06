@@ -65508,5 +65508,89 @@
     "xPostUrl": "https://x.com/MiiiiGiiii/status/2096445758018879795",
     "sourceUrl": "https://x.com/MiiiiGiiii/status/2096445758018879795",
     "sourceLabel": "Michel Gielen on X"
+  },
+  {
+    "slug": "syberlabs-relay-job-search-workspace-grokcell",
+    "title": "Relay job-search workspace + GrokCell",
+    "headline": "Job-search review app that exchanges drafts with Grok Bot on its VM and ships GrokCell specialist Bot templates.",
+    "whatTheyDid": "Job-search review app that exchanges drafts with Grok Bot on its VM and ships GrokCell specialist Bot templates.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Job-search review app that exchanges drafts with Grok Bot on its VM and ships GrokCell specialist Bot templates.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "SyberLabs",
+    "publishedAt": "2026-09-05",
+    "sourceUrl": "https://github.com/SyberLabs/relay",
+    "sourceLabel": "SyberLabs · GitHub"
+  },
+  {
+    "slug": "ndunl075-canvas-student-assistant-grok-bot",
+    "title": "Canvas student assistant Grok Bot",
+    "headline": "Hackathon Grok Bot that proactively texts Canvas due dates, grade impact, and reachable-grade math with skills and routines.",
+    "whatTheyDid": "Hackathon Grok Bot that proactively texts Canvas due dates, grade impact, and reachable-grade math with skills and routines.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Hackathon Grok Bot that proactively texts Canvas due dates, grade impact, and reachable-grade math with skills and routines.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "ndunl075",
+    "publishedAt": "2026-09-05",
+    "sourceUrl": "https://github.com/ndunl075/grok-bot---cursor-hackathon",
+    "sourceLabel": "ndunl075 · GitHub"
+  },
+  {
+    "slug": "thegrokboard-grokbot-board-public-defi-directors",
+    "title": "GrokBot Board public DeFi directors",
+    "headline": "Public build-in-public case of an autonomous AI board of directors of Grok Bots running a Solana DeFi company.",
+    "whatTheyDid": "Public build-in-public case of an autonomous AI board of directors of Grok Bots running a Solana DeFi company.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Public build-in-public case of an autonomous AI board of directors of Grok Bots running a Solana DeFi company.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "thegrokboard",
+    "publishedAt": "2026-08-26",
+    "sourceUrl": "https://github.com/thegrokboard/the-grokbot-board",
+    "sourceLabel": "thegrokboard · GitHub"
   }
 ]
