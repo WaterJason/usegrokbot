@@ -15,6 +15,7 @@ import {
 import { absoluteUrl, localeFromParams } from "@/lib/i18n/paths";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { getYouTubeViews } from "@/lib/youtube-views";
 import { getGithubResourceStars } from "@/lib/github-resource-stars";
 
 export async function generateMetadata({
@@ -48,7 +49,10 @@ export default async function BookmarksPage({
   const chineseArticles = chineseTeachingArticlesByViews();
   const englishArticles = englishArticlesByViews(20);
   const japaneseArticles = japaneseArticlesByViews(20);
-  const githubStars = await getGithubResourceStars(github.map((item) => item.url));
+  const [githubStars, youtubeViews] = await Promise.all([
+    getGithubResourceStars(github.map((item) => item.url)),
+    getYouTubeViews(youtube.map((item) => item.url)),
+  ]);
   const rankedGithub = [...github].sort(
     (a, b) => (githubStars[b.url]?.count ?? -1) - (githubStars[a.url]?.count ?? -1),
   );
@@ -67,7 +71,7 @@ export default async function BookmarksPage({
             youtube.length +
             chineseArticles.length +
             englishArticles.length +
-            (locale === "ja" ? japaneseArticles.length : 0),
+            japaneseArticles.length,
           publisher: { "@type": "Organization", name: site.name, url: site.url },
         }}
       />
@@ -75,6 +79,7 @@ export default async function BookmarksPage({
         github={rankedGithub}
         githubStars={githubStars}
         youtube={youtube}
+        youtubeViews={youtubeViews}
         chineseArticles={chineseArticles}
         englishArticles={englishArticles}
         japaneseArticles={japaneseArticles}

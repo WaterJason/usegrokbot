@@ -16,12 +16,14 @@ import { cn } from "@/lib/cn";
 import { useI18n } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/types";
 import type { RankedStory } from "@/lib/x-metrics";
+import type { YouTubeViewMap } from "@/lib/youtube-views";
 import type { GithubResourceStarMap } from "@/lib/github-resource-stars";
 
 export function BookmarksView({
   github,
   githubStars,
   youtube,
+  youtubeViews,
   chineseArticles,
   englishArticles,
   japaneseArticles,
@@ -29,6 +31,7 @@ export function BookmarksView({
   github: LocalizedBookmarkItem[];
   githubStars: GithubResourceStarMap;
   youtube: LocalizedBookmarkItem[];
+  youtubeViews: YouTubeViewMap;
   chineseArticles: RankedStory[];
   englishArticles: RankedStory[];
   japaneseArticles: RankedStory[];
@@ -43,7 +46,7 @@ export function BookmarksView({
         ? youtube.length
         : chineseArticles.length +
           englishArticles.length +
-          (locale === "ja" ? japaneseArticles.length : 0);
+          japaneseArticles.length;
   }
 
   function selectSource(next: BookmarkSource) {
@@ -150,7 +153,7 @@ export function BookmarksView({
                 {panelSource === "github" ? (
                   <BookmarkGrid items={github} source="github" stars={githubStars} />
                 ) : panelSource === "youtube" ? (
-                  <BookmarkGrid items={youtube} source="youtube" />
+                  <BookmarkGrid items={youtube} source="youtube" views={youtubeViews} />
                 ) : (
                   <XArticleLists
                     locale={locale}
@@ -173,10 +176,12 @@ function BookmarkGrid({
   items,
   source,
   stars,
+  views,
 }: {
   items: LocalizedBookmarkItem[];
   source: "github" | "youtube";
   stars?: GithubResourceStarMap;
+  views?: YouTubeViewMap;
 }) {
   const { locale } = useI18n();
   const copy = bookmarkUiCopy[locale];
@@ -188,6 +193,7 @@ function BookmarkGrid({
     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((item) => {
         const videoId = source === "youtube" ? youtubeVideoId(item.url) : null;
+        const viewStats = videoId ? views?.[videoId] : null;
         return (
         <li key={item.id}>
           <article data-resource-id={item.id} className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-4 hover:border-line-strong sm:p-5">
@@ -209,7 +215,18 @@ function BookmarkGrid({
                     </>
                   ) : <span className="ui-meta text-mute">{copy.starsUnavailable}</span>}
                 </span>
-              ) : null}
+              ) : (
+                <span
+                  data-youtube-views={viewStats?.count ?? "unavailable"}
+                  title={viewStats ? copy.youtubeCheckedAt.replace("{date}", new Intl.DateTimeFormat(locale, { dateStyle: "medium" }).format(new Date(viewStats.checkedAt))) : undefined}
+                  className="inline-flex flex-wrap items-baseline gap-x-1.5 text-base font-medium text-ink tabular-nums"
+                >
+                  {viewStats ? <>
+                    {new Intl.NumberFormat(locale).format(viewStats.count)}
+                    <span className="ui-meta font-normal text-mute">{copy.youtubeViewsLabel}</span>
+                  </> : <span className="ui-meta text-mute">{copy.youtubeViewsUnavailable}</span>}
+                </span>
+              )}
               <span className="ui-meta text-mute">
                 {copy.language[item.language]}
               </span>
@@ -298,19 +315,15 @@ function XArticleLists({
   const chineseSection = { key: "chinese", title: copy.xChineseTitle, items: chinese };
   const sections =
     locale === "ja"
-      ? [
-          ...(japanese.length > 0 ? [japaneseSection] : []),
-          englishSection,
-          chineseSection,
-        ]
+      ? [japaneseSection, chineseSection, englishSection]
       : locale === "en"
-        ? [englishSection, chineseSection]
-        : [chineseSection, englishSection];
+        ? [englishSection, chineseSection, japaneseSection]
+        : [chineseSection, englishSection, japaneseSection];
 
   return (
     <div className="w-full">
       {sections.map((section, sectionIndex) => (
-        <section className={sectionIndex === 0 ? "" : "mt-8"} key={section.key}>
+        <section data-article-language={section.key} className={sectionIndex === 0 ? "" : "mt-8"} key={section.key}>
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h3 className="text-[22px] leading-snug font-medium text-ink md:text-2xl">
               {section.title}

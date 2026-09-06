@@ -51,6 +51,9 @@ export type BookmarkUiCopy = {
   starsUnavailable: string;
   starsCheckedAt: string;
   viewsLabel: string;
+  youtubeViewsLabel: string;
+  youtubeViewsUnavailable: string;
+  youtubeCheckedAt: string;
   language: Record<BookmarkLanguage, string>;
   note: string;
 };
@@ -78,6 +81,9 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     starsUnavailable: "Stars unavailable",
     starsCheckedAt: "Last checked: {date}",
     viewsLabel: "X views",
+    youtubeViewsLabel: "views",
+    youtubeViewsUnavailable: "Views unavailable",
+    youtubeCheckedAt: "Checked {date} · Updated daily",
     language: { zh: "Chinese", en: "English", bilingual: "Chinese + English", multilingual: "Chinese / English / Japanese" },
     note: "GitHub and YouTube are curated selections; X articles are ranked by views.",
   },
@@ -103,6 +109,9 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     starsUnavailable: "暫無星數",
     starsCheckedAt: "最後核對：{date}",
     viewsLabel: "X 瀏覽",
+    youtubeViewsLabel: "次觀看",
+    youtubeViewsUnavailable: "暫無觀看次數",
+    youtubeCheckedAt: "核對日期：{date}・每日更新",
     language: { zh: "中文", en: "英文", bilingual: "中英雙語", multilingual: "中英日語" },
     note: "GitHub 與 YouTube 內容經過精選；X 文章按瀏覽次數排列。",
   },
@@ -128,6 +137,9 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     starsUnavailable: "暂无星数",
     starsCheckedAt: "最后核对：{date}",
     viewsLabel: "X 浏览",
+    youtubeViewsLabel: "次观看",
+    youtubeViewsUnavailable: "暂无观看次数",
+    youtubeCheckedAt: "核对日期：{date}・每日更新",
     language: { zh: "中文", en: "英文", bilingual: "中英双语", multilingual: "中英日语" },
     note: "GitHub 和 YouTube 内容经过精选；X 文章按浏览次数排列。",
   },
@@ -153,6 +165,9 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     starsUnavailable: "スター数を取得できません",
     starsCheckedAt: "最終確認：{date}",
     viewsLabel: "X 閲覧",
+    youtubeViewsLabel: "回視聴",
+    youtubeViewsUnavailable: "再生回数を取得できません",
+    youtubeCheckedAt: "確認日：{date}・毎日更新",
     language: { zh: "中国語", en: "英語", bilingual: "中国語と英語", multilingual: "中国語・英語・日本語" },
     note: "GitHub と YouTube は厳選した内容、X 記事は閲覧数順です。",
   },
