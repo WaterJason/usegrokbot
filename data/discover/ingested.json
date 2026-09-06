@@ -65209,5 +65209,304 @@
     "xPostUrl": "https://x.com/RichSilver/status/2096272483762499924",
     "sourceUrl": "https://x.com/RichSilver/status/2096272483762499924",
     "sourceLabel": "Rich Silver on X"
+  },
+  {
+    "slug": "zentrixhq-7-mistakes-everyone-makes-building-their-first-g",
+    "title": "🤖 7 mistakes everyone makes building their first Grok Bot (and why...",
+    "headline": "🤖 7 mistakes everyone makes building their first Grok Bot (and why automation breaks on day 3) 1.",
+    "body": "🤖 7 mistakes everyone makes building their first Grok Bot\n\n(and why automation breaks on day 3)\n\n1. Prompt with no focus\nYou write a task without context, audience, or format. The bot guesses - and guesses wrong.\n\n2. Context as a dumpster\nYou dump the entire chat history into one window. The bot hallucinates the important parts.\n\n3. One mega-task instead of a chain\n\"Do everything in one request\" is a path to chaos. Decomposition = reliability.\n\n4. Zero error handling\nThe bot fails silently. You find out 3 hours later from the client.\n\n5. Output with no validation\nAutonomous mode + blind trust = your bot confidently lying inside your business processes.\n\n6. No retry logic\nAPI limit hits → bot dies → you panic at 2am.\n\n7. One mega-bot instead of a fleet\nOne point of failure for everything. A fleet of small bots is far more resilient.\n\n🔖I think you'll find this useful later.",
+    "whatTheyDid": "🤖 7 mistakes everyone makes building their first Grok Bot (and why automation breaks on day 3) 1.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "🤖 7 mistakes everyone makes building their first Grok Bot (and why automation breaks on day 3) 1.",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Zentrix⌚️",
+    "handle": "ZentrixHQ",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/ZentrixHQ/status/2096446557205770733",
+    "sourceUrl": "https://x.com/ZentrixHQ/status/2096446557205770733",
+    "sourceLabel": "Zentrix⌚️ on X",
+    "format": "article"
+  },
+  {
+    "slug": "toy-maestro-here-is-my-food-again-as-a-3d-orbit",
+    "title": "Here is my food again as a 3D orbit",
+    "headline": "Here is my food again as a 3D orbit.",
+    "body": "Here is my food again as a 3D orbit. Built by my Grok Bot using @Blender  @elonmusk",
+    "whatTheyDid": "Here is my food again as a 3D orbit.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Here is my food again as a 3D orbit.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "The Qubits Guy",
+    "handle": "Toy_Maestro",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/Toy_Maestro/status/2096432948819964394",
+    "sourceUrl": "https://x.com/Toy_Maestro/status/2096432948819964394",
+    "sourceLabel": "The Qubits Guy on X"
+  },
+  {
+    "slug": "xiaohu-grok-bot",
+    "title": "Grok Bot 官方机器人模板市场发布 你可以在这里找到各种各样的机器人模板 传送门：",
+    "headline": "Grok Bot 官方机器人模板市场发布 你可以在这里找到各种各样的机器人模板 传送门：",
+    "body": "Grok Bot 官方机器人模板市场发布\n\n你可以在这里找到各种各样的机器人模板\n\n传送门：https://x.ai/bot/marketplace",
+    "whatTheyDid": "Grok Bot 官方机器人模板市场发布 你可以在这里找到各种各样的机器人模板 传送门：",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Marketers",
+      "Founders"
+    ],
+    "usefulFor": "Marketers / Founders",
+    "output": "Grok Bot 官方机器人模板市场发布 你可以在这里找到各种各样的机器人模板 传送门：",
+    "category": "marketing",
+    "outcomes": [
+      "grow-business",
+      "automate-work"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "小互",
+    "handle": "xiaohu",
+    "publishedAt": "2026-09-05",
+    "xPostUrl": "https://x.com/xiaohu/status/2096056054291505333",
+    "sourceUrl": "https://x.com/xiaohu/status/2096056054291505333",
+    "sourceLabel": "小互 on X"
+  },
+  {
+    "slug": "0707-eth-grok-bot-template-marketplace-is-live-ready-made",
+    "title": "Grok Bot: Template Marketplace is live 🔥 Ready-made bots",
+    "headline": "Grok Bot: Template Marketplace is live 🔥 Ready-made bots.",
+    "body": "Grok Bot: Template Marketplace is live 🔥\n\nReady-made bots. No blank page.\n\nHaggle Bot found $100K+ savings in week one (SpaceXAI). You still approve spend.\n\nAlso: iPad, Android, Enterprise, Cursor Pro.\n\nAI agents got an App Store.\n\nBot team yet?\n@bot @SpaceXAI",
+    "whatTheyDid": "Grok Bot: Template Marketplace is live 🔥 Ready-made bots.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Marketers",
+      "Founders"
+    ],
+    "usefulFor": "Marketers / Founders",
+    "output": "Grok Bot: Template Marketplace is live 🔥 Ready-made bots.",
+    "category": "marketing",
+    "outcomes": [
+      "grow-business",
+      "automate-work"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "0707.eth",
+    "handle": "0707_eth",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/0707_eth/status/2096415173011452012",
+    "sourceUrl": "https://x.com/0707_eth/status/2096415173011452012",
+    "sourceLabel": "0707.eth on X"
+  },
+  {
+    "slug": "sweier63673-grok-bot-case-from-sweier63673",
+    "title": "Grok Bot case from @SWeier63673",
+    "headline": "OMG!",
+    "body": "OMG! I had Grok @bot do a file clean up on my computer and it freed up 18 GB! 🥰",
+    "whatTheyDid": "OMG!",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "OMG!",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Stephanie Weier",
+    "handle": "SWeier63673",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/SWeier63673/status/2096445737974313455",
+    "sourceUrl": "https://x.com/SWeier63673/status/2096445737974313455",
+    "sourceLabel": "Stephanie Weier on X"
+  },
+  {
+    "slug": "ahoop-daily-grok-bot-update-thanks-to-bot-for-another",
+    "title": "Daily Grok Bot Update Thanks to @bot for another usage reset, I was...",
+    "headline": "Daily Grok Bot Update Thanks to @bot for another usage reset, I was able to tackle another project I’ve been keeping on the back burner.",
+    "body": "Daily Grok Bot Update\n\nThanks to @bot for another usage reset, I was able to tackle another project I’ve been keeping on the back burner. My father-in-law has been sending what he calls “musings” to his kids since about 2017. I decided to have dr eggbot go through my email, find all those musings, and start building out books that I can publish for him. Within minutes, I have a new bot named Folio, and the first draft was close to 95% accurate! \n\nIt’s wild what @bot is letting you do!!!",
+    "whatTheyDid": "Daily Grok Bot Update Thanks to @bot for another usage reset, I was able to tackle another project I’ve been keeping on the back burner.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "People exploring personal automation",
+      "Grok Bot users"
+    ],
+    "usefulFor": "People exploring personal automation / Grok Bot users",
+    "output": "Daily Grok Bot Update Thanks to @bot for another usage reset, I was able to tackle another project I’ve been keeping on the back burner.",
+    "category": "personal",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "daily",
+    "source": "community",
+    "authorName": "Austin H",
+    "handle": "ahoop",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/ahoop/status/2096441088622068099",
+    "sourceUrl": "https://x.com/ahoop/status/2096441088622068099",
+    "sourceLabel": "Austin H on X"
+  },
+  {
+    "slug": "stevoyager-i-asked-3-ai-to-recommend-books-in-my-local-libr",
+    "title": "I asked 3 AI to recommend books in my local library, only Grok Bot can...",
+    "headline": "I asked 3 AI to recommend books in my local library, only Grok Bot can tell me which books are on the shelf (check the library website), where both Opus and GPT 5.6 Sol told me to check the website myself🤷",
+    "body": "I asked 3 AI to recommend books in my local library, only Grok Bot can tell me which books are on the shelf (check the library website), where both Opus and GPT 5.6 Sol told me to check the website myself🤷",
+    "whatTheyDid": "I asked 3 AI to recommend books in my local library, only Grok Bot can tell me which books are on the shelf (check the library website), where both Opus and GPT 5.6 Sol told me to check the website myself🤷",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "I asked 3 AI to recommend books in my local library, only Grok Bot can tell me which books are on the shelf (check the library website), where both Opus and GPT 5.6 Sol told me to check the website myself🤷",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "browser"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Steven Wang",
+    "handle": "stevoyager",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/stevoyager/status/2096440069196550573",
+    "sourceUrl": "https://x.com/stevoyager/status/2096440069196550573",
+    "sourceLabel": "Steven Wang on X"
+  },
+  {
+    "slug": "huangyihe-grok-bot-bot-chief",
+    "title": "Grok Bot有一个很棒的地方：Bot之间可以私信传话。 所以，可以建一个CHIEF...",
+    "headline": "Grok Bot有一个很棒的地方：Bot之间可以私信传话。 所以，可以建一个CHIEF Bot，跟它聊模糊的目标。然后由它直接派活给其它Bot。当然，如果任务非常明确，那就直接找对应的Bot下达指令。 除了私信唤醒之外，还可以建群，把几个Bot拉到一起。",
+    "body": "Grok Bot有一个很棒的地方：Bot之间可以私信传话。\n\n所以，可以建一个CHIEF Bot，跟它聊模糊的目标。然后由它直接派活给其它Bot。当然，如果任务非常明确，那就直接找对应的Bot下达指令。\n\n除了私信唤醒之外，还可以建群，把几个Bot拉到一起。",
+    "whatTheyDid": "Grok Bot有一个很棒的地方：Bot之间可以私信传话。 所以，可以建一个CHIEF Bot，跟它聊模糊的目标。然后由它直接派活给其它Bot。当然，如果任务非常明确，那就直接找对应的Bot下达指令。 除了私信唤醒之外，还可以建群，把几个Bot拉到一起。",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Grok Bot有一个很棒的地方：Bot之间可以私信传话。 所以，可以建一个CHIEF Bot，跟它聊模糊的目标。然后由它直接派活给其它Bot。当然，如果任务非常明确，那就直接找对应的Bot下达指令。 除了私信唤醒之外，还可以建群，把几个Bot拉到一起。",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "huangyihe",
+    "handle": "huangyihe",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/huangyihe/status/2096441003175825621",
+    "sourceUrl": "https://x.com/huangyihe/status/2096441003175825621",
+    "sourceLabel": "huangyihe on X"
+  },
+  {
+    "slug": "miiiigiiii-cave-rush-is-live-a-free-boulder-dash-inspired-d",
+    "title": "Cave Rush is live — a free Boulder Dash–inspired digger",
+    "headline": "Cave Rush is live — a free Boulder Dash–inspired digger.",
+    "body": "Cave Rush is live — a free Boulder Dash–inspired digger. Built by Grok Bot (Agent Game developer) for 2026.\n5 caves, falling rocks, fireflies & butterflies, Messi finale.\nWorks on phone + PC (same link).\n\nPlay free → https://caverush2026.itch.io/cave-rush",
+    "whatTheyDid": "Cave Rush is live — a free Boulder Dash–inspired digger.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "Cave Rush is live — a free Boulder Dash–inspired digger.",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [
+      "browser"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Michel Gielen",
+    "handle": "MiiiiGiiii",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/MiiiiGiiii/status/2096445758018879795",
+    "sourceUrl": "https://x.com/MiiiiGiiii/status/2096445758018879795",
+    "sourceLabel": "Michel Gielen on X"
   }
 ]
