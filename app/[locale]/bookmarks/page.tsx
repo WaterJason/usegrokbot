@@ -15,6 +15,7 @@ import {
 import { absoluteUrl, localeFromParams } from "@/lib/i18n/paths";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { getGithubResourceStars } from "@/lib/github-resource-stars";
 
 export async function generateMetadata({
   params,
@@ -47,6 +48,7 @@ export default async function BookmarksPage({
   const chineseArticles = chineseTeachingArticlesByViews();
   const englishArticles = englishArticlesByViews(20);
   const japaneseArticles = japaneseArticlesByViews(20);
+  const githubStars = await getGithubResourceStars(github.map((item) => item.url));
 
   return (
     <>
@@ -68,6 +70,7 @@ export default async function BookmarksPage({
       />
       <BookmarksView
         github={github}
+        githubStars={githubStars}
         youtube={youtube}
         chineseArticles={chineseArticles}
         englishArticles={englishArticles}

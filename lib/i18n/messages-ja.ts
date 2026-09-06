@@ -39,7 +39,7 @@ export const jaMessages = {
     categories: "カテゴリ",
     rankings: "ランキング",
     articles: "記事",
-    bookmarks: "ブックマーク",
+    bookmarks: "リソース",
     apps: "アプリ",
     saved: "保存済み",
     submit: "投稿する",

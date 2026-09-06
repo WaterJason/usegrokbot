@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type KeyboardEvent } from "react";
-import { ExternalLink, FolderGit2, Play } from "lucide-react";
+import { ExternalLink, FolderGit2, Play, Star } from "lucide-react";
 import { ArticleRow } from "@/components/ArticleRow";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
 import {
@@ -14,15 +14,18 @@ import { cn } from "@/lib/cn";
 import { useI18n } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/types";
 import type { RankedStory } from "@/lib/x-metrics";
+import type { GithubResourceStarMap } from "@/lib/github-resource-stars";
 
 export function BookmarksView({
   github,
+  githubStars,
   youtube,
   chineseArticles,
   englishArticles,
   japaneseArticles,
 }: {
   github: LocalizedBookmarkItem[];
+  githubStars: GithubResourceStarMap;
   youtube: LocalizedBookmarkItem[];
   chineseArticles: RankedStory[];
   englishArticles: RankedStory[];
@@ -147,7 +150,7 @@ export function BookmarksView({
                 </div>
 
                 {panelSource === "github" ? (
-                  <BookmarkGrid items={github} source="github" />
+                  <BookmarkGrid items={github} source="github" stars={githubStars} />
                 ) : panelSource === "youtube" ? (
                   <BookmarkGrid items={youtube} source="youtube" />
                 ) : (
@@ -172,9 +175,11 @@ export function BookmarksView({
 function BookmarkGrid({
   items,
   source,
+  stars,
 }: {
   items: LocalizedBookmarkItem[];
   source: "github" | "youtube";
+  stars?: GithubResourceStarMap;
 }) {
   const { locale } = useI18n();
   const copy = bookmarkUiCopy[locale];
@@ -185,7 +190,7 @@ function BookmarkGrid({
     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-5">
       {items.map((item) => (
         <li key={item.id}>
-          <article className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong">
+          <article data-resource-id={item.id} className="spring-lift flex h-full min-w-0 flex-col rounded-2xl border border-line bg-card p-5 hover:border-line-strong">
             <div className="flex items-center justify-between gap-3">
               <span className="inline-flex size-10 items-center justify-center rounded-[10px] bg-accent-soft text-accent">
                 <Icon aria-hidden className="size-5" strokeWidth={1.75} />
@@ -198,6 +203,23 @@ function BookmarkGrid({
             <h3 className="ui-card-title mt-5 text-ink">
               {item.title}
             </h3>
+            {source === "github" ? (
+              <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+                <span
+                  data-github-stars={stars?.[item.url]?.count ?? "unavailable"}
+                  title={stars?.[item.url] ? copy.starsCheckedAt.replace("{date}", new Date(stars[item.url]!.checkedAt).toISOString().slice(0, 10)) : undefined}
+                  className="inline-flex items-center gap-1.5 text-base font-medium text-ink tabular-nums"
+                >
+                  <Star aria-hidden className="size-4 text-accent" strokeWidth={1.75} />
+                  {stars?.[item.url] ? (
+                    <>
+                      {`${new Intl.NumberFormat(locale).format(stars[item.url]!.count)} `}
+                      <span className="ui-meta font-normal text-mute">{copy.starsLabel}</span>
+                    </>
+                  ) : <span className="ui-meta text-mute">{copy.starsUnavailable}</span>}
+                </span>
+              </div>
+            ) : null}
             <p className="ui-body mt-2 text-mute">{item.description}</p>
 
             <div className="mt-5">

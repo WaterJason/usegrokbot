@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/i18n/types";
 export const bookmarkSources = ["github", "x", "youtube"] as const;
 
 export type BookmarkSource = (typeof bookmarkSources)[number];
-export type BookmarkLanguage = "zh" | "en" | "bilingual";
+export type BookmarkLanguage = "zh" | "en" | "bilingual" | "multilingual";
 
 type LocalizedText = Record<Locale, string>;
 
@@ -45,6 +45,9 @@ export type BookmarkUiCopy = {
   by: string;
   openGithub: string;
   openYoutube: string;
+  starsLabel: string;
+  starsUnavailable: string;
+  starsCheckedAt: string;
   viewsLabel: string;
   language: Record<BookmarkLanguage, string>;
   note: string;
@@ -52,12 +55,12 @@ export type BookmarkUiCopy = {
 
 export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
   en: {
-    title: "Grok Bot Bookmarks",
-    intro: "Selected GitHub guides, X articles, and YouTube tutorials in one place.",
-    navLabel: "Bookmark source",
-    count: "{n} bookmarks",
+    title: "Grok Bot Resources",
+    intro: "Discover community projects, guides, and tutorials.",
+    navLabel: "Resource source",
+    count: "{n} resources",
     sourceCards: {
-      github: { title: "GitHub", body: "Public books, practical handbooks, and complete guides." },
+      github: { title: "GitHub", body: "Community projects, resource collections, and practical guides." },
       x: { title: "X Articles", body: "Long-form X articles ranked by public view counts." },
       youtube: { title: "YouTube", body: "Setup walkthroughs, demos, and real Grok Bot use cases." },
     },
@@ -67,17 +70,20 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     by: "By",
     openGithub: "Open on GitHub",
     openYoutube: "Watch on YouTube",
+    starsLabel: "GitHub stars",
+    starsUnavailable: "Stars unavailable",
+    starsCheckedAt: "Last checked: {date}",
     viewsLabel: "X views",
-    language: { zh: "Chinese", en: "English", bilingual: "Chinese + English" },
-    note: "The main button on every card opens the original source. GitHub and YouTube links are selected by relevance; X articles are ranked only by public X views.",
+    language: { zh: "Chinese", en: "English", bilingual: "Chinese + English", multilingual: "Chinese / English / Japanese" },
+    note: "GitHub and YouTube are curated selections; X articles are ranked by views.",
   },
   "zh-Hant": {
-    title: "Grok Bot 書籤",
-    intro: "把值得閱讀的 GitHub 指南、X 長文及 YouTube 教學集中在一頁。",
-    navLabel: "書籤來源",
-    count: "{n} 個書籤",
+    title: "Grok Bot 資源",
+    intro: "探索社群項目、實用指南及影片教學。",
+    navLabel: "資源來源",
+    count: "{n} 個資源",
     sourceCards: {
-      github: { title: "GitHub", body: "公開書籍、實用手冊及完整指南。" },
+      github: { title: "GitHub", body: "社群項目、資源合集及實用指南。" },
       x: { title: "X 文章", body: "按公開瀏覽次數排列的 X 長文。" },
       youtube: { title: "YouTube", body: "安裝示範、入門影片及真實使用案例。" },
     },
@@ -87,17 +93,20 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     by: "作者",
     openGithub: "在 GitHub 開啟",
     openYoutube: "在 YouTube 觀看",
+    starsLabel: "GitHub 星數",
+    starsUnavailable: "暫無星數",
+    starsCheckedAt: "最後核對：{date}",
     viewsLabel: "X 瀏覽",
-    language: { zh: "中文", en: "英文", bilingual: "中英雙語" },
-    note: "每張卡片的主要按鈕都會開啟原始來源。GitHub 與 YouTube 內容按實用程度精選；X 長文只按公開瀏覽次數排列。",
+    language: { zh: "中文", en: "英文", bilingual: "中英雙語", multilingual: "中英日語" },
+    note: "GitHub 與 YouTube 內容經過精選；X 文章按瀏覽次數排列。",
   },
   "zh-Hans": {
-    title: "Grok Bot 书签",
-    intro: "把值得阅读的 GitHub 指南、X 长文和 YouTube 教程集中在一页。",
-    navLabel: "书签来源",
-    count: "{n} 个书签",
+    title: "Grok Bot 资源",
+    intro: "探索社区项目、实用指南和视频教程。",
+    navLabel: "资源来源",
+    count: "{n} 个资源",
     sourceCards: {
-      github: { title: "GitHub", body: "公开书籍、实用手册和完整指南。" },
+      github: { title: "GitHub", body: "社区项目、资源合集和实用指南。" },
       x: { title: "X 文章", body: "按公开浏览次数排列的 X 长文。" },
       youtube: { title: "YouTube", body: "安装演示、入门视频和真实使用案例。" },
     },
@@ -107,17 +116,20 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     by: "作者",
     openGithub: "在 GitHub 打开",
     openYoutube: "在 YouTube 观看",
+    starsLabel: "GitHub 星数",
+    starsUnavailable: "暂无星数",
+    starsCheckedAt: "最后核对：{date}",
     viewsLabel: "X 浏览",
-    language: { zh: "中文", en: "英文", bilingual: "中英双语" },
-    note: "每张卡片的主要按钮都会打开原始来源。GitHub 和 YouTube 内容按实用程度精选；X 长文只按公开浏览次数排列。",
+    language: { zh: "中文", en: "英文", bilingual: "中英双语", multilingual: "中英日语" },
+    note: "GitHub 和 YouTube 内容经过精选；X 文章按浏览次数排列。",
   },
   ja: {
-    title: "Grok Bot ブックマーク",
-    intro: "役立つ GitHub ガイド、X の長文、YouTube の解説を、このページにまとめています。",
-    navLabel: "ブックマークの出典",
-    count: "{n} 件のブックマーク",
+    title: "Grok Bot リソース",
+    intro: "コミュニティのプロジェクト、ガイド、解説動画を探せます。",
+    navLabel: "リソースの出典",
+    count: "{n} 件のリソース",
     sourceCards: {
-      github: { title: "GitHub", body: "公開されている本、実践ハンドブック、一通りのガイド。" },
+      github: { title: "GitHub", body: "コミュニティのプロジェクト、リソース集、実践ガイド。" },
       x: { title: "X 記事", body: "公開の閲覧数で並べた X の長文。" },
       youtube: { title: "YouTube", body: "初期設定、実演、実際の活用例。" },
     },
@@ -127,13 +139,76 @@ export const bookmarkUiCopy: Record<Locale, BookmarkUiCopy> = {
     by: "作者",
     openGithub: "GitHub で開く",
     openYoutube: "YouTube で見る",
+    starsLabel: "GitHub スター数",
+    starsUnavailable: "スター数を取得できません",
+    starsCheckedAt: "最終確認：{date}",
     viewsLabel: "X 閲覧",
-    language: { zh: "中国語", en: "英語", bilingual: "中国語と英語" },
-    note: "各カードの主なボタンは、元の出典を開きます。GitHub と YouTube は役立つものを選んでいます。X の長文は、公開の閲覧数だけで並べています。",
+    language: { zh: "中国語", en: "英語", bilingual: "中国語と英語", multilingual: "中国語・英語・日本語" },
+    note: "GitHub と YouTube は厳選した内容、X 記事は閲覧数順です。",
   },
 };
 
 export const githubBookmarks: readonly BookmarkItem[] = [
+  {
+    id: "awesome-grokbot-kydlikebtc",
+    source: "github",
+    url: "https://github.com/kydlikebtc/awesome-grokbot",
+    author: "kydlikebtc",
+    language: "bilingual",
+    title: { en: "awesome-grokbot", "zh-Hant": "awesome-grokbot", "zh-Hans": "awesome-grokbot", ja: "awesome-grokbot" },
+    description: {
+      en: "A searchable Chinese and English catalog of public Bots you can preview and add to your account.",
+      "zh-Hant": "可搜尋的中英雙語 Bot 目錄，讓你預覽公開設定，再加入自己的帳號。",
+      "zh-Hans": "可搜索的中英双语 Bot 目录，让你预览公开设置，再添加到自己的账号。",
+      ja: "公開 Bot を検索し、設定を確認して自分のアカウントに追加できる中英のカタログ。",
+    },
+    focus: { en: "Bot directory", "zh-Hant": "Bot 目錄", "zh-Hans": "Bot 目录", ja: "Bot カタログ" },
+  },
+  {
+    id: "botdirectory-ai",
+    source: "github",
+    url: "https://github.com/elie222/botdirectory.ai",
+    author: "elie222",
+    language: "en",
+    title: { en: "botdirectory.ai", "zh-Hant": "botdirectory.ai", "zh-Hans": "botdirectory.ai", ja: "botdirectory.ai" },
+    description: {
+      en: "A community directory of Bot prompts you can copy into Grok Bot or other AI assistants.",
+      "zh-Hant": "社群整理的 Bot 提示詞目錄，可複製到 Grok Bot 或其他 AI 助手使用。",
+      "zh-Hans": "社区整理的 Bot 提示词目录，可复制到 Grok Bot 或其他 AI 助手使用。",
+      ja: "Grok Bot やほかの AI アシスタントにコピーして使える、コミュニティのプロンプト集。",
+    },
+    focus: { en: "Prompt collection", "zh-Hant": "提示詞合集", "zh-Hans": "提示词合集", ja: "プロンプト集" },
+  },
+  {
+    id: "grok-bot-cli",
+    source: "github",
+    url: "https://github.com/ScriptedAlchemy/grok-bot-cli",
+    author: "ScriptedAlchemy",
+    language: "en",
+    title: { en: "grok-bot-cli", "zh-Hant": "grok-bot-cli", "zh-Hans": "grok-bot-cli", ja: "grok-bot-cli" },
+    description: {
+      en: "A command-line tool for creating and updating Bots, sending messages, and reading conversations.",
+      "zh-Hant": "供熟悉指令的人使用，可建立及更新 Bot、傳送訊息和查看對話。",
+      "zh-Hans": "供熟悉命令的人使用，可创建和更新 Bot、发送消息和查看对话。",
+      ja: "コマンドで Bot の作成・更新、メッセージの送信、会話の確認ができるツール。",
+    },
+    focus: { en: "Command-line tool", "zh-Hant": "指令工具", "zh-Hans": "命令行工具", ja: "コマンドラインツール" },
+  },
+  {
+    id: "awesome-grok-bot",
+    source: "github",
+    url: "https://github.com/RongleCat/awesome-grok-bot",
+    author: "RongleCat",
+    language: "multilingual",
+    title: { en: "Awesome Grok Bot", "zh-Hant": "Awesome Grok Bot", "zh-Hans": "Awesome Grok Bot", ja: "Awesome Grok Bot" },
+    description: {
+      en: "Grok Bot guides, tools, templates, and community examples in Chinese, English, and Japanese.",
+      "zh-Hant": "整理 Grok Bot 指南、工具、模板及社群案例，提供中文、英文及日文。",
+      "zh-Hans": "整理 Grok Bot 指南、工具、模板和社区案例，提供中文、英文和日文。",
+      ja: "Grok Bot のガイド、ツール、テンプレート、活用例を集めた、日本語・中国語・英語のリソース集。",
+    },
+    focus: { en: "Resource collection", "zh-Hant": "資源合集", "zh-Hans": "资源合集", ja: "リソース集" },
+  },
   {
     id: "grok-bot-orange-book",
     source: "github",
@@ -223,10 +298,10 @@ export const githubBookmarks: readonly BookmarkItem[] = [
     language: "en",
     title: { en: "Grok Bot Delegation", "zh-Hant": "Grok Bot Delegation", "zh-Hans": "Grok Bot Delegation", ja: "Grok Bot Delegation" },
     description: {
-      en: "A practical guide to defining roles, delegating clearly, and keeping human approval gates.",
-      "zh-Hant": "介紹如何設定角色、清楚委派，並在重要步驟保留人工批准。",
-      "zh-Hans": "介绍如何设置角色、清楚委派，并在重要步骤保留人工批准。",
-      ja: "役割の決め方、はっきりした任せ方、大切な手順では人が承認する方法を説明する実践ガイド。",
+      en: "A Claude Code skill for briefing Grok Bot, defining roles, and keeping human approval steps.",
+      "zh-Hant": "供 Claude Code 使用的技能，協助你向 Grok Bot 說明需求、設定角色及保留人工批准。",
+      "zh-Hans": "供 Claude Code 使用的技能，帮助你向 Grok Bot 说明需求、设置角色和保留人工批准。",
+      ja: "Grok Bot への依頼、役割分担、人による承認手順を整える Claude Code 用スキル。",
     },
     focus: { en: "Delegation", "zh-Hant": "分配與批准", "zh-Hans": "分配与批准", ja: "役割分担と承認" },
   },
@@ -254,10 +329,10 @@ export const githubBookmarks: readonly BookmarkItem[] = [
     language: "en",
     title: { en: "grokbot.run Handbook", "zh-Hant": "grokbot.run Handbook", "zh-Hans": "grokbot.run Handbook", ja: "grokbot.run Handbook" },
     description: {
-      en: "An unofficial handbook covering setup, the first Bot, shared computers, routines, and troubleshooting.",
-      "zh-Hant": "非官方入門手冊，涵蓋設定、第一隻 Bot、共用電腦、例行事項及疑難排解。",
-      "zh-Hans": "非官方入门手册，涵盖设置、第一只 Bot、共享电脑、例行事项和故障排查。",
-      ja: "設定、最初の Bot、共用パソコン、ルーチン、困ったときの対処までをまとめた非公式ハンドブック。",
+      en: "Source code for the unofficial grokbot.run handbook, with setup guides and troubleshooting.",
+      "zh-Hant": "非官方 grokbot.run 手冊的網站原始碼，包含設定指南及疑難排解內容。",
+      "zh-Hans": "非官方 grokbot.run 手册的网站源码，包含设置指南和故障排查内容。",
+      ja: "設定ガイドやトラブル対処をまとめた、非公式ハンドブック grokbot.run のサイトのソースコード。",
     },
     focus: { en: "Getting started", "zh-Hant": "開始使用", "zh-Hans": "开始使用", ja: "はじめに" },
   },
@@ -454,13 +529,14 @@ export function localizeBookmark(item: BookmarkItem, locale: Locale): LocalizedB
 }
 
 function languagePriority(language: BookmarkLanguage, locale: Locale) {
+  if (locale === "ja" && language === "multilingual") return -1;
   if (locale === "en" || locale === "ja") {
     if (language === "en") return 0;
-    if (language === "bilingual") return 1;
+    if (language === "bilingual" || language === "multilingual") return 1;
     return 2;
   }
   if (language === "zh") return 0;
-  if (language === "bilingual") return 1;
+  if (language === "bilingual" || language === "multilingual") return 1;
   return 2;
 }
 
