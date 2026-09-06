@@ -371,5 +371,40 @@
   },
   "Ub3T7usX-c6yRQibQq83P": {
     "oneLiner": "Coordinates your coding agents. Uses the repository you specify instead of guessing."
+  },
+  "YTNSFtHdol3LvuZeAmcXZ": {
+    "title": "Internship Finder",
+    "oneLiner": "Find internship opportunities.",
+    "body": "Find internship opportunities."
+  },
+  "e-l7rGeYuc_cVuydcNvBc": {
+    "title": "Cycle Tracker",
+    "oneLiner": "Track your period and hormone cycle.",
+    "body": "Track your period and hormone cycle."
+  },
+  "wbcx_ZKU507pEMMDEddAf": {
+    "title": "System Design & PR Review",
+    "oneLiner": "Review system designs and code changes for latency, clear boundaries, simplicity, and failure modes.",
+    "body": "Review system designs and code changes for latency, clear boundaries, simplicity, and failure modes."
+  },
+  "lcGQv8_I7UvJEWs3833LR": {
+    "title": "Mailchimp Newsletter Helper",
+    "oneLiner": "Help prepare monthly club newsletters with Mailchimp and Google tools.",
+    "body": "Help prepare monthly club newsletters with Mailchimp and Google tools."
+  },
+  "QZ6VW1zRJTb4ZY5DNk5pm": {
+    "title": "Volt",
+    "oneLiner": "Compare Tesla purchase and lease prices on matching terms, with links to the offers.",
+    "body": "Compare Tesla purchase and lease prices on matching terms, with links to the offers."
+  },
+  "zFDmYYQKE8dUS9Z8r2LAd": {
+    "title": "HubSpot Partner Helper",
+    "oneLiner": "Help HubSpot Solutions Partners access client accounts through the API, MCP, or browser.",
+    "body": "Help HubSpot Solutions Partners access client accounts through the API, MCP, or browser."
+  },
+  "PrgTl_LbGkXg5d2IcdLvc": {
+    "title": "Multi-Model Discussion",
+    "oneLiner": "Run Grok, Claude Code, and Codex inside Grok Bot to discuss a question and seek a shared answer.",
+    "body": "Run Grok, Claude Code, and Codex inside Grok Bot to discuss a question and seek a shared answer."
   }
 }

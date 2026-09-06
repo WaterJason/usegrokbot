@@ -1149,6 +1149,41 @@
       "title": "GitHub 熱門倉庫",
       "oneLiner": "每天抓取 GitHub 熱門倉庫，可當發文素材、學習與技術調查。",
       "body": "作者自用模板：每天抓取 GitHub 熱門倉庫，作為發文來源、知識儲備與日常技術調查。"
+    },
+    "YTNSFtHdol3LvuZeAmcXZ": {
+      "title": "實習機會搜尋",
+      "oneLiner": "幫你尋找實習機會。",
+      "body": "幫你尋找實習機會。"
+    },
+    "e-l7rGeYuc_cVuydcNvBc": {
+      "title": "生理週期紀錄",
+      "oneLiner": "幫你記錄月經與荷爾蒙週期。",
+      "body": "幫你記錄月經與荷爾蒙週期。"
+    },
+    "wbcx_ZKU507pEMMDEddAf": {
+      "title": "系統設計與程式碼審查",
+      "oneLiner": "檢查系統設計和程式碼修改，留意延遲、責任邊界、複雜度與故障風險。",
+      "body": "檢查系統設計和程式碼修改，留意延遲、責任邊界、複雜度與故障風險。"
+    },
+    "lcGQv8_I7UvJEWs3833LR": {
+      "title": "Mailchimp 電子報助手",
+      "oneLiner": "配合 Mailchimp 和 Google 工具，協助準備社團每月電子報。",
+      "body": "配合 Mailchimp 和 Google 工具，協助準備社團每月電子報。"
+    },
+    "QZ6VW1zRJTb4ZY5DNk5pm": {
+      "title": "Volt（Tesla 比價）",
+      "oneLiner": "按相同條件比較 Tesla 購買與租賃價格，附上優惠來源連結。",
+      "body": "按相同條件比較 Tesla 購買與租賃價格，附上優惠來源連結。"
+    },
+    "zFDmYYQKE8dUS9Z8r2LAd": {
+      "title": "HubSpot 夥伴助手",
+      "oneLiner": "協助 HubSpot 合作夥伴透過 API、MCP 或瀏覽器操作客戶帳號。",
+      "body": "協助 HubSpot 合作夥伴透過 API、MCP 或瀏覽器操作客戶帳號。"
+    },
+    "PrgTl_LbGkXg5d2IcdLvc": {
+      "title": "多模型討論助手",
+      "oneLiner": "在 Grok Bot 內讓 Grok、Claude Code 和 Codex 互相討論，嘗試得出共同答案。",
+      "body": "在 Grok Bot 內讓 Grok、Claude Code 和 Codex 互相討論，嘗試得出共同答案。"
     }
   },
   "zh-Hans": {
@@ -2301,6 +2336,41 @@
       "title": "GitHub 热门仓库",
       "oneLiner": "每天抓取 GitHub 热门仓库，可当发文素材、学习与技术调查。",
       "body": "作者自用模板：每天抓取 GitHub 热门仓库，作为发文来源、知识储备与日常技术调查。"
+    },
+    "YTNSFtHdol3LvuZeAmcXZ": {
+      "title": "实习机会搜索",
+      "oneLiner": "帮你寻找实习机会。",
+      "body": "帮你寻找实习机会。"
+    },
+    "e-l7rGeYuc_cVuydcNvBc": {
+      "title": "生理周期记录",
+      "oneLiner": "帮你记录月经与激素周期。",
+      "body": "帮你记录月经与激素周期。"
+    },
+    "wbcx_ZKU507pEMMDEddAf": {
+      "title": "系统设计与代码审查",
+      "oneLiner": "检查系统设计和代码修改，留意延迟、职责边界、复杂度与故障风险。",
+      "body": "检查系统设计和代码修改，留意延迟、职责边界、复杂度与故障风险。"
+    },
+    "lcGQv8_I7UvJEWs3833LR": {
+      "title": "Mailchimp 邮件通讯助手",
+      "oneLiner": "配合 Mailchimp 和 Google 工具，协助准备社团每月邮件通讯。",
+      "body": "配合 Mailchimp 和 Google 工具，协助准备社团每月邮件通讯。"
+    },
+    "QZ6VW1zRJTb4ZY5DNk5pm": {
+      "title": "Volt（Tesla 比价）",
+      "oneLiner": "按相同条件比较 Tesla 购买与租赁价格，附上优惠来源链接。",
+      "body": "按相同条件比较 Tesla 购买与租赁价格，附上优惠来源链接。"
+    },
+    "zFDmYYQKE8dUS9Z8r2LAd": {
+      "title": "HubSpot 合作伙伴助手",
+      "oneLiner": "协助 HubSpot 合作伙伴通过 API、MCP 或浏览器操作客户账号。",
+      "body": "协助 HubSpot 合作伙伴通过 API、MCP 或浏览器操作客户账号。"
+    },
+    "PrgTl_LbGkXg5d2IcdLvc": {
+      "title": "多模型讨论助手",
+      "oneLiner": "在 Grok Bot 内让 Grok、Claude Code 和 Codex 互相讨论，尝试得出共同答案。",
+      "body": "在 Grok Bot 内让 Grok、Claude Code 和 Codex 互相讨论，尝试得出共同答案。"
     }
   }
 }

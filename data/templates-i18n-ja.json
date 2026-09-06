@@ -1148,5 +1148,40 @@
     "title": "テンプレート一覧",
     "oneLiner": "SpaceXAI チームの使い方を、誰でも使えるテンプレートにまとめています。これは Bot ではありません。",
     "body": "公開テンプレートを見るための入口です。作業する Bot ではありません。"
+  },
+  "YTNSFtHdol3LvuZeAmcXZ": {
+    "title": "インターンシップ検索",
+    "oneLiner": "インターンシップの機会を探します。",
+    "body": "インターンシップの機会を探します。"
+  },
+  "e-l7rGeYuc_cVuydcNvBc": {
+    "title": "周期トラッカー",
+    "oneLiner": "月経とホルモンの周期を記録します。",
+    "body": "月経とホルモンの周期を記録します。"
+  },
+  "wbcx_ZKU507pEMMDEddAf": {
+    "title": "システム設計・コードレビュー",
+    "oneLiner": "システム設計とコード変更を、遅延、責任の境界、単純さ、障害リスクの観点で確認します。",
+    "body": "システム設計とコード変更を、遅延、責任の境界、単純さ、障害リスクの観点で確認します。"
+  },
+  "lcGQv8_I7UvJEWs3833LR": {
+    "title": "Mailchimp ニュースレター助手",
+    "oneLiner": "Mailchimp と Google のツールで、団体の月次ニュースレター作成を手伝います。",
+    "body": "Mailchimp と Google のツールで、団体の月次ニュースレター作成を手伝います。"
+  },
+  "QZ6VW1zRJTb4ZY5DNk5pm": {
+    "title": "Volt（Tesla 価格比較）",
+    "oneLiner": "同じ条件で Tesla の購入・リース価格を比較し、販売元のリンクを添えます。",
+    "body": "同じ条件で Tesla の購入・リース価格を比較し、販売元のリンクを添えます。"
+  },
+  "zFDmYYQKE8dUS9Z8r2LAd": {
+    "title": "HubSpot パートナー助手",
+    "oneLiner": "HubSpot パートナーが API、MCP、ブラウザーから顧客アカウントを操作するのを手伝います。",
+    "body": "HubSpot パートナーが API、MCP、ブラウザーから顧客アカウントを操作するのを手伝います。"
+  },
+  "PrgTl_LbGkXg5d2IcdLvc": {
+    "title": "複数モデルの議論助手",
+    "oneLiner": "Grok Bot 内で Grok、Claude Code、Codex に議論させ、共通の答えを探します。",
+    "body": "Grok Bot 内で Grok、Claude Code、Codex に議論させ、共通の答えを探します。"
   }
 }
