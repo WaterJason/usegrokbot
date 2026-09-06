@@ -2,8 +2,7 @@ name: Refresh YouTube view counts
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "23 1 * * *"
+  # Enable the daily schedule after official YouTube data access is connected.
 
 permissions:
   contents: write
