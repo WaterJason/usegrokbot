@@ -604,8 +604,8 @@ export const messages = {
     },
     home: {
       kicker: "Grok Bot 發現中心",
-      title: "人們怎麼使用 Grok Bot。",
-      metaTitle: "人們怎麼使用 Grok Bot",
+      title: "Grok Bot 怎麼用",
+      metaTitle: "Grok Bot 怎麼用",
       metaDescription: "真實公開的 X 貼文，看人們實際怎麼使用 Grok Bot：電子郵件、銷售、程式等。",
       censusPosts: "則貼文",
       censusRefresh: "每 6 小時更新",
@@ -1075,8 +1075,8 @@ export const messages = {
     },
     home: {
       kicker: "Grok Bot 发现中心",
-      title: "人们怎么使用 Grok Bot。",
-      metaTitle: "人们怎么使用 Grok Bot",
+      title: "Grok Bot 怎么用",
+      metaTitle: "Grok Bot 怎么用",
       metaDescription: "真实公开的 X 帖子，看人们实际怎么使用 Grok Bot：邮件、销售、代码等。",
       censusPosts: "条帖子",
       censusRefresh: "每 6 小时更新",

@@ -88,7 +88,6 @@ export function BookmarksView({
     >
       <header className="mb-5">
         <h1 className="ui-page-title text-[30px] md:text-[36px]">{copy.title}</h1>
-        <p className="ui-page-intro mt-2">{copy.intro}</p>
       </header>
 
       <nav aria-label={copy.navLabel}>
