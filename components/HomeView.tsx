@@ -390,7 +390,7 @@ function HomeViewContent({
           <SectionHeader
             title={t("home.popularArticlesTitle")}
             body={t("home.popularArticlesBody")}
-            href="/articles"
+            href="/articles/x"
             cta={t("home.popularArticlesCta")}
           />
           <ol className="mt-8 divide-y divide-line border-y border-line">

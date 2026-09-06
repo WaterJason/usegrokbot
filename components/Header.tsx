@@ -82,18 +82,18 @@ export function Header() {
       match: (current: string) => current.startsWith("/use-cases"),
     },
     {
-      href: "/bookmarks",
+      href: "/articles",
       label: t("nav.bookmarks"),
-      match: (current: string) => current.startsWith("/bookmarks"),
+      match: (current: string) => current.startsWith("/articles"),
     },
     { href: "/submit", label: t("nav.submitShort") },
   ];
   const menuItems = nav.filter((item) => item.href !== "/submit");
   const moreItems: NavItem[] = [
     {
-      href: "/articles",
+      href: "/articles/x",
       label: t("nav.articles"),
-      match: (current: string) => current.startsWith("/articles"),
+      match: (current: string) => current.startsWith("/articles/x"),
     },
     {
       href: "/community",

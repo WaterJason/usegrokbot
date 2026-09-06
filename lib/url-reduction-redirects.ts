@@ -14,6 +14,7 @@ function permanentRedirect(source: string, destination: string) {
 
 function legacyPageRedirectsFor(sourcePrefix: string, destinationPrefix: string) {
   return [
+    permanentRedirect(`${sourcePrefix}/bookmarks`, `${destinationPrefix}/articles`),
     permanentRedirect(`${sourcePrefix}/official`, `${destinationPrefix}/roles`),
     permanentRedirect(`${sourcePrefix}/prompts`, destinationPrefix),
     permanentRedirect(`${sourcePrefix}/saved`, destinationPrefix),

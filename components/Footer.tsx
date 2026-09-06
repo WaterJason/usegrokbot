@@ -15,8 +15,8 @@ export function Footer({ stars }: { stars?: number | null }) {
     { href: "/templates", label: t("nav.templates") },
     { href: "/roles", label: t("nav.official") },
     { href: "/community", label: t("trust.community") },
-    { href: "/articles", label: t("nav.articles") },
-    { href: "/bookmarks", label: t("nav.bookmarks") },
+    { href: "/articles/x", label: t("nav.articles") },
+    { href: "/articles", label: t("nav.bookmarks") },
     { href: "/submit", label: t("nav.submitShort") },
   ];
 

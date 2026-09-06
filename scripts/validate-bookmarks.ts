@@ -38,10 +38,11 @@ check(new Set(items.map((item) => item.id)).size === items.length, "Bookmark IDs
 check(new Set(items.map((item) => item.url)).size === items.length, "Bookmark URLs must be unique");
 
 const sitemapUrls = new Set(sitemap().map((entry) => entry.url));
+check(![...sitemapUrls].some(url => url.endsWith("/bookmarks")), "Sitemap must not contain the redirected bookmarks URL");
 for (const urlLocale of URL_LOCALES) {
   check(
-    sitemapUrls.has(absoluteUrl("/bookmarks", urlLocale)),
-    `Sitemap is missing the ${urlLocale} bookmarks page`,
+    sitemapUrls.has(absoluteUrl("/articles", urlLocale)),
+    `Sitemap is missing the ${urlLocale} articles page`,
   );
 }
 

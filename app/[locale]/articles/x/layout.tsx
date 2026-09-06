@@ -3,7 +3,7 @@ import { messageMeta } from "@/lib/seo";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return messageMeta(locale, {
-    path: "/articles",
+    path: "/articles/x",
     title: "pages.articlesTitle",
     description: "pages.articlesBody",
   });

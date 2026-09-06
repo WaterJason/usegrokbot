@@ -10,8 +10,8 @@ export const PRIORITY_PATHS = [
   "/use-cases",
   "/templates",
   "/community",
-  "/bookmarks",
   "/articles",
+  "/articles/x",
   "/roles",
 ] as const;
 

@@ -37,8 +37,8 @@ const EXPECTED_OLD_BOT_TEAMS = 48;
 const EXPECTED_OLD_SCENARIOS = 24;
 const EXPECTED_COMMUNITY_HANDLES = 1_292;
 const EXPECTED_SITEMAP_PATHS = 155;
-const EXPECTED_CONFIGURED_REDIRECTS = 259;
-const EXPECTED_LEGACY_PAGE_REDIRECTS = 14;
+const EXPECTED_CONFIGURED_REDIRECTS = 261;
+const EXPECTED_LEGACY_PAGE_REDIRECTS = 16;
 const EXPECTED_URL_REDUCTION_REDIRECTS = 244;
 const LOCALES = URL_LOCALES;
 const localePattern = `:locale(${URL_LOCALE_PATTERN})`;
@@ -176,7 +176,7 @@ check(sitemapUrls.size === sitemapEntries.length, "Sitemap contains duplicate UR
 for (const locale of LOCALES) {
   const base = `https://usegrokbot.com/${locale}`;
   check(sitemapUrls.has(`${base}/community`), `Sitemap missing ${locale} community page`);
-  check(sitemapUrls.has(`${base}/bookmarks`), `Sitemap missing ${locale} bookmarks page`);
+  check(sitemapUrls.has(`${base}/articles`), `Sitemap missing ${locale} articles page`);
   for (const story of retained) {
     check(sitemapUrls.has(`${base}/discover/${story.slug}`), `Sitemap missing retained Discover: ${locale}/${story.slug}`);
   }
