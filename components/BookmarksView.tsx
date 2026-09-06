@@ -131,7 +131,7 @@ export function BookmarksView({
             role="tabpanel"
             aria-labelledby={`bookmark-tab-${panelSource}`}
             hidden={!active}
-            className="py-4"
+            className={cn("py-4", panelSource === "x" && "mx-auto w-full max-w-[936px]")}
           >
             {active ? (
               <>
@@ -305,7 +305,7 @@ function XArticleLists({
                 locale={locale}
                 viewsLabel={copy.viewsLabel}
                 rank={index + 1}
-                compact
+                presentation="homepage"
               />
             ))}
           </ol>

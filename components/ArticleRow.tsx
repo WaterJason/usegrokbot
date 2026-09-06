@@ -12,18 +12,58 @@ export function ArticleRow({
   viewsLabel,
   rank,
   compact = false,
+  presentation = "default",
 }: {
   item: RankedStory;
   locale: Locale;
   viewsLabel: string;
   rank?: number;
   compact?: boolean;
+  presentation?: "default" | "homepage";
 }) {
   const story = localizeDiscoverStory(item.story, locale);
   const href = articleExternalUrl(item.story);
   const showHandle = item.story.handle && (
     !compact || story.authorName.replace(/^@/, "").toLowerCase() !== item.story.handle.toLowerCase()
   );
+
+  if (presentation === "homepage") {
+    return (
+      <li>
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-start gap-3 py-4 transition-colors hover:bg-card-hover sm:gap-4 md:gap-5"
+        >
+          {rank != null ? (
+            <span className="ui-count w-6 shrink-0 pt-1 text-right font-medium text-mute sm:w-8">
+              {rank}
+            </span>
+          ) : null}
+          <AuthorAvatar name={story.authorName} handle={item.story.handle} size={40} />
+          <div className="min-w-0 flex-1">
+            <p className="truncate text-[13px] leading-normal font-medium text-ink">
+              {story.authorName}
+              {item.story.handle ? (
+                <span className="ml-1 font-normal text-mute">@{item.story.handle}</span>
+              ) : null}
+            </p>
+            <p className="mt-1 text-[15px] leading-snug text-ink wrap-anywhere">{story.title}</p>
+            <time dateTime={item.story.publishedAt} className="mt-1 block text-[12px] leading-normal text-mute">
+              {formatCardDate(item.story.publishedAt, locale)}
+            </time>
+          </div>
+          <div className="shrink-0 pt-1 text-right">
+            <p className="text-[18px] leading-normal font-medium tracking-tight text-ink tabular-nums">
+              {item.views > 0 ? formatViewCount(item.views, locale) : "—"}
+            </p>
+            <p className="mt-0.5 text-[12px] leading-normal text-mute">{viewsLabel}</p>
+          </div>
+        </a>
+      </li>
+    );
+  }
 
   return (
     <li>
