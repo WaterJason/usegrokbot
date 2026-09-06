@@ -215,10 +215,7 @@ function BookmarkGrid({
             </div>
             <p className="ui-body mt-3 text-mute">{item.description}</p>
 
-            <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
-              <span className="ui-label inline-flex max-w-full rounded-full bg-elevated px-2.5 py-1 text-mute">
-                {item.focus}
-              </span>
+            <div className="mt-4">
               {item.xAuthor ? (
                 <a
                   href={`https://x.com/${item.xAuthor.handle}`}
