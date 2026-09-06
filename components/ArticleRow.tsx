@@ -58,22 +58,14 @@ export function ArticleRow({
                 ? formatStoryDate(item.story.publishedAt, locale)
                 : formatCardDate(item.story.publishedAt, locale)}
             </time>
-            {compact ? (
-              <span data-article-views className="inline-flex items-baseline gap-1.5 whitespace-nowrap">
-                <span className="ui-count font-medium text-ink">
-                  {item.views > 0 ? formatViewCount(item.views, locale) : "—"}
-                </span>
-                <span className="ui-meta text-mute">{viewsLabel}</span>
-              </span>
-            ) : null}
           </div>
         </div>
-        {!compact ? <div className={cn("row-start-2 flex shrink-0 items-baseline gap-1.5 sm:block sm:pt-1 sm:text-right", rank != null ? "col-start-2" : "col-span-2")}>
+        <div className={cn("row-start-2 flex shrink-0 items-baseline gap-1.5 sm:block sm:pt-1 sm:text-right", rank != null ? "col-start-2" : "col-span-2")}>
           <p className="ui-count font-medium text-ink">
             {item.views > 0 ? formatViewCount(item.views, locale) : "—"}
           </p>
           <p className="ui-meta text-mute sm:mt-0.5">{viewsLabel}</p>
-        </div> : null}
+        </div>
       </a>
     </li>
   );
