@@ -71245,5 +71245,40 @@
     "sourceUrl": "https://x.com/bfrench/status/2096891691060097240",
     "sourceLabel": "bfrench on X",
     "format": "article"
+  },
+  {
+    "slug": "cgnot996",
+    "title": "省到极致就是赚！",
+    "headline": "省到极致就是赚！",
+    "body": "省到极致就是赚！ https://x.com/i/article/2094108824949096448",
+    "whatTheyDid": "省到极致就是赚！",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "省到极致就是赚！",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "铁柱AGI",
+    "handle": "cgnot996",
+    "publishedAt": "2026-08-31",
+    "xPostUrl": "https://x.com/cgnot996/status/2094220949340185078",
+    "sourceUrl": "https://x.com/cgnot996/status/2094220949340185078",
+    "sourceLabel": "铁柱AGI on X",
+    "format": "article"
   }
 ]
