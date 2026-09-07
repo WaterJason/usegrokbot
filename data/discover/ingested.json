@@ -70998,5 +70998,252 @@
     "publishedAt": "2026-09-05",
     "sourceUrl": "https://github.com/TheGiraffe/CuteCursorProjects",
     "sourceLabel": "TheGiraffe · GitHub"
+  },
+  {
+    "slug": "echrisclarke-i-moved-the-heavy-grok-bot-work-into-cursor-and",
+    "title": "I moved the heavy Grok Bot work into Cursor and kept the seats for...",
+    "headline": "I moved the heavy Grok Bot work into Cursor and kept the seats for supervision, votes, and the final calls.",
+    "body": "I moved the heavy Grok Bot work into Cursor and kept the seats for supervision, votes, and the final calls. Python + Task Scheduler take the GET/file jobs. Real setup, not bot-slop. How I did it: https://x.com/i/article/2096398890303995905",
+    "whatTheyDid": "I moved the heavy Grok Bot work into Cursor and kept the seats for supervision, votes, and the final calls.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "I moved the heavy Grok Bot work into Cursor and kept the seats for supervision, votes, and the final calls.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Herbie Clarke",
+    "handle": "echrisclarke",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/echrisclarke/status/2096399969297010933",
+    "sourceUrl": "https://x.com/echrisclarke/status/2096399969297010933",
+    "sourceLabel": "Herbie Clarke on X",
+    "format": "article"
+  },
+  {
+    "slug": "tri333-bot-grok-bot-ai-agent-spacex",
+    "title": "แชร์ประสบการณ์ใช้งาน @bot Grok Bot Ai Agent ของค่าย SpaceX อีลอน มัสก์...",
+    "headline": "แชร์ประสบการณ์ใช้งาน @bot Grok Bot Ai Agent ของค่าย SpaceX อีลอน มัสก์ ขอบอกว่าสุดยอดมากครับ",
+    "body": "แชร์ประสบการณ์ใช้งาน @bot Grok Bot  Ai Agent ของค่าย SpaceX อีลอน มัสก์ ขอบอกว่าสุดยอดมากครับ https://x.com/i/article/2096591547345350656",
+    "whatTheyDid": "แชร์ประสบการณ์ใช้งาน @bot Grok Bot Ai Agent ของค่าย SpaceX อีลอน มัสก์ ขอบอกว่าสุดยอดมากครับ",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "แชร์ประสบการณ์ใช้งาน @bot Grok Bot Ai Agent ของค่าย SpaceX อีลอน มัสก์ ขอบอกว่าสุดยอดมากครับ",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "ชีพธรรม คำวิเศษณ์",
+    "handle": "tri333",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/tri333/status/2096591901915021516",
+    "sourceUrl": "https://x.com/tri333/status/2096591901915021516",
+    "sourceLabel": "ชีพธรรม คำวิเศษณ์ on X",
+    "format": "article"
+  },
+  {
+    "slug": "anandvragav-how-i-handed-my-podcast-episode-workflow-to-my-g",
+    "title": "How I handed my podcast episode workflow to my Grok Bot crew",
+    "headline": "How I handed my podcast episode workflow to my Grok Bot crew",
+    "body": "How I handed my podcast episode workflow to my Grok Bot crew https://x.com/i/article/2096594098647973889",
+    "whatTheyDid": "How I handed my podcast episode workflow to my Grok Bot crew",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Creators",
+      "Content teams"
+    ],
+    "usefulFor": "Creators / Content teams",
+    "output": "How I handed my podcast episode workflow to my Grok Bot crew",
+    "category": "content",
+    "outcomes": [
+      "create-content",
+      "save-time"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Anand",
+    "handle": "anandVragav",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/anandVragav/status/2096599381247996241",
+    "sourceUrl": "https://x.com/anandVragav/status/2096599381247996241",
+    "sourceLabel": "Anand on X",
+    "format": "article"
+  },
+  {
+    "slug": "gargeyas-experimentation-chatgpt-subscription-grok-bot-cu",
+    "title": "Experimentation👇 ChatGPT Subscription + Grok Bot + Cursor Cloud...",
+    "headline": "Experimentation👇 ChatGPT Subscription + Grok Bot + Cursor Cloud Agents SDLC V1 Automated AI loop handles engineering tasks even with laptop closed.",
+    "body": "Experimentation👇\nChatGPT Subscription + Grok Bot + Cursor Cloud Agents SDLC V1\nAutomated AI loop handles engineering tasks even with laptop closed. Pilot successfully integrates Architect, Builder, and Reviewer bots for handoffs between GitHub and Notion. https://x.com/i/article/2096735892321026048",
+    "whatTheyDid": "Experimentation👇 ChatGPT Subscription + Grok Bot + Cursor Cloud Agents SDLC V1 Automated AI loop handles engineering tasks even with laptop closed.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "Experimentation👇 ChatGPT Subscription + Grok Bot + Cursor Cloud Agents SDLC V1 Automated AI loop handles engineering tasks even with laptop closed.",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [
+      "notion",
+      "github",
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Gargeya",
+    "handle": "GargeyaS",
+    "publishedAt": "2026-09-06",
+    "xPostUrl": "https://x.com/GargeyaS/status/2096738207891349661",
+    "sourceUrl": "https://x.com/GargeyaS/status/2096738207891349661",
+    "sourceLabel": "Gargeya on X",
+    "format": "article"
+  },
+  {
+    "slug": "pcefancom-ai-grok-bot",
+    "title": "「AIエージェント」って結局何なのか、Grok Botを使ってようやく分かりました。...",
+    "headline": "「AIエージェント」って結局何なのか、Grok Botを使ってようやく分かりました。 役割を与えたBotをグループに入れると、Bot同士が勝手に議論しながらネタ集め→記事作成まで進めてくれます。人間の編集部を見ているみたいで、ちょっと感動した。",
+    "body": "「AIエージェント」って結局何なのか、Grok Botを使ってようやく分かりました。\n\n役割を与えたBotをグループに入れると、Bot同士が勝手に議論しながらネタ集め→記事作成まで進めてくれます。人間の編集部を見ているみたいで、ちょっと感動した。 https://x.com/i/article/2092026643426803712",
+    "whatTheyDid": "「AIエージェント」って結局何なのか、Grok Botを使ってようやく分かりました。 役割を与えたBotをグループに入れると、Bot同士が勝手に議論しながらネタ集め→記事作成まで進めてくれます。人間の編集部を見ているみたいで、ちょっと感動した。",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "「AIエージェント」って結局何なのか、Grok Botを使ってようやく分かりました。 役割を与えたBotをグループに入れると、Bot同士が勝手に議論しながらネタ集め→記事作成まで進めてくれます。人間の編集部を見ているみたいで、ちょっと感動した。",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "タケイマコト",
+    "handle": "pcefancom",
+    "publishedAt": "2026-09-07",
+    "xPostUrl": "https://x.com/pcefancom/status/2096819736596398276",
+    "sourceUrl": "https://x.com/pcefancom/status/2096819736596398276",
+    "sourceLabel": "タケイマコト on X",
+    "format": "article"
+  },
+  {
+    "slug": "anandvragav-how-i-handed-off-almost-my-entire-podcast-episod",
+    "title": "How I handed off almost my entire Podcast episode creation workflow to...",
+    "headline": "How I handed off almost my entire Podcast episode creation workflow to Grok Bot.",
+    "body": "How I handed off almost my entire Podcast episode creation workflow to Grok Bot. https://x.com/i/article/2096814365039054848",
+    "whatTheyDid": "How I handed off almost my entire Podcast episode creation workflow to Grok Bot.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Creators",
+      "Content teams"
+    ],
+    "usefulFor": "Creators / Content teams",
+    "output": "How I handed off almost my entire Podcast episode creation workflow to Grok Bot.",
+    "category": "content",
+    "outcomes": [
+      "create-content",
+      "save-time"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Anand",
+    "handle": "anandVragav",
+    "publishedAt": "2026-09-07",
+    "xPostUrl": "https://x.com/anandVragav/status/2096822077655241215",
+    "sourceUrl": "https://x.com/anandVragav/status/2096822077655241215",
+    "sourceLabel": "Anand on X",
+    "format": "article"
+  },
+  {
+    "slug": "bfrench-i-used-to-hunt-for-a-yaml-file-the-way-i-hunt-fo",
+    "title": "I used to hunt for a YAML file the way I hunt for the spare house key",
+    "headline": "I used to hunt for a YAML file the way I hunt for the spare house key.",
+    "body": "I used to hunt for a YAML file the way I hunt for the spare house key. Espanso was already the right tool — local, mine, a little fiddly. What it lacked was a clerk: one Grok Bot that edits, checks collisions, scouts new triggers. https://x.com/i/article/2096887742768832513",
+    "whatTheyDid": "I used to hunt for a YAML file the way I hunt for the spare house key.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "I used to hunt for a YAML file the way I hunt for the spare house key.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "bfrench",
+    "handle": "bfrench",
+    "publishedAt": "2026-09-07",
+    "xPostUrl": "https://x.com/bfrench/status/2096891691060097240",
+    "sourceUrl": "https://x.com/bfrench/status/2096891691060097240",
+    "sourceLabel": "bfrench on X",
+    "format": "article"
   }
 ]
