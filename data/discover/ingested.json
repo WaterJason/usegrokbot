@@ -70914,5 +70914,89 @@
     "sourceUrl": "https://x.com/Dirindin533/status/2096860484440039715",
     "sourceLabel": "Adirindin on X",
     "format": "article"
+  },
+  {
+    "slug": "ckel0325-casa-kattegat-perps-desk-polymarket",
+    "title": "Casa/Kattegat Perps desk (Polymarket)",
+    "headline": "Vikings-themed Grok Bot crew plus a live paper HUD for Polymarket BTC/ETH perps; humans still trigger the row.",
+    "whatTheyDid": "Vikings-themed Grok Bot crew plus a live paper HUD for Polymarket BTC/ETH perps; humans still trigger the row.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Researchers",
+      "Operators"
+    ],
+    "usefulFor": "Researchers / Operators",
+    "output": "Vikings-themed Grok Bot crew plus a live paper HUD for Polymarket BTC/ETH perps; humans still trigger the row.",
+    "category": "research",
+    "outcomes": [
+      "research",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "ckel0325",
+    "publishedAt": "2026-09-07",
+    "sourceUrl": "https://github.com/ckel0325/casa-perps-desk",
+    "sourceLabel": "ckel0325 · GitHub"
+  },
+  {
+    "slug": "danielz0217-waymarker-student-tutor-grok-bot-rag",
+    "title": "WayMarker student tutor (Grok Bot + RAG)",
+    "headline": "Cursor Student Build case: Grok Bot owns explanation/grading while a FastAPI/LangGraph TAagent backend (Milvus/Neo4j/Redis/Postgres + MCP) remembers the learner over time.",
+    "whatTheyDid": "Cursor Student Build case: Grok Bot owns explanation/grading while a FastAPI/LangGraph TAagent backend (Milvus/Neo4j/Redis/Postgres + MCP) remembers the learner over time.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Creators",
+      "Content teams"
+    ],
+    "usefulFor": "Creators / Content teams",
+    "output": "Cursor Student Build case: Grok Bot owns explanation/grading while a FastAPI/LangGraph TAagent backend (Milvus/Neo4j/Redis/Postgres + MCP) remembers the learner over time.",
+    "category": "content",
+    "outcomes": [
+      "create-content",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "DanielZ0217",
+    "publishedAt": "2026-09-07",
+    "sourceUrl": "https://github.com/DanielZ0217/WayMarker",
+    "sourceLabel": "DanielZ0217 · GitHub"
+  },
+  {
+    "slug": "thegiraffe-cutezinemaker-hawaii-tech-week-grok-bot",
+    "title": "CuteZineMaker (Hawaii Tech Week × Grok Bot)",
+    "headline": "Flutter CuteZineMaker built with Cursor and a Grok Bot (“Very Cute Bot”) at Hawaii Tech Week—export booklet or classic 8-page zine layouts with screenshots.",
+    "whatTheyDid": "Flutter CuteZineMaker built with Cursor and a Grok Bot (“Very Cute Bot”) at Hawaii Tech Week—export booklet or classic 8-page zine layouts with screenshots.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Flutter CuteZineMaker built with Cursor and a Grok Bot (“Very Cute Bot”) at Hawaii Tech Week—export booklet or classic 8-page zine layouts with screenshots.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "TheGiraffe",
+    "publishedAt": "2026-09-05",
+    "sourceUrl": "https://github.com/TheGiraffe/CuteCursorProjects",
+    "sourceLabel": "TheGiraffe · GitHub"
   }
 ]

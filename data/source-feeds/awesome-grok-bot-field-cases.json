@@ -9,11 +9,11 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 66,
+    "total": 69,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
-    "alreadyIngested": 61,
+    "alreadyIngested": 64,
     "pending": 0
   },
   "cases": [
@@ -869,6 +869,45 @@
       "title": "Star Goat Grok Bot Storm (Polymarket desk)",
       "url": "https://github.com/stevengray8-glitch/star-goat-grok-bot-storm",
       "sourceSummary": "Six-bot Polymarket BTC Up/Down market-making desk profiles and runbook built for the Grok Bot desktop app (dry-run first).",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "casa-kattegat-perps-desk-polymarket",
+      "title": "Casa/Kattegat Perps desk (Polymarket)",
+      "url": "https://github.com/ckel0325/casa-perps-desk",
+      "sourceSummary": "Vikings-themed Grok Bot crew plus a live paper HUD for Polymarket BTC/ETH perps; humans still trigger the row.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "waymarker-student-tutor-grok-bot-rag",
+      "title": "WayMarker student tutor (Grok Bot + RAG)",
+      "url": "https://github.com/DanielZ0217/WayMarker",
+      "sourceSummary": "Cursor Student Build case: Grok Bot owns explanation/grading while a FastAPI/LangGraph TAagent backend (Milvus/Neo4j/Redis/Postgres + MCP) remembers the learner over time.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "cutezinemaker-hawaii-tech-week-grok-bot",
+      "title": "CuteZineMaker (Hawaii Tech Week × Grok Bot)",
+      "url": "https://github.com/TheGiraffe/CuteCursorProjects",
+      "sourceSummary": "Flutter CuteZineMaker built with Cursor and a Grok Bot (“Very Cute Bot”) at Hawaii Tech Week—export booklet or classic 8-page zine layouts with screenshots.",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",
