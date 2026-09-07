@@ -13,26 +13,6 @@ export type FetchedPost = {
   isArticle?: boolean;
 };
 
-type FxTwitterArticle = {
-  title?: string;
-  preview_text?: string;
-  content?: {
-    blocks?: Array<{ text?: string }>;
-  };
-};
-
-function articleBodyFromFx(article?: FxTwitterArticle) {
-  if (!article) return "";
-  const blockText = (article.content?.blocks ?? [])
-    .map((block) => block.text?.trim() ?? "")
-    .filter(Boolean)
-    .join("\n");
-  return [article.title, article.preview_text, blockText]
-    .map((part) => part?.trim() ?? "")
-    .filter(Boolean)
-    .join("\n\n");
-}
-
 function isoDay(value: string | number) {
   const date = typeof value === "number" ? new Date(value * 1000) : new Date(value);
   if (Number.isNaN(date.getTime())) return null;
@@ -52,6 +32,19 @@ function stripHtml(html: string) {
     .trim();
 }
 
+
+function articleBodyFromFx(article: {
+  title?: string;
+  preview_text?: string;
+  content?: { blocks?: Array<{ text?: string }> };
+} | undefined) {
+  if (!article) return "";
+  const blocks = (article.content?.blocks ?? [])
+    .map((block) => block.text?.trim())
+    .filter((value): value is string => Boolean(value));
+  return [article.title, article.preview_text, ...blocks].filter(Boolean).join("\n").trim();
+}
+
 async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
   const response = await fetch(`https://api.fxtwitter.com/status/${id}`, {
     headers: { "User-Agent": "usegrokbot.com" },
@@ -66,7 +59,11 @@ async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
       author?: { screen_name?: string; name?: string };
       quote?: { text?: string; author?: { screen_name?: string; name?: string } };
       is_note_tweet?: boolean;
-      article?: FxTwitterArticle;
+      article?: {
+        title?: string;
+        preview_text?: string;
+        content?: { blocks?: Array<{ text?: string }> };
+      };
     };
   };
   const tweet = data.tweet;
@@ -81,9 +78,10 @@ async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
     ? `${tweet.quote.author?.name ?? ""} @${tweet.quote.author?.screen_name ?? ""}: ${tweet.quote.text}`.trim()
     : undefined;
   const text = tweet.text.trim();
+  const articleBody = articleBodyFromFx(tweet.article);
   const url = tweet.url ?? `https://x.com/${tweet.author.screen_name}/status/${id}`;
   const isNoteTweet = Boolean(tweet.is_note_tweet);
-  const articleBody = articleBodyFromFx(tweet.article);
+  const sourceParts = [text, quoted, articleBody].filter(Boolean);
   return {
     url,
     id,
@@ -92,9 +90,9 @@ async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
     text,
     quotedText: quoted,
     publishedAt,
-    sourceText: [text, quoted, articleBody].filter(Boolean).join("\n\n"),
+    sourceText: sourceParts.join("\n\n"),
     isNoteTweet,
-    isArticle: Boolean(articleBody) || isLongFormXPost({ url, text, isNoteTweet }),
+    isArticle: isLongFormXPost({ url, text, isNoteTweet }) || Boolean(articleBody),
   };
 }
 
