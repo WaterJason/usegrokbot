@@ -9,11 +9,11 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 61,
+    "total": 66,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
-    "alreadyIngested": 56,
+    "alreadyIngested": 61,
     "pending": 0
   },
   "cases": [
@@ -804,6 +804,71 @@
       "title": "Hedge-fund desk Grok Bot agent export",
       "url": "https://github.com/prosmoon-hash/hedge-fund-agents",
       "sourceSummary": "Sanitized backup of a multi-desk Grok Bot trading roster (profiles, automations, skills, ops docs) for version history—not a live runtime.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "vidya-course-page-calendar-grok-bot",
+      "title": "vidya course-page calendar Grok Bot",
+      "url": "https://github.com/vinilpolepalli/vidya",
+      "sourceSummary": "Student Build Challenge engine: a Grok Bot reads course pages nightly, diffs deadlines, and keeps Google Calendar honest with tested safety gates.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "grokbot-scheduler-seat-watcher",
+      "title": "GrokBot-Scheduler (seat watcher)",
+      "url": "https://github.com/TheHelperVariable/GrokBot-Scheduler",
+      "sourceSummary": "Unattended cloud-agent spring-registration prep: watches public registrar pages for seats and alerts without ever holding university credentials.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "recourse-academic-case-engine-student-build",
+      "title": "Recourse academic case engine (Student Build)",
+      "url": "https://github.com/moizk12/RECOURSE-Grokbot",
+      "sourceSummary": "Grok Bot Student Build Challenge submission: deterministic, source-verified engine that replays university procedures against a student case trace.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "grok-bot-architecture-public-council",
+      "title": "GROK BOT ARCHITECTURE (public council)",
+      "url": "https://github.com/monokernn/Grok_Bot_Architecture",
+      "sourceSummary": "Public observable multi-agent Grok Bot org (Helm + five specialists) with a live observer UI for assignments, handoffs, and receipts.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "star-goat-grok-bot-storm-polymarket-desk",
+      "title": "Star Goat Grok Bot Storm (Polymarket desk)",
+      "url": "https://github.com/stevengray8-glitch/star-goat-grok-bot-storm",
+      "sourceSummary": "Six-bot Polymarket BTC Up/Down market-making desk profiles and runbook built for the Grok Bot desktop app (dry-run first).",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",

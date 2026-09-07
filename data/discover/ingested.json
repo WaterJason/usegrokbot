@@ -69224,5 +69224,147 @@
     "xPostUrl": "https://x.com/liang570391/status/2096571534680666317",
     "sourceUrl": "https://x.com/liang570391/status/2096571534680666317",
     "sourceLabel": "Hope on X"
+  },
+  {
+    "slug": "vinilpolepalli-vidya-course-page-calendar-grok-bot",
+    "title": "vidya course-page calendar Grok Bot",
+    "headline": "Student Build Challenge engine: a Grok Bot reads course pages nightly, diffs deadlines, and keeps Google Calendar honest with tested safety gates.",
+    "whatTheyDid": "Student Build Challenge engine: a Grok Bot reads course pages nightly, diffs deadlines, and keeps Google Calendar honest with tested safety gates.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "People exploring personal automation",
+      "Grok Bot users"
+    ],
+    "usefulFor": "People exploring personal automation / Grok Bot users",
+    "output": "Student Build Challenge engine: a Grok Bot reads course pages nightly, diffs deadlines, and keeps Google Calendar honest with tested safety gates.",
+    "category": "personal",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "google-calendar"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "vinilpolepalli",
+    "publishedAt": "2026-09-06",
+    "sourceUrl": "https://github.com/vinilpolepalli/vidya",
+    "sourceLabel": "vinilpolepalli · GitHub"
+  },
+  {
+    "slug": "thehelpervariable-grokbot-scheduler-seat-watcher",
+    "title": "GrokBot-Scheduler (seat watcher)",
+    "headline": "Unattended cloud-agent spring-registration prep: watches public registrar pages for seats and alerts without ever holding university credentials.",
+    "whatTheyDid": "Unattended cloud-agent spring-registration prep: watches public registrar pages for seats and alerts without ever holding university credentials.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Unattended cloud-agent spring-registration prep: watches public registrar pages for seats and alerts without ever holding university credentials.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "TheHelperVariable",
+    "publishedAt": "2026-09-06",
+    "sourceUrl": "https://github.com/TheHelperVariable/GrokBot-Scheduler",
+    "sourceLabel": "TheHelperVariable · GitHub"
+  },
+  {
+    "slug": "moizk12-recourse-academic-case-engine-student-build",
+    "title": "Recourse academic case engine (Student Build)",
+    "headline": "Grok Bot Student Build Challenge submission: deterministic, source-verified engine that replays university procedures against a student case trace.",
+    "whatTheyDid": "Grok Bot Student Build Challenge submission: deterministic, source-verified engine that replays university procedures against a student case trace.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Grok Bot Student Build Challenge submission: deterministic, source-verified engine that replays university procedures against a student case trace.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "moizk12",
+    "publishedAt": "2026-09-05",
+    "sourceUrl": "https://github.com/moizk12/RECOURSE-Grokbot",
+    "sourceLabel": "moizk12 · GitHub"
+  },
+  {
+    "slug": "monokernn-grok-bot-architecture-public-council",
+    "title": "GROK BOT ARCHITECTURE (public council)",
+    "headline": "Public observable multi-agent Grok Bot org (Helm + five specialists) with a live observer UI for assignments, handoffs, and receipts.",
+    "whatTheyDid": "Public observable multi-agent Grok Bot org (Helm + five specialists) with a live observer UI for assignments, handoffs, and receipts.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Public observable multi-agent Grok Bot org (Helm + five specialists) with a live observer UI for assignments, handoffs, and receipts.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "monokernn",
+    "publishedAt": "2026-08-24",
+    "sourceUrl": "https://github.com/monokernn/Grok_Bot_Architecture",
+    "sourceLabel": "monokernn · GitHub"
+  },
+  {
+    "slug": "stevengray8-glitch-star-goat-grok-bot-storm-polymarket-desk",
+    "title": "Star Goat Grok Bot Storm (Polymarket desk)",
+    "headline": "Six-bot Polymarket BTC Up/Down market-making desk profiles and runbook built for the Grok Bot desktop app (dry-run first).",
+    "whatTheyDid": "Six-bot Polymarket BTC Up/Down market-making desk profiles and runbook built for the Grok Bot desktop app (dry-run first).",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Researchers",
+      "Operators"
+    ],
+    "usefulFor": "Researchers / Operators",
+    "output": "Six-bot Polymarket BTC Up/Down market-making desk profiles and runbook built for the Grok Bot desktop app (dry-run first).",
+    "category": "research",
+    "outcomes": [
+      "research",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "stevengray8-glitch",
+    "publishedAt": "2026-09-06",
+    "sourceUrl": "https://github.com/stevengray8-glitch/star-goat-grok-bot-storm",
+    "sourceLabel": "stevengray8-glitch · GitHub"
   }
 ]
