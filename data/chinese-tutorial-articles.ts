@@ -43,7 +43,7 @@ function tutorialArticle(input: TutorialArticleInput): DiscoverStory {
 
 /**
  * Chinese Grok Bot tutorials verified through Grok X Search on 2026-09-04,
- * plus a 2026-09-07 longform backfill for three @cgnot996 X Articles.
+ * with longform Article backfill on 2026-09-07 (cgnot996 credits / Hangzhou).
  *
  * These records are intentionally article-only. They are merged into the
  * Articles surfaces without increasing the Discover catalogue inventory.
