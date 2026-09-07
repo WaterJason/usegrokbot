@@ -13,6 +13,26 @@ export type FetchedPost = {
   isArticle?: boolean;
 };
 
+type FxTwitterArticle = {
+  title?: string;
+  preview_text?: string;
+  content?: {
+    blocks?: Array<{ text?: string }>;
+  };
+};
+
+function articleBodyFromFx(article?: FxTwitterArticle) {
+  if (!article) return "";
+  const blockText = (article.content?.blocks ?? [])
+    .map((block) => block.text?.trim() ?? "")
+    .filter(Boolean)
+    .join("\n");
+  return [article.title, article.preview_text, blockText]
+    .map((part) => part?.trim() ?? "")
+    .filter(Boolean)
+    .join("\n\n");
+}
+
 function isoDay(value: string | number) {
   const date = typeof value === "number" ? new Date(value * 1000) : new Date(value);
   if (Number.isNaN(date.getTime())) return null;
@@ -46,6 +66,7 @@ async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
       author?: { screen_name?: string; name?: string };
       quote?: { text?: string; author?: { screen_name?: string; name?: string } };
       is_note_tweet?: boolean;
+      article?: FxTwitterArticle;
     };
   };
   const tweet = data.tweet;
@@ -62,6 +83,7 @@ async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
   const text = tweet.text.trim();
   const url = tweet.url ?? `https://x.com/${tweet.author.screen_name}/status/${id}`;
   const isNoteTweet = Boolean(tweet.is_note_tweet);
+  const articleBody = articleBodyFromFx(tweet.article);
   return {
     url,
     id,
@@ -70,9 +92,9 @@ async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
     text,
     quotedText: quoted,
     publishedAt,
-    sourceText: quoted ? `${text}\n\n${quoted}` : text,
+    sourceText: [text, quoted, articleBody].filter(Boolean).join("\n\n"),
     isNoteTweet,
-    isArticle: isLongFormXPost({ url, text, isNoteTweet }),
+    isArticle: Boolean(articleBody) || isLongFormXPost({ url, text, isNoteTweet }),
   };
 }
 
