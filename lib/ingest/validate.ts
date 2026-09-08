@@ -1,7 +1,7 @@
 import { discoverStories, type DiscoverStory } from "@/data/discover";
 import type { FetchedPost } from "./fetch-post";
 import type { ExtractedCase } from "./schema";
-import { tweetIdFromUrl } from "./x-url";
+import { tweetIdFromUrl, xArticleUrlFromText } from "./x-url";
 
 const GROK_SIGNAL = /grok\s*bot|\bgrok\b|@grok|@bot\b/i;
 const MIN_RELEVANCE = 90;
@@ -106,12 +106,22 @@ export function notesSayElonLiked(notes?: string) {
   return Boolean(notes && /elon\s+(liked|reposted|quoted)/i.test(notes));
 }
 
+export function articleUrlFromPost(post: FetchedPost): string | undefined {
+  return (
+    post.articleUrl ??
+    xArticleUrlFromText(post.url) ??
+    xArticleUrlFromText(post.text) ??
+    xArticleUrlFromText(post.sourceText)
+  );
+}
+
 export function toDiscoverStory(
   post: FetchedPost,
   extracted: ExtractedCase,
   slug: string,
   extras: { notes?: string } = {},
 ): DiscoverStory {
+  const articleUrl = articleUrlFromPost(post);
   return {
     slug,
     title: extracted.title.trim(),
@@ -138,7 +148,8 @@ export function toDiscoverStory(
     xPostUrl: post.url,
     sourceUrl: post.url,
     sourceLabel: `${post.authorName} on X`,
-    format: extracted.format === "article" || post.isArticle ? "article" : undefined,
+    format: extracted.format === "article" || post.isArticle || articleUrl ? "article" : undefined,
+    ...(articleUrl ? { articleUrl } : {}),
     elonLiked: extracted.elonLiked || notesSayElonLiked(extras.notes) || undefined,
   };
 }

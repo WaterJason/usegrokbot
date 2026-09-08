@@ -3,7 +3,7 @@ import { discoverStories, type DiscoverStory } from "../data/discover";
 import { fetchGenericSourceMetadata, type GenericSourceType } from "../lib/ingest/fetch-source-metadata";
 import { fetchXPost, type FetchedPost } from "../lib/ingest/fetch-post";
 import { makeStorySlug } from "../lib/ingest/slug";
-import { assertStorySafe } from "../lib/ingest/validate";
+import { articleUrlFromPost, assertStorySafe } from "../lib/ingest/validate";
 import { site } from "../lib/site";
 
 const FEED_PATH = "data/source-feeds/awesome-grok-bot-field-cases.json";
@@ -202,6 +202,7 @@ function buildSafeXFallback(item: SourceCase, post: FetchedPost, existingStories
   const category = fallbackCategory(combined);
   const whoShouldTry = audienceFor(category);
   const slug = makeStorySlug(post.handle, title, new Set(existingStories.map((story) => story.slug)));
+  const articleUrl = articleUrlFromPost(post);
 
   return {
     slug,
@@ -230,7 +231,8 @@ function buildSafeXFallback(item: SourceCase, post: FetchedPost, existingStories
     xPostUrl: item.url,
     sourceUrl: item.url,
     sourceLabel: `${post.authorName} on X`,
-    format: post.isArticle ? "article" : undefined,
+    format: post.isArticle || articleUrl ? "article" : undefined,
+    ...(articleUrl ? { articleUrl } : {}),
   };
 }
 

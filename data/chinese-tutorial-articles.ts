@@ -44,10 +44,11 @@ function tutorialArticle(input: TutorialArticleInput): DiscoverStory {
 /**
  * Chinese Grok Bot tutorials verified through Grok X Search on 2026-09-04,
  * with longform Article backfill on 2026-09-07 (cgnot996 credits / Hangzhou)
- * and 2026-09-08 (Adrian Punk self-media team; Chris FAQ).
+ * and 2026-09-08 (Adrian Punk self-media team; Chris FAQ; JuneDangg Topic Scout).
  *
  * These records are intentionally article-only. They are merged into the
  * Articles surfaces without increasing the Discover catalogue inventory.
+ * Runtime ranking also unions Discover zh X Articles; curated titles win.
  */
 export const chineseTutorialArticles: DiscoverStory[] = [
   tutorialArticle({
@@ -337,6 +338,24 @@ export const chineseTutorialArticles: DiscoverStory[] = [
     category: "operations",
     outcomes: ["save-time", "automate-work"],
     difficulty: "easy",
+  }),
+  tutorialArticle({
+    slug: "zh-tutorial-junedangg-topic-scout",
+    title: "我用了9%的Grok Bot周用量，手搓出第一只AI选题编辑",
+    localizedArticleTitles: {
+      en: "I used 9% of my weekly Grok Bot quota to hand-build my first AI Topic Scout editor",
+      "zh-Hant": "我用了9%的 Grok Bot 週用量，手搓出第一隻 AI 選題編輯",
+      "zh-Hans": "我用了9%的Grok Bot周用量，手搓出第一只AI选题编辑",
+      ja: "週次 Grok Bot 枠の9%で、最初のAIトピック編集ボットを手づくりした",
+    },
+    authorName: "君定老師",
+    handle: "JuneDangg",
+    publishedAt: "2026-09-08",
+    xPostUrl: "https://x.com/JuneDangg/status/2097145937034723607",
+    articleUrl: "https://x.com/i/article/2097125111187001344",
+    category: "content",
+    outcomes: ["create-content", "automate-work"],
+    difficulty: "medium",
   }),
 ];
 

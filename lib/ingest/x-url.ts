@@ -33,6 +33,12 @@ export function xArticleIdFromText(text: string) {
   return text.match(X_ARTICLE_RE)?.[1];
 }
 
+export function xArticleUrlFromText(text?: string): string | undefined {
+  if (!text) return undefined;
+  const id = xArticleIdFromText(text);
+  return id ? `https://x.com/i/article/${id}` : undefined;
+}
+
 export function hasXArticleLink(text: string) {
   return X_ARTICLE_RE.test(text) || /(?:x\.com|twitter\.com)\/(?:i\/)?article\//i.test(text);
 }
