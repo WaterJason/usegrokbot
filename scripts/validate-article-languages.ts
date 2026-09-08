@@ -1,6 +1,8 @@
 import {
   articleExternalUrl,
+  discoverStories,
   looksLikeXArticleUrl,
+  resolvedXArticleUrl,
   xArticleIdFromUrl,
   type DiscoverStory,
 } from "../data/discover";
@@ -11,6 +13,7 @@ import {
 import { storyContentLanguage, type ArticleContentLanguage } from "../lib/article-language";
 import {
   articleLibraryStories,
+  chineseTeachingArticleStories,
   chineseTeachingArticlesByViews,
   latestArticleStories,
   topArticleStoriesByViews,
@@ -18,6 +21,7 @@ import {
 import type { Locale } from "../lib/i18n/types";
 import metricsFile from "../data/discover/x-metrics.json";
 import { tweetIdFromUrl } from "../lib/ingest/x-url";
+import { toDiscoverStory } from "../lib/ingest/validate";
 import {
   metricForStory,
   rankArticleStories,
@@ -298,10 +302,90 @@ function main() {
     );
   }
 
-  const expectedTutorialOrder = rankArticleStories(chineseTutorialArticles, {
-    locale: "zh-Hans",
-    by: "views",
-  });
+  const teachingStories = chineseTeachingArticleStories();
+  check(teachingStories.length > 0, "chineseTeachingArticleStories() is empty");
+
+  for (const story of chineseTutorialArticles) {
+    check(
+      teachingStories.some((item) => item.slug === story.slug),
+      "Curated Chinese tutorial missing from ranking union: " + story.slug,
+    );
+  }
+
+  check(
+    teachingStories.some((item) => item.slug === "zh-tutorial-junedangg-topic-scout"),
+    "JuneDangg curated tutorial is missing from chineseTeachingArticleStories()",
+  );
+  check(
+    !teachingStories.some((item) => item.slug === "junedangg-9-grok-bot-ai-4-7-x"),
+    "Discover JuneDangg row must lose to the curated tutorial on article/tweet id",
+  );
+
+  for (const story of teachingStories) {
+    const curated = chineseTutorialArticles.some((item) => item.slug === story.slug);
+    check(
+      Boolean(resolvedXArticleUrl(story)),
+      "Chinese ranking row is not a real X Article: " + story.slug,
+    );
+    if (curated) continue;
+    const language = storyContentLanguage(story);
+    check(
+      language === "zh-Hans" || language === "zh-Hant",
+      "Auto-included Discover row is not Chinese: " + story.slug + " (" + language + ")",
+    );
+  }
+
+  const formatOnlyArticle = discoverStories.find(
+    (story) => story.format === "article" && !resolvedXArticleUrl(story),
+  );
+  if (formatOnlyArticle) {
+    check(
+      !teachingStories.some((item) => item.slug === formatOnlyArticle.slug),
+      "format:article without an X Article URL must not enter Chinese ranking: " +
+        formatOnlyArticle.slug,
+    );
+  }
+
+  const ingestedArticle = toDiscoverStory(
+    {
+      url: "https://x.com/JuneDangg/status/2097145937034723607",
+      id: "2097145937034723607",
+      handle: "JuneDangg",
+      authorName: "君定老師",
+      text: "手搓出第一只AI选题编辑 https://x.com/i/article/2097125111187001344",
+      publishedAt: "2026-09-08",
+      sourceText: "手搓出第一只AI选题编辑 https://x.com/i/article/2097125111187001344",
+      isArticle: true,
+    },
+    {
+      relevant: true,
+      relevance: 95,
+      reason: "Public Chinese X Article.",
+      title: "我用了9%的Grok Bot周用量，手搓出第一只AI选题编辑",
+      headline: "我用了9%的Grok Bot周用量，手搓出第一只AI选题编辑",
+      whatTheyDid: "Trained a Topic Scout editor with Grok Bot.",
+      howItWorks: "UseGrokBot ingested this public X post.",
+      whyUseful: "A public Chinese X Article.",
+      whyItMatters: "The original X Article is the source.",
+      whoShouldTry: ["Chinese-speaking Grok Bot users"],
+      usefulFor: "Chinese-speaking Grok Bot users",
+      output: "A trained Topic Scout editor.",
+      category: "content",
+      outcomes: ["create-content", "automate-work"],
+      apps: ["x"],
+      difficulty: "medium",
+      schedule: "one-time",
+      format: "article",
+    },
+    "ingest-article-url-check",
+  );
+  check(
+    ingestedArticle.articleUrl === "https://x.com/i/article/2097125111187001344",
+    "toDiscoverStory() must persist articleUrl from an i/article link, got " +
+      String(ingestedArticle.articleUrl),
+  );
+
+  const expectedTutorialOrder = rankArticleStories(teachingStories, { by: "views" });
   const actualTutorialOrder = chineseTeachingArticlesByViews();
   if (actualTutorialOrder.length > 0) {
     check(
@@ -376,7 +460,9 @@ function main() {
   console.log(
     "Validated " +
       chineseTutorialArticles.length +
-      " Chinese tutorial article URLs, view-count order, and locale-aware Top" +
+      " curated Chinese tutorial article URLs, " +
+      teachingStories.length +
+      " ranking-union rows, view-count order, and locale-aware Top" +
       TOP_LIMIT +
       "/Latest" +
       LATEST_LIMIT +

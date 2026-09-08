@@ -1,4 +1,4 @@
-import { hasXArticleLink, parseXUrl } from "./x-url";
+import { hasXArticleLink, parseXUrl, xArticleUrlFromText } from "./x-url";
 
 export type FetchedPost = {
   url: string;
@@ -11,6 +11,7 @@ export type FetchedPost = {
   sourceText: string;
   isNoteTweet?: boolean;
   isArticle?: boolean;
+  articleUrl?: string;
 };
 
 function isoDay(value: string | number) {
@@ -82,6 +83,7 @@ async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
   const url = tweet.url ?? `https://x.com/${tweet.author.screen_name}/status/${id}`;
   const isNoteTweet = Boolean(tweet.is_note_tweet);
   const sourceParts = [text, quoted, articleBody].filter(Boolean);
+  const articleUrl = xArticleUrlFromText(text) ?? xArticleUrlFromText(url) ?? xArticleUrlFromText(articleBody);
   return {
     url,
     id,
@@ -92,7 +94,8 @@ async function fromFxTwitter(id: string): Promise<FetchedPost | null> {
     publishedAt,
     sourceText: sourceParts.join("\n\n"),
     isNoteTweet,
-    isArticle: isLongFormXPost({ url, text, isNoteTweet }) || Boolean(articleBody),
+    isArticle: isLongFormXPost({ url, text, isNoteTweet }) || Boolean(articleBody) || Boolean(articleUrl),
+    articleUrl,
   };
 }
 
@@ -112,6 +115,7 @@ async function fromOEmbed(url: string, id: string): Promise<FetchedPost | null> 
     const text = data.html ? stripHtml(data.html) : "";
     const handle = data.author_url?.split("/").filter(Boolean).pop();
     if (!data.author_name || !handle || text.length < 8) continue;
+    const articleUrl = xArticleUrlFromText(text) ?? xArticleUrlFromText(url);
     return {
       url,
       id,
@@ -120,6 +124,8 @@ async function fromOEmbed(url: string, id: string): Promise<FetchedPost | null> 
       text,
       publishedAt: new Date().toISOString().slice(0, 10),
       sourceText: text,
+      isArticle: isLongFormXPost({ url, text }) || Boolean(articleUrl),
+      articleUrl,
     };
   }
   return null;
@@ -148,8 +154,10 @@ async function fromSyndication(id: string): Promise<FetchedPost | null> {
   const quoted = data.quoted_tweet?.text
     ? `${data.quoted_tweet.user?.name ?? ""} @${data.quoted_tweet.user?.screen_name ?? ""}: ${data.quoted_tweet.text}`.trim()
     : undefined;
+  const url = `https://x.com/${handle}/status/${id}`;
+  const articleUrl = xArticleUrlFromText(text) ?? xArticleUrlFromText(quoted);
   return {
-    url: `https://x.com/${handle}/status/${id}`,
+    url,
     id,
     handle,
     authorName,
@@ -157,7 +165,8 @@ async function fromSyndication(id: string): Promise<FetchedPost | null> {
     quotedText: quoted,
     publishedAt,
     sourceText: quoted ? `${text}\n\n${quoted}` : text,
-    isArticle: isLongFormXPost({ url: `https://x.com/${handle}/status/${id}`, text }),
+    isArticle: isLongFormXPost({ url, text }) || Boolean(articleUrl),
+    articleUrl,
   };
 }
 
