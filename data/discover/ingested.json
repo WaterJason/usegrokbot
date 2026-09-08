@@ -75595,5 +75595,71 @@
     "sourceUrl": "https://x.com/Kinzf2121/status/2097095816750260477",
     "sourceLabel": "Danylo Fedorenko on X",
     "format": "article"
+  },
+  {
+    "slug": "kommatose-grok-bot-is-useful-for-the-chores-i-already-know",
+    "title": "grok bot is useful for the chores I already know the steps to",
+    "headline": "grok bot is useful for the chores I already know the steps to.",
+    "body": "grok bot is useful for the chores I already know the steps to. it clicks through them. I still wouldn't give it the keys.",
+    "whatTheyDid": "grok bot is useful for the chores I already know the steps to.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "grok bot is useful for the chores I already know the steps to.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Kommatose",
+    "handle": "Kommatose",
+    "publishedAt": "2026-09-08",
+    "xPostUrl": "https://x.com/Kommatose/status/2097148680902185191",
+    "sourceUrl": "https://x.com/Kommatose/status/2097148680902185191",
+    "sourceLabel": "Kommatose on X"
+  },
+  {
+    "slug": "simonsequedac-i-genuinely-think-grok-bot-is-a-new-way-of-worki",
+    "title": "I genuinely think Grok @bot is a new way of working",
+    "headline": "I genuinely think Grok @bot is a new way of working.",
+    "body": "I genuinely think Grok @bot is a new way of working. \nIt's amazing how you can create a bot for anything, and they can talk to each other, build group chats, and answer to your questions in the cloud as if they were complex agents like Codex or CC.\n\nI'm missing a bit of granularity over skills, instructions like Hermes. But overall it's incredible. Great job @SpaceXAI and @cursor_ai",
+    "whatTheyDid": "I genuinely think Grok @bot is a new way of working.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "I genuinely think Grok @bot is a new way of working.",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Simon",
+    "handle": "simonsequedac",
+    "publishedAt": "2026-09-08",
+    "xPostUrl": "https://x.com/simonsequedac/status/2097148053543059962",
+    "sourceUrl": "https://x.com/simonsequedac/status/2097148053543059962",
+    "sourceLabel": "Simon on X"
   }
 ]
