@@ -44,7 +44,7 @@ function tutorialArticle(input: TutorialArticleInput): DiscoverStory {
 /**
  * Chinese Grok Bot tutorials verified through Grok X Search on 2026-09-04,
  * with longform Article backfill on 2026-09-07 (cgnot996 credits / Hangzhou)
- * and 2026-09-08 (Adrian Punk self-media team).
+ * and 2026-09-08 (Adrian Punk self-media team; Chris FAQ).
  *
  * These records are intentionally article-only. They are merged into the
  * Articles surfaces without increasing the Discover catalogue inventory.
@@ -319,6 +319,24 @@ export const chineseTutorialArticles: DiscoverStory[] = [
     category: "content",
     outcomes: ["create-content", "automate-work"],
     difficulty: "medium",
+  }),
+  tutorialArticle({
+    slug: "zh-tutorial-chris-faq-7",
+    title: "Grok Bot FAQ：新手最常問的 7 個問題",
+    localizedArticleTitles: {
+      en: "Grok Bot FAQ: 7 questions beginners ask most",
+      "zh-Hant": "Grok Bot FAQ：新手最常問的 7 個問題",
+      "zh-Hans": "Grok Bot FAQ：新手最常问的 7 个问题",
+      ja: "Grok Bot FAQ：初心者がよく聞く7つの質問",
+    },
+    authorName: "Chris",
+    handle: "Chris62771610",
+    publishedAt: "2026-09-07",
+    xPostUrl: "https://x.com/Chris62771610/status/2096982246913888554",
+    articleUrl: "https://x.com/i/article/2095747836654796800",
+    category: "operations",
+    outcomes: ["save-time", "automate-work"],
+    difficulty: "easy",
   }),
 ];
 
