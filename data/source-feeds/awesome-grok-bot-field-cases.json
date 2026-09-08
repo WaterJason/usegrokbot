@@ -9,11 +9,11 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 70,
+    "total": 75,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
-    "alreadyIngested": 65,
+    "alreadyIngested": 70,
     "pending": 0
   },
   "cases": [
@@ -921,6 +921,71 @@
       "title": "Household Grok Bot swarm writeup",
       "url": "https://github.com/ylgibby/grokbot-household-swarm",
       "sourceSummary": "Shareable case writeup of a specialized household Grok Bot swarm, with a live GitHub Pages story page.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "manila-hackathon-builder-5-bot-ship-kit",
+      "title": "Manila Hackathon Builder (5-Bot ship kit)",
+      "url": "https://github.com/Iron-Mark/Hackathon-Builder-Grok_Bot",
+      "sourceSummary": "Manila Grok Bot hackathon kit: a five-bot group (orchestrator→reviewer) ships research→PRD→public repo with visible handoffs and live-run proof.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "cape-fear-grok-bot-lead-gen-desk",
+      "title": "Cape Fear Grok Bot lead-gen desk",
+      "url": "https://github.com/altiracompany/grokbot-cape-fear",
+      "sourceSummary": "Cape Fear / Alamo lead-gen Grok Bot desk (ranking sites → screened call handoff) with .grok app-env and Grok PWA install assets; no top-level README.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "folio3-grounded-marketing-desk-pack",
+      "title": "Folio3 grounded marketing desk pack",
+      "url": "https://github.com/mhasnainr/folio3-grounded-desk",
+      "sourceSummary": "Source-grounded Folio3 B2B marketing desk pack: named Grok Bot profiles, grounded-brief/draft/red-team skills, sample outputs, and a static demo page.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "real-world-agents-org-chart-ridarketh",
+      "title": "Real World Agents org chart (Ridarketh)",
+      "url": "https://github.com/Ridarketh/-real-world-agents",
+      "sourceSummary": "Live Grok Bot org-chart pack (Atlas/Scout/Quill/…) with seat charters and templates; active home after pyco404/-real-world-agents 404.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "signal-outbound-grok-bot-desk",
+      "title": "Signal outbound Grok Bot desk",
+      "url": "https://github.com/nifinet/signal-outbound-grok-bot",
+      "sourceSummary": "Grok Bot outbound desk recipe: PROFILE, Max MCP, hunt/rank skills, and a weekday digest routine—Bot drafts top-two outreach; human sends.",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",

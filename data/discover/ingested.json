@@ -76705,5 +76705,145 @@
     "xPostUrl": "https://x.com/doitian/status/2097173000705745308",
     "sourceUrl": "https://x.com/doitian/status/2097173000705745308",
     "sourceLabel": "Ian Yang on X"
+  },
+  {
+    "slug": "iron-mark-manila-hackathon-builder-5-bot-ship-kit",
+    "title": "Manila Hackathon Builder (5-Bot ship kit)",
+    "headline": "Manila Grok Bot hackathon kit: a five-bot group (orchestrator→reviewer) ships research→PRD→public repo with visible handoffs and live-run proof.",
+    "whatTheyDid": "Manila Grok Bot hackathon kit: a five-bot group (orchestrator→reviewer) ships research→PRD→public repo with visible handoffs and live-run proof.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The source did not expose a reliable machine-readable publication date, so the displayed date is when UseGrokBot indexed it.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Researchers",
+      "Operators"
+    ],
+    "usefulFor": "Researchers / Operators",
+    "output": "Manila Grok Bot hackathon kit: a five-bot group (orchestrator→reviewer) ships research→PRD→public repo with visible handoffs and live-run proof.",
+    "category": "research",
+    "outcomes": [
+      "research",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Iron-Mark",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/Iron-Mark/Hackathon-Builder-Grok_Bot",
+    "sourceLabel": "Iron-Mark · GitHub"
+  },
+  {
+    "slug": "altiracompany-cape-fear-grok-bot-lead-gen-desk",
+    "title": "Cape Fear Grok Bot lead-gen desk",
+    "headline": "Cape Fear / Alamo lead-gen Grok Bot desk (ranking sites → screened call handoff) with .grok app-env and Grok PWA install assets; no top-level README.",
+    "whatTheyDid": "Cape Fear / Alamo lead-gen Grok Bot desk (ranking sites → screened call handoff) with .grok app-env and Grok PWA install assets; no top-level README.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The source did not expose a reliable machine-readable publication date, so the displayed date is when UseGrokBot indexed it.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Sales teams",
+      "Founders"
+    ],
+    "usefulFor": "Sales teams / Founders",
+    "output": "Cape Fear / Alamo lead-gen Grok Bot desk (ranking sites → screened call handoff) with .grok app-env and Grok PWA install assets; no top-level README.",
+    "category": "sales",
+    "outcomes": [
+      "grow-business",
+      "automate-work"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "altiracompany",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/altiracompany/grokbot-cape-fear",
+    "sourceLabel": "altiracompany · GitHub"
+  },
+  {
+    "slug": "mhasnainr-folio3-grounded-marketing-desk-pack",
+    "title": "Folio3 grounded marketing desk pack",
+    "headline": "Source-grounded Folio3 B2B marketing desk pack: named Grok Bot profiles, grounded-brief/draft/red-team skills, sample outputs, and a static demo page.",
+    "whatTheyDid": "Source-grounded Folio3 B2B marketing desk pack: named Grok Bot profiles, grounded-brief/draft/red-team skills, sample outputs, and a static demo page.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The source did not expose a reliable machine-readable publication date, so the displayed date is when UseGrokBot indexed it.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Researchers",
+      "Operators"
+    ],
+    "usefulFor": "Researchers / Operators",
+    "output": "Source-grounded Folio3 B2B marketing desk pack: named Grok Bot profiles, grounded-brief/draft/red-team skills, sample outputs, and a static demo page.",
+    "category": "research",
+    "outcomes": [
+      "research",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "mhasnainr",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/mhasnainr/folio3-grounded-desk",
+    "sourceLabel": "mhasnainr · GitHub"
+  },
+  {
+    "slug": "ridarketh-real-world-agents-org-chart-ridarketh",
+    "title": "Real World Agents org chart (Ridarketh)",
+    "headline": "Live Grok Bot org-chart pack (Atlas/Scout/Quill/…) with seat charters and templates; active home after pyco404/-real-world-agents 404.",
+    "whatTheyDid": "Live Grok Bot org-chart pack (Atlas/Scout/Quill/…) with seat charters and templates; active home after pyco404/-real-world-agents 404.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The source did not expose a reliable machine-readable publication date, so the displayed date is when UseGrokBot indexed it.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Live Grok Bot org-chart pack (Atlas/Scout/Quill/…) with seat charters and templates; active home after pyco404/-real-world-agents 404.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Ridarketh",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/Ridarketh/-real-world-agents",
+    "sourceLabel": "Ridarketh · GitHub"
+  },
+  {
+    "slug": "nifinet-signal-outbound-grok-bot-desk",
+    "title": "Signal outbound Grok Bot desk",
+    "headline": "Grok Bot outbound desk recipe: PROFILE, Max MCP, hunt/rank skills, and a weekday digest routine—Bot drafts top-two outreach; human sends.",
+    "whatTheyDid": "Grok Bot outbound desk recipe: PROFILE, Max MCP, hunt/rank skills, and a weekday digest routine—Bot drafts top-two outreach; human sends.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The source did not expose a reliable machine-readable publication date, so the displayed date is when UseGrokBot indexed it.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Grok Bot outbound desk recipe: PROFILE, Max MCP, hunt/rank skills, and a weekday digest routine—Bot drafts top-two outreach; human sends.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "nifinet",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/nifinet/signal-outbound-grok-bot",
+    "sourceLabel": "nifinet · GitHub"
   }
 ]
