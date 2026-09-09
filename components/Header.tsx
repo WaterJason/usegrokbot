@@ -70,6 +70,11 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
 
+  const grok47Item: NavItem = {
+    href: "/grok-4-7",
+    label: t("nav.grok47"),
+    match: (current: string) => current.startsWith("/grok-4-7"),
+  };
   const nav: NavItem[] = [
     {
       href: "/templates",
@@ -87,8 +92,9 @@ export function Header() {
       match: (current: string) => current.startsWith("/articles"),
     },
     { href: "/submit", label: t("nav.submitShort") },
+    grok47Item,
   ];
-  const menuItems = nav.filter((item) => item.href !== "/submit");
+  const menuItems = nav.filter((item) => item.href !== "/submit" && item.href !== "/grok-4-7");
   const moreItems: NavItem[] = [
     {
       href: "/articles/x",
@@ -162,7 +168,7 @@ export function Header() {
 
         <div className="flex items-center gap-1">
           {SEARCH_UI_ENABLED ? <HeaderSearch onOpen={() => setOpen(false)} /> : null}
-          <ThemeToggle />
+          {path.startsWith("/grok-4-7") ? null : <ThemeToggle />}
           <div className="hidden xl:block">
             <LanguageSwitch />
           </div>
@@ -221,6 +227,22 @@ export function Header() {
                   >
                     <span>{t("nav.submit")}</span>
                     <ArrowRight aria-hidden="true" className="size-4 shrink-0" strokeWidth={1.75} />
+                  </LocaleLink>
+                  <LocaleLink
+                    href="/grok-4-7"
+                    aria-current={path.startsWith("/grok-4-7") ? "page" : undefined}
+                    className={cn(
+                      "flex min-h-12 items-center justify-between rounded-[10px] gap-3 px-4 py-2 text-[16px] leading-6 font-medium transition-colors hover:bg-elevated hover:text-ink",
+                      path.startsWith("/grok-4-7") ? "bg-accent-soft text-accent" : "text-ink",
+                    )}
+                    onClick={() => closeMenu()}
+                  >
+                    <span>{t("nav.grok47")}</span>
+                    <ArrowRight
+                      aria-hidden="true"
+                      className={cn("size-4 shrink-0", path.startsWith("/grok-4-7") ? "text-accent" : "text-faint")}
+                      strokeWidth={1.75}
+                    />
                   </LocaleLink>
                 </div>
               </nav>

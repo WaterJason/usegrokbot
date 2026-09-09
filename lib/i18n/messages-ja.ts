@@ -30,6 +30,7 @@ export const jaMessages = {
   },
   nav: {
     discover: "ホーム",
+    grok47: "Grok 4.7",
     useCases: "活用例",
     templates: "テンプレート",
     workflows: "ワークフロー",
