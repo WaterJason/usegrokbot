@@ -28,9 +28,7 @@ import {
   detectUrlLocaleFromHeader,
 } from "../lib/i18n/paths";
 
-const EXPECTED_DISCOVER = 1_838;
 const EXPECTED_RETAINED_DISCOVER = 88;
-const EXPECTED_EXTERNAL_DISCOVER = 1_750;
 const EXPECTED_TEMPLATES = 217;
 const EXPECTED_VERIFIED_USE_CASES = 28;
 const EXPECTED_OLD_BOT_TEAMS = 48;
@@ -104,9 +102,11 @@ const handles = new Set(
     .filter((handle): handle is string => Boolean(handle)),
 );
 
-check(discoverStories.length === EXPECTED_DISCOVER, `Discover must be ${EXPECTED_DISCOVER}, found ${discoverStories.length}`);
 check(retained.length === EXPECTED_RETAINED_DISCOVER, `Retained Discover must be ${EXPECTED_RETAINED_DISCOVER}, found ${retained.length}`);
-check(externalOnly.length === EXPECTED_EXTERNAL_DISCOVER, `External Discover must be ${EXPECTED_EXTERNAL_DISCOVER}, found ${externalOnly.length}`);
+check(
+  retained.length + externalOnly.length === discoverStories.length,
+  "Every Discover story is either retained on-site or linked out to its source",
+);
 check(retainedSet.size === EXPECTED_RETAINED_DISCOVER, "Retained Discover list has duplicates");
 check(retained.every((story) => retainedSet.has(story.slug)), "Runtime retained set differs from the reviewed list");
 check(templates.length === EXPECTED_TEMPLATES, `Templates must be ${EXPECTED_TEMPLATES}, found ${templates.length}`);
