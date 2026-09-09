@@ -9,11 +9,11 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 75,
+    "total": 83,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
-    "alreadyIngested": 70,
+    "alreadyIngested": 78,
     "pending": 0
   },
   "cases": [
@@ -986,6 +986,110 @@
       "title": "Signal outbound Grok Bot desk",
       "url": "https://github.com/nifinet/signal-outbound-grok-bot",
       "sourceSummary": "Grok Bot outbound desk recipe: PROFILE, Max MCP, hunt/rank skills, and a weekday digest routine—Bot drafts top-two outreach; human sends.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "grok-bot-one-job-starter-personas",
+      "title": "Grok Bot one-job starter personas",
+      "url": "https://github.com/SigiBaes/grok-bot-starter-pack",
+      "sourceSummary": "Copy-paste one-job Grok Bot personas (speed-to-lead, inbox triage, found-money, content scout) with draft-only defaults and first-wake checklists.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "cybertruck-nine-agent-grok-bot-desk",
+      "title": "Cybertruck nine-agent Grok Bot desk",
+      "url": "https://github.com/ScottyBeam/grokbot-cybertruck",
+      "sourceSummary": "Nine paste-ready Grok Bot agents that turn Cybertruck telemetry into one actionable sentence (load/route/range/charge/cabin/service/guard/powerbank + chief of staff).",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "warsaw-smb-sales-lead-inbox-desk",
+      "title": "Warsaw SMB sales lead inbox desk",
+      "url": "https://github.com/spicefiendd/sales-lead-inbox",
+      "sourceSummary": "Local SMB lead ingest and cross-day inbox scripts built for a Sales Grok Bot in Warsaw/46580.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "50-grok-bot-self-revenue-fleet-playbooks",
+      "title": "50 Grok Bot self-revenue fleet playbooks",
+      "url": "https://github.com/AgentMindCloud/Grokbot-Autonomous-Revenue",
+      "sourceSummary": "Living ranked playbooks, YAML role contracts, and Phase-0 rollout notes for a 50-bot Grok Bot revenue fleet.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "ledger-freshbooks-mvp-by-grok-bot",
+      "title": "Ledger FreshBooks MVP by Grok Bot",
+      "url": "https://github.com/rohitgarewal-code/ledger",
+      "sourceSummary": "FreshBooks-style multi-business ledger MVP (Hono/SQLite/PDF) described as created by Grok Bot.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "grok-bot-marketvector-ftse-flow-desk",
+      "title": "Grok Bot MarketVector / FTSE flow desk",
+      "url": "https://github.com/daaaarcy/grokbot",
+      "sourceSummary": "Grok Bot workspace with MarketVector and FTSE/Russell index rebalance flow estimators and tests.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "eac-multi-bot-overwatch-workspace",
+      "title": "EAC multi-bot Overwatch workspace",
+      "url": "https://github.com/camav2/eac-grok-bot",
+      "sourceSummary": "Post-midday shared multi-bot workspace for Expert Author Community ops with Overwatch control-plane scripts, inbox batches, and engagement plans.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "equity-data-model-poc-built-with-grok-bot",
+      "title": "Equity data model POC built with Grok Bot",
+      "url": "https://github.com/qaz027/equity-data-model-poc",
+      "sourceSummary": "Small yfinance-to-Python equity data and FMI-shaped model skeleton POC described as built while working with Grok Bot.",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",

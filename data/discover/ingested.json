@@ -81233,5 +81233,229 @@
     "sourceLabel": "AYi on X",
     "format": "article",
     "articleUrl": "https://x.com/i/article/2097482793651679232"
+  },
+  {
+    "slug": "sigibaes-grok-bot-one-job-starter-personas",
+    "title": "Grok Bot one-job starter personas",
+    "headline": "Copy-paste one-job Grok Bot personas (speed-to-lead, inbox triage, found-money, content scout) with draft-only defaults and first-wake checklists.",
+    "whatTheyDid": "Copy-paste one-job Grok Bot personas (speed-to-lead, inbox triage, found-money, content scout) with draft-only defaults and first-wake checklists.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Sales teams",
+      "Founders"
+    ],
+    "usefulFor": "Sales teams / Founders",
+    "output": "Copy-paste one-job Grok Bot personas (speed-to-lead, inbox triage, found-money, content scout) with draft-only defaults and first-wake checklists.",
+    "category": "sales",
+    "outcomes": [
+      "grow-business",
+      "automate-work"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "SigiBaes",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/SigiBaes/grok-bot-starter-pack",
+    "sourceLabel": "SigiBaes · GitHub"
+  },
+  {
+    "slug": "scottybeam-cybertruck-nine-agent-grok-bot-desk",
+    "title": "Cybertruck nine-agent Grok Bot desk",
+    "headline": "Nine paste-ready Grok Bot agents that turn Cybertruck telemetry into one actionable sentence (load/route/range/charge/cabin/service/guard/powerbank + chief of staff).",
+    "whatTheyDid": "Nine paste-ready Grok Bot agents that turn Cybertruck telemetry into one actionable sentence (load/route/range/charge/cabin/service/guard/powerbank + chief of staff).",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Nine paste-ready Grok Bot agents that turn Cybertruck telemetry into one actionable sentence (load/route/range/charge/cabin/service/guard/powerbank + chief of staff).",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "ScottyBeam",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/ScottyBeam/grokbot-cybertruck",
+    "sourceLabel": "ScottyBeam · GitHub"
+  },
+  {
+    "slug": "spicefiendd-warsaw-smb-sales-lead-inbox-desk",
+    "title": "Warsaw SMB sales lead inbox desk",
+    "headline": "Local SMB lead ingest and cross-day inbox scripts built for a Sales Grok Bot in Warsaw/46580.",
+    "whatTheyDid": "Local SMB lead ingest and cross-day inbox scripts built for a Sales Grok Bot in Warsaw/46580.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Sales teams",
+      "Founders"
+    ],
+    "usefulFor": "Sales teams / Founders",
+    "output": "Local SMB lead ingest and cross-day inbox scripts built for a Sales Grok Bot in Warsaw/46580.",
+    "category": "sales",
+    "outcomes": [
+      "grow-business",
+      "automate-work"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "spicefiendd",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/spicefiendd/sales-lead-inbox",
+    "sourceLabel": "spicefiendd · GitHub"
+  },
+  {
+    "slug": "agentmindcloud-50-grok-bot-self-revenue-fleet-playbooks",
+    "title": "50 Grok Bot self-revenue fleet playbooks",
+    "headline": "Living ranked playbooks, YAML role contracts, and Phase-0 rollout notes for a 50-bot Grok Bot revenue fleet.",
+    "whatTheyDid": "Living ranked playbooks, YAML role contracts, and Phase-0 rollout notes for a 50-bot Grok Bot revenue fleet.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Living ranked playbooks, YAML role contracts, and Phase-0 rollout notes for a 50-bot Grok Bot revenue fleet.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "AgentMindCloud",
+    "publishedAt": "2026-08-20",
+    "sourceUrl": "https://github.com/AgentMindCloud/Grokbot-Autonomous-Revenue",
+    "sourceLabel": "AgentMindCloud · GitHub"
+  },
+  {
+    "slug": "rohitgarewal-code-ledger-freshbooks-mvp-by-grok-bot",
+    "title": "Ledger FreshBooks MVP by Grok Bot",
+    "headline": "FreshBooks-style multi-business ledger MVP (Hono/SQLite/PDF) described as created by Grok Bot.",
+    "whatTheyDid": "FreshBooks-style multi-business ledger MVP (Hono/SQLite/PDF) described as created by Grok Bot.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "FreshBooks-style multi-business ledger MVP (Hono/SQLite/PDF) described as created by Grok Bot.",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "rohitgarewal-code",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/rohitgarewal-code/ledger",
+    "sourceLabel": "rohitgarewal-code · GitHub"
+  },
+  {
+    "slug": "daaaarcy-grok-bot-marketvector-ftse-flow-desk",
+    "title": "Grok Bot MarketVector / FTSE flow desk",
+    "headline": "Grok Bot workspace with MarketVector and FTSE/Russell index rebalance flow estimators and tests.",
+    "whatTheyDid": "Grok Bot workspace with MarketVector and FTSE/Russell index rebalance flow estimators and tests.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Researchers",
+      "Operators"
+    ],
+    "usefulFor": "Researchers / Operators",
+    "output": "Grok Bot workspace with MarketVector and FTSE/Russell index rebalance flow estimators and tests.",
+    "category": "research",
+    "outcomes": [
+      "research",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "daaaarcy",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/daaaarcy/grokbot",
+    "sourceLabel": "daaaarcy · GitHub"
+  },
+  {
+    "slug": "camav2-eac-multi-bot-overwatch-workspace",
+    "title": "EAC multi-bot Overwatch workspace",
+    "headline": "Post-midday shared multi-bot workspace for Expert Author Community ops with Overwatch control-plane scripts, inbox batches, and engagement plans.",
+    "whatTheyDid": "Post-midday shared multi-bot workspace for Expert Author Community ops with Overwatch control-plane scripts, inbox batches, and engagement plans.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Creators",
+      "Content teams"
+    ],
+    "usefulFor": "Creators / Content teams",
+    "output": "Post-midday shared multi-bot workspace for Expert Author Community ops with Overwatch control-plane scripts, inbox batches, and engagement plans.",
+    "category": "content",
+    "outcomes": [
+      "create-content",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "camav2",
+    "publishedAt": "2026-09-09",
+    "sourceUrl": "https://github.com/camav2/eac-grok-bot",
+    "sourceLabel": "camav2 · GitHub"
+  },
+  {
+    "slug": "qaz027-equity-data-model-poc-built-with-grok-bot",
+    "title": "Equity data model POC built with Grok Bot",
+    "headline": "Small yfinance-to-Python equity data and FMI-shaped model skeleton POC described as built while working with Grok Bot.",
+    "whatTheyDid": "Small yfinance-to-Python equity data and FMI-shaped model skeleton POC described as built while working with Grok Bot.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Small yfinance-to-Python equity data and FMI-shaped model skeleton POC described as built while working with Grok Bot.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "qaz027",
+    "publishedAt": "2026-09-08",
+    "sourceUrl": "https://github.com/qaz027/equity-data-model-poc",
+    "sourceLabel": "qaz027 · GitHub"
   }
 ]
