@@ -34,6 +34,7 @@ export const messages = {
     },
     nav: {
       discover: "Home",
+      grok47: "Grok 4.7",
       useCases: "Use Cases",
       templates: "Templates",
       workflows: "Workflows",
@@ -511,6 +512,7 @@ export const messages = {
     },
     nav: {
       discover: "首頁",
+      grok47: "Grok 4.7",
       useCases: "案例",
       templates: "模板",
       workflows: "工作流程",
@@ -983,6 +985,7 @@ export const messages = {
     },
     nav: {
       discover: "首页",
+      grok47: "Grok 4.7",
       useCases: "案例",
       templates: "模板",
       workflows: "工作流",

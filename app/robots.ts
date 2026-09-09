@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/saved", "/*/saved"],
+        disallow: ["/saved", "/*/saved", "/grok-4-7", "/*/grok-4-7"],
       },
       {
         userAgent: "Twitterbot",

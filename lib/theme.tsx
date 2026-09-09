@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { createContext, useCallback, useContext, useLayoutEffect, useMemo } from "react";
+import { isGrok47Path } from "@/lib/grok47-path";
 import { THEME_STORAGE_KEY } from "@/lib/theme-script";
 
 export type Theme = "light" | "dark";
@@ -22,6 +23,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
   useLayoutEffect(() => {
+    if (isGrok47Path(pathname)) {
+      applyTheme("dark");
+      return;
+    }
     let stored: Theme = "light";
     try {
       stored = window.localStorage.getItem(THEME_STORAGE_KEY) === "dark" ? "dark" : "light";
