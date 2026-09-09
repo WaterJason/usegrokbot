@@ -83053,5 +83053,153 @@
     "sourceLabel": "0xNevsky on X",
     "format": "article",
     "articleUrl": "https://x.com/i/article/2094408697137049601"
+  },
+  {
+    "slug": "liam-fallen-grok-bot-for-sales",
+    "title": "Grok Bot for Sales 🙌",
+    "headline": "Grok Bot for Sales 🙌",
+    "body": "Grok Bot for Sales 🙌 https://x.com/i/article/2097631626209488896",
+    "whatTheyDid": "Grok Bot for Sales 🙌",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Researchers",
+      "Operators"
+    ],
+    "usefulFor": "Researchers / Operators",
+    "output": "Grok Bot for Sales 🙌",
+    "category": "research",
+    "outcomes": [
+      "research",
+      "save-time"
+    ],
+    "apps": [
+      "gmail",
+      "google-calendar",
+      "slack",
+      "salesforce",
+      "hubspot"
+    ],
+    "difficulty": "medium",
+    "schedule": "daily",
+    "source": "community",
+    "authorName": "Liam",
+    "handle": "liam_fallen",
+    "publishedAt": "2026-09-09",
+    "xPostUrl": "https://x.com/liam_fallen/status/2097642258669478059",
+    "sourceUrl": "https://x.com/liam_fallen/status/2097642258669478059",
+    "sourceLabel": "Liam on X",
+    "format": "article",
+    "articleUrl": "https://x.com/i/article/2097631626209488896"
+  },
+  {
+    "slug": "minhthieu470118-grok-bot",
+    "title": "值得逛的 Grok Bot 生态网站",
+    "headline": "值得逛的 Grok Bot 生态网站",
+    "body": "值得逛的 Grok Bot 生态网站 https://x.com/i/article/2097647688804155393",
+    "whatTheyDid": "值得逛的 Grok Bot 生态网站",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "值得逛的 Grok Bot 生态网站",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [
+      "github",
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Mi星星",
+    "handle": "MinhThieu470118",
+    "publishedAt": "2026-09-09",
+    "xPostUrl": "https://x.com/MinhThieu470118/status/2097653720217739442",
+    "sourceUrl": "https://x.com/MinhThieu470118/status/2097653720217739442",
+    "sourceLabel": "Mi星星 on X",
+    "format": "article",
+    "articleUrl": "https://x.com/i/article/2097647688804155393"
+  },
+  {
+    "slug": "leoduquesnel-three-grok-bots-on-a-thing-that-is-still-mostly",
+    "title": "Three Grok Bots on a thing that is still mostly a repo",
+    "headline": "Three Grok Bots on a thing that is still mostly a repo.",
+    "body": "Three Grok Bots on a thing that is still mostly a repo. One finds people, one drafts replies, one checks the live site. https://x.com/i/article/2097720018704429056",
+    "whatTheyDid": "Three Grok Bots on a thing that is still mostly a repo.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "Three Grok Bots on a thing that is still mostly a repo.",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [
+      "gmail",
+      "github",
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "daily",
+    "source": "community",
+    "authorName": "Léo Duquesnel",
+    "handle": "LeoDuquesnel",
+    "publishedAt": "2026-09-09",
+    "xPostUrl": "https://x.com/LeoDuquesnel/status/2097723997450633605",
+    "sourceUrl": "https://x.com/LeoDuquesnel/status/2097723997450633605",
+    "sourceLabel": "Léo Duquesnel on X",
+    "format": "article",
+    "articleUrl": "https://x.com/i/article/2097720018704429056"
+  },
+  {
+    "slug": "chiefjeeb-sharing-a-grok-bot-template-here",
+    "title": "Sharing a Grok @bot template here",
+    "headline": "Sharing a Grok @bot template here.",
+    "body": "Sharing a Grok @bot template here.\n\nIf you're like me and you've ended up almost out of disk on your local, with a couple different versions of the same thing sitting around, it's probably your coding agent spinning up worktrees, node_modules, leftover clones, etc.\n\nThis bot finds the fat trees, explains them, asks what to keep and what to remove, and reports the GB freed when it's done. I ran it once and got 18GB back.\n\nIt will not wipe your main project or delete first and explain later. Read the list and decide what should go.\n\nTry it here: https://x.ai/bot/v9qOXYXnHXvr_XN7fPZIE",
+    "whatTheyDid": "Sharing a Grok @bot template here.",
+    "howItWorks": "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+    "whyUseful": "A public example of someone handing work to Grok Bot, kept here with attribution.",
+    "whyItMatters": "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Sharing a Grok @bot template here.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "browser",
+      "x"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Mujeeb",
+    "handle": "chiefjeeb",
+    "publishedAt": "2026-09-09",
+    "xPostUrl": "https://x.com/chiefjeeb/status/2097762870595342442",
+    "sourceUrl": "https://x.com/chiefjeeb/status/2097762870595342442",
+    "sourceLabel": "Mujeeb on X"
   }
 ]
