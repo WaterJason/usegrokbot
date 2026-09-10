@@ -84850,5 +84850,89 @@
     "xPostUrl": "https://x.com/Chris62771610/status/2097813457785770030",
     "sourceUrl": "https://x.com/Chris62771610/status/2097813457785770030",
     "sourceLabel": "Chris on X"
+  },
+  {
+    "slug": "noam99moyal-sealed-lego-hunter-grok-bot",
+    "title": "Sealed LEGO Hunter Grok Bot",
+    "headline": "Public Grok Bot template that scans sealed LEGO deals for your country on a schedule and never auto-buys.",
+    "whatTheyDid": "Public Grok Bot template that scans sealed LEGO deals for your country on a schedule and never auto-buys.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Researchers",
+      "Operators"
+    ],
+    "usefulFor": "Researchers / Operators",
+    "output": "Public Grok Bot template that scans sealed LEGO deals for your country on a schedule and never auto-buys.",
+    "category": "research",
+    "outcomes": [
+      "research",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "noam99moyal",
+    "publishedAt": "2026-09-09",
+    "sourceUrl": "https://github.com/noam99moyal/Sealed_LEGO_Hunter_Bot",
+    "sourceLabel": "noam99moyal · GitHub"
+  },
+  {
+    "slug": "skyiimaple-agent-daily-grok-bot-message-archive",
+    "title": "agent-daily Grok Bot message archive",
+    "headline": "Repo convention for Grok Bots to commit daily digests (hotspot morning, job radar) into content/ by bot-id.",
+    "whatTheyDid": "Repo convention for Grok Bots to commit daily digests (hotspot morning, job radar) into content/ by bot-id.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Creators",
+      "Content teams"
+    ],
+    "usefulFor": "Creators / Content teams",
+    "output": "Repo convention for Grok Bots to commit daily digests (hotspot morning, job radar) into content/ by bot-id.",
+    "category": "content",
+    "outcomes": [
+      "create-content",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "daily",
+    "source": "community",
+    "authorName": "skyiimaple",
+    "publishedAt": "2026-09-09",
+    "sourceUrl": "https://github.com/skyiimaple/agent-daily",
+    "sourceLabel": "skyiimaple · GitHub"
+  },
+  {
+    "slug": "dahhrk-dark-factory-cursor-handoff-for-grok-bot",
+    "title": "dark-factory cursor-handoff for Grok Bot",
+    "headline": "Teaching-kitchen automation that POSTs tickets into a Grok Bot Chief-of-Staff webhook routine from a local page.",
+    "whatTheyDid": "Teaching-kitchen automation that POSTs tickets into a Grok Bot Chief-of-Staff webhook routine from a local page.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Creators",
+      "Content teams"
+    ],
+    "usefulFor": "Creators / Content teams",
+    "output": "Teaching-kitchen automation that POSTs tickets into a Grok Bot Chief-of-Staff webhook routine from a local page.",
+    "category": "content",
+    "outcomes": [
+      "create-content",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "Dahhrk",
+    "publishedAt": "2026-09-02",
+    "sourceUrl": "https://github.com/Dahhrk/dark-factory",
+    "sourceLabel": "Dahhrk · GitHub"
   }
 ]

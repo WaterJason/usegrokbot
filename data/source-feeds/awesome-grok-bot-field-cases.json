@@ -9,11 +9,11 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 83,
+    "total": 86,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
-    "alreadyIngested": 78,
+    "alreadyIngested": 81,
     "pending": 0
   },
   "cases": [
@@ -1090,6 +1090,45 @@
       "title": "Equity data model POC built with Grok Bot",
       "url": "https://github.com/qaz027/equity-data-model-poc",
       "sourceSummary": "Small yfinance-to-Python equity data and FMI-shaped model skeleton POC described as built while working with Grok Bot.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "sealed-lego-hunter-grok-bot",
+      "title": "Sealed LEGO Hunter Grok Bot",
+      "url": "https://github.com/noam99moyal/Sealed_LEGO_Hunter_Bot",
+      "sourceSummary": "Public Grok Bot template that scans sealed LEGO deals for your country on a schedule and never auto-buys.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "agent-daily-grok-bot-message-archive",
+      "title": "agent-daily Grok Bot message archive",
+      "url": "https://github.com/skyiimaple/agent-daily",
+      "sourceSummary": "Repo convention for Grok Bots to commit daily digests (hotspot morning, job radar) into content/ by bot-id.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "dark-factory-cursor-handoff-for-grok-bot",
+      "title": "dark-factory cursor-handoff for Grok Bot",
+      "url": "https://github.com/Dahhrk/dark-factory",
+      "sourceSummary": "Teaching-kitchen automation that POSTs tickets into a Grok Bot Chief-of-Staff webhook routine from a local page.",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",
