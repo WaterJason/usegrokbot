@@ -26,7 +26,7 @@ export function Footer({ stars }: { stars?: number | null }) {
       <div className="mx-auto max-w-[1240px] px-5 py-10 md:px-8 md:py-12">
         <LocaleLink href="/" className="inline-flex items-center gap-2 text-[15px] font-medium text-ink">
           <BotFace size={18} color={botColorFor("usegrokbot")} />
-          UseGrokBot
+          GrokCases
         </LocaleLink>
 
         <nav

@@ -1,4 +1,4 @@
-# UseGrokBot — Design System
+# GrokCases — Design System
 
 > A dark discovery hub that still reads as a catalog. Not a blog. Not a dashboard. Not a chat app. Not a landing-page playground.
 
@@ -12,7 +12,7 @@ The site should feel like Linear × Vercel × Gumloop, plus a little xAI. A visi
 
 ## 1. Product feel
 
-UseGrokBot is a **searchable catalog of ready-made work**.
+GrokCases is a **searchable catalog of ready-made work**.
 
 Every screen answers: *What can I actually do with Grok Bot?*
 
@@ -182,7 +182,7 @@ Use CSS transitions. No animation library in v1. Springs are remade as `cubic-be
 
 Sticky, 56px, `--bg` at 80% + `backdrop-blur(16px)`, hairline bottom.
 
-Left: wordmark. “UseGrokBot” in `--text`, with a 8px accent-gradient square mark.
+Left: wordmark. “GrokCases” in `--text`, with a 8px accent-gradient square mark.
 
 Center / inline nav (desktop): Use Cases · Prompts · Categories · Apps · Learn
 Weight 400, 13–14px, `--text-secondary`. Hover → `--text`.
@@ -314,7 +314,7 @@ Four columns on desktop (Brand · Explore · Learn · Community), stacked on mob
 
 Disclaimer always visible, muted, 12px:
 
-> UseGrokBot is an independent resource and is not affiliated with xAI. Grok is a trademark of its respective owner.
+> GrokCases is an independent resource and is not affiliated with xAI. Grok is a trademark of its respective owner.
 
 ---
 

@@ -974,7 +974,7 @@ function caseReference(source: CasePromptSource, locale: Locale) {
 }
 
 function isGenericCaseText(value: string) {
-  return /awesome-grok-bot Field Cases|This public case was surfaced|UseGrokBot keeps the original|source-index summary is CC0|我們沒有在這裡重跑|我们没有在这里重跑/i.test(
+  return /awesome-grok-bot Field Cases|This public case was surfaced|GrokCases keeps the original|source-index summary is CC0|我們沒有在這裡重跑|我们没有在这里重跑/i.test(
     value,
   );
 }

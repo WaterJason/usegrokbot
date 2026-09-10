@@ -37,7 +37,7 @@ export function parseYouTubeViews(html: string, videoId: string): number | null 
 export async function fetchPublicYouTubeViews(videoId: string): Promise<YouTubeViewStats> {
   if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) throw new Error("Invalid YouTube video ID");
   const response = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {
-    headers: { Accept: "text/html", "User-Agent": "UseGrokBot/1.0 (+https://usegrokbot.com)" },
+    headers: { Accept: "text/html", "User-Agent": "GrokCases/1.0 (+https://usegrokbot.com)" },
     cache: "no-store",
     signal: AbortSignal.timeout(8_000),
   });

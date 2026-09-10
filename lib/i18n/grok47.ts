@@ -127,7 +127,7 @@ export const grok47Copy: Record<Locale, Grok47Copy> = {
     footerMark: "Grok 4.7 Hub",
     footerLegal:
       "An unofficial showcase of things made with Grok 4.7. Not affiliated with or endorsed by xAI or X. Original posts and media remain on X. Summaries describe creators’ claims.",
-    backHome: "UseGrokBot",
+    backHome: "GrokCases",
     themeToLight: "Switch to light theme",
     themeToDark: "Switch to dark theme",
     langLabel: "Display language",
@@ -200,7 +200,7 @@ export const grok47Copy: Record<Locale, Grok47Copy> = {
     footerMark: "Grok 4.7 Hub",
     footerLegal:
       "非正式展示用 Grok 4.7 做出來的東西。與 xAI 或 X 無關，亦未經其背書。原始帖文與媒體仍在 X。摘要只轉述創作者的說法。",
-    backHome: "UseGrokBot",
+    backHome: "GrokCases",
     themeToLight: "切換淺色主題",
     themeToDark: "切換深色主題",
     langLabel: "顯示語言",
@@ -273,7 +273,7 @@ export const grok47Copy: Record<Locale, Grok47Copy> = {
     footerMark: "Grok 4.7 Hub",
     footerLegal:
       "非正式展示用 Grok 4.7 做出来的东西。与 xAI 或 X 无关，亦未经其背书。原始帖文与媒体仍在 X。摘要只转述创作者的说法。",
-    backHome: "UseGrokBot",
+    backHome: "GrokCases",
     themeToLight: "切换浅色主题",
     themeToDark: "切换深色主题",
     langLabel: "显示语言",
@@ -346,7 +346,7 @@ export const grok47Copy: Record<Locale, Grok47Copy> = {
     footerMark: "Grok 4.7 Hub",
     footerLegal:
       "Grok 4.7 で作られたものの非公式ショーケース。xAI および X とは無関係で、後援も受けていない。元の投稿とメディアは X 上にある。要約は作者の主張の言い換え。",
-    backHome: "UseGrokBot",
+    backHome: "GrokCases",
     themeToLight: "ライトテーマに切り替え",
     themeToDark: "ダークテーマに切り替え",
     langLabel: "表示言語",

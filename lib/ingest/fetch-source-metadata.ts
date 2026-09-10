@@ -8,7 +8,7 @@ export type GenericSourceMetadata = {
   dateFromSource: boolean;
 };
 
-const USER_AGENT = "UseGrokBot-source-ingest/1.0 (+https://usegrokbot.com)";
+const USER_AGENT = "GrokCases-source-ingest/1.0 (+https://usegrokbot.com)";
 
 function decodeHtml(value: string) {
   return value

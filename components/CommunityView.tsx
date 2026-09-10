@@ -110,8 +110,8 @@ export function CommunityView({
 function communityCopy(locale: string) {
   if (locale === "zh-Hant") {
     return {
-      title: "UseGrokBot 社群",
-      body: "認識分享真實使用案例的人，以及一起改善 UseGrokBot 的開源貢獻者。",
+      title: "GrokCases 社群",
+      body: "認識分享真實使用案例的人，以及一起改善 GrokCases 的開源貢獻者。",
       submit: "分享你的使用案例",
       builders: "開源貢獻者",
       buildersBody: "一起改善網站、程式和內容的人。",
@@ -126,8 +126,8 @@ function communityCopy(locale: string) {
   }
   if (locale === "zh-Hans") {
     return {
-      title: "UseGrokBot 社区",
-      body: "认识分享真实使用案例的人，以及一起改善 UseGrokBot 的开源贡献者。",
+      title: "GrokCases 社区",
+      body: "认识分享真实使用案例的人，以及一起改善 GrokCases 的开源贡献者。",
       submit: "分享你的使用案例",
       builders: "开源贡献者",
       buildersBody: "一起改善网站、程序和内容的人。",
@@ -142,8 +142,8 @@ function communityCopy(locale: string) {
   }
   if (locale === "ja") {
     return {
-      title: "UseGrokBot コミュニティ",
-      body: "実際の活用例を共有する人と、UseGrokBot を改善するオープンソースの貢献者を紹介します。",
+      title: "GrokCases コミュニティ",
+      body: "実際の活用例を共有する人と、GrokCases を改善するオープンソースの貢献者を紹介します。",
       submit: "活用例を共有",
       builders: "オープンソースの貢献者",
       buildersBody: "サイト、コード、内容を改善する人。",
@@ -157,8 +157,8 @@ function communityCopy(locale: string) {
     };
   }
   return {
-    title: "UseGrokBot Community",
-    body: "Meet the people who share real use cases, and the open-source contributors improving UseGrokBot.",
+    title: "GrokCases Community",
+    body: "Meet the people who share real use cases, and the open-source contributors improving GrokCases.",
     submit: "Share your use case",
     builders: "Open-source contributors",
     buildersBody: "People who help improve the site, code, and copy.",

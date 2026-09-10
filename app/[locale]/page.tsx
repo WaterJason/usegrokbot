@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: "home.metaTitle",
       description: "home.metaDescription",
     }),
-    title: { absolute: `${site.name} — ${translateMeta(locale, "home.metaTitle")}` },
+    title: { absolute: `${site.name} – ${translateMeta(locale, "home.metaTitle")}` },
   };
 }
 

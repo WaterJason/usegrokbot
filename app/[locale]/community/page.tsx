@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     locale === "zh-hk" ? "社群" : locale === "zh-cn" ? "社区" : locale === "ja" ? "コミュニティ" : "Community";
   const description =
     locale === "zh-hk"
-      ? "認識分享 Grok Bot 真實案例的社群，以及幫助改善 UseGrokBot 的開源 Contributor。"
+      ? "認識分享 Grok Bot 真實案例的社群，以及幫助改善 GrokCases 的開源 Contributor。"
       : locale === "zh-cn"
-        ? "认识分享 Grok Bot 真实案例的社区，以及帮助改善 UseGrokBot 的开源 Contributor。"
+        ? "认识分享 Grok Bot 真实案例的社区，以及帮助改善 GrokCases 的开源 Contributor。"
         : locale === "ja"
-          ? "Grok Bot の実例を共有する人と、UseGrokBot を支えるオープンソースの貢献者を紹介します。"
-          : "Meet the community sharing real Grok Bot examples and the open-source contributors improving UseGrokBot.";
+          ? "Grok Bot の実例を共有する人と、GrokCases を支えるオープンソースの貢献者を紹介します。"
+          : "Meet the community sharing real Grok Bot examples and the open-source contributors improving GrokCases.";
   return { title, description };
 }
 
@@ -28,7 +28,7 @@ async function getContributors(): Promise<GitHubContributor[]> {
     const response = await fetch(`https://api.github.com/repos/${site.githubRepo}/contributors?per_page=24`, {
       headers: {
         Accept: "application/vnd.github+json",
-        "User-Agent": "UseGrokBot-community-page",
+        "User-Agent": "GrokCases-community-page",
       },
       next: { revalidate: 3600 },
     });

@@ -1,6 +1,6 @@
-# UseGrokBot Roadmap
+# GrokCases Roadmap
 
-UseGrokBot is building an open discovery layer for real Grok Bot use cases.
+GrokCases is building an open discovery layer for real Grok Bot use cases.
 
 The long-term goal is simple:
 
@@ -76,7 +76,7 @@ Live today:
 Next ingestion work:
 
 - [ ] Add more public source indexes / feeds
-- [ ] Parse X mentions such as `@UseGrokBot`
+- [ ] Parse X mentions such as `@GrokCases`
 - [ ] Detect semantic duplicates across different source URLs
 - [ ] Improve source-date recovery for pages without machine-readable publication dates
 - [ ] Map more detected tools into integrations automatically
@@ -88,7 +88,7 @@ Next ingestion work:
 - [ ] Add `good first issue` tasks
 - [ ] Add `help wanted` tasks
 - [ ] Make it easier to contribute one integration or one public example
-- [ ] Explore `@UseGrokBot` mention-based submissions on X
+- [ ] Explore `@GrokCases` mention-based submissions on X
 - [ ] Contributor profiles / attribution for repeat contributors
 
 ## Discovery
@@ -117,11 +117,11 @@ Later-stage ideas:
 - [ ] Public JSON feed
 - [ ] Public API for discover stories / workflows / integrations
 - [ ] Machine-readable case schema
-- [ ] External agent access to the UseGrokBot directory
+- [ ] External agent access to the GrokCases directory
 
 ## Sustainability
 
-UseGrokBot should remain useful to normal users without putting core discovery behind a paywall.
+GrokCases should remain useful to normal users without putting core discovery behind a paywall.
 
 Potential sustainability model:
 
