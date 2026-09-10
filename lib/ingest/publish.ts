@@ -127,7 +127,7 @@ export async function queueIngestIssue(urls: string[]) {
     body: JSON.stringify({
       title: "Ingest posts:",
       labels: ["use-case"],
-      body: ["Queued by the UseGrokBot ingest API.", "", "## X post URLs", "", ...unique].join("\n"),
+      body: ["Queued by the GrokCases ingest API.", "", "## X post URLs", "", ...unique].join("\n"),
     }),
   });
   return { issueUrl: issue.html_url, count: unique.length };

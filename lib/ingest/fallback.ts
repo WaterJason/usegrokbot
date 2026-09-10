@@ -126,7 +126,7 @@ export function fallbackExtract(
     headline: summary,
     whatTheyDid: summary,
     howItWorks:
-      "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.",
+      "GrokCases ingested this public X post. We keep the original permalink and did not re-run this Bot.",
     whyUseful: "A public example of someone handing work to Grok Bot, kept here with attribution.",
     whyItMatters:
       "The original X post is the source. This card is a short curator summary, not a reprint of the thread.",

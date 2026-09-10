@@ -412,7 +412,7 @@ function main() {
       title: "我用了9%的Grok Bot周用量，手搓出第一只AI选题编辑",
       headline: "我用了9%的Grok Bot周用量，手搓出第一只AI选题编辑",
       whatTheyDid: "Trained a Topic Scout editor with Grok Bot.",
-      howItWorks: "UseGrokBot ingested this public X post.",
+      howItWorks: "GrokCases ingested this public X post.",
       whyUseful: "A public Chinese X Article.",
       whyItMatters: "The original X Article is the source.",
       whoShouldTry: ["Chinese-speaking Grok Bot users"],

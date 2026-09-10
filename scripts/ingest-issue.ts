@@ -219,7 +219,7 @@ async function main() {
   for (const xUrl of issue.urls) {
     const id = tweetIdFromUrl(xUrl);
     if (id && seen.has(id)) {
-      rows.push({ url: xUrl, status: "skipped", code: "duplicate", detail: "Already on UseGrokBot." });
+      rows.push({ url: xUrl, status: "skipped", code: "duplicate", detail: "Already on GrokCases." });
       continue;
     }
     try {

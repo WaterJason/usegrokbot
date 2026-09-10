@@ -1,6 +1,6 @@
 ---
 name: Ingest Grok Bot posts
-about: Queue public X posts for UseGrokBot
+about: Queue public X posts for GrokCases
 title: "Ingest posts:"
 labels: ["use-case"]
 ---

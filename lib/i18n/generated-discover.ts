@@ -34,38 +34,68 @@ const howItWorks: Record<DiscoverCopyLocale, Record<string, string>> = {
   "zh-Hant": {
     "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.":
       "UseGrokBot 收錄了這則公開 X 貼文。我們保留原帖連結，沒有在這裡重跑這個 Bot。",
+    "GrokCases ingested this public X post. We keep the original permalink and did not re-run this Bot.":
+      "GrokCases 收錄了這則公開 X 貼文。我們保留原帖連結，沒有在這裡重跑這個 Bot。",
     "This public X post is a first-person Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
       "這則公開 X 貼文是作者自己寫的 Grok Bot 例子。UseGrokBot 保留原帖連結，沒有在這裡重跑這個 Bot。",
+    "This public X post is a first-person Grok Bot case. GrokCases keeps the original permalink and did not re-run this Bot.":
+      "這則公開 X 貼文是作者自己寫的 Grok Bot 例子。GrokCases 保留原帖連結，沒有在這裡重跑這個 Bot。",
     "Elon Musk reposted or quoted this original Grok Bot post. UseGrokBot keeps the original X permalink and did not re-run this Bot.":
       "Elon Musk 轉發或引用過這則原始 Grok Bot 貼文。UseGrokBot 保留原帖連結，沒有在這裡重跑這個 Bot。",
+    "Elon Musk reposted or quoted this original Grok Bot post. GrokCases keeps the original X permalink and did not re-run this Bot.":
+      "Elon Musk 轉發或引用過這則原始 Grok Bot 貼文。GrokCases 保留原帖連結，沒有在這裡重跑這個 Bot。",
     "This public X Article / long-form write-up is a Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
       "這篇公開的 X 長文是 Grok Bot 案例。UseGrokBot 保留原帖連結，沒有在這裡重跑這個 Bot。",
+    "This public X Article / long-form write-up is a Grok Bot case. GrokCases keeps the original permalink and did not re-run this Bot.":
+      "這篇公開的 X 長文是 Grok Bot 案例。GrokCases 保留原帖連結，沒有在這裡重跑這個 Bot。",
     "This public case was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot keeps the original X permalink and did not re-run this Bot.":
       "這個公開案例來自 awesome-grok-bot Field Cases 索引。UseGrokBot 保留原帖連結，沒有在這裡重跑這個 Bot。",
+    "This public case was surfaced through the awesome-grok-bot Field Cases index. GrokCases keeps the original X permalink and did not re-run this Bot.":
+      "這個公開案例來自 awesome-grok-bot Field Cases 索引。GrokCases 保留原帖連結，沒有在這裡重跑這個 Bot。",
   },
   "zh-Hans": {
     "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.":
       "UseGrokBot 收录了这则公开 X 帖子。我们保留原帖链接，没有在这里重跑这个 Bot。",
+    "GrokCases ingested this public X post. We keep the original permalink and did not re-run this Bot.":
+      "GrokCases 收录了这则公开 X 帖子。我们保留原帖链接，没有在这里重跑这个 Bot。",
     "This public X post is a first-person Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
       "这则公开 X 帖子是作者自己写的 Grok Bot 例子。UseGrokBot 保留原帖链接，没有在这里重跑这个 Bot。",
+    "This public X post is a first-person Grok Bot case. GrokCases keeps the original permalink and did not re-run this Bot.":
+      "这则公开 X 帖子是作者自己写的 Grok Bot 例子。GrokCases 保留原帖链接，没有在这里重跑这个 Bot。",
     "Elon Musk reposted or quoted this original Grok Bot post. UseGrokBot keeps the original X permalink and did not re-run this Bot.":
       "Elon Musk 转发或引用过这则原始 Grok Bot 帖子。UseGrokBot 保留原帖链接，没有在这里重跑这个 Bot。",
+    "Elon Musk reposted or quoted this original Grok Bot post. GrokCases keeps the original X permalink and did not re-run this Bot.":
+      "Elon Musk 转发或引用过这则原始 Grok Bot 帖子。GrokCases 保留原帖链接，没有在这里重跑这个 Bot。",
     "This public X Article / long-form write-up is a Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
       "这篇公开的 X 长文是 Grok Bot 案例。UseGrokBot 保留原帖链接，没有在这里重跑这个 Bot。",
+    "This public X Article / long-form write-up is a Grok Bot case. GrokCases keeps the original permalink and did not re-run this Bot.":
+      "这篇公开的 X 长文是 Grok Bot 案例。GrokCases 保留原帖链接，没有在这里重跑这个 Bot。",
     "This public case was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot keeps the original X permalink and did not re-run this Bot.":
       "这个公开案例来自 awesome-grok-bot Field Cases 索引。UseGrokBot 保留原帖链接，没有在这里重跑这个 Bot。",
+    "This public case was surfaced through the awesome-grok-bot Field Cases index. GrokCases keeps the original X permalink and did not re-run this Bot.":
+      "这个公开案例来自 awesome-grok-bot Field Cases 索引。GrokCases 保留原帖链接，没有在这里重跑这个 Bot。",
   },
   ja: {
     "UseGrokBot ingested this public X post. We keep the original permalink and did not re-run this Bot.":
       "UseGrokBot は、この公開 X 投稿を収録しています。元の投稿リンクは残し、この Bot はこちらでは動かし直していません。",
+    "GrokCases ingested this public X post. We keep the original permalink and did not re-run this Bot.":
+      "GrokCases は、この公開 X 投稿を収録しています。元の投稿リンクは残し、この Bot はこちらでは動かし直していません。",
     "This public X post is a first-person Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
       "これは、本人が書いた公開の Grok Bot 事例です。UseGrokBot は元の投稿リンクを残し、この Bot はこちらでは動かし直していません。",
+    "This public X post is a first-person Grok Bot case. GrokCases keeps the original permalink and did not re-run this Bot.":
+      "これは、本人が書いた公開の Grok Bot 事例です。GrokCases は元の投稿リンクを残し、この Bot はこちらでは動かし直していません。",
     "Elon Musk reposted or quoted this original Grok Bot post. UseGrokBot keeps the original X permalink and did not re-run this Bot.":
       "Elon Musk が転載または引用した、元の Grok Bot 投稿です。UseGrokBot は元の X リンクを残し、この Bot はこちらでは動かし直していません。",
+    "Elon Musk reposted or quoted this original Grok Bot post. GrokCases keeps the original X permalink and did not re-run this Bot.":
+      "Elon Musk が転載または引用した、元の Grok Bot 投稿です。GrokCases は元の X リンクを残し、この Bot はこちらでは動かし直していません。",
     "This public X Article / long-form write-up is a Grok Bot case. UseGrokBot keeps the original permalink and did not re-run this Bot.":
       "これは公開の X 長文による Grok Bot 事例です。UseGrokBot は元のリンクを残し、この Bot はこちらでは動かし直していません。",
+    "This public X Article / long-form write-up is a Grok Bot case. GrokCases keeps the original permalink and did not re-run this Bot.":
+      "これは公開の X 長文による Grok Bot 事例です。GrokCases は元のリンクを残し、この Bot はこちらでは動かし直していません。",
     "This public case was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot keeps the original X permalink and did not re-run this Bot.":
       "この公開事例は awesome-grok-bot Field Cases の索引から見つけました。UseGrokBot は元の X リンクを残し、この Bot はこちらでは動かし直していません。",
+    "This public case was surfaced through the awesome-grok-bot Field Cases index. GrokCases keeps the original X permalink and did not re-run this Bot.":
+      "この公開事例は awesome-grok-bot Field Cases の索引から見つけました。GrokCases は元の X リンクを残し、この Bot はこちらでは動かし直していません。",
   },
 };
 

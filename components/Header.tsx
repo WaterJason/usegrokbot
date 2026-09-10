@@ -141,7 +141,7 @@ export function Header() {
           className="flex items-center gap-2.5 text-[16px] font-medium tracking-tight text-ink"
         >
           <BotFace size={20} color={botColorFor("usegrokbot")} />
-          UseGrokBot
+          GrokCases
         </LocaleLink>
 
         <nav

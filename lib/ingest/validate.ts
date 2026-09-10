@@ -92,7 +92,7 @@ export function validateExtractedCase(
 
   const { tweetIds } = existingStoryKeys(stories);
   if (tweetIds.has(post.id)) {
-    return { ok: false, code: "duplicate", reason: "This X post is already on UseGrokBot." };
+    return { ok: false, code: "duplicate", reason: "This X post is already on GrokCases." };
   }
 
   return {

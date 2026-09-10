@@ -8,7 +8,7 @@ assert.equal(repeatsReadingCopy("整理收件匣。", ["整理收件匣"]), true
 assert.equal(repeatsReadingCopy(" Draft a reply. ", ["draft a reply"]), true);
 assert.equal(repeatsReadingCopy("Draft a reply, then wait for approval.", ["Draft a reply"]), false);
 assert.equal(repeatsReadingCopy("起草回覆，等你批准才寄出。", ["起草回覆"]), false);
-assert.equal(isImportedStoryExplanation("UseGrokBot ingested this public X post. The source is linked below."), true);
+assert.equal(isImportedStoryExplanation("GrokCases ingested this public X post. The source is linked below."), true);
 assert.equal(isImportedStoryExplanation("Reads call notes and drafts a follow-up for approval."), false);
 
 const researchy = templates.find(item => item.id === "rQt4W2zO2Gx9lfcBjd1lj");

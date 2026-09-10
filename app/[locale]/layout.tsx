@@ -43,7 +43,7 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(site.url),
     title: {
-      default: `${site.name} — ${messages[locale].home.metaTitle}`,
+      default: `${site.name} – ${messages[locale].home.metaTitle}`,
       template: `%s | ${site.name}`,
     },
     description: messages[locale].home.metaDescription,
@@ -58,7 +58,7 @@ export async function generateMetadata({
           url: site.shareImage,
           width: 1200,
           height: 630,
-          alt: `${site.name} — ${messages[locale].home.metaTitle}`,
+          alt: `${site.name} – ${messages[locale].home.metaTitle}`,
           type: "image/png",
         },
       ],

@@ -206,35 +206,38 @@ function HomeViewContent({
 
   return (
     <>
-      <section className="border-b border-line">
-        <div className="mx-auto max-w-[1240px] px-5 pb-8 pt-8 md:px-8 md:pb-16 md:pt-20">
-          <div className="grid grid-cols-[minmax(0,1fr)_160px] items-center gap-x-3 gap-y-5 md:grid-cols-[minmax(0,1fr)_auto] md:gap-x-16 md:gap-y-8">
-            <div className="col-span-2 min-w-0 md:col-span-1 md:col-start-1 md:row-start-1">
+      <section className="border-b border-line bg-elevated/40">
+        <div className="mx-auto max-w-[1240px] px-5 pb-10 pt-8 md:px-8 md:pb-14 md:pt-16">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between lg:gap-12">
+            <div className="min-w-0 max-w-2xl flex-1">
               <div className="flex flex-wrap items-center gap-3">
-                <p className="ui-label tracking-[0.06em] text-mute uppercase">
+                <p className="ui-label tracking-[0.08em] text-accent uppercase">
                   {t("home.kicker")}
                 </p>
                 <GitHubStar stars={stars} className="h-7 shrink-0 px-2.5" />
               </div>
-              <h1 className="ui-hero-title mt-5 max-w-3xl">
+              <h1 className="ui-hero-title mt-4 max-w-3xl text-balance">
                 {t("home.title")}
               </h1>
               {!showResults ? (
-                <p className="ui-page-intro mt-5 max-w-xl md:text-[18px]">
+                <p className="ui-page-intro mt-4 max-w-xl md:text-[18px]">
                   {discoveryCopy.intro}
                 </p>
               ) : null}
+              <div className="mt-6 max-w-xl space-y-2 rounded-2xl border border-line bg-card/80 px-4 py-3">
+                <p className="ui-body text-mute">{t("home.entityLibrary")}</p>
+                <p className="ui-body text-mute">{t("home.entityFilter")}</p>
+              </div>
             </div>
-            <div className="col-start-1 row-start-2 min-w-0 self-center border-l border-accent pl-4 md:col-start-1 md:row-start-2 md:max-w-[650px] md:pl-5">
-              <AnimatedSignal total={postCount} />
-              <p className="ui-meta mt-3 text-faint">
-                {t("home.signalRefresh")}
-              </p>
-            </div>
-            <div className="col-start-2 row-start-2 mx-auto md:col-start-2 md:row-span-2 md:row-start-1 md:mx-0">
+            <div className="mx-auto shrink-0 lg:mx-0">
               <HeroBot />
             </div>
-
+          </div>
+          <div className="mt-8 grid gap-4 rounded-2xl border border-line bg-card p-4 sm:grid-cols-[1fr_auto] sm:items-end sm:p-5">
+            <AnimatedSignal total={postCount} />
+            <p className="ui-meta text-faint sm:text-right">
+              {t("home.signalRefresh")}
+            </p>
           </div>
         </div>
       </section>
@@ -267,6 +270,45 @@ function HomeViewContent({
         </section>
       ) : (
         <>
+      <section id="real-use-cases" className="mx-auto max-w-[1240px] scroll-mt-16 px-5 py-10 md:px-8 md:py-24">
+        <SectionHeader title={t("home.realUseCasesTitle")} href="/use-cases" cta={t("home.realUseCasesCta")} />
+        <div className="mt-6 divide-y divide-line border-y border-line md:mt-8">
+          {realUseCases.map((useCase, index) => {
+            const localized = localizeVerifiedUseCase(useCase, locale);
+            const source = getDiscoverStory(useCase.primarySourceSlug);
+            return (
+              <LocaleLink
+                key={useCase.slug}
+                href={`/use-cases/${useCase.slug}`}
+                className="group grid min-h-[132px] grid-cols-[2rem_minmax(0,1fr)_auto] gap-3 py-5"
+              >
+                <span className="pt-0.5 font-mono text-[16px] font-medium text-faint">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="min-w-0">
+                  <span className="ui-card-title block group-hover:text-accent">
+                    {localized.title}
+                  </span>
+                  <span className="mt-4 flex flex-wrap gap-2">
+                    <Badge>{useCase.evidence === "prompt" ? useCaseCopy.promptIncluded : useCaseCopy.setupShared}</Badge>
+                    <Badge>{useCase.structure === "team" ? useCaseCopy.botTeam : useCaseCopy.singleBot}</Badge>
+                  </span>
+                  {source ? (
+                    <span className="mt-4 flex items-center gap-2.5">
+                      <AuthorAvatar name={source.authorName} handle={source.handle} size={40} />
+                      <span className="truncate text-[13px] text-mute">
+                        {source.handle ? `@${source.handle}` : source.authorName}
+                      </span>
+                    </span>
+                  ) : null}
+                </span>
+                <ArrowUpRight aria-hidden className="mt-1 size-4 text-faint group-hover:text-accent" />
+              </LocaleLink>
+            );
+          })}
+        </div>
+      </section>
+
       <section id="find-your-bot" className="mx-auto max-w-[1240px] scroll-mt-16 px-5 py-10 md:px-8 md:py-20">
         <SectionHeader
           title={t("home.identitiesTitle")}
@@ -275,12 +317,12 @@ function HomeViewContent({
           compactOnMobile
         />
         <p className="ui-body mt-3 max-w-xl text-mute">{discoveryCopy.identityHint}</p>
-        <div data-home-identity-grid="" className="mt-6 grid gap-3 min-[360px]:grid-cols-2 sm:mt-8 sm:gap-4 lg:grid-cols-4">
+        <div data-home-identity-grid="" className="mt-5 grid gap-2.5 min-[360px]:grid-cols-2 sm:mt-7 sm:gap-3 md:grid-cols-3">
           {identities.map((identity) => (
             <LocaleLink
               key={identity.slug}
               href={`/templates/${identity.slug}`}
-              className="spring-lift group flex min-w-0 flex-col rounded-2xl border border-line bg-card p-4 hover:border-line-strong sm:p-5"
+              className="spring-lift group flex min-w-0 flex-col rounded-xl border border-line bg-card p-3.5 hover:border-line-strong sm:p-4"
             >
               <div className="flex flex-col-reverse items-start gap-4">
                 <h3 className="ui-card-title w-full group-hover:text-accent">
@@ -304,15 +346,37 @@ function HomeViewContent({
         </div>
       </section>
 
+      <section className="border-y border-line">
+        <div className="mx-auto max-w-[1240px] px-5 py-10 md:px-8 md:py-16">
+          <SectionHeader
+            title={t("home.popularArticlesTitle")}
+            body={t("home.popularArticlesBody")}
+            href="/articles/x"
+            cta={t("home.popularArticlesCta")}
+          />
+          <ol className="mt-8 divide-y divide-line border-y border-line">
+            {popularArticles.map((item, index) => (
+              <ArticleRow
+                key={item.story.slug}
+                item={item}
+                locale={locale}
+                viewsLabel={t("pages.rankingsViews")}
+                rank={index + 1}
+              />
+            ))}
+          </ol>
+        </div>
+      </section>
+
       <section className="border-y border-line bg-elevated">
-        <div className="mx-auto max-w-[1240px] px-5 py-10 md:px-8 md:py-24">
+        <div className="mx-auto max-w-[1240px] px-5 py-10 md:px-8 md:py-16">
           <p className="ui-label tracking-[0.06em] text-mute uppercase">
             {t("home.botTeamsLabel")}
           </p>
           <div className="mt-2">
             <SectionHeader title={t("home.botTeamsTitle")} href="/templates/teams" cta={t("home.botTeamsCta")} />
           </div>
-          <div data-home-team-grid="" className="mt-6 grid gap-3 min-[360px]:grid-cols-2 sm:mt-8 sm:gap-4 lg:grid-cols-4">
+          <div data-home-team-grid="" className="mt-5 grid gap-3 sm:mt-7 sm:grid-cols-2 lg:grid-cols-3">
             {teamTemplates.map(({ template, catalog }, index) => {
               const copy = localizeTemplateCopy(template.id, locale, catalog);
               const purpose = getTemplateTeamCardCopy(template.id, locale) ?? copy.oneLiner;
@@ -343,67 +407,6 @@ function HomeViewContent({
               );
             })}
           </div>
-        </div>
-      </section>
-
-      <section id="real-use-cases" className="mx-auto max-w-[1240px] scroll-mt-16 px-5 py-10 md:px-8 md:py-24">
-        <SectionHeader title={t("home.realUseCasesTitle")} href="/use-cases" cta={t("home.realUseCasesCta")} />
-        <div className="mt-8 grid gap-x-10 md:grid-cols-2">
-          {realUseCases.map((useCase, index) => {
-            const localized = localizeVerifiedUseCase(useCase, locale);
-            const source = getDiscoverStory(useCase.primarySourceSlug);
-            return (
-              <LocaleLink
-                key={useCase.slug}
-                href={`/use-cases/${useCase.slug}`}
-                className="group grid min-h-[172px] grid-cols-[2rem_minmax(0,1fr)_auto] gap-3 border-t border-line py-6"
-              >
-                <span className="pt-0.5 font-mono text-[16px] font-medium text-faint">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="min-w-0">
-                  <span className="ui-card-title block group-hover:text-accent">
-                    {localized.title}
-                  </span>
-                  <span className="mt-4 flex flex-wrap gap-2">
-                    <Badge>{useCase.evidence === "prompt" ? useCaseCopy.promptIncluded : useCaseCopy.setupShared}</Badge>
-                    <Badge>{useCase.structure === "team" ? useCaseCopy.botTeam : useCaseCopy.singleBot}</Badge>
-                  </span>
-                  {source ? (
-                    <span className="mt-4 flex items-center gap-2.5">
-                      <AuthorAvatar name={source.authorName} handle={source.handle} size={40} />
-                      <span className="truncate text-[13px] text-mute">
-                        {source.handle ? `@${source.handle}` : source.authorName}
-                      </span>
-                    </span>
-                  ) : null}
-                </span>
-                <ArrowUpRight aria-hidden className="mt-1 size-4 text-faint group-hover:text-accent" />
-              </LocaleLink>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="border-y border-line">
-        <div className="mx-auto max-w-[1000px] px-5 py-10 md:px-8 md:py-24">
-          <SectionHeader
-            title={t("home.popularArticlesTitle")}
-            body={t("home.popularArticlesBody")}
-            href="/articles/x"
-            cta={t("home.popularArticlesCta")}
-          />
-          <ol className="mt-8 divide-y divide-line border-y border-line">
-            {popularArticles.map((item, index) => (
-              <ArticleRow
-                key={item.story.slug}
-                item={item}
-                locale={locale}
-                viewsLabel={t("pages.rankingsViews")}
-                rank={index + 1}
-              />
-            ))}
-          </ol>
         </div>
       </section>
 

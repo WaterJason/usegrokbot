@@ -9,6 +9,7 @@ export function repeatsReadingCopy(text: string | undefined, shown: readonly str
 /** Import provenance is shown once with the source, rather than as a how-to. */
 export function isImportedStoryExplanation(text: string) {
   return [
+    "GrokCases ingested this public X post.",
     "UseGrokBot ingested this public X post.",
     "This public X post is a first-person Grok Bot case.",
     "Elon Musk reposted or quoted this original Grok Bot post.",

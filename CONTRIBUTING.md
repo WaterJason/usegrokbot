@@ -1,8 +1,8 @@
-# Contributing to UseGrokBot
+# Contributing to GrokCases
 
 Thanks for helping people discover how Grok Bot is actually being used.
 
-UseGrokBot is built around one rule:
+GrokCases is built around one rule:
 
 > **Curate, explain, attribute, and link back.**
 
@@ -57,9 +57,9 @@ Required where available:
 Do not:
 
 - invent authors, handles, dates, or source URLs
-- copy an entire X post or article into UseGrokBot
+- copy an entire X post or article into GrokCases
 - invent performance or revenue numbers
-- mark something as Tested unless UseGrokBot actually tested it
+- mark something as Tested unless GrokCases actually tested it
 - remove attribution to the original creator
 
 If the original source gives a measurable number, it may be shown as a **Result**.
@@ -80,7 +80,7 @@ A good discover story explains:
 - What Result / Output was produced
 - Where the original source lives
 
-UseGrokBot is the curator / explainer. The original author remains the source.
+GrokCases is the curator / explainer. The original author remains the source.
 
 ## Workflows
 

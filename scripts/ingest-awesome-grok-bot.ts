@@ -96,7 +96,7 @@ async function extractViaLiveSite(item: SourceCase): Promise<DiscoverStory> {
     headers: {
       "Content-Type": "application/json",
       "x-ingest-mode": "extract",
-      "User-Agent": "UseGrokBot-awesome-source-ingest",
+      "User-Agent": "GrokCases-awesome-source-ingest",
     },
     body: JSON.stringify({
       xUrl: item.url,
@@ -119,6 +119,15 @@ async function extractViaLiveSite(item: SourceCase): Promise<DiscoverStory> {
   throw new Error(`${code}:${reason}`);
 }
 
+
+/** Mirror sync denylist for defense-in-depth on ingest. */
+function shouldSkipIngestTitle(title: string) {
+  if (!title || title.trim().length < 9) return true;
+  if (/\b(mahjong|poker|blackjack|slots?)\b/i.test(title)) return true;
+  if (/^test\b/i.test(title) || /^untitled\b/i.test(title)) return true;
+  return false;
+}
+
 function fallbackTitle(item: SourceCase) {
   const colon = item.title.indexOf(":");
   const value = colon >= 0 ? item.title.slice(colon + 1).trim() : item.title.trim();
@@ -127,22 +136,30 @@ function fallbackTitle(item: SourceCase) {
 
 function fallbackCategory(text: string): DiscoverStory["category"] {
   const value = text.toLowerCase();
-  if (/wordpress|arduino|engineering|\bpr\b|databricks|developer|technical|code|software/.test(value)) return "coding";
-  if (/support|helpdesk|customer[- ]service/.test(value)) return "operations";
-  if (/market|research|brief|scan|reconcile|credit|field notes/.test(value)) return "research";
-  if (/calendar|reservation|travel|shopping|flights|beer|personal/.test(value)) return "personal";
-  if (/sales|buyer|lead|customer/.test(value)) return "sales";
+  // GrokCases remapping: slightly different priority / keywords than raw Field Cases defaults
+  if (/resume|interview|hiring|recruit|hr\b|onboard/.test(value)) return "operations";
+  if (/wordpress|arduino|engineering|\bpr\b|databricks|developer|technical|code|software|github|debug|refactor/.test(value)) return "coding";
+  if (/newsletter|blog|tweet|thread|script|storyboard|caption|copywriting/.test(value)) return "content";
+  if (/support|helpdesk|customer[- ]service|inbox|ops\b|ops team|sla\b/.test(value)) return "operations";
+  if (/competitor|market|research|brief|scan|reconcile|credit|field notes|due diligence|literature/.test(value)) return "research";
+  if (/calendar|reservation|travel|shopping|flights|beer|personal|home|family|parent/.test(value)) return "personal";
+  if (/outbound|pipeline|crm|sales|buyer|lead|prospect/.test(value)) return "sales";
+  if (/marketing|seo|campaign|ads?\b|landing page|growth/.test(value)) return "marketing";
   if (/content|image|write|video|post/.test(value)) return "content";
-  if (/marketing|seo|campaign/.test(value)) return "marketing";
+  // Prefer research over blanket operations for ambiguous analytical posts
+  if (/analy|report|summary|digest|monitor/.test(value)) return "research";
   return "operations";
 }
 
 function fallbackOutcomes(category: DiscoverStory["category"]): DiscoverStory["outcomes"] {
-  if (category === "coding") return ["build-software", "automate-work"];
-  if (category === "research") return ["research", "save-time"];
-  if (category === "sales" || category === "marketing") return ["grow-business", "automate-work"];
-  if (category === "content") return ["create-content", "save-time"];
-  return ["automate-work", "save-time"];
+  // Diversified outcome pairing for GrokCases catalog shape
+  if (category === "coding") return ["build-software", "save-time"];
+  if (category === "research") return ["research", "automate-work"];
+  if (category === "sales") return ["grow-business", "save-time"];
+  if (category === "marketing") return ["grow-business", "create-content"];
+  if (category === "content") return ["create-content", "automate-work"];
+  if (category === "personal") return ["save-time", "automate-work"];
+  return ["automate-work", "research"];
 }
 
 function fallbackApps(text: string): DiscoverStory["apps"] {
@@ -211,7 +228,7 @@ function buildSafeXFallback(item: SourceCase, post: FetchedPost, existingStories
     body: post.text.trim() || undefined,
     whatTheyDid: item.sourceSummary,
     howItWorks:
-      "This public case was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot keeps the original X permalink and did not re-run this Bot.",
+      "This public case was surfaced through the awesome-grok-bot Field Cases index. GrokCases keeps the original X permalink and did not re-run this Bot.",
     whyUseful:
       "It is a concrete public example of work being handed to Grok Bot, with the original source kept for context.",
     whyItMatters:
@@ -268,7 +285,7 @@ async function buildGenericSourceStory(item: SourceCase, existingStories: Discov
   const slug = makeStorySlug(metadata.authorName, title, new Set(existingStories.map((story) => story.slug)));
   const dateNote = metadata.dateFromSource
     ? "The publication date comes from machine-readable metadata on the original source."
-    : "The source did not expose a reliable machine-readable publication date, so the displayed date is when UseGrokBot indexed it.";
+    : "The source did not expose a reliable machine-readable publication date, so the displayed date is when GrokCases indexed it.";
 
   return {
     slug,
@@ -276,11 +293,11 @@ async function buildGenericSourceStory(item: SourceCase, existingStories: Discov
     headline: item.sourceSummary,
     whatTheyDid: item.sourceSummary,
     howItWorks:
-      `This public ${sourceKind.toLowerCase()} was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. ${dateNote}`,
+      `This public ${sourceKind.toLowerCase()} was surfaced through the awesome-grok-bot Field Cases index. GrokCases uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. ${dateNote}`,
     whyUseful:
       "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
     whyItMatters:
-      "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+      "GrokCases can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
     whoShouldTry,
     usefulFor: whoShouldTry.join(" / "),
     output: item.sourceSummary,
@@ -349,6 +366,13 @@ async function main() {
     console.log(`\n[${attempts}/${MAX_ATTEMPTS}] [${item.sourceType}] ${item.title}\n${item.url}`);
 
     try {
+      if (shouldSkipIngestTitle(item.title)) {
+        item.ingest = { status: "skipped", attempts, code: "denied_title", reason: "Skipped by GrokCases title denylist" };
+        console.log("skipped: denied_title");
+        await saveFeed(feed);
+        continue;
+      }
+
       if (workingStories.some((story) => story.xPostUrl === item.url || story.sourceUrl === item.url)) {
         item.ingest = { status: "published", attempts, reason: "already present in Discover" };
         console.log("already published");

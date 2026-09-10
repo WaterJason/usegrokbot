@@ -12,8 +12,8 @@ export async function extractCase(
     model: MODEL,
     output: Output.object({ schema: extractSchema }),
     prompt: [
-      "You are ingesting a public X post for UseGrokBot, a Grok Bot discovery hub.",
-      "Write a short curated case in English. UseGrokBot is the curator, not the original author.",
+      "You are ingesting a public X post for GrokCases, a Grok Bot discovery hub.",
+      "Write a short curated case in English. GrokCases is the curator, not the original author.",
       "The author name and @handle are already known. Do not invent a different author or handle.",
       "Only mark relevant=true if the post is a real Grok Bot / @bot / @Grok agent workflow, demo, or result.",
       "If it is generic AI talk, a joke, news with no workflow, or spam, set relevant=false and relevance below 50.",

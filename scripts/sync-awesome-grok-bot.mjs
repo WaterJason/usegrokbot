@@ -48,6 +48,38 @@ function sourceType(url) {
   return "article";
 }
 
+
+/**
+ * GrokCases-owned skip rules (keep catalog diversified vs raw Field Cases).
+ * Documented denylist — thin/duplicate titles and optional host skips.
+ * Does NOT wipe existing published stories; only affects new candidates.
+ */
+const TITLE_DENY_PATTERNS = [
+  /^test\b/i,
+  /^untitled\b/i,
+  /^\s*$/,
+  /^.{1,8}$/, // too-thin titles
+  /\b(mahjong|poker|blackjack|slots?)\b/i,
+];
+
+const HOST_DENYLIST = new Set([
+  // optional host skips — keep empty-ish; extend carefully
+]);
+
+function shouldSkipFieldCase(item) {
+  const title = item.title || "";
+  if (TITLE_DENY_PATTERNS.some((re) => re.test(title))) {
+    return { skip: true, reason: "thin_or_denied_title" };
+  }
+  try {
+    const host = new URL(item.url).hostname.replace(/^www\./, "");
+    if (HOST_DENYLIST.has(host)) return { skip: true, reason: "denied_host" };
+  } catch {
+    return { skip: true, reason: "invalid_url" };
+  }
+  return { skip: false };
+}
+
 function extractFieldCases(markdown) {
   const startMarker = "## Field Cases";
   const start = markdown.indexOf(startMarker);
@@ -83,7 +115,7 @@ function urlsIn(text) {
 
 async function main() {
   const response = await fetch(README_URL, {
-    headers: { "User-Agent": "UseGrokBot-source-sync" },
+    headers: { "User-Agent": "GrokCases-source-sync" },
   });
   if (!response.ok) throw new Error(`Failed to fetch awesome-grok-bot README: ${response.status}`);
 
@@ -107,7 +139,17 @@ async function main() {
     (Array.isArray(previous.cases) ? previous.cases : []).map((item) => [normalizeUrl(item.url), item]),
   );
 
-  const cases = fieldCases.map((item) => {
+  const skipped = [];
+  const filteredFieldCases = fieldCases.filter((item) => {
+    const decision = shouldSkipFieldCase(item);
+    if (decision.skip) {
+      skipped.push({ title: item.title, url: item.url, reason: decision.reason });
+      return false;
+    }
+    return true;
+  });
+
+  const cases = filteredFieldCases.map((item) => {
     const type = sourceType(item.url);
     const alreadyIngested = existingUrls.has(item.url);
     const old = previousByUrl.get(item.url);
@@ -144,16 +186,18 @@ async function main() {
       rawReadme: README_URL,
       section: "Field Cases",
       sourceListLicense: "CC0-1.0",
-      note: "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale.",
+      note: "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. GrokCases uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale.",
     },
     stats: {
       total: cases.length,
+      skippedByGrokCasesRules: skipped.length,
       candidates: cases.filter((item) => item.sourceStatus === "candidate").length,
       xCandidates: cases.filter((item) => item.sourceStatus === "candidate" && item.sourceType === "x").length,
       nonXCandidates: cases.filter((item) => item.sourceStatus === "candidate" && item.sourceType !== "x").length,
       alreadyIngested: cases.filter((item) => item.sourceStatus === "already-ingested").length,
       pending: cases.filter((item) => ["pending", "retry"].includes(item.ingest.status)).length,
     },
+    skipped,
     cases,
   };
 
