@@ -9,11 +9,11 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. UseGrokBot uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 86,
+    "total": 91,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
-    "alreadyIngested": 81,
+    "alreadyIngested": 86,
     "pending": 0
   },
   "cases": [
@@ -1129,6 +1129,71 @@
       "title": "dark-factory cursor-handoff for Grok Bot",
       "url": "https://github.com/Dahhrk/dark-factory",
       "sourceSummary": "Teaching-kitchen automation that POSTs tickets into a Grok Bot Chief-of-Staff webhook routine from a local page.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "cybersecurity-acbn-grok-bot-poc",
+      "title": "Cybersecurity ACBN Grok Bot PoC",
+      "url": "https://github.com/saiyellanki/grokbot",
+      "sourceSummary": "Synthetic bank cybersecurity bot-mesh PoC with grok-operable playbooks for 1LoD/2LoD/3LoD HITL workflows on Grok Bot.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "itsm-dep-graph-grok-bot-board-tooling",
+      "title": "ITSM dep-graph Grok Bot board tooling",
+      "url": "https://github.com/skbergam/itsm-dep-graph",
+      "sourceSummary": "Next.js + React Flow ITSM Notion dependency graph built as Grok Bot board tooling, with a dump script meant to run on the Bot computer.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "aura-2-grok-bot-design-approver",
+      "title": "Aura 2 Grok Bot design approver",
+      "url": "https://github.com/chromewizard/Aura-2",
+      "sourceSummary": "Grok Bot Design Approver persona with allocation and vision gate docs that coordinate Bot Notion routing and beauty greenlights.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "grok-oracle-persona-resident-on-grok-bot-machine",
+      "title": "Grok Oracle persona resident on Grok Bot machine",
+      "url": "https://github.com/mozzquito/grok-oracle",
+      "sourceSummary": "Field persona pack for an always-on Oracle sibling that lives on the Grok Bot cloud machine, with CLAUDE.md identity and ψ resonance memory files.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "personal-config-grok-bot-pr-desk-field-writeup",
+      "title": "personal-config Grok Bot PR Desk field writeup",
+      "url": "https://github.com/abhimehro/personal-config",
+      "sourceSummary": "Maintainer field writeup that uses Grok Bot as a read-only Chief-of-Staff PR Desk digest compressing automation reports into at most five human decisions.",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",

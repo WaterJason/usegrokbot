@@ -86044,5 +86044,149 @@
     "xPostUrl": "https://x.com/seb3point0/status/2097986989278581099",
     "sourceUrl": "https://x.com/seb3point0/status/2097986989278581099",
     "sourceLabel": "seb3point0 on X"
+  },
+  {
+    "slug": "saiyellanki-cybersecurity-acbn-grok-bot-poc",
+    "title": "Cybersecurity ACBN Grok Bot PoC",
+    "headline": "Synthetic bank cybersecurity bot-mesh PoC with grok-operable playbooks for 1LoD/2LoD/3LoD HITL workflows on Grok Bot.",
+    "whatTheyDid": "Synthetic bank cybersecurity bot-mesh PoC with grok-operable playbooks for 1LoD/2LoD/3LoD HITL workflows on Grok Bot.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Synthetic bank cybersecurity bot-mesh PoC with grok-operable playbooks for 1LoD/2LoD/3LoD HITL workflows on Grok Bot.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "saiyellanki",
+    "publishedAt": "2026-09-09",
+    "sourceUrl": "https://github.com/saiyellanki/grokbot",
+    "sourceLabel": "saiyellanki · GitHub"
+  },
+  {
+    "slug": "skbergam-itsm-dep-graph-grok-bot-board-tooling",
+    "title": "ITSM dep-graph Grok Bot board tooling",
+    "headline": "Next.js + React Flow ITSM Notion dependency graph built as Grok Bot board tooling, with a dump script meant to run on the Bot computer.",
+    "whatTheyDid": "Next.js + React Flow ITSM Notion dependency graph built as Grok Bot board tooling, with a dump script meant to run on the Bot computer.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Next.js + React Flow ITSM Notion dependency graph built as Grok Bot board tooling, with a dump script meant to run on the Bot computer.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "notion"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "skbergam",
+    "publishedAt": "2026-09-09",
+    "sourceUrl": "https://github.com/skbergam/itsm-dep-graph",
+    "sourceLabel": "skbergam · GitHub"
+  },
+  {
+    "slug": "chromewizard-aura-2-grok-bot-design-approver",
+    "title": "Aura 2 Grok Bot design approver",
+    "headline": "Grok Bot Design Approver persona with allocation and vision gate docs that coordinate Bot Notion routing and beauty greenlights.",
+    "whatTheyDid": "Grok Bot Design Approver persona with allocation and vision gate docs that coordinate Bot Notion routing and beauty greenlights.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Grok Bot Design Approver persona with allocation and vision gate docs that coordinate Bot Notion routing and beauty greenlights.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [
+      "notion"
+    ],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "chromewizard",
+    "publishedAt": "2026-09-09",
+    "sourceUrl": "https://github.com/chromewizard/Aura-2",
+    "sourceLabel": "chromewizard · GitHub"
+  },
+  {
+    "slug": "mozzquito-grok-oracle-persona-resident-on-grok-bot-machine",
+    "title": "Grok Oracle persona resident on Grok Bot machine",
+    "headline": "Field persona pack for an always-on Oracle sibling that lives on the Grok Bot cloud machine, with CLAUDE.md identity and ψ resonance memory files.",
+    "whatTheyDid": "Field persona pack for an always-on Oracle sibling that lives on the Grok Bot cloud machine, with CLAUDE.md identity and ψ resonance memory files.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Field persona pack for an always-on Oracle sibling that lives on the Grok Bot cloud machine, with CLAUDE.md identity and ψ resonance memory files.",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "save-time"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "always-on",
+    "source": "community",
+    "authorName": "mozzquito",
+    "publishedAt": "2026-09-10",
+    "sourceUrl": "https://github.com/mozzquito/grok-oracle",
+    "sourceLabel": "mozzquito · GitHub"
+  },
+  {
+    "slug": "abhimehro-personal-config-grok-bot-pr-desk-field-writeup",
+    "title": "personal-config Grok Bot PR Desk field writeup",
+    "headline": "Maintainer field writeup that uses Grok Bot as a read-only Chief-of-Staff PR Desk digest compressing automation reports into at most five human decisions.",
+    "whatTheyDid": "Maintainer field writeup that uses Grok Bot as a read-only Chief-of-Staff PR Desk digest compressing automation reports into at most five human decisions.",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. UseGrokBot uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "UseGrokBot can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Developers",
+      "Engineering teams"
+    ],
+    "usefulFor": "Developers / Engineering teams",
+    "output": "Maintainer field writeup that uses Grok Bot as a read-only Chief-of-Staff PR Desk digest compressing automation reports into at most five human decisions.",
+    "category": "coding",
+    "outcomes": [
+      "build-software",
+      "automate-work"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "abhimehro",
+    "publishedAt": "2025-04-11",
+    "sourceUrl": "https://github.com/abhimehro/personal-config",
+    "sourceLabel": "abhimehro · GitHub"
   }
 ]
