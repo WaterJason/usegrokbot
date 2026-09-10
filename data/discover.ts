@@ -547,7 +547,7 @@ const curatedStories: DiscoverStory[] = [
     whyUseful:
       "Short, copyable setup habits. If your Bot still feels like one more chat, start with chief of staff plus a Notion “what’s left” page.",
     whyItMatters:
-      "These are team tips relayed in public, not a UseGrokBot re-test. We did not mark it official or tested.",
+      "These are team tips relayed in public, not a GrokCases re-test. We did not mark it official or tested.",
     whoShouldTry: ["People who already have a Bot", "Operators building a small team"],
     usefulFor: "Operators",
     quote: "One Chief of Staff plus a few specialists beats one mega-chat",
@@ -1212,7 +1212,7 @@ const curatedStories: DiscoverStory[] = [
     whyUseful:
       "Good for founders and marketing teams who do not want to check competitors by hand every day.",
     whyItMatters:
-      "Competitor watch is the example people ask for first. This version is sourced, reversible, and maps to a full UseGrokBot workflow.",
+      "Competitor watch is the example people ask for first. This version is sourced, reversible, and maps to a full GrokCases workflow.",
     whoShouldTry: ["Founders", "Marketing teams", "Product marketers"],
     usefulFor: "Marketing / Founders",
     quote: "Ad libraries, review sites, and competitor changelogs are exactly the shape Grok Bot is built for",
@@ -1394,7 +1394,7 @@ const THIN_COPY_MARKERS = [
   "It is a concrete public example of work being handed to Grok Bot",
   "A public example of someone handing work to Grok Bot, kept here with attribution",
   "This fallback deliberately avoids adding claims",
-  "UseGrokBot ingested this public X post",
+  "GrokCases ingested this public X post",
   "It is a public field example of Grok Bot being used for a real task",
 ] as const;
 

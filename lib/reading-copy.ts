@@ -10,7 +10,6 @@ export function repeatsReadingCopy(text: string | undefined, shown: readonly str
 export function isImportedStoryExplanation(text: string) {
   return [
     "GrokCases ingested this public X post.",
-    "UseGrokBot ingested this public X post.",
     "This public X post is a first-person Grok Bot case.",
     "Elon Musk reposted or quoted this original Grok Bot post.",
     "This public X Article / long-form write-up is a Grok Bot case.",
