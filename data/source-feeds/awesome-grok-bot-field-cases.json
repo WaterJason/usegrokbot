@@ -10,12 +10,14 @@
   },
   "stats": {
     "total": 91,
+    "skippedByGrokCasesRules": 0,
     "candidates": 5,
     "xCandidates": 0,
     "nonXCandidates": 5,
     "alreadyIngested": 86,
     "pending": 0
   },
+  "skipped": [],
   "cases": [
     {
       "id": "sprite-portal-grok-bot-nursery-ui",
