@@ -1131,8 +1131,8 @@
   },
   "7k0TLQBu4hPI5oE3ywRHU": {
     "title": "Agent readiness scan",
-    "oneLiner": "サイトを Grok、Claude、OpenAI などの agent が読み、取引できるよう、毎日点検します。",
-    "body": "投稿は日次の agent readiness scan です。自動改修までは書いていません。"
+    "oneLiner": "サイトをエージェントが読んで取引できるか、日次の readiness を点検します。",
+    "body": "作者は @bot や他エージェント向けの日次スキャンとして公開しています。サイト変更の自動適用は書いていません。"
   },
   "DYg0r1xvzy_xxPeRGHcHE": {
     "title": "求人メール",
@@ -1183,5 +1183,325 @@
     "title": "複数モデルの議論助手",
     "oneLiner": "Grok Bot 内で Grok、Claude Code、Codex に議論させ、共通の答えを探します。",
     "body": "Grok Bot 内で Grok、Claude Code、Codex に議論させ、共通の答えを探します。"
+  },
+  "WAQAF0bSQTRrrTb1q-J9Y": {
+    "title": "履歴事項全部証明書ガイド",
+    "oneLiner": "かんたん登記で履歴事項全部証明書の申請から Pay-easy、郵送待ちまで日本語で案内します。",
+    "body": "作者は法務局に行かず郵送で取る流れをステップ案内すると書いています。認証や銀行操作は自分で行う前提で、コネクタは不要です。"
+  },
+  "TNPSVnX4Dm-adBvHJbng7": {
+    "title": "LG Laundry Specialist",
+    "oneLiner": "LG Washtower の洗濯モード選びを案内する Bot です。",
+    "body": "作者はボタンが少ない LG Washtower 向けにモード案内テンプレを公開しています。機器の操作代行は書いていません。"
+  },
+  "i5YF8f-zdcR76uKPrqg3J": {
+    "title": "Shepherd（herdr）",
+    "oneLiner": "herdr を使う Grok Bot 向けに、エージェントをまとめる Shepherd テンプレです。",
+    "body": "作者は herdr を入れた Bot 向けのテンプレとして公開しています。外部サービスの契約や課金は出典にありません。"
+  },
+  "__4FfrkUdvpdMk6-LKg5r": {
+    "title": "firstmate（参謀）",
+    "oneLiner": "ワンクリックで入れられる chief of staff 型の Grok Bot 編成です。",
+    "body": "作者は firstmate を参謀役として公開しています。他 Bot への自動送信や権限昇格の有無は投稿に明記されていません。"
+  },
+  "qi4tUvKkQelzwsV2siUwR": {
+    "title": "オプション取引 Bot",
+    "oneLiner": "オプション取引の補助用に公開された Grok Bot テンプレです。",
+    "body": "作者は自分のオプション取引 Bot をテンプレ化したと書いています。売買の実行や利益の保証はありません。"
+  },
+  "emU2-KfBA8BbFkrG8rhem": {
+    "title": "AI インフルエンサー世界観",
+    "oneLiner": "寝ている間も回る AI インフルエンサー向けの世界観づくりを手伝います。",
+    "body": "作者は一貫した世界観のコンテンツ運用向けに公開しています。投稿の自動公開範囲は出典に詳しくありません。"
+  },
+  "9nAjTcDLxhYNz4jOtEzDO": {
+    "title": "安全ファイル掃除",
+    "oneLiner": "Bot が動くコンピュータに溜まった不要ファイルを安全に掃除します。",
+    "body": "作者は今後使わないファイル群の掃除用 Bot を公開しています。削除前確認の詳細は投稿の説明に従ってください。"
+  },
+  "kmmBn74qwBr9lgedW4naf": {
+    "title": "Quotewise Daily",
+    "oneLiner": "テーマを伝えると、出典つきの引用を返す日次 Bot です。",
+    "body": "作者は雰囲気ではなく出典つき引用を返すと書いています。引用の正確性は自分で確認する前提です。"
+  },
+  "OFLbKRObiwj-tH6BTVsMA": {
+    "title": "声マネ動画＋字幕",
+    "oneLiner": "自分の声をまねた動画に画像と字幕を付けて生成する流れをまとめた Bot です。",
+    "body": "作者は動画ソフトより手軽に声マネ動画を作れると書いています。商用利用や権利の扱いは自分で確認してください。"
+  },
+  "m4WfJ0ODD0O1runkfq0Ak": {
+    "title": "Slack ハイシグナル",
+    "oneLiner": "自分が関わる実用的な Slack 議論だけを通知してノイズを減らします。",
+    "body": "作者は所有領域の actionable な議論だけを ping すると書いています。メッセージの自動送信範囲は投稿に詳しくありません。"
+  },
+  "-A5GzkqCGxtedkKF_I9CK": {
+    "title": "New Grokbot",
+    "oneLiner": "作者が「New Grokbot」として共有したテンプレです。詳細説明は短いです。",
+    "body": "投稿の説明は短いです。用途の詳細はテンプレ側の説明を確認してください。"
+  },
+  "l2RX-35tKxZXxgJldSBf0": {
+    "title": "Telnyx 音声・SMS",
+    "oneLiner": "Telnyx 経由で Bot 組織に音声やテキスト能力を足すテンプレです。",
+    "body": "作者は声・テキスト・追加推論向けに Telnyx 連携テンプレを公開しています。利用料金は Telnyx 側の条件に従います。"
+  },
+  "OWj_0o4Ik2FffupfloOwe": {
+    "title": "生活事務 PA",
+    "oneLiner": "カレンダー、請求、旅行、書類など退屈なデスク仕事の生活事務を手伝います。",
+    "body": "作者はオープンソースの PA として公開しています。送信や支払いの代行範囲はテンプレ説明を確認してください。"
+  },
+  "RzVWyXu5x95OA1tMabRh9": {
+    "title": "X→YouTube ポッドキャスト",
+    "oneLiner": "X の記事を ElevenLabs 音声と Imagine 画像で YouTube ポッドキャストにします。",
+    "body": "作者は X リンクを送るとエピソードを出すと書いています。アップロード先アカウントや公開設定は自分で管理する前提です。"
+  },
+  "yu_bkwUfpHdqhF2Q1VhWn": {
+    "title": "BeneBot（福利厚生）",
+    "oneLiner": "オープンエンロールメントや自己負担、ネットワーク内の医療機関を落ち着いて案内します。",
+    "body": "作者は福利厚生プランの読み解きと受診先探しを手伝うと書いています。保険の助言や加入代行ではありません。"
+  },
+  "t-Axu4DmT9x2DEPa1eNW1": {
+    "title": "WhatsApp-Bot",
+    "oneLiner": "WhatsApp Web を一度 QR 連携し、一覧・既読・検索・下書き送信を手伝います。",
+    "body": "作者は capture-first で大量送信しないと書いています。送信前確認の有無はテンプレ説明に従ってください。"
+  },
+  "uaKyhDX_T3FY56jf6n4VL": {
+    "title": "共有テンプレ",
+    "oneLiner": "作者がリンクだけで共有した Grok Bot テンプレです。",
+    "body": "投稿の説明は短いです。用途はテンプレ側の説明を確認してください。"
+  },
+  "wUWBNyr-Y0BJwAKAT-I_J": {
+    "title": "最近のブックマーク検索",
+    "oneLiner": "X の直近ブックマークを取得し、表で検索・並べ替えします。",
+    "body": "作者は最新 100 件を Author / Date / Post / Engagement で見ると書いています。削除や自動投稿は書いていません。"
+  },
+  "m5Xjk7EhNokKF49YF9XuW": {
+    "title": "Discogs-Bot",
+    "oneLiner": "Discogs のコレクション、欲しいもの、マーケットをログインセッションで操作します。",
+    "body": "作者は再実行できるスクリプト付きと書いています。購入や入札の自動実行は出典に保証がありません。"
+  },
+  "_3EmrWiFM-DiDqgpriCJ3": {
+    "title": "入門チュートリアル用テンプレ",
+    "oneLiner": "Grok Bot 入門チュートリアル記事内で紹介されたテンプレのひとつです。",
+    "body": "チュートリアル投稿に含まれる Bot リンクです。個別の用途はテンプレ説明を確認してください。"
+  },
+  "iwNvOp-CFp-9Dk5wus41l": {
+    "title": "入門チュートリアル用テンプレ",
+    "oneLiner": "Grok Bot 入門チュートリアル記事内で紹介されたテンプレのひとつです。",
+    "body": "チュートリアル投稿に含まれる Bot リンクです。個別の用途はテンプレ説明を確認してください。"
+  },
+  "PqgO8EMZjN_SUdcvEmsRFapi": {
+    "title": "入門チュートリアル用リンク",
+    "oneLiner": "チュートリアル本文から抽出された Bot リンクです。ID 形式が通常と異なる場合があります。",
+    "body": "チュートリアル投稿に含まれるリンクです。開けない場合は出典投稿を確認してください。"
+  },
+  "wi5XHbtdKchiAuh0FUNkC": {
+    "title": "入門チュートリアル用テンプレ",
+    "oneLiner": "Grok Bot 入門チュートリアル記事内で紹介されたテンプレのひとつです。",
+    "body": "チュートリアル投稿に含まれる Bot リンクです。個別の用途はテンプレ説明を確認してください。"
+  },
+  "XbvFUuskYA0eP4aDwGXSO": {
+    "title": "入門チュートリアル用テンプレ",
+    "oneLiner": "Grok Bot 入門チュートリアル記事内で紹介されたテンプレのひとつです。",
+    "body": "チュートリアル投稿に含まれる Bot リンクです。個別の用途はテンプレ説明を確認してください。"
+  },
+  "L6q8qCzomu2lTs9mu_r1X": {
+    "title": "AI Master（4 LLM）",
+    "oneLiner": "1 つの質問を 4 つの LLM チャットに同時に投げ、コピペを減らします。",
+    "body": "作者は複数 LLM への同時問い合わせ用テンプレとして公開しています。各サービスの利用条件は各自で確認してください。"
+  },
+  "HAJavif4ssNOQku9JQsp-": {
+    "title": "Golf Caddie",
+    "oneLiner": "ラウンド前の天気とバッグ準備、コース中のクラブ助言、スコアメモを手伝います。",
+    "body": "作者は落ち着いた口調でスイング講義はしないと書いています。競技成績や用具選定の保証はありません。"
+  },
+  "BlTqnV5o9E35Dwo2sodyD": {
+    "title": "ボット整備",
+    "oneLiner": "各 Bot の名前・ラベル・説明を点検し、ずれがあれば修正案を出します。",
+    "body": "作者は確認後に問題なければ反映する整備用テンプレだと書いています。無断での一括変更は前提にしていません。"
+  },
+  "rfAHsaFrz6xHBMtUpxDi5": {
+    "title": "Dewey（メール整理）",
+    "oneLiner": "不要なメールスレッドを短時間で整理し、ストレージ課金を減らす手伝いをします。",
+    "body": "作者は数百スレッドを削除した事例を共有しています。削除対象の確認方法はテンプレ説明に従ってください。"
+  },
+  "3hFbbjddl7VpY2oRACKBB": {
+    "title": "thrift（token 節約）",
+    "oneLiner": "常時オンの厚いプロファイルを短くし、token 出血を抑える見直しをします。",
+    "body": "作者は最適化を謳うより、肥大化プロファイルの短縮とフラグ出しをすると書いています。自動停止の有無は出典を確認してください。"
+  },
+  "KzBEylM_3NFTjATszLICV": {
+    "title": "App Store Review Bot",
+    "oneLiner": "提出前に iOS アプリを監査し、リジェクト時の返信下書きも用意します。",
+    "body": "作者は 300 件超のリジェクト経験を基に作ったと書いています。審査通過の保証はありません。"
+  },
+  "zSiLsURBgkKHhx0V9Wok2": {
+    "title": "Forced Human Touches",
+    "oneLiner": "毎週 3 人を選び、チャット以外の具体的な接触アクションを提案します。",
+    "body": "作者はエージェント効率で人間関係が薄くなることへの対策として公開しています。連絡の自動送信は書いていません。"
+  },
+  "WFW6_5N596TQpWCRjRZ5w": {
+    "title": "Wool Radar（お得情報）",
+    "oneLiner": "買い物リストと AI ツール条件に合う特売や枠リセットだけを通知します。",
+    "body": "作者は Coles / WW / Aldi / Costco などの特売マッチ向けと書いています。決済や口座操作はしないとあります。"
+  },
+  "V2kkrme1lYb3NwIulGTTd": {
+    "title": "GitHub Bro",
+    "oneLiner": "指定リポジトリを追い、その日の更新を日次でまとめます。",
+    "body": "作者は絶対的な更新と顧客体験観点のまとめを返すと書いています。リポジトリへの書き込みは書いていません。"
+  },
+  "wQHNsqt2KhOszyxMZ1xQ1": {
+    "title": "Todo（実タスク連携）",
+    "oneLiner": "チャットで消えるタスクを実タスク系統に入れ、重複を除き完了まで閉じます。",
+    "body": "作者は平日朝は静かに動くと書いています。どのタスクアプリ連携かはテンプレ説明を確認してください。"
+  },
+  "4wovVk-3n65GZSQnG_srx": {
+    "title": "Realtor Bot",
+    "oneLiner": "公開ポータルから物件候補とデューデリをまとめる家探し助手です。",
+    "body": "作者は免許を持つ仲介ではないと明記しています。契約や内見の代行はありません。"
+  },
+  "EaX1UmhwVQWHQZ7beB8pI": {
+    "title": "Fishing Bot",
+    "oneLiner": "魚種や釣り場の調べものを手伝う Fishing Bot です。",
+    "body": "同じ投稿で Realtor と一緒に公開されています。安全や規制の最終判断は自分で行ってください。"
+  },
+  "N9eJfkuupWb3EpWFt76va": {
+    "title": "2A（州間携帯ルール）",
+    "oneLiner": "concealed carry の州間移動で reciprocity や告知義務を調べる手伝いをします。",
+    "body": "作者は旅行ルール案内用と書いています。法律助言ではなく、最終確認は公式情報で行ってください。"
+  },
+  "KINOQ4CQiKcP57kjuYGps": {
+    "title": "子ども向け朝刊",
+    "oneLiner": "毎朝 6 時に学校・スポーツ・天気・予定・漫画・クイズの新聞を印刷します。",
+    "body": "作者は子供向けの自動朝刊 Bot として公開しています。印刷環境や内容の監修は家庭側の前提です。"
+  },
+  "HAIGA0nUYgv85CtV5SMWa": {
+    "title": "OMNI-Grok Bot",
+    "oneLiner": "作者が OMNI-Grok Bot の新版として共有したテンプレです。",
+    "body": "投稿の説明は短いです。詳細な能力範囲はテンプレ側の説明を確認してください。"
+  },
+  "wC622hEnAgGY5AHK9z205": {
+    "title": "Video Transcriber",
+    "oneLiner": "YouTube / IG / TikTok / X のリンクから字幕優先で文字起こしします。",
+    "body": "作者は plain / SRT / VTT / 話者分離 / 要約＋引用に対応すると書いています。ASR フォールバックありです。"
+  },
+  "T-tYDBfjtZw-ZK-AW6JE9": {
+    "title": "Should We Climb that Mountain?",
+    "oneLiner": "高所登山の go / caution / no-go を天気・ルート・装備から初心者向けに出します。",
+    "body": "作者は出典つきの判断机だと書いています。安全の最終判断は自分と現地状況で行ってください。"
+  },
+  "c4fYduVVic2YtbcjXquD0": {
+    "title": "raw→wiki コンパイル",
+    "oneLiner": "不変の raw/ から SCHEMA.md に沿う短い wiki ページをコンパイルして照会します。",
+    "body": "作者は巨大 RAG ではなく wiki を問い合わせ、不明は unknown のままと書いています。"
+  },
+  "z-_zncW1_15qwOxc98b09": {
+    "title": "Tire Kicker",
+    "oneLiner": "FB Marketplace / Craigslist / eBay のウォッチを下書き専用で巡回します。",
+    "body": "作者は公正価格の引用と売り手・買い手メッセージ下書きまでだと書いています。自動購入はありません。"
+  },
+  "ChuFYfELJdp6iA-5ImjFU": {
+    "title": "Termlock",
+    "oneLiner": "フリーランス案件の提示を貼ると相場帯・ギャップ・カウンター表と返信下書きを出します。",
+    "body": "作者は draft-only のカウンター机だと書いています。送信代行はありません。"
+  },
+  "2pewBd6QpttNiH52dyGhq": {
+    "title": "Avi（飛行運用）",
+    "oneLiner": "パイロット向けにルート、天気、空港設備など飛行計画を手伝います。",
+    "body": "作者はお気に入りの EFB とも連携すると書いています。運航判断の責任は操縦者にあります。"
+  },
+  "NhTYqcIBaPCSZtdTflnqa": {
+    "title": "Skills → Grok Bot",
+    "oneLiner": "Claude / Codex / Hermes のスキルを Grok Bot 向けに橋渡しする公開スキルです。",
+    "body": "作者はテンプレは公開、アーカイブは私用と書いています。各ツールの認証情報は自分で管理してください。"
+  },
+  "P_0bcl1HrKuL8E1bfmJjz": {
+    "title": "Career Scout",
+    "oneLiner": "技術職以外も含め、背景を問わず求人探しを手伝う Career Scout です。",
+    "body": "作者は career-ops に触発された分野非依存の求人 Bot だと書いています。代応募の保証はありません。"
+  },
+  "xqinGTgeghdOyeYmzqO2m": {
+    "title": "往復フライト比較",
+    "oneLiner": "往復便を比較し Skyscanner リンクを作り、荷物込みの値下げを監視します。",
+    "body": "作者はルート監視付きの比較テンプレとして公開しています。予約代行はありません。"
+  },
+  "zMMAByt3oW_t2ua1NZa9X": {
+    "title": "Ramp レシート突合",
+    "oneLiner": "勤務メールの食事レシートを Ramp 経費と突合し、承認後だけ添付します。",
+    "body": "作者は承認後に添付すると書いています。無断提出や自動承認は前提にしていません。"
+  },
+  "-9hlUkQbsgE7oUyQvUPum": {
+    "title": "更新課金の許可リスト払い",
+    "oneLiner": "承認リストにある更新だけを週次手当の範囲で清算し、新規は人の判断待ちにします。",
+    "body": "作者は agentic bank 待ちのあいだの運用例として共有しています。口座連携の範囲は自分で設定する前提です。"
+  },
+  "v9qOXYXnHXvr_XN7fPZIE": {
+    "title": "ローカルディスク整理",
+    "oneLiner": "同じものの複数版でディスクが埋まったローカル環境の掃除を手伝います。",
+    "body": "作者はコーディング由来の重複で容量が足りない人向けと書いています。削除前確認は必須です。"
+  },
+  "n0tywD5YprRhnlIh4h7on": {
+    "title": "Obsidian Chief",
+    "oneLiner": "Obsidian を共有台帳にして、複数 Bot 世帯の参謀として仕事を振り分けます。",
+    "body": "作者は vault index を持ち specialist にルーティングすると書いています。外部送信の範囲はテンプレ説明次第です。"
+  },
+  "6KkkrATfxZYDFKOFVZzzh": {
+    "title": "Memory bot",
+    "oneLiner": "会議やチャットの出来事を取り込み、エージェント向けメモリを管理します。",
+    "body": "作者は個人 vault で使っていた Memory bot を公開テンプレにしたと書いています。"
+  },
+  "Hd3GphmPZ4aHWyFiBSmu5": {
+    "title": "Meeting prep",
+    "oneLiner": "カレンダーと接続先から、電話でも読める短い事前ブリーフを作ります。",
+    "body": "作者は会議前にwho's who を把握するための準備 Bot だと書いています。会議出席の代行はありません。"
+  },
+  "_t_vyuhFM8ev2flbZoYnU": {
+    "title": "初めてのテンプレ",
+    "oneLiner": "作者が初めて公開した Grok Bot テンプレです。詳細説明は短いです。",
+    "body": "投稿の説明は短いです。用途はテンプレ側の説明を確認してください。"
+  },
+  "LrW8NQ19WViRSie4gj9hb": {
+    "title": "Paste Ready",
+    "oneLiner": "雑な仕事内容から、貼り付け用の Name / Title / Description を整えます。",
+    "body": "作者はプラグイン前に名前と説明を整える用途だと書いています。Bot 作成そのものの代行ではありません。"
+  },
+  "9-VBOKZkj7_QZoKDuZWIP": {
+    "title": "Throttle · Token Officer",
+    "oneLiner": "他 Bot の token 消費を管理する Token Officer です。",
+    "body": "作者は token burn 管理用として公開しています。自動停止の強さはテンプレ説明を確認してください。"
+  },
+  "6tbtv4Tln4MvKc5duOkle": {
+    "title": "PM 向け AGI Bot",
+    "oneLiner": "プロダクトマネージャー向けに公開された Grok Bot テンプレです。",
+    "body": "作者は PM 向けだと書いていますが、投稿の機能説明は短めです。詳細はテンプレ側を確認してください。"
+  },
+  "KpodhhBqjA4FHv47R1HrD": {
+    "title": "Gong Call Coach",
+    "oneLiner": "Gong の通話録音から短いポストコール要点と次の打ち手を返します。",
+    "body": "作者は録音が来てもコーチングが来ない問題向けと書いています。顧客への自動送信はありません。"
+  },
+  "8o5g-70IT7LWNt1JQT0DY": {
+    "title": "Dice 求人応募 Sean",
+    "oneLiner": "Dice 上の求人応募作業を減らす job-apply テンプレ（Sean）です。",
+    "body": "作者は Templates 上の Sean として公開しています。応募内容の最終確認は自分で行ってください。"
+  },
+  "Ci1UvQUguruSmxhiGmMI6": {
+    "title": "Security Bot",
+    "oneLiner": "作者が公開したセキュリティ向け Grok Bot テンプレです。",
+    "body": "投稿の説明は短めです。監査範囲や自動修正の有無はテンプレ説明を確認してください。"
+  },
+  "pOcrH-Rc7SdPWiHsX9vHg": {
+    "title": "Hermes / Bot / Grok 同期",
+    "oneLiner": "Hermes・Bot・Grok を併用するとき、同じ案件の更新が迷子にならないよう同期します。",
+    "body": "作者は 3 場所で同じプロジェクトを触ると情報が落ちると書いています。同期範囲はテンプレ説明次第です。"
+  },
+  "5qiJDBQ-IOM-FMdQO9mP3": {
+    "title": "Courier",
+    "oneLiner": "別々の Grok Bot アカウント間でエージェントが仕事を引き継げる橋を作ります。",
+    "body": "作者は同一人物の二アカウントでも、別人間でも使えると書いています。権限境界は自分で設定してください。"
+  },
+  "mWxeafjXItbC0_VcpSwqm": {
+    "title": "Colombia Move",
+    "oneLiner": "Colombia Move のマーケット出品をチャットから管理・質問できる机です。",
+    "body": "作者は接続して出品を管理し、チャットで質問できると書いています。決済代行の有無はテンプレ説明を確認してください。"
   }
 }
