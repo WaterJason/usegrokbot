@@ -15,7 +15,7 @@
     "xCandidates": 0,
     "nonXCandidates": 7,
     "alreadyIngested": 135,
-    "pending": 1
+    "pending": 0
   },
   "skipped": [],
   "cases": [
@@ -1813,8 +1813,8 @@
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "candidate",
       "ingest": {
-        "status": "retry",
-        "attempts": 2,
+        "status": "skipped",
+        "attempts": 3,
         "code": "source_unreadable",
         "reason": "404"
       }
