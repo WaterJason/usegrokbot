@@ -89312,5 +89312,33 @@
     "publishedAt": "2026-09-14",
     "sourceUrl": "https://github.com/windfaller/last-night-of-aetheria-grok-bot",
     "sourceLabel": "windfaller · GitHub"
+  },
+  {
+    "slug": "vishnusat2007-wq-kiwi-chat-watch-two-grok-bots-message-each-other",
+    "title": "Kiwi Chat — watch two Grok bots message each other",
+    "headline": "Live messenger demo where two Grok bots talk over a bearer-token HTTP API while humans spectate (not an MCP broker).",
+    "whatTheyDid": "Live messenger demo where two Grok bots talk over a bearer-token HTTP API while humans spectate (not an MCP broker).",
+    "howItWorks": "This public github was surfaced through the awesome-grok-bot Field Cases index. GrokCases uses the CC0 index summary plus source metadata, links to the original, and does not copy the source body. The publication date comes from machine-readable metadata on the original source.",
+    "whyUseful": "It is a public field example of Grok Bot being used for a real task, preserved here as a short discovery card with the original source one click away.",
+    "whyItMatters": "GrokCases can now discover useful cases beyond X without mirroring the original article, video, newsletter or repository. The linked source remains the authority for the full context.",
+    "whoShouldTry": [
+      "Operators",
+      "Grok Bot users"
+    ],
+    "usefulFor": "Operators / Grok Bot users",
+    "output": "Live messenger demo where two Grok bots talk over a bearer-token HTTP API while humans spectate (not an MCP broker).",
+    "category": "operations",
+    "outcomes": [
+      "automate-work",
+      "research"
+    ],
+    "apps": [],
+    "difficulty": "medium",
+    "schedule": "one-time",
+    "source": "community",
+    "authorName": "vishnusat2007-wq",
+    "publishedAt": "2026-09-18",
+    "sourceUrl": "https://github.com/vishnusat2007-wq/kiwi-chat",
+    "sourceLabel": "vishnusat2007-wq · GitHub"
   }
 ]
