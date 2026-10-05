@@ -9,12 +9,12 @@
     "note": "The list metadata is CC0. Linked X posts, articles, videos, repositories and other source content retain their own rights. GrokCases uses the index as a discovery source, summarizes conservatively, and links back rather than copying source content wholesale."
   },
   "stats": {
-    "total": 206,
+    "total": 207,
     "skippedByGrokCasesRules": 1,
     "candidates": 8,
     "xCandidates": 1,
     "nonXCandidates": 7,
-    "alreadyIngested": 198,
+    "alreadyIngested": 199,
     "pending": 0
   },
   "skipped": [
@@ -2703,6 +2703,19 @@
       "title": "GrokD4M — HurlingWiki built with Grok Bot + D4M",
       "url": "https://github.com/Sliothar1/GrokD4M",
       "sourceSummary": "Kid-friendly Galway hurling knowledge site (MIT D4M-style associative arrays) built as a Grok Bot project handoff.",
+      "sourceType": "github",
+      "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
+      "sourceStatus": "already-ingested",
+      "ingest": {
+        "status": "published",
+        "attempts": 1
+      }
+    },
+    {
+      "id": "visa-bulletin-push-visa-priority-date-alerts-to-a-grok-bot-routine",
+      "title": "Visa Bulletin Push — visa priority-date alerts to a Grok Bot routine",
+      "url": "https://github.com/jt-wang/visa-bulletin-push",
+      "sourceSummary": "Free US Visa Bulletin alerts for China and India EB-1/2/3 that push to a webhook-triggered Grok Bot routine (or ChatGPT and other agents) with one-sentence setup and an immediate test alert.",
       "sourceType": "github",
       "sourceIndex": "RongleCat/awesome-grok-bot#field-cases",
       "sourceStatus": "already-ingested",
